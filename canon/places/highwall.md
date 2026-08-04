@@ -8,29 +8,51 @@ tags: []
 related: []
 provenance:
   - "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md"
+  - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
 ---
 
 # Highwall
 
 ## Summary
 
-Highwall is a civilization shaped by centuries of adaptation to recurring
-catastrophic flash floods in a narrow canyon.
+Highwall is a major city and civilization carved into the walls of a narrow
+sandstone canyon. Its regional importance comes from its command of the only
+practical route between the inland highlands and the downstream river valleys
+and coastal states, together with its accumulated civic and technical
+expertise.
 
 ## Classification and location
 
 - **Place type:** City and civilization
-- **Containing region:** Not yet documented
-- **Coordinates or relative position:** A narrow canyon; further position is
-  not yet documented
+- **Containing region:** Between inland highlands and downstream river valleys
+  and coastal states
+- **Coordinates or relative position:** Primarily carved into one wall of a
+  narrow sandstone canyon; the opposite wall supports complementary civic and
+  commercial uses
 
 ## Geography and environment
 
-The canyon experiences recurring catastrophic flash floods.
+An intermittent, non-navigable river formed the canyon. For much of the year
+its flow is limited, but seasonal storms can produce catastrophic flash
+floods. The canyon limits expansion, restricts access to natural resources,
+and exposes the city to recurring disasters, while also providing Highwall's
+foundation, transportation corridor, marketplace, defensive feature, and
+principal regional advantage.
+
+Most permanent structures are carved directly into the sandstone rather than
+built as freestanding buildings. The surrounding highlands supply timber,
+ores, livestock, and other specialty raw materials scarce within the canyon.
 
 ## Population and settlement
 
-Not yet documented.
+Highwall distinguishes visitors, long-term residents, and citizens as separate
+classes of legal residency. Visitors may enter for trade, seasonal work, or
+travel without joining the permanent civic community. Long-term residents may
+live and work in the city without full citizenship.
+
+Citizens are commonly known as stewards. They hold additional privileges and
+civic obligations, and citizenship represents an active commitment to the
+city's long-term welfare rather than residence alone.
 
 ## Government and institutions
 
@@ -38,27 +60,79 @@ Highwall's institutions are generally functional, well-designed, and staffed
 by capable people. They remain susceptible to blind spots, over-optimization,
 rare events, and changing circumstances.
 
+Modern Highwall presents itself as an autonomous civic authority governing its
+own affairs while maintaining longstanding political and economic relations
+with neighboring powers. Its legal traditions and reputation for impartial
+arbitration extend beyond the city and are principal sources of regional
+influence. Some civic titles retain terminology from earlier military roles
+whose functions have become civilian and administrative.
+
 ## Economy and infrastructure
 
-Highwall's engineering and economy have generally emerged from the pressure of
-adapting to its flood-prone environment. Specific systems are not yet
-documented.
+Highwall is neither the region's largest polity nor its strongest military
+power. Its influence rests on stable institutions, legal traditions,
+engineering knowledge, accumulated expertise, and its indispensable position
+on the regional corridor.
+
+The city's prosperity depends on efficient trade, specialized craftsmanship,
+institutional knowledge, and coordination of people and resources rather than
+abundant local materials. Upriver, Highwall trades and cooperates with pastoral
+clans in the mountains and smaller canyons. Downriver, it maintains commercial,
+diplomatic, and legal relationships with princely city-states and coastal
+polities. Highland communities rely on Highwall's markets, manufactured goods,
+legal institutions, and downstream connections; downstream polities rely on
+continued access to highland resources.
+
+Highwall's technological level is broadly comparable to the classical
+Mediterranean rather than medieval Europe. Engineering, logistics,
+construction, and civic administration are especially advanced. Mechanical
+lifting systems, cranes, suspension bridges, signaling networks, and
+large-scale stone construction are highly developed, but industrial
+manufacturing has not emerged.
+
+Flood prediction, rescue operations, canyon engineering, archival
+preservation, logistics, and jurisprudence are defining bodies of civic
+expertise.
 
 ## Culture
 
-Highwall values stewardship, accumulated knowledge, continuity, and long-term
-thinking over individual exceptionalism. Its culture, laws, religion, and civic
-values have generally emerged from the same environmental pressure.
+Stewardship is central to Highwall's civic identity. Citizens are expected to
+preserve and improve the city's institutions and infrastructure for future
+generations. Competence, reliability, preparation, public responsibility,
+accumulated knowledge, continuity, and long-term thinking are respected civic
+values. Engineering knowledge, historical records, and institutional memory
+are treated as public assets.
 
 ## History
 
-Highwall has adapted to recurring catastrophic flash floods for centuries.
+Highwall has existed for centuries and developed continuously in response to
+the opportunities and dangers of the canyon.
+
+Approximately 185 years before the primary events of the novels, a catastrophic
+flood destroyed the original settlement, now called the Old Wall. Survivors
+relocated slightly downriver to a more favorable site and rebuilt. Modern
+Highwall considers itself a direct continuation of the Old Wall, supported by
+the continuation of institutions, traditions, families, and civic practices.
+The destruction and rebuilding remain defining events in the city's history.
+
+Official civic histories emphasize continuity, reconstruction, public service,
+institutional stability, and uninterrupted civic identity. They present the
+rebuilding as the defining moment in Highwall's development. Some accounts of
+Highwall's earlier history, foreign relationships, and political status remain
+disputed or incomplete, and official accounts do not fully represent every
+event and political reality in its objective history.
 
 ## Open issues
 
-TODO: Document the canyon, floods, settlement, institutions, culture, and
-history in greater detail when explicitly supplied.
+- The [canonical name of the river](../../development/open-questions/highwall-river-name.md)
+  has not been finalized.
+- Additional overview-level physical layout may be documented by later
+  geography seeds.
+- Specialized government, institutional, historical, religious, economic,
+  geographic, and character material remains reserved for dedicated pages and
+  seeds.
 
 ## Sources and decisions
 
 - [Authorial Design Principles confirmation review](../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md)
+- [Highwall Overview seed review](../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md)
