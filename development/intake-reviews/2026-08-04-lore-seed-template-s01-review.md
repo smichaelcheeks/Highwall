@@ -1,7 +1,7 @@
 ---
 title: Author-Facing Lore Seed Template Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-lore-seed-template-s01.md"
 case_id: CASE-2026-08-04-LORE-SEED-TEMPLATE
@@ -101,16 +101,16 @@ records. No canon or story pages change.
 - [x] No contradiction was silently resolved.
 - [x] Repository roles are linked rather than duplicated.
 - [x] Relative links resolve and repository validation passes.
-- [ ] Markdown style passes.
+- [x] Markdown style passes.
 - [x] The Git diff matches the recorded file list.
-- [ ] Both GitHub checks pass on the draft PR.
+- [x] Both GitHub checks pass on the draft PR.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Commit, push, open a draft PR, and verify both GitHub checks, including Markdown style.
+- **Git commit:** `91627a7882193389c997e73595267eed26d7bf4f`
+- **Outstanding actions:** None. Publication is tracked in [PR #6](https://github.com/smichaelcheeks/Highwall/pull/6).
 
 ## Amendments
 
