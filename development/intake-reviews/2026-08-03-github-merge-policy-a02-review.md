@@ -1,7 +1,7 @@
 ---
 title: Fresh Codex Canon Intake Readiness Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-03
 submission: "../../intake/submissions/2026-08-03-github-merge-policy-a02.md"
 case_id: CASE-2026-08-03-GITHUB-MERGE-POLICY
@@ -79,15 +79,15 @@ None.
 - [x] Python 3.13.14 and pip are installed for the Windows user.
 - [x] Microsoft Python, Pylance, debugger, and environment extensions are installed in VS Code.
 - [x] The repository validator passes locally.
-- [ ] Repository links and Markdown style pass after adding the guidance.
-- [ ] Both GitHub checks pass on PR #2.
+- [x] Repository links and Markdown style pass after adding the guidance.
+- [x] Both GitHub checks pass on PR #2.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Validate, push, and observe PR #2 checks.
+- **Git commit:** `d629e7805896f26a3c070d9a3dd1e941d94403fa`
+- **Outstanding actions:** None. Publication is tracked in [PR #2](https://github.com/smichaelcheeks/Highwall/pull/2).
 
 ## Amendments
 
