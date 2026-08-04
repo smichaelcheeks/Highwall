@@ -40,6 +40,28 @@ My notes begin after this line:
 [PASTE NOTES OR BEGIN THE INTERVIEW HERE]
 ```
 
+## Optional repository context
+
+```text
+Highwall is a controlled canon repository. A lore seed is preserved source
+material, not automatically canon. Codex later preserves the finished seed
+verbatim, inventories every substantive claim in a separate review, records
+every decision and deliberate non-change, and places authorized facts in one
+authoritative location.
+
+Canon contains objective setting truth. Story contains character knowledge,
+reader knowledge, chronology, and reveals. Design contains out-of-world
+authorial guidance but cannot establish fictional facts. Development contains
+proposals, questions, contradictions, decisions, and retired ideas.
+
+Once review begins, a seed is immutable. Later confirmed corrections and
+additions are preserved in separately numbered addenda. Contradictions are
+documented rather than silently resolved. Missing information remains unknown
+or becomes an open question. Repository identifiers, dispositions, file
+destinations, validation, branches, and draft pull requests are Codex's
+responsibility, not the seed-preparation assistant's.
+```
+
 ## Seed output format
 
 ```markdown
@@ -85,10 +107,31 @@ connections.]
 [Attribute every belief, tradition, rumor, historical claim, or disputed
 account to its stated source.]
 
-## Story and knowledge boundaries
+## Narrative truth levels
 
-[Character knowledge, viewpoint limitations, reader reveals, plot usage, and
-spoiler-sensitive information. Do not restate these as setting truth.]
+### Objective setting truth
+
+[What is actually true. Refer to the relevant fact elsewhere in the seed
+rather than duplicating its full explanation.]
+
+### Official or institutional position
+
+[What a named government, civic history, religious authority, or other
+institution officially claims. Attribute every position.]
+
+### Character knowledge
+
+[What each relevant character knows, believes, suspects, or misunderstands;
+include the applicable point in the story.]
+
+### Reader knowledge
+
+[What the reader knows and when, organized by book, chapter, or reveal stage.]
+
+### Spoiler notes
+
+[Hidden truths, reveal dependencies, and information that must not appear in
+spoiler-safe summaries.]
 
 ## Proposals and alternatives
 

@@ -9,6 +9,8 @@ This repository begins as a structure, not a body of lore. No setting fact is ca
 - [`intake/`](intake/README.md) contains immutable submissions of new information awaiting or documenting review.
 - [`canon/`](canon/README.md) contains authoritative facts about the setting.
 - [`story/`](story/README.md) contains narrative-specific material: projects, character knowledge, reveals, and story chronology.
+- [`design/`](design/README.md) contains authoritative out-of-world creative
+  guidance that cannot establish in-world facts.
 - [`development/`](development/README.md) contains proposals, questions, contradictions, decisions, and retired ideas.
 - [`references/`](references/README.md) contains repository standards and external research notes.
 - [`templates/`](templates/README.md) contains reusable page structures.
@@ -42,10 +44,12 @@ When a seed document develops through conversation, related material remains gro
 
 The complete workflow and controlled decision vocabulary are defined in [`references/intake-workflow.md`](references/intake-workflow.md).
 
-## Canon, story, and development
+## Canon, story, design, and development
 
 - **Canon** answers what is true in the setting.
 - **Story** answers what a particular narrative, viewpoint character, or reader knows and when they know it.
+- **Design** guides how authors and AI collaborators construct the setting and
+  stories without serving as evidence for fictional truth.
 - **Development** answers what might become true, what is unresolved, and why a decision was made.
 - **In-world belief** is documented as a belief held by a named person or group and must not be presented as objective truth without confirmation.
 

@@ -12,4 +12,13 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
-No canon changes have been recorded yet.
+### 2026-08-04 — Establish Highwall's environmental and civic foundations
+
+- **Change:** Establish Highwall as a civilization in a narrow canyon shaped
+  over centuries by recurring catastrophic flash floods, including the general
+  institutional character and civic values supplied by the author.
+- **Authority:** [Authorial Design Principles confirmation](../intake/submissions/2026-08-04-authorial-design-principles-a01.md)
+- **Review:** [Authorial Design Principles confirmation review](intake-reviews/2026-08-04-authorial-design-principles-a01-review.md)
+- **Affected pages:** [`canon/places/highwall.md`](../canon/places/highwall.md)
+- **Notes:** Meta-level narrative and worldbuilding preferences remain separate
+  under `design/` and are not canon evidence.
