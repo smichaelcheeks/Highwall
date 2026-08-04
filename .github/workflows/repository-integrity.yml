@@ -1,0 +1,52 @@
+name: Repository integrity
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repository-integrity-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integrity:
+    name: Canon and intake integrity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Validate repository
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -n "$BASE_SHA" ]; then
+            python scripts/validate_repository.py --base-ref "$BASE_SHA"
+          else
+            python scripts/validate_repository.py
+          fi
+
+  markdown:
+    name: Markdown style
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Lint maintained Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v23
+        with:
+          globs: "**/*.md"

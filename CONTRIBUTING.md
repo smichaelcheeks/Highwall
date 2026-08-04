@@ -71,3 +71,11 @@ Use plain Markdown, lowercase kebab-case filenames, and relative links. Do not i
 ## Branches and pull requests
 
 Use one short-lived branch per intake case or other coherent maintenance task. Keep overlapping canon changes sequential unless their independence has been established. See [`references/git-workflow.md`](references/git-workflow.md) for naming, draft PRs, validation, and merge boundaries.
+
+Before pushing, run the same deterministic integrity check used by CI:
+
+```powershell
+python scripts/validate_repository.py --base-ref origin/main
+```
+
+The base-ref argument enforces immutability for submissions that have already merged. Omit it only when validating a standalone checkout without a comparison ref.

@@ -28,6 +28,8 @@ Open a draft pull request while a case is still being refined. Its description s
 
 Mark the PR ready only when every included review is complete or the PR clearly documents why an unresolved administrative item does not block the proposed changes.
 
+The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
+
 ## Parallel branches
 
 Parallel branches are appropriate only when their semantic effects are independent. Different files alone do not prove independence.
@@ -49,7 +51,7 @@ Do not merge merely because Git reports no conflicts. Confirm that:
 - unresolved conflicts remain documented rather than silently selected
 - links and required metadata validate
 - the diff contains no unrelated changes
-- any required external checks pass
+- the repository-integrity and Markdown checks pass
 
 ## Remote policy
 
