@@ -19,6 +19,7 @@ Use these boundaries:
 | Original batch of submitted information | `intake/submissions/` |
 | Objective setting truth | `canon/` |
 | Plot, viewpoint knowledge, or reveal order | `story/` |
+| Authoritative out-of-world creative guidance | `design/` |
 | Unapproved possibility or unresolved issue | `development/` |
 | External research or repository guidance | `references/` |
 | Discarded material retained for history | `development/retired/` |
@@ -44,6 +45,12 @@ Label claims according to what they represent:
 - **Development idea:** an unapproved possibility.
 
 Do not use confident prose to erase these distinctions.
+
+## Design guidance
+
+Design principles may justify a creative or editorial choice but cannot
+establish an in-world fact. When a principle relies on a setting premise, link
+to its authoritative canon page. Do not infer missing lore from design intent.
 
 ## Canon changes
 

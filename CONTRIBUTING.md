@@ -10,6 +10,8 @@ This repository is a controlled canon system. Contributions should improve clari
 - Prefer links to the authoritative page over duplicated explanations.
 - Keep brainstorming, alternatives, and speculative material in `development/`, not `canon/`.
 - Keep setting truth in `canon/` and narrative state in `story/`.
+- Keep authorial intent in `design/`; never cite it as evidence of an in-world
+  fact or infer missing lore from it.
 - Preserve narrative ambiguity when instructed. Do not convert implication, rumor, belief, or reader inference into fact.
 - Record significant canon changes and the decision authorizing them.
 - Do not treat external research, prior drafts, or retired ideas as canon.
