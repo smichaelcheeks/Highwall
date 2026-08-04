@@ -1,0 +1,36 @@
+---
+title: TODO
+type: intake-submission
+case_id: CASE-YYYY-MM-DD-SLUG
+submission_id: CASE-YYYY-MM-DD-SLUG-S01
+sequence: 1
+submitted_on: YYYY-MM-DD
+submitted_by: TODO
+authority: classify
+session_mode: exploration
+parent_submission: null
+supersedes_claims: []
+related: []
+---
+
+# TODO: Submission title
+
+## Author instruction
+
+TODO: Preserve the instruction that establishes how this material may be used.
+
+## Session mode
+
+TODO: Record `exploration`, `canon-authoring`, or `direct-integration`. Use `exploration` when no mode was declared.
+
+## Submitted information
+
+TODO: Record the source material without adding reviewer interpretation.
+
+## Attachments or sources
+
+TODO: Link any files or external sources supplied with this submission.
+
+## Submission notes
+
+TODO: Record source context only. Processing decisions belong in the separate intake review.

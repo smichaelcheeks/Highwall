@@ -1,0 +1,81 @@
+# Contributing to Highwall
+
+This repository is a controlled canon system. Contributions should improve clarity and consistency without expanding the setting beyond explicit instructions.
+
+## Non-negotiable rules
+
+- Never invent canon or fill gaps creatively unless explicitly instructed.
+- Never silently resolve contradictions. Document each claim, cite its repository location, and request a decision.
+- Ask for clarification rather than guessing when an answer would affect meaning or canon.
+- Prefer links to the authoritative page over duplicated explanations.
+- Keep brainstorming, alternatives, and speculative material in `development/`, not `canon/`.
+- Keep setting truth in `canon/` and narrative state in `story/`.
+- Preserve narrative ambiguity when instructed. Do not convert implication, rumor, belief, or reader inference into fact.
+- Record significant canon changes and the decision authorizing them.
+- Do not treat external research, prior drafts, or retired ideas as canon.
+
+## Contribution workflow
+
+For a batch of new information, follow [`references/intake-workflow.md`](references/intake-workflow.md):
+
+1. **Preserve the submission.** Store it in `intake/submissions/` with a stable ID and do not alter it after review begins.
+2. **Establish authority.** Record whether the author's instruction establishes canon, proposes possibilities, or supplies material for classification.
+3. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
+4. **Find the authority.** Search for existing authoritative pages and dependent references.
+5. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
+6. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
+7. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
+8. **Verify the result.** Check the diff, links, provenance, accidental canon changes, and leaked story spoilers.
+9. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
+
+For conversational refinement, declare a session mode and maintain a review checkpoint separating decisions, proposals, corrections, and questions. Before integrating new conversational facts, preserve the confirmed outcome in an immutable addendum from [`templates/conversation-addendum.md`](templates/conversation-addendum.md). Follow the detailed rules in [`references/intake-workflow.md`](references/intake-workflow.md).
+
+For maintenance work that contains no new setting information, use the same classification and verification rules but an intake submission is optional.
+
+## Working with canon pages
+
+All canon pages must contain YAML front matter conforming to [`references/front-matter.md`](references/front-matter.md). New canon material should not be marked `established` unless the author explicitly approves that status.
+
+Do not move a development document into `canon/` as a shortcut. Create or update the appropriate canon page, link the approving decision, and retain the development record when it explains important history.
+
+## Contradictions
+
+If two statements conflict:
+
+1. Do not edit either statement merely to make them agree.
+2. Create a report from [`templates/contradiction-report.md`](templates/contradiction-report.md).
+3. Quote or neutrally summarize both claims and link to each source.
+4. Describe the scope and downstream pages affected.
+5. Leave the report open until the author decides.
+6. Apply the decision consistently and record the resulting canon change.
+
+## AI collaboration checklist
+
+Before completing a task, an AI contributor must verify:
+
+- Every new factual claim came from the user's instruction or an existing authoritative page.
+- Placeholders remain visibly marked as TODO or unknown.
+- No proposal, belief, draft, or discarded idea was promoted to canon.
+- No contradiction was hidden by rewording or deletion.
+- Relative links identify the authoritative pages.
+- Significant changes are traceable to a request or decision record.
+- Every substantive intake claim has a disposition, including claims that caused no repository change.
+- The original submission remains unchanged and the review report distinguishes source text from reviewer conclusions.
+
+When asked to brainstorm, write only in `development/` unless the user explicitly requests canon changes. When instructions are ambiguous about canon impact, pause and ask.
+
+## File conventions
+
+Use plain Markdown, lowercase kebab-case filenames, and relative links. Do not introduce generator-specific syntax into content unless the repository formally adopts that tool. Follow [`references/repository-standards.md`](references/repository-standards.md) for naming, headings, TODOs, and change records.
+
+## Branches and pull requests
+
+Use one short-lived branch per intake case or other coherent maintenance task. Keep overlapping canon changes sequential unless their independence has been established. See [`references/git-workflow.md`](references/git-workflow.md) for naming, draft PRs, validation, and merge boundaries.
+
+Before pushing, run the same deterministic integrity check used by CI:
+
+```powershell
+python scripts/validate_repository.py --base-ref origin/main
+```
+
+The base-ref argument enforces immutability for submissions that have already merged. Omit it only when validating a standalone checkout without a comparison ref.
