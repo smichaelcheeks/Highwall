@@ -138,7 +138,7 @@ story pages without the excluded detail.
 
 - **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 Highwall overview entry](../canon-changes.md)
-- **Git commit:** Not yet committed
+- **Git commit:** `cd4afa2af9a9ce5b44b10649b5a34bcb18ac41f1`
 - **Outstanding actions:** Push the case branch, open a draft PR, and verify both required GitHub checks.
 
 ## Amendments
