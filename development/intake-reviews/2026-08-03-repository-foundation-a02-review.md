@@ -99,4 +99,6 @@ The intake workflow, Git workflow, templates, top-level guidance, three case sub
 
 ## Amendments
 
-None.
+### 2026-08-03 — Deferred-question record
+
+Created [`github-merge-policy.md`](../open-questions/github-merge-policy.md) so deferred claim A02-C006 points to the development record required by the intake workflow. Implemented in commit `5f43ceefa0560ad7c80f9067587ab0e60d0cee1b`.

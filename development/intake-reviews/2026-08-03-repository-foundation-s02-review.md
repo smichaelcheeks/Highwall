@@ -84,8 +84,8 @@ None.
 
 - **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Update PR #1 with this correction.
+- **Git commit:** `5f43ceefa0560ad7c80f9067587ab0e60d0cee1b`
+- **Outstanding actions:** None. Publication is tracked in [PR #1](https://github.com/smichaelcheeks/Highwall/pull/1).
 
 ## Amendments
 

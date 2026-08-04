@@ -91,4 +91,6 @@ None.
 
 ## Amendments
 
-None.
+### 2026-08-03 — Administrative authority correction
+
+Changed the submission and review authority from `establish-canon` to `establish-policy` so repository governance cannot be mistaken for lore authority. Implemented in commit `5f43ceefa0560ad7c80f9067587ab0e60d0cee1b`.

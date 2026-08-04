@@ -103,3 +103,5 @@ The root README and all administrative files under `canon/`, `story/`, `developm
 ### 2026-08-03 — Source fidelity correction
 
 This review originally described S01 as the original submission. S01 is a retrospective reconstruction. The verbatim source is now preserved without rewriting S01 as [`CASE-2026-08-03-REPOSITORY-FOUNDATION-S02`](../../intake/submissions/2026-08-03-repository-foundation-s02.md) and reviewed separately.
+
+Implemented in commit `5f43ceefa0560ad7c80f9067587ab0e60d0cee1b`.
