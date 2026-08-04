@@ -30,6 +30,8 @@ Mark the PR ready only when every included review is complete or the PR clearly 
 
 The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
 
+All third-party and GitHub-maintained Actions must be pinned to full commit SHAs. Keep the corresponding major-version comment beside each SHA for readability. Dependabot checks monthly for GitHub Actions updates and opens reviewable PRs rather than moving action versions implicitly.
+
 ## Parallel branches
 
 Parallel branches are appropriate only when their semantic effects are independent. Different files alone do not prove independence.
@@ -42,7 +44,9 @@ When relevant canon changes merge while another branch remains open, update the 
 
 Keep commits coherent and attributable to the intake case or maintenance task. Record relevant commit provenance in completed reviews.
 
-Squash merging is the preferred default for a completed case because it gives `main` one understandable change unit. This remains a preference, not a mandatory repository rule, until the author explicitly decides whether exceptions or enforcement are desired.
+Squash merging is the default for a completed case because it gives `main` one understandable change unit. Regular merge commits remain available for exceptional cases where individual commits carry meaningful independent provenance. Rebase merging is disabled.
+
+GitHub automatically deletes merged remote head branches. After updating local `main` and confirming a clean working tree, delete the corresponding local branch as well. Do not delete open or unmerged branches, and preserve abandoned work through a closed PR or development record before deleting it. Never reuse a deleted branch name.
 
 Do not merge merely because Git reports no conflicts. Confirm that:
 
@@ -55,4 +59,8 @@ Do not merge merely because Git reports no conflicts. Confirm that:
 
 ## Remote policy
 
-Branch protection, required reviews, status checks, and automatic deletion of merged branches are GitHub repository settings. Do not enable or alter them until the author selects the desired enforcement policy.
+The repository allows squash and regular merge commits, disables rebase merging, and automatically deletes merged remote head branches. Squash commits use the PR title and body so accepted history reflects the reviewed change description.
+
+GitHub Projects, Wiki, and Discussions are disabled; Issues remain available for work tracking. Actions have read-only default token permissions, cannot approve pull requests, and must use immutable SHA references.
+
+Required reviews, required status checks, and protection against direct pushes remain unresolved and must not be enabled or altered without explicit author approval. They are unavailable for this private repository under its current GitHub plan.

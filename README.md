@@ -66,3 +66,5 @@ Before adding or changing material:
 Human and AI contributors follow the same rules. AI assistance does not have authority to invent, promote, reinterpret, or reconcile canon unless explicitly instructed.
 
 Substantial changes should follow the case-oriented branch and pull-request process in [`references/git-workflow.md`](references/git-workflow.md).
+
+To begin a canon case in a fresh Codex chat, use [`references/canon-intake-quickstart.md`](references/canon-intake-quickstart.md). Codex-specific mandatory instructions live in [`AGENTS.md`](AGENTS.md).

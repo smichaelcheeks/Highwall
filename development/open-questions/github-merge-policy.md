@@ -1,7 +1,7 @@
 ---
 title: GitHub Branch Protection and Merge Policy
 type: open-question
-status: open
+status: resolved
 date_opened: 2026-08-03
 related:
   - "../../references/git-workflow.md"
@@ -44,4 +44,14 @@ The following possibilities are unapproved:
 
 ## Resolution
 
-Pending.
+Resolved on 2026-08-03 through [`CASE-2026-08-03-GITHUB-MERGE-POLICY-S01`](../../intake/submissions/2026-08-03-github-merge-policy-s01.md):
+
+- Automatically delete merged remote head branches.
+- Delete corresponding local branches after synchronizing and verifying `main`.
+- Use squash merging by default.
+- Keep regular merge commits available for exceptional provenance needs.
+- Disable rebase merging.
+- Do not delete open or unmerged branches.
+- Do not reuse deleted branch names.
+
+Protection against direct pushes, required approvals, and required status checks remains unresolved in [`main-branch-protection.md`](main-branch-protection.md).
