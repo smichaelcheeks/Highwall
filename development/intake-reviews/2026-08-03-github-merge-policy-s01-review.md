@@ -86,14 +86,14 @@ The Git workflow, merge-policy question, this submission, and this review.
 - [x] Rebase merges are disabled.
 - [x] The merged foundation branch is deleted locally and remotely.
 - [x] `main` was synchronized and clean before branch deletion.
-- [ ] Repository integrity and Markdown CI pass on the follow-up PR.
+- [x] Repository integrity and Markdown CI pass on the follow-up PR.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Publish and validate the follow-up PR.
+- **Git commit:** `0ac9082f56195c2581cc2c47db2ede85fdb3b382`
+- **Outstanding actions:** None. Publication is tracked in [PR #2](https://github.com/smichaelcheeks/Highwall/pull/2).
 
 ## Amendments
 
