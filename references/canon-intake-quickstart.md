@@ -9,6 +9,11 @@ This guide is the entry point for starting a new Highwall canon case in a fresh 
 - Use one Codex chat and working directory per active case.
 - Decide whether the seed is established canon, working canon, or a proposal.
 
+If the material is still in notes or conversational form, first use the
+author-facing [`lore-seed.md`](../templates/lore-seed.md) template to have
+ChatGPT or another assistant organize it without inventing or assigning
+repository metadata. This preparation step does not grant canon authority.
+
 ## Recommended fresh-chat prompts
 
 ### Established canon
