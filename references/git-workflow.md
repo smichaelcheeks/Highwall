@@ -42,7 +42,9 @@ When relevant canon changes merge while another branch remains open, update the 
 
 Keep commits coherent and attributable to the intake case or maintenance task. Record relevant commit provenance in completed reviews.
 
-Squash merging is the preferred default for a completed case because it gives `main` one understandable change unit. This remains a preference, not a mandatory repository rule, until the author explicitly decides whether exceptions or enforcement are desired.
+Squash merging is the default for a completed case because it gives `main` one understandable change unit. Regular merge commits remain available for exceptional cases where individual commits carry meaningful independent provenance. Rebase merging is disabled.
+
+GitHub automatically deletes merged remote head branches. After updating local `main` and confirming a clean working tree, delete the corresponding local branch as well. Do not delete open or unmerged branches, and preserve abandoned work through a closed PR or development record before deleting it. Never reuse a deleted branch name.
 
 Do not merge merely because Git reports no conflicts. Confirm that:
 
@@ -55,4 +57,4 @@ Do not merge merely because Git reports no conflicts. Confirm that:
 
 ## Remote policy
 
-Branch protection, required reviews, status checks, and automatic deletion of merged branches are GitHub repository settings. Do not enable or alter them until the author selects the desired enforcement policy.
+The repository allows squash and regular merge commits, disables rebase merging, and automatically deletes merged remote head branches. Required reviews, required status checks, and protection against direct pushes remain unresolved and must not be enabled or altered without explicit author approval.
