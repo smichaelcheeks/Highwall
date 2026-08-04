@@ -30,6 +30,8 @@ Mark the PR ready only when every included review is complete or the PR clearly 
 
 The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
 
+All third-party and GitHub-maintained Actions must be pinned to full commit SHAs. Keep the corresponding major-version comment beside each SHA for readability. Dependabot checks monthly for GitHub Actions updates and opens reviewable PRs rather than moving action versions implicitly.
+
 ## Parallel branches
 
 Parallel branches are appropriate only when their semantic effects are independent. Different files alone do not prove independence.
@@ -57,4 +59,8 @@ Do not merge merely because Git reports no conflicts. Confirm that:
 
 ## Remote policy
 
-The repository allows squash and regular merge commits, disables rebase merging, and automatically deletes merged remote head branches. Required reviews, required status checks, and protection against direct pushes remain unresolved and must not be enabled or altered without explicit author approval.
+The repository allows squash and regular merge commits, disables rebase merging, and automatically deletes merged remote head branches. Squash commits use the PR title and body so accepted history reflects the reviewed change description.
+
+GitHub Projects, Wiki, and Discussions are disabled; Issues remain available for work tracking. Actions have read-only default token permissions, cannot approve pull requests, and must use immutable SHA references.
+
+Required reviews, required status checks, and protection against direct pushes remain unresolved and must not be enabled or altered without explicit author approval. They are unavailable for this private repository under its current GitHub plan.

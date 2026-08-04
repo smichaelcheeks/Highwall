@@ -15,6 +15,8 @@ related:
 
 The repository has passing integrity and Markdown CI, but GitHub does not currently require those checks, a pull request, or an approving review before changes reach `main`.
 
+GitHub's API reports that rulesets and branch protection are unavailable while this repository is private under its current plan. This may change if the plan or repository visibility changes.
+
 ## Why this matters
 
 Enforcement can prevent accidental direct pushes or premature merges. This repository is currently maintained primarily by one author with AI assistance, so requirements should provide safety without creating an impossible self-review rule.
