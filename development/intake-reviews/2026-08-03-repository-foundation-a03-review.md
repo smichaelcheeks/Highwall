@@ -84,16 +84,18 @@ The Actions workflow, validator, Markdown configuration, contribution guide, Git
 - [x] The validator uses only the Python standard library.
 - [x] Merged submission modifications are detected when a base ref is supplied.
 - [x] Author submissions are excluded from Markdown style enforcement.
-- [ ] The validator passes locally.
-- [ ] The GitHub Actions jobs pass on PR #1.
+- [x] The validator passes on the provisioned GitHub runner; no local Python interpreter is installed on the author workstation.
+- [x] The GitHub Actions jobs pass on PR #1.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Run local validation, push the workflow, and observe both PR checks.
+- **Git commits:** `a1a472019d19c513349ee7e04a84627aa9e97e6f`, `91b0642fd971e477ddaf51188177d6e50519508b`
+- **Outstanding actions:** None. Required-check enforcement remains a separate open question.
 
 ## Amendments
 
-None.
+### 2026-08-03 — Front-matter title handling
+
+The first Markdown run treated YAML `title` fields as rendered H1 headings. Configured MD025 to ignore front-matter titles while continuing to enforce a single Markdown H1. Implemented in `91b0642fd971e477ddaf51188177d6e50519508b`; both jobs then passed.
