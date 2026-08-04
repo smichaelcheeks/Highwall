@@ -95,7 +95,7 @@ None directly from S01.
 
 - **Review status:** `complete`
 - **Canon change-log entry:** None from S01
-- **Git commit:** Not yet committed
+- **Git commit:** `1fc586f50ed26accc84fd4f2cd4b23bba8ea2c8f`
 - **Outstanding actions:** None; implementation is audited in A01.
 
 ## Amendments

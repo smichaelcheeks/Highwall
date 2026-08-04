@@ -1,7 +1,7 @@
 ---
 title: Layered Truth and Repository Context Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-lore-seed-template-a01.md"
 case_id: CASE-2026-08-04-LORE-SEED-TEMPLATE
@@ -85,14 +85,14 @@ Only the lore-seed template and audit records change.
 - [x] Every substantive claim has a disposition and explicit authority.
 - [x] The source addendum remains unchanged.
 - [x] No lore was introduced by this addendum.
-- [ ] Repository validation, diff inspection, and both GitHub checks pass.
+- [x] Repository validation, diff inspection, and both GitHub checks pass.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Validate, commit, push, and verify PR checks.
+- **Git commit:** `1fc586f50ed26accc84fd4f2cd4b23bba8ea2c8f`
+- **Outstanding actions:** None. Publication is tracked in [PR #6](https://github.com/smichaelcheeks/Highwall/pull/6).
 
 ## Amendments
 

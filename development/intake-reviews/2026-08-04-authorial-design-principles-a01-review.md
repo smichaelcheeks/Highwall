@@ -1,7 +1,7 @@
 ---
 title: Authorial Design Principles Approval and Canon Classification Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md"
 case_id: CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES
@@ -96,14 +96,14 @@ boundaries, and log the canon addition.
 - [x] Proposal, design policy, and canon remain distinct.
 - [x] Canon facts have one authoritative home and design links to it.
 - [x] No specific system, event, person, or internal variation was invented.
-- [ ] Repository validation, diff inspection, and both GitHub checks pass.
+- [x] Repository validation, diff inspection, and both GitHub checks pass.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 entry](../canon-changes.md)
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Validate, commit, push, update PR #6, and verify checks.
+- **Git commit:** `1fc586f50ed26accc84fd4f2cd4b23bba8ea2c8f`
+- **Outstanding actions:** None. Publication is tracked in [PR #6](https://github.com/smichaelcheeks/Highwall/pull/6).
 
 ## Amendments
 
