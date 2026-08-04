@@ -1,7 +1,7 @@
 ---
 title: GitHub Repository Safety Settings Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-03
 submission: "../../intake/submissions/2026-08-03-github-merge-policy-a01.md"
 case_id: CASE-2026-08-03-GITHUB-MERGE-POLICY
@@ -83,17 +83,17 @@ The integrity workflow, Dependabot configuration, Git workflow, branch-protectio
 
 - [x] Action tags resolve to the pinned commits recorded in the workflow.
 - [x] Workflow token permissions remain read-only.
-- [ ] Pinned workflow checks pass on PR #2.
-- [ ] SHA pinning is required in GitHub settings.
-- [ ] Squash metadata settings match policy.
-- [ ] Projects is disabled; Issues remains enabled.
+- [x] Pinned workflow checks pass on PR #2.
+- [x] SHA pinning is required in GitHub settings.
+- [x] Squash metadata settings match policy.
+- [x] Projects is disabled; Issues remains enabled.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Push pinned workflow, observe CI, apply and verify repository settings.
+- **Git commit:** `1481094ba2e8c84c0d9b87405e2c27fb35c08393`
+- **Outstanding actions:** None. Publication is tracked in [PR #2](https://github.com/smichaelcheeks/Highwall/pull/2).
 
 ## Amendments
 
