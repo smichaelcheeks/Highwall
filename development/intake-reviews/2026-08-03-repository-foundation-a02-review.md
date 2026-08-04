@@ -94,7 +94,7 @@ The intake workflow, Git workflow, templates, top-level guidance, three case sub
 
 - **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
+- **Git commit:** `9deb8c45abcaaa4cb28b742ea62166e00f213cae`
 - **Outstanding actions:** Push the case branch and open a draft PR.
 
 ## Amendments
