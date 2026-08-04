@@ -36,7 +36,7 @@ The intake workflow, submission and review templates, intake indexes, contributi
 | CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C003 | Preserve confirmed conversation in addenda. | Administrative | `explicit` | None | Corrections were supported but conversation was informal. | `create` | Conversation-addendum template | Immutable addenda preserve confirmed outcomes without transcript dependence. |
 | CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C004 | Use short-lived branches and PRs. | Administrative | `explicit` | None | Git repository and remote exist. | `create` | `references/git-workflow.md`, this case's branch, and draft PR | One case branch gives reviewable scope and durable history. |
 | CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C005 | Treat setup as the precedent case. | Administrative | `explicit` | None | Setup previously had no intake records. | `create` | S01, A01, A02, and their reviews | Retroactive records demonstrate the required process. |
-| CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C006 | Configure branch protection now. | Administrative | `pending` | None | No specific policy was approved. | `defer` | Open question in A02 | Repository settings should not be changed without selecting enforcement rules. |
+| CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C006 | Configure branch protection now. | Administrative | `pending` | None | No specific policy was approved. | `defer` | [`development/open-questions/github-merge-policy.md`](../open-questions/github-merge-policy.md) | Repository settings should not be changed without selecting enforcement rules. |
 
 ## Conversation checkpoint
 
@@ -73,7 +73,7 @@ The intake workflow, Git workflow, templates, top-level guidance, three case sub
 
 ## Exceptions created
 
-- **Open questions:** Branch protection and universal squash merging are recorded in A02.
+- **Open questions:** [GitHub branch protection and merge policy](../open-questions/github-merge-policy.md).
 - **Proposals:** None beyond the noted open questions.
 - **Contradictions:** None.
 - **Decision records:** None.
@@ -95,7 +95,7 @@ The intake workflow, Git workflow, templates, top-level guidance, three case sub
 - **Review status:** `complete`
 - **Canon change-log entry:** None
 - **Git commit:** `9deb8c45abcaaa4cb28b742ea62166e00f213cae`
-- **Outstanding actions:** Push the case branch and open a draft PR.
+- **Outstanding actions:** Resolve the [GitHub branch protection and merge policy](../open-questions/github-merge-policy.md) when an enforcement decision is desired. Publication is tracked in [PR #1](https://github.com/smichaelcheeks/Highwall/pull/1).
 
 ## Amendments
 

@@ -6,7 +6,7 @@ submission_id: CASE-2026-08-03-REPOSITORY-FOUNDATION-A01
 sequence: 1
 submitted_on: 2026-08-03
 submitted_by: Shawn
-authority: establish-canon
+authority: establish-policy
 session_mode: direct-integration
 parent_submission: CASE-2026-08-03-REPOSITORY-FOUNDATION-S01
 supersedes_claims: []

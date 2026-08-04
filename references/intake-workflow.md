@@ -53,6 +53,7 @@ Before processing claims, the reviewer records the authority conveyed by the aut
 
 - `establish-canon`: explicit instruction to make supplied setting facts canonical
 - `working-canon`: explicit instruction to record supplied facts provisionally
+- `establish-policy`: explicit instruction to establish repository structure, governance, or workflow without granting lore authority
 - `proposal-only`: material is offered for consideration and cannot update canon
 - `classify`: authority varies by claim or is not explicit; ambiguous canon effects must be held for clarification
 

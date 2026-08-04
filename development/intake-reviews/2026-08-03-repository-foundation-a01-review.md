@@ -6,7 +6,7 @@ reviewed_on: 2026-08-03
 submission: "../../intake/submissions/2026-08-03-repository-foundation-a01.md"
 case_id: CASE-2026-08-03-REPOSITORY-FOUNDATION
 submission_id: CASE-2026-08-03-REPOSITORY-FOUNDATION-A01
-authority: establish-canon
+authority: establish-policy
 session_mode: direct-integration
 reviewer: Codex
 related: []
@@ -20,7 +20,7 @@ related: []
 - **Case:** `CASE-2026-08-03-REPOSITORY-FOUNDATION`
 - **Submission ID:** `CASE-2026-08-03-REPOSITORY-FOUNDATION-A01`
 - **Session mode:** `direct-integration`
-- **Authority conveyed:** Explicit approval to establish the repository's intake process
+- **Authority conveyed:** `establish-policy` — explicit approval to establish the repository's intake process without granting lore authority
 - **Review objective:** Make decisions to update and not update repository knowledge fully auditable.
 
 ## Files inspected
@@ -87,7 +87,7 @@ None.
 - **Review status:** `complete`
 - **Canon change-log entry:** None
 - **Git commit:** `9deb8c45abcaaa4cb28b742ea62166e00f213cae`
-- **Outstanding actions:** Publish through the case branch and draft PR.
+- **Outstanding actions:** None. Publication is tracked in [PR #1](https://github.com/smichaelcheeks/Highwall/pull/1).
 
 ## Amendments
 

@@ -96,8 +96,10 @@ The root README and all administrative files under `canon/`, `story/`, `developm
 - **Review status:** `complete`
 - **Canon change-log entry:** None
 - **Git commit:** `9deb8c45abcaaa4cb28b742ea62166e00f213cae`
-- **Outstanding actions:** Publish through the case branch and draft PR.
+- **Outstanding actions:** None. Publication is tracked in [PR #1](https://github.com/smichaelcheeks/Highwall/pull/1).
 
 ## Amendments
 
-None.
+### 2026-08-03 — Source fidelity correction
+
+This review originally described S01 as the original submission. S01 is a retrospective reconstruction. The verbatim source is now preserved without rewriting S01 as [`CASE-2026-08-03-REPOSITORY-FOUNDATION-S02`](../../intake/submissions/2026-08-03-repository-foundation-s02.md) and reviewed separately.

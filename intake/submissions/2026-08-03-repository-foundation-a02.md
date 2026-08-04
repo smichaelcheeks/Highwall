@@ -10,7 +10,8 @@ authority: classify
 session_mode: direct-integration
 parent_submission: CASE-2026-08-03-REPOSITORY-FOUNDATION-A01
 supersedes_claims: []
-related: []
+related:
+  - "../../development/open-questions/github-merge-policy.md"
 ---
 
 # Conversational Refinement and Publication Decisions
@@ -73,8 +74,7 @@ Formal GitHub branch-protection settings have not yet been selected.
 
 ## Open questions
 
-- Whether to enable required reviews or other branch-protection rules on GitHub.
-- Whether completed PRs should always be squash-merged or evaluated case by case.
+- [Which GitHub branch protections and merge rules should be enforced?](../../development/open-questions/github-merge-policy.md)
 
 ## Expected repository effects
 

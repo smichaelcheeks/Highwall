@@ -20,7 +20,7 @@ related: []
 - **Case:** TODO
 - **Submission ID:** TODO
 - **Session mode:** TODO: `exploration`, `canon-authoring`, or `direct-integration`
-- **Authority conveyed:** TODO: `establish-canon`, `working-canon`, `proposal-only`, or `classify`
+- **Authority conveyed:** TODO: `establish-canon`, `working-canon`, `establish-policy`, `proposal-only`, or `classify`
 - **Review objective:** TODO
 
 ## Files inspected
