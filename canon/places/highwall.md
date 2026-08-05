@@ -10,6 +10,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
+  - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md"
 ---
 
 # Highwall
@@ -18,9 +19,12 @@ provenance:
 
 Highwall is a major city and civilization carved into the walls of a deep
 sandstone canyon cutting through the inland plateau. Its regional importance
-comes from its command of the principal practical route between the inland
+comes from its command of the only practical corridor between the inland
 plateau and the downstream lowlands, together with its accumulated civic and
 technical expertise.
+
+Alternative routes may be possible, but their use is negligible and does not
+displace the canyon's status as the only practical regional corridor.
 
 ## Classification and location
 
@@ -144,3 +148,4 @@ event and political reality in its objective history.
 - [Authorial Design Principles confirmation review](../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md)
 - [Highwall Overview seed review](../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md)
 - [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
+- [Highwall Corridor clarification review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md)

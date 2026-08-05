@@ -30,7 +30,9 @@ Record significant additions, revisions, reversals, and clarifications to canon.
   and [`canon/government/regional-imperial-structure.md`](../canon/government/regional-imperial-structure.md)
 - **Notes:** [Correction addendum A01](../intake/submissions/2026-08-04-regional-geography-economy-a01.md)
   restored the portion of the seed truncated during transmission. Reader reveal
-  guidance remains separate in `story/`.
+  guidance remains separate in `story/`. [Clarification addendum A02](../intake/submissions/2026-08-04-regional-geography-economy-a02.md)
+  confirms that Highwall's canyon is the only practical corridor while allowing
+  for negligible use of possible alternatives.
 
 ### 2026-08-04 — Establish Highwall's environmental and civic foundations
 
