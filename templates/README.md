@@ -20,6 +20,7 @@ Copy the closest template when creating a page; do not edit a template to contai
 - [`intake-submission.md`](intake-submission.md)
 - [`conversation-addendum.md`](conversation-addendum.md)
 - [`intake-review.md`](intake-review.md)
+- [`maintenance-review.md`](maintenance-review.md)
 - [`decision-record.md`](decision-record.md)
 - [`open-question.md`](open-question.md)
 - [`contradiction-report.md`](contradiction-report.md)

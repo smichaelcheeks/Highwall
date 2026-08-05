@@ -12,6 +12,7 @@ The workflow maintains distinct records:
 4. **Exception records:** open questions, proposals, contradictions, decisions, or retired ideas under `development/`.
 5. **Canon change log:** concise index of significant canon effects.
 6. **Git history:** durable record of the exact file changes associated with the review.
+7. **Claim index:** generated, non-authoritative navigation across review claims.
 
 Do not combine these records. In particular, never append reviewer conclusions to the original submission.
 
@@ -108,6 +109,22 @@ Use these review statuses consistently:
 
 A review may move between the first three states as conversation continues. Do not mark it `complete` merely because a discussion session ended.
 
+Review completion and publication are separate. A review may become `complete`
+after all claims are disposed, authorized changes are applied, local validation
+passes, and the complete diff is inspected. Publication remains `pending` until
+the branch is pushed and required GitHub checks pass. Do not add a later
+audit-only commit merely to copy external check results or a commit hash into
+the review.
+
+## Impact manifest and review depth
+
+Every new review records nonempty `subjects`, `domains`, `search_terms`, and
+`authoritative_targets` lists. Use the manifest to build the affected semantic
+neighborhood, then widen it if discovery exposes another dependency. Follow
+the tier rules and controlled vocabulary in
+[`consistency-workflow.md`](consistency-workflow.md). Existing reviews without
+these fields are historical records and do not need retroactive edits.
+
 ## Claim inventory
 
 A substantive claim is any statement that could create, alter, contradict, retire, or materially contextualize repository knowledge. Break compound statements apart when their dispositions could differ. Minor wording, formatting, and connective prose need not receive separate IDs.
@@ -145,16 +162,19 @@ Use one of these values:
 1. Pass the transmission completeness gate.
 2. Save the source using [`../templates/intake-submission.md`](../templates/intake-submission.md).
 3. Create a review using [`../templates/intake-review.md`](../templates/intake-review.md).
-4. Record the authority declaration and files inspected.
+4. Record the authority declaration and impact manifest.
 5. Inventory and classify every substantive claim.
-6. Search canon, story, development records, aliases, and terminology for prior coverage.
+6. Generate targeted context, inspect the affected neighborhood, and widen the
+   manifest when new dependencies appear.
 7. Assign a disposition before modifying authoritative pages.
 8. Apply authorized changes, creating exception records where required.
 9. Record all changed and deliberately unchanged targets in the review.
-10. Run link, metadata, contradiction, duplication, and diff checks.
+10. Run the required consistency tier, link, metadata, contradiction,
+    duplication, generated-index, and diff checks.
 11. Add a canon change-log entry for significant canon effects.
 12. Mark the review complete only when no claim lacks a disposition.
-13. When committed, record the Git commit hash in the review.
+13. Record publication as pending; report the final commit, PR, and check state
+    from Git and GitHub without modifying the completed review.
 
 ## Conversational refinement
 

@@ -1,0 +1,100 @@
+# Consistency Workflow
+
+Use this workflow to keep semantic review proportional to a case's likely
+effects while retaining full deterministic repository validation.
+
+## Impact manifests
+
+Every new intake review declares four nonempty front-matter lists:
+
+```yaml
+subjects:
+  - highwall
+domains:
+  - places
+search_terms:
+  - corridor
+authoritative_targets:
+  - canon/places/highwall.md
+```
+
+Subject IDs use lowercase kebab case and remain stable across aliases. Domains
+use this controlled vocabulary: `administration`, `characters`, `culture`,
+`design`, `economy`, `government`, `history`, `institutions`, `law`,
+`organizations`, `places`, `religion`, `story`, `technology`, and
+`terminology`.
+
+Search terms include names, aliases, distinctive phrases, and relationship
+terms needed to find earlier coverage. Authoritative targets use
+repository-relative paths and identify the pages expected to own approved
+changes. Update the manifest when review discovers additional impact.
+
+## Consistency tiers
+
+### Tier 1: deterministic repository validation
+
+Run for every change. It checks links, metadata, intake structure, controlled
+dispositions, transmission completeness, impact manifests, generated-index
+freshness, and submission immutability. Tier 1 is repository-wide because its
+cost is deterministic and bounded.
+
+### Tier 2: targeted semantic review
+
+Run for every lore case. Build context from the impact manifest:
+
+```powershell
+python scripts/build_case_context.py `
+  --subject highwall `
+  --domain places `
+  --term corridor `
+  --target canon/places/highwall.md
+```
+
+Inspect the returned authoritative targets, prior indexed claims, matching
+canon and development pages, and backlinks. Widen the manifest and rerun when a
+new dependency, alias, or affected subject appears. Ordinary cases stop after
+the complete affected neighborhood is reviewed.
+
+### Tier 3: repository-wide semantic audit
+
+Review the complete canon and claim set when a change alters shared taxonomy,
+naming, chronology, geography, political structure, repository boundaries,
+paths, aliases, or ownership; affects three or more domains; or exposes
+unexpected cross-domain effects.
+
+## Claim index
+
+`development/indexes/claim-index.json` is generated from intake-review claim
+tables:
+
+```powershell
+python scripts/build_claim_index.py
+python scripts/build_claim_index.py --check
+```
+
+The index is navigation-only. It cannot establish canon, replace reviews, or
+resolve contradictions. CI rejects a stale index.
+
+## Periodic audits
+
+Run a Tier 3 audit after every ten completed canon cases, before a tagged canon
+snapshot or sustained story-drafting phase, after a major regional,
+chronological, political, or taxonomy change, or whenever targeted reviews
+repeatedly expose unexpected cross-domain effects.
+
+## Maintenance boundary
+
+Routine process-only maintenance may use
+[`../templates/maintenance-review.md`](../templates/maintenance-review.md)
+without an intake submission or claim inventory. Use full intake when work adds
+lore, changes authority, resolves a contradiction, or establishes significant
+repository governance. A lightweight record never grants lore authority.
+
+## Publication boundary
+
+Complete an intake review after claims, authorized changes, local validation,
+and diff inspection are complete. Record publication as `pending` and publish
+the final content once. GitHub owns check history and the eventual merge commit;
+do not create audit-only commits merely to copy passing check results or a
+commit hash into the review. The completion report must still state the PR,
+checks, merge state, and unresolved decisions.

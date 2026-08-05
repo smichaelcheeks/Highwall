@@ -9,6 +9,14 @@ submission_id: CASE-YYYY-MM-DD-SLUG-S01
 authority: classify
 session_mode: exploration
 reviewer: TODO
+subjects:
+  - TODO
+domains:
+  - TODO
+search_terms:
+  - TODO
+authoritative_targets:
+  - TODO
 related: []
 ---
 
@@ -22,6 +30,11 @@ related: []
 - **Session mode:** TODO: `exploration`, `canon-authoring`, or `direct-integration`
 - **Authority conveyed:** TODO: `establish-canon`, `working-canon`, `establish-policy`, `proposal-only`, or `classify`
 - **Review objective:** TODO
+
+The front-matter impact manifest is required for new reviews. Use stable
+kebab-case subject IDs, controlled domains from
+`../../references/consistency-workflow.md`, literal search terms, and
+repository-relative authoritative targets.
 
 ## Files inspected
 
@@ -93,12 +106,16 @@ TODO or `None`.
 - [ ] Required front matter is present.
 - [ ] The Git diff matches the recorded file list.
 - [ ] Significant canon changes are in the canon change log.
+- [ ] The impact manifest covers every affected subject, domain, search term,
+  and authoritative target.
+- [ ] Targeted context was generated and inspected before widening the search.
 
 ## Outcome
 
 - **Review status:** TODO: `in-progress`, `awaiting-confirmation`, `awaiting-decision`, `complete`, or `blocked`
 - **Canon change-log entry:** TODO or `None`
-- **Git commit:** TODO or `Not yet committed`
+- **Git commit:** Recorded by the case PR and Git history after publication.
+- **Publication:** TODO: `pending`, PR link, or merged PR link
 - **Outstanding actions:** TODO or `None`
 
 ## Amendments

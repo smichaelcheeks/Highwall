@@ -44,6 +44,25 @@ DISPOSITIONS = {
 TRANSMISSION_STATUSES = {"complete"}
 COMPLETION_BASES = {"end-marker", "explicit-confirmation", "complete-attachment"}
 END_OF_SEED_MARKER = "<!-- END OF SEED -->"
+IMPACT_FIELDS = {"subjects", "domains", "search_terms", "authoritative_targets"}
+CONSISTENCY_DOMAINS = {
+    "administration",
+    "characters",
+    "culture",
+    "design",
+    "economy",
+    "government",
+    "history",
+    "institutions",
+    "law",
+    "organizations",
+    "places",
+    "religion",
+    "story",
+    "technology",
+    "terminology",
+}
+SUBJECT_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DEVELOPMENT_DISPOSITIONS = {"defer", "conflict", "retire"}
 CASE_ID = re.compile(r"^CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+$")
 SUBMISSION_ID = re.compile(r"^(CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+)-(S|A)\d{2}$")
@@ -75,6 +94,30 @@ class Validator:
             match = re.match(r"^([a-z_]+):(?:\s*(.*))?$", line)
             if match:
                 values[match.group(1)] = (match.group(2) or "").strip().strip('"')
+        return values
+
+    @staticmethod
+    def parse_front_matter_lists(path: Path) -> dict[str, list[str]]:
+        lines = path.read_text(encoding="utf-8").splitlines()
+        if not lines or lines[0] != "---":
+            return {}
+        try:
+            end = lines.index("---", 1)
+        except ValueError:
+            return {}
+        values: dict[str, list[str]] = {}
+        current: str | None = None
+        for line in lines[1:end]:
+            item = re.match(r"^\s+-\s+(.+?)\s*$", line)
+            if item and current:
+                values[current].append(item.group(1).strip().strip('"'))
+                continue
+            field = re.match(r"^([a-z_]+):\s*$", line)
+            if field:
+                current = field.group(1)
+                values[current] = []
+            else:
+                current = None
         return values
 
     @staticmethod
@@ -185,16 +228,21 @@ class Validator:
                 self.error(path, "review case_id does not match submission_id")
             if metadata.get("status") not in REVIEW_STATUSES:
                 self.error(path, f"invalid review status: {metadata.get('status')!r}")
+            if self.is_new_path(path):
+                self.validate_impact_manifest(path)
             self.validate_review_claims(path, submission_id)
 
         for submission_id, path in submissions.items():
             if submission_id not in reviewed:
                 self.error(path, f"no intake review found for {submission_id}")
 
-    def is_new_submission(self, path: Path) -> bool:
+    def is_new_path(self, path: Path) -> bool:
         if not self.base_ref:
             metadata = self.parse_front_matter(path) or {}
-            return "transmission_status" in metadata or "completion_basis" in metadata
+            return bool(
+                {"transmission_status", "completion_basis"} & metadata.keys()
+                or IMPACT_FIELDS & self.parse_front_matter_lists(path).keys()
+            )
         relative_path = path.relative_to(ROOT).as_posix()
         result = subprocess.run(
             ["git", "cat-file", "-e", f"{self.base_ref}:{relative_path}"],
@@ -204,6 +252,34 @@ class Validator:
             text=True,
         )
         return result.returncode != 0
+
+    def is_new_submission(self, path: Path) -> bool:
+        return self.is_new_path(path)
+
+    def validate_impact_manifest(self, path: Path) -> None:
+        lists = self.parse_front_matter_lists(path)
+        missing = IMPACT_FIELDS - lists.keys()
+        if missing:
+            self.error(path, f"missing impact manifest fields: {', '.join(sorted(missing))}")
+            return
+        for field in IMPACT_FIELDS:
+            if not lists[field]:
+                self.error(path, f"impact manifest field must not be empty: {field}")
+        for subject in lists["subjects"]:
+            if not SUBJECT_ID.fullmatch(subject):
+                self.error(path, f"invalid subject ID: {subject!r}")
+        for domain in lists["domains"]:
+            if domain not in CONSISTENCY_DOMAINS:
+                self.error(path, f"invalid consistency domain: {domain!r}")
+        for target in lists["authoritative_targets"]:
+            target_path = (ROOT / target).resolve()
+            try:
+                target_path.relative_to(ROOT)
+            except ValueError:
+                self.error(path, f"authoritative target escapes repository: {target}")
+                continue
+            if not target_path.exists():
+                self.error(path, f"missing authoritative target: {target}")
 
     def validate_transmission_completeness(self, path: Path, metadata: dict[str, str]) -> None:
         status = metadata.get("transmission_status")

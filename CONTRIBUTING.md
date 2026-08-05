@@ -26,16 +26,23 @@ For a batch of new information, follow [`references/intake-workflow.md`](referen
 2. **Preserve the submission.** Store it in `intake/submissions/` with a stable ID and do not alter it after review begins.
 3. **Establish authority.** Record whether the author's instruction establishes canon, proposes possibilities, or supplies material for classification.
 4. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
-5. **Find the authority.** Search for existing authoritative pages and dependent references.
+5. **Map the impact.** Record subjects, domains, search terms, and expected
+   authoritative targets, then generate targeted context.
 6. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
 7. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
 8. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
-9. **Verify the result.** Check the diff, links, provenance, accidental canon changes, and leaked story spoilers.
+9. **Verify the result.** Apply the consistency tier required by
+   [`references/consistency-workflow.md`](references/consistency-workflow.md),
+   then check the diff, links, provenance, accidental canon changes, and leaked
+   story spoilers.
 10. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
 
 For conversational refinement, declare a session mode and maintain a review checkpoint separating decisions, proposals, corrections, and questions. Before integrating new conversational facts, preserve the confirmed outcome in an immutable addendum from [`templates/conversation-addendum.md`](templates/conversation-addendum.md). Follow the detailed rules in [`references/intake-workflow.md`](references/intake-workflow.md).
 
-For maintenance work that contains no new setting information, use the same classification and verification rules but an intake submission is optional.
+For routine process-only maintenance that contains no lore or significant
+governance decision, use [`templates/maintenance-review.md`](templates/maintenance-review.md).
+Use the full intake workflow when maintenance changes authority, resolves a
+contradiction, or establishes significant repository policy.
 
 ## Working with canon pages
 
@@ -81,6 +88,7 @@ Before pushing, run the same deterministic integrity check used by CI:
 
 ```powershell
 python scripts/validate_repository.py --base-ref origin/main
+python scripts/build_claim_index.py --check
 ```
 
 The base-ref argument enforces immutability for submissions that have already merged. Omit it only when validating a standalone checkout without a comparison ref.
