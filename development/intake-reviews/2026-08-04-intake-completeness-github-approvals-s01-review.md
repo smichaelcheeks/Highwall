@@ -115,7 +115,9 @@ operations through scoped escalation on the first attempt.
 - **Review status:** `complete`
 - **Canon change-log entry:** None
 - **Git commit:** `bd845c067660b66a470754c16c1f771b5742b2f2`
-- **Outstanding actions:** Publication and GitHub checks remain pending.
+- **Outstanding actions:** None. Publication is tracked in
+  [PR #9](https://github.com/smichaelcheeks/Highwall/pull/9), and both required
+  GitHub checks pass.
 
 ## Amendments
 
