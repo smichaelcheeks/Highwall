@@ -9,17 +9,18 @@ related: []
 provenance:
   - "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
+  - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
 ---
 
 # Highwall
 
 ## Summary
 
-Highwall is a major city and civilization carved into the walls of a narrow
-sandstone canyon. Its regional importance comes from its command of the only
-practical route between the inland highlands and the downstream river valleys
-and coastal states, together with its accumulated civic and technical
-expertise.
+Highwall is a major city and civilization carved into the walls of a deep
+sandstone canyon cutting through the inland plateau. Its regional importance
+comes from its command of the principal practical route between the inland
+plateau and the downstream lowlands, together with its accumulated civic and
+technical expertise.
 
 ## Classification and location
 
@@ -90,6 +91,12 @@ lifting systems, cranes, suspension bridges, signaling networks, and
 large-scale stone construction are highly developed, but industrial
 manufacturing has not emerged.
 
+Within the [regional trade system](../economy/regional-trade-system.md),
+Highwall specializes in transportation, engineering, and facilitating trade
+between the upriver and downriver regions. It is the primary interface between
+the inland plateau and the downstream regions, but does not replace the larger
+commercial centers farther downstream.
+
 Flood prediction, rescue operations, canyon engineering, archival
 preservation, logistics, and jurisprudence are defining bodies of civic
 expertise.
@@ -136,3 +143,4 @@ event and political reality in its objective history.
 
 - [Authorial Design Principles confirmation review](../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md)
 - [Highwall Overview seed review](../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md)
+- [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
