@@ -1,7 +1,7 @@
 ---
 title: Intake Completeness and GitHub Approval Workflow Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-intake-completeness-github-approvals-s01.md"
 case_id: CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS
@@ -112,11 +112,10 @@ operations through scoped escalation on the first attempt.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Commit, push, open a draft PR, and verify both
-  GitHub checks.
+- **Git commit:** `bd845c067660b66a470754c16c1f771b5742b2f2`
+- **Outstanding actions:** Publication and GitHub checks remain pending.
 
 ## Amendments
 
