@@ -1,7 +1,7 @@
 ---
 title: Highwall Corridor Clarification Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-regional-geography-economy-a02.md"
 case_id: CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY
@@ -102,18 +102,17 @@ entry.
 - [x] No belief or disputed account is promoted to objective truth.
 - [x] No contradiction is silently resolved.
 - [x] No authoritative explanation is unnecessarily duplicated.
-- [ ] Relative links resolve.
+- [x] Relative links resolve.
 - [x] Required front matter is present.
-- [ ] The Git diff matches the recorded file list.
+- [x] The Git diff matches the recorded file list.
 - [x] Significant canon changes are in the canon change log.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 regional geography and political-economic structure](../canon-changes.md)
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Validation, commit, publication, and GitHub checks
-  remain pending.
+- **Git commit:** `902c89559b04e5d1724c182172324d7d7f708ca5`
+- **Outstanding actions:** Publication and GitHub checks remain pending.
 
 ## Amendments
 
