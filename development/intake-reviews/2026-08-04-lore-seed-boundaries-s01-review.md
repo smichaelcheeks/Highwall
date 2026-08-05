@@ -1,7 +1,7 @@
 ---
 title: Lore Seed Authoring Boundaries Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md"
 case_id: CASE-2026-08-04-LORE-SEED-BOUNDARIES
@@ -106,11 +106,10 @@ comparisons.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** None
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Commit, push, open a draft PR, and verify both
-  GitHub checks.
+- **Git commit:** `ed093df7e1b6968fac5ac7275ae316782436ef08`
+- **Outstanding actions:** Publication and GitHub checks remain pending.
 
 ## Amendments
 
