@@ -34,6 +34,15 @@ Use these boundaries:
 - Mark incomplete content with `TODO:` and state exactly what is missing.
 - Avoid empty prose that could be mistaken for a claim; `Unknown` or `Not yet documented` is safer.
 
+Use missing-information terms precisely:
+
+- `Not established.` means the author has supplied no answer.
+- `None.` means the author explicitly established that nothing exists in the
+  stated category.
+- `TODO:` identifies a specific known task or missing detail.
+
+Never convert missing information into an explicit negative claim.
+
 ## Claims and perspectives
 
 Label claims according to what they represent:
@@ -51,6 +60,12 @@ Do not use confident prose to erase these distinctions.
 Design principles may justify a creative or editorial choice but cannot
 establish an in-world fact. When a principle relies on a setting premise, link
 to its authoritative canon page. Do not infer missing lore from design intent.
+
+Real-world history, geography, cultures, places, and institutions are
+out-of-world development or source context, not fictional setting facts. Record
+them only when the author explicitly identifies them as inspirations or source
+material. Do not place the comparisons in canon sections, treat real-world
+names as in-world entities, or use analogies as canon evidence.
 
 ## Canon changes
 
