@@ -12,6 +12,28 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-04 — Establish regional geography and political-economic structure
+
+- **Change:** Establish the Upriver Highlands, Stormlands, Forge, Ledger, and
+  Delta; clarify Highwall's corridor; and document their specialized roles in
+  the regional trade system and broad imperial structure.
+- **Authority:** [Regional Geography and Economy seed](../intake/submissions/2026-08-04-regional-geography-economy-s01.md)
+  and [transmission correction](../intake/submissions/2026-08-04-regional-geography-economy-a01.md)
+- **Review:** [Regional Geography and Economy seed review](intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
+- **Affected pages:** [`canon/places/highwall.md`](../canon/places/highwall.md),
+  [`canon/places/upriver-highlands.md`](../canon/places/upriver-highlands.md),
+  [`canon/places/stormlands.md`](../canon/places/stormlands.md),
+  [`canon/places/forge.md`](../canon/places/forge.md),
+  [`canon/places/ledger.md`](../canon/places/ledger.md),
+  [`canon/places/delta.md`](../canon/places/delta.md), and
+  [`canon/economy/regional-trade-system.md`](../canon/economy/regional-trade-system.md),
+  and [`canon/government/regional-imperial-structure.md`](../canon/government/regional-imperial-structure.md)
+- **Notes:** [Correction addendum A01](../intake/submissions/2026-08-04-regional-geography-economy-a01.md)
+  restored the portion of the seed truncated during transmission. Reader reveal
+  guidance remains separate in `story/`. [Clarification addendum A02](../intake/submissions/2026-08-04-regional-geography-economy-a02.md)
+  confirms that Highwall's canyon is the only practical corridor while allowing
+  for negligible use of possible alternatives.
+
 ### 2026-08-04 — Establish Highwall's environmental and civic foundations
 
 - **Change:** Establish Highwall as a civilization in a narrow canyon shaped
