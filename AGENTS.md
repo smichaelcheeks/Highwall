@@ -12,6 +12,7 @@ Read these documents in order:
 4. [`references/intake-workflow.md`](references/intake-workflow.md)
 5. [`references/front-matter.md`](references/front-matter.md)
 6. [`references/git-workflow.md`](references/git-workflow.md)
+7. [`references/consistency-workflow.md`](references/consistency-workflow.md)
 
 For a new batch of setting information, also read [`references/canon-intake-quickstart.md`](references/canon-intake-quickstart.md) and the relevant templates.
 
@@ -38,12 +39,18 @@ Before changing authoritative content:
 3. Confirm the session mode: `exploration`, `canon-authoring`, or `direct-integration`. Default to `exploration` when unspecified.
 4. Create a stable case ID and a short-lived `agent/<case-topic>` branch from synchronized `main`.
 5. Preserve the complete seed verbatim in `intake/submissions/`; do not replace it with a summary.
-6. Create the matching review in `development/intake-reviews/` and inventory every substantive claim before changing authoritative pages.
+6. Create the matching review in `development/intake-reviews/`, record its
+   impact manifest, generate targeted context, and inventory every substantive
+   claim before changing authoritative pages.
 7. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
 8. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
 9. Apply authorized changes to their single authoritative locations and add provenance links.
 10. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
-11. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+11. Apply the required consistency tier. Use repository-wide semantic review
+    for shared taxonomy, naming, chronology, geography, political structure,
+    paths, aliases, authority ownership, three or more affected domains, or
+    unexpected cross-domain effects.
+12. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
 
 Treat mid-sentence endings, missing promised sections, unclosed delimiters or
 code fences, abrupt list endings, and references to omitted continuation as
@@ -73,6 +80,7 @@ Run before pushing:
 
 ```powershell
 python scripts/validate_repository.py --base-ref origin/main
+python scripts/build_claim_index.py --check
 ```
 
 Also run `git diff --check` and inspect the complete diff for invented lore, duplicated authority, unrecorded decisions, broken narrative boundaries, and unrelated changes.
@@ -86,4 +94,4 @@ If local Python is unavailable, report that limitation and rely on the draft PR 
 
 ## Completion report
 
-Summarize the case ID, authority, session mode, submissions and addenda, claim dispositions, files changed and deliberately unchanged, exceptions, validation, commit, and PR. Call out every unresolved decision. Do not describe a review as complete while required claims or checks remain pending.
+Summarize the case ID, authority, session mode, submissions and addenda, claim dispositions, files changed and deliberately unchanged, exceptions, validation, commit, PR, and GitHub checks. Call out every unresolved decision. A review may be complete after its claims, changes, local validation, and diff inspection are complete; do not describe publication or the case as finished while required GitHub checks remain pending. Do not create an audit-only commit to copy external publication state into the review.

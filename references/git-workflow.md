@@ -26,7 +26,7 @@ Open a draft pull request while a case is still being refined. Its description s
 - validation performed
 - any canon change-log entry
 
-Mark the PR ready only when every included review is complete or the PR clearly documents why an unresolved administrative item does not block the proposed changes.
+Mark the PR ready only when every included review is complete or the PR clearly documents why an unresolved administrative item does not block the proposed changes. A completed review may still record publication as pending while GitHub checks run.
 
 The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
 
@@ -56,7 +56,11 @@ When relevant canon changes merge while another branch remains open, update the 
 
 ## Commits and merge strategy
 
-Keep commits coherent and attributable to the intake case or maintenance task. Record relevant commit provenance in completed reviews.
+Keep commits coherent and attributable to the intake case or maintenance task.
+Finalize the review, generated index, and locally verified content before the
+publication commit when practical. Git history and the PR record exact commit
+provenance; do not create follow-up commits solely to copy a commit hash,
+check result, PR URL, or merge state into a review.
 
 Squash merging is the default for a completed case because it gives `main` one understandable change unit. Regular merge commits remain available for exceptional cases where individual commits carry meaningful independent provenance. Rebase merging is disabled.
 

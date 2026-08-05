@@ -39,6 +39,9 @@ jobs:
             python scripts/validate_repository.py
           fi
 
+      - name: Check generated claim index
+        run: python scripts/build_claim_index.py --check
+
   markdown:
     name: Markdown style
     runs-on: ubuntu-latest
