@@ -151,9 +151,9 @@ and log the significant canon change.
 
 - **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 regional geography and economic specialization](../canon-changes.md)
-- **Git commit:** Not yet committed
+- **Git commit:** `3803e6915b41c4451dccf42476bea06e0e84bef1`
 - **Outstanding actions:** The missing continuation was supplied in A01.
-  Commit, publication, and GitHub checks remain pending.
+  Publication and GitHub checks remain pending.
 
 ## Amendments
 

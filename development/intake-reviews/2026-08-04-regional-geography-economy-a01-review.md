@@ -1,7 +1,7 @@
 ---
 title: Regional Geography and Economy Transmission Correction Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-04
 submission: "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md"
 case_id: CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY
@@ -128,18 +128,17 @@ case reviews.
 - [x] Official terminology is attributed.
 - [x] No contradiction was silently resolved.
 - [x] Authoritative explanations are linked rather than unnecessarily duplicated.
-- [ ] Relative links resolve.
+- [x] Relative links resolve.
 - [x] Required front matter is present.
-- [ ] The Git diff matches the recorded file list.
+- [x] The Git diff matches the recorded file list.
 - [x] Significant canon changes are in the canon change log.
 
 ## Outcome
 
-- **Review status:** `in-progress`
+- **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 regional geography and political-economic structure](../canon-changes.md)
-- **Git commit:** Not yet committed
-- **Outstanding actions:** Validation, final diff inspection, commit,
-  publication, and GitHub checks remain pending.
+- **Git commit:** `3803e6915b41c4451dccf42476bea06e0e84bef1`
+- **Outstanding actions:** Publication and GitHub checks remain pending.
 
 ## Amendments
 
