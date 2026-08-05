@@ -112,7 +112,9 @@ entry.
 - **Review status:** `complete`
 - **Canon change-log entry:** [2026-08-04 regional geography and political-economic structure](../canon-changes.md)
 - **Git commit:** `902c89559b04e5d1724c182172324d7d7f708ca5`
-- **Outstanding actions:** Publication and GitHub checks remain pending.
+- **Outstanding actions:** None. Publication is tracked in
+  [PR #8](https://github.com/smichaelcheeks/Highwall/pull/8), and both required
+  GitHub checks pass.
 
 ## Amendments
 
