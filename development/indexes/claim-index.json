@@ -2028,6 +2028,818 @@
     },
     {
       "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C001",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The region is underlain by two major sandstone formations: resistant upper Whitestone and softer lower Redstone.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C002",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Whitestone is the plateau's continuous uppermost caprock.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C003",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "About 250 meters of highly erosion-resistant Whitestone are exposed in Highwall's canyon walls.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C004",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Whitestone can support large excavated chambers.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C005",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Redstone lies beneath Whitestone and extends well below the canyon floor.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C006",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "About 550 meters of Redstone are exposed in the canyon walls.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C007",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Redstone is easier to excavate and less erosion-resistant than Whitestone and cannot support chambers of the same scale.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C008",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "An ancient fault crosses the region, formed after both sandstone units, and later became inactive.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C009",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "An elevated sandstone plateau capped continuously by Whitestone dominates the region despite extensive valleys and smaller canyons.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C010",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Highwall occupies a local elevation maximum on the plateau.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C011",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The plateau terminates at a major escarpment overlooking the downstream coastal plain.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C012",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "An enclosed inland basin lies beyond Highwall within the inland plateau.",
+      "target": "`canon/places/highwall-region-geology.md`; `canon/places/upriver-highlands.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C013",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The basin floor is lower than the plateau and separated from it by a smaller escarpment.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C014",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Mountains and canyons surround much of the inland basin.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C015",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "An ancient inland lake occupied the basin and later drained catastrophically.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C016",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Much of the basin is salt flats left by the drainage, and a saline lake remains and periodically overflows.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C017",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Highwall's canyon cuts through all Whitestone and deep into Redstone, about 800 meters below the plateau.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C018",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Highwall's canyon is the only known regional site where erosion has fully breached Whitestone; no other known canyon penetrates it.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C019",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Redstone predates Whitestone.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C020",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The lake-drainage megaflood followed the ancient fault and rapidly excavated essentially the entire modern canyon, breaching Whitestone into Redstone.",
+      "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C021",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The modern intermittent river inherited the megaflood canyon, and later erosion modified rather than fundamentally created it.",
+      "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`; `development/open-questions/highwall-river-name.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C022",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Whitestone's resistance preserves the plateau, and Redstone underlies it throughout the region.",
+      "target": "`canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C023",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The canyon's megaflood origin rather than formation by the modern river is objective setting truth.",
+      "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C024",
+      "classification": "narrative metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Official position, character knowledge, and reader knowledge are not established; there are no spoiler notes.",
+      "target": "`story/` deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C025",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The geological ages of Whitestone and Redstone are unknown.",
+      "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C026",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The age of the catastrophic basin drainage is unknown.",
+      "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C027",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Canonical geological names beyond Whitestone and Redstone are unknown.",
+      "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C028",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "Climate, hydrology, flood behavior, ecology, settlement, transportation, engineering, excavation practices, architecture, and political geography and history are excluded.",
+      "target": "Adjacent authoritative pages deliberately unchanged except necessary geological corrections"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "claim_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C029",
+      "classification": "provenance metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "whitestone",
+        "redstone",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
+      "summary": "The source is author-approved worldbuilding discussion.",
+      "target": "`intake/submissions/2026-08-05-geology-geomorphology-s01.md`"
+    },
+    {
+      "authoritative_targets": [
         "references/consistency-workflow.md",
         "references/intake-workflow.md",
         "references/git-workflow.md"

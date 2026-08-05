@@ -5,6 +5,7 @@ status: open
 date_opened: 2026-08-04
 related:
   - "../../canon/places/highwall.md"
+  - "../../canon/places/highwall-region-geology.md"
   - "../intake-reviews/2026-08-04-highwall-overview-s01-review.md"
 ---
 
@@ -12,9 +13,10 @@ related:
 
 ## Context
 
-An intermittent river formed Highwall's canyon and remains capable of
-catastrophic flash floods after seasonal storms. Its canonical name has not
-been finalized.
+An intermittent river occupies Highwall's canyon and remains capable of
+catastrophic flash floods after seasonal storms. The canyon itself was created
+primarily by the catastrophic drainage of an ancient inland lake. The modern
+river's canonical name has not been finalized.
 
 ## Why this matters
 
@@ -25,7 +27,7 @@ documentation.
 
 - The river is intermittent for much of the year.
 - It is not navigable by ships.
-- It formed the canyon occupied by Highwall.
+- It inherited the canyon excavated by the ancient lake-drainage megaflood.
 - Seasonal storms can produce catastrophic flash floods.
 
 ## Possible answers

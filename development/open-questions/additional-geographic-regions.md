@@ -23,7 +23,9 @@ undocumented regions already have canonical characteristics.
 ## Constraints
 
 - Existing regions and relationships remain established.
-- Whitestone and Redstone are explicitly outside the current case's scope.
+- Whitestone and Redstone were outside the regional economy case's scope and
+  are now established in dedicated
+  [geology documentation](../../canon/places/highwall-region-geology.md).
 - No additional region may be inferred from the current trade network.
 
 ## Possible answers

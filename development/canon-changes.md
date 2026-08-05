@@ -12,6 +12,20 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-05 — Establish Highwall regional geology and geomorphology
+
+- **Change:** Establish Whitestone and Redstone, the regional plateau and
+  escarpments, the inland basin, the ancient fault, and the lake-drainage
+  megaflood that excavated Highwall's canyon.
+- **Authority:** [Geology and Geomorphology seed](../intake/submissions/2026-08-05-geology-geomorphology-s01.md)
+- **Review:** [Geology and Geomorphology seed review](intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
+- **Affected pages:** [`canon/places/highwall-region-geology.md`](../canon/places/highwall-region-geology.md),
+  [`canon/places/highwall.md`](../canon/places/highwall.md), and
+  [`canon/places/upriver-highlands.md`](../canon/places/upriver-highlands.md)
+- **Notes:** Clarifies that the modern intermittent river inherited the canyon
+  created by the ancient megaflood. Geological ages and additional geological
+  names remain unresolved.
+
 ### 2026-08-04 — Establish regional geography and political-economic structure
 
 - **Change:** Establish the Upriver Highlands, Stormlands, Forge, Ledger, and
