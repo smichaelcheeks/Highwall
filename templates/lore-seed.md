@@ -14,11 +14,16 @@ Rules:
 - Do not invent facts, explanations, names, motives, dates, relationships, or
   connective details.
 - Do not make an uncertain statement more definite than I made it.
+- Prefer recording author-supplied facts over writing polished encyclopedia
+  prose. Do not add explanatory or connective text unless I explicitly
+  supplied it or request editorial assistance.
 - Keep objective setting truth separate from in-world belief, disputed history,
   character knowledge, reader reveals, and ideas still under consideration.
 - If two statements appear inconsistent, preserve both and flag the apparent
   conflict. Do not reconcile them yourself.
-- Use TODO or list a question when information is missing. Do not fill gaps.
+- If a required section has no supplied information, write `Not established.`
+  Use `None.` only when I explicitly establish the absence of something. Use
+  `TODO:` only for a specific known task or missing detail. Do not fill gaps.
 - Ask focused clarification questions when an answer would materially change
   meaning. Otherwise, organize what I supplied and list the remaining unknowns.
 - If I ask for an interview, ask one focused question at a time and periodically
@@ -26,14 +31,21 @@ Rules:
   I supplied them, and do not treat my consideration of an option as approval.
 - Preserve intentional ambiguity and spoiler boundaries exactly as I identify
   them.
+- When a fact belongs primarily to another planned seed, mention it only
+  briefly if necessary for context. Do not expand or duplicate that material.
+- Treat comparisons to real-world history, geography, cultures, or institutions
+  as development context, never as fictional setting facts. Include them only
+  when I explicitly identify them as inspirations or source context, and keep
+  them out of canon sections.
 - Do not assign repository case IDs, claim IDs, filenames, front matter, or
   processing dispositions. Codex will do that during repository intake.
 - Before producing the final document, ask me to confirm its authority as one
   of: established canon, working canon, or proposal only; and its intended
   repository session mode as one of: exploration, canon-authoring, or
   direct-integration.
-- Return the final result as plain Markdown using the seed format below. Omit
-  optional sections that have no supplied content; do not create filler prose.
+- Return the final result as plain Markdown using the seed format below.
+- Omit optional sections that have no supplied content; do not create filler
+  prose.
 - End the final document with the literal `<!-- END OF SEED -->` marker on its
   own line. Do not emit that marker until the full document is complete.
 
@@ -62,6 +74,11 @@ documented rather than silently resolved. Missing information remains unknown
 or becomes an open question. Repository identifiers, dispositions, file
 destinations, validation, branches, and draft pull requests are Codex's
 responsibility, not the seed-preparation assistant's.
+
+Real-world places, cultures, histories, and institutions may be identified as
+out-of-world inspirations or source context when the author explicitly supplies
+them. They are not in-world entities or setting facts and do not belong in
+canon sections.
 ```
 
 ## Seed output format
@@ -113,8 +130,9 @@ account to its stated source.]
 
 ### Objective setting truth
 
-[What is actually true. Refer to the relevant fact elsewhere in the seed
-rather than duplicating its full explanation.]
+[What is actually true in the setting, regardless of what any person or
+institution believes. Refer to the relevant fact elsewhere in the seed rather
+than duplicating its full explanation.]
 
 ### Official or institutional position
 
@@ -149,7 +167,9 @@ spoiler-safe summaries.]
 
 ## Sources and attachments
 
-[Author-supplied references, files, prior notes, or source context.]
+[Only author-supplied references, files, maps, images, prior notes, or other
+source material. Do not include inferred inspirations unless the author
+explicitly identifies them.]
 
 ## Explicit exclusions
 
