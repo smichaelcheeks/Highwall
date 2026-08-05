@@ -109,7 +109,9 @@ comparisons.
 - **Review status:** `complete`
 - **Canon change-log entry:** None
 - **Git commit:** `ed093df7e1b6968fac5ac7275ae316782436ef08`
-- **Outstanding actions:** Publication and GitHub checks remain pending.
+- **Outstanding actions:** None. Publication is tracked in
+  [PR #10](https://github.com/smichaelcheeks/Highwall/pull/10), and both required
+  GitHub checks pass.
 
 ## Amendments
 
