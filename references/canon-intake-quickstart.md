@@ -8,6 +8,9 @@ This guide is the entry point for starting a new Highwall canon case in a fresh 
 - Open the repository from a clean, synchronized `main` checkout.
 - Use one Codex chat and working directory per active case.
 - Decide whether the seed is established canon, working canon, or a proposal.
+- End pasted seed documents with the literal `<!-- END OF SEED -->` marker.
+  Without the marker or an explicit confirmation that transmission is complete,
+  Codex must wait rather than begin repository work.
 
 If the material is still in notes or conversational form, first use the
 author-facing [`lore-seed.md`](../templates/lore-seed.md) template to have
@@ -20,6 +23,8 @@ repository metadata. This preparation step does not grant canon authority.
 
 ```text
 Treat the attached seed as established canon in direct-integration mode.
+Do not begin until the seed ends with `<!-- END OF SEED -->` or I explicitly
+confirm that transmission is complete.
 Preserve it verbatim as a new intake case, inventory every substantive
 claim, place each accepted fact in its single authoritative location,
 record every disposition and rationale, run repository validation, and
@@ -30,6 +35,8 @@ open a draft PR. Do not invent anything not stated in the seed.
 
 ```text
 Treat the attached seed as working canon in direct-integration mode.
+Do not begin until the seed ends with `<!-- END OF SEED -->` or I explicitly
+confirm that transmission is complete.
 Preserve it verbatim as a new intake case, identify every substantive
 claim, integrate it without promoting anything to established canon,
 record every decision, run validation, and open a draft PR. Do not fill
@@ -40,6 +47,8 @@ gaps or resolve ambiguity without asking.
 
 ```text
 Treat the attached seed as proposal-only material in exploration mode.
+Do not begin until the seed ends with `<!-- END OF SEED -->` or I explicitly
+confirm that transmission is complete.
 Preserve it as a new intake case and help me develop it, but keep all
 ideas in development and do not update canon until I explicitly approve
 specific decisions.
@@ -50,15 +59,17 @@ specific decisions.
 The agent should:
 
 1. Read [`../AGENTS.md`](../AGENTS.md) and the linked repository standards.
-2. Confirm authority and session mode when they are not explicit.
-3. Synchronize `main` and create a case branch.
-4. Save the seed verbatim from [`../templates/intake-submission.md`](../templates/intake-submission.md).
-5. Create a claim-level review from [`../templates/intake-review.md`](../templates/intake-review.md).
-6. Search existing canon, story, development, aliases, and terminology.
-7. Assign every claim a controlled disposition before integration.
-8. Create or update authoritative pages using the relevant templates.
-9. Record contradictions and unresolved questions instead of choosing answers.
-10. Validate locally, push, and open a draft PR for review.
+2. Confirm the transmission is complete; otherwise request the remainder and
+   make no repository changes.
+3. Confirm authority and session mode when they are not explicit.
+4. Synchronize `main` and create a case branch.
+5. Save the seed verbatim from [`../templates/intake-submission.md`](../templates/intake-submission.md).
+6. Create a claim-level review from [`../templates/intake-review.md`](../templates/intake-review.md).
+7. Search existing canon, story, development, aliases, and terminology.
+8. Assign every claim a controlled disposition before integration.
+9. Create or update authoritative pages using the relevant templates.
+10. Record contradictions and unresolved questions instead of choosing answers.
+11. Validate locally, push, and open a draft PR for review.
 
 ## Continuing the conversation
 

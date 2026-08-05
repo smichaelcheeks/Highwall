@@ -8,6 +8,8 @@ submitted_on: YYYY-MM-DD
 submitted_by: TODO
 authority: classify
 session_mode: exploration
+transmission_status: complete
+completion_basis: TODO
 parent_submission: CASE-YYYY-MM-DD-SLUG-S01
 supersedes_claims: []
 related: []
@@ -25,6 +27,12 @@ related: []
 ## Authority checkpoint
 
 TODO: Record the instruction, confirmation, or declared session mode that authorizes the confirmed decisions below. Do not infer authority from exploratory discussion.
+
+## Transmission completeness
+
+TODO: Record `end-marker`, `explicit-confirmation`, or `complete-attachment` as
+the `completion_basis`. Do not preserve or integrate a suspected partial
+addendum.
 
 ## Confirmed decisions and additions
 

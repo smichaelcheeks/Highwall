@@ -15,6 +15,34 @@ The workflow maintains distinct records:
 
 Do not combine these records. In particular, never append reviewer conclusions to the original submission.
 
+## Transmission completeness gate
+
+Confirm that a seed or addendum is complete before creating a branch, intake
+record, review, or authoritative change. Completeness requires one of:
+
+- the literal `<!-- END OF SEED -->` marker in the submitted document
+- an explicit author statement that the transmission is complete
+- a complete attachment whose boundaries are available for inspection
+
+If none is present, ask whether more material is coming and wait. Also wait when
+the source ends mid-sentence, omits a section it says will follow, leaves a code
+fence or delimiter unclosed, ends abruptly within a list, or otherwise appears
+truncated. Do not preserve a suspected partial transmission as `S01` and do not
+begin partial integration.
+
+Every new submission or addendum records:
+
+```yaml
+transmission_status: complete
+completion_basis: end-marker
+```
+
+Controlled `completion_basis` values are `end-marker`,
+`explicit-confirmation`, and `complete-attachment`. When `end-marker` is used,
+the immutable submission must contain the literal marker. The validator applies
+these requirements to submissions newly added relative to the supplied base
+ref, preserving compatibility with historical merged intake records.
+
 ## Cases, submissions, and claim IDs
 
 A case groups one seed submission with every conversational addendum, correction, and review that develops from it. Create a stable case ID from the seed date and topic:
@@ -114,18 +142,19 @@ Use one of these values:
 
 ## Processing sequence
 
-1. Save the source using [`../templates/intake-submission.md`](../templates/intake-submission.md).
-2. Create a review using [`../templates/intake-review.md`](../templates/intake-review.md).
-3. Record the authority declaration and files inspected.
-4. Inventory and classify every substantive claim.
-5. Search canon, story, development records, aliases, and terminology for prior coverage.
-6. Assign a disposition before modifying authoritative pages.
-7. Apply authorized changes, creating exception records where required.
-8. Record all changed and deliberately unchanged targets in the review.
-9. Run link, metadata, contradiction, duplication, and diff checks.
-10. Add a canon change-log entry for significant canon effects.
-11. Mark the review complete only when no claim lacks a disposition.
-12. When committed, record the Git commit hash in the review.
+1. Pass the transmission completeness gate.
+2. Save the source using [`../templates/intake-submission.md`](../templates/intake-submission.md).
+3. Create a review using [`../templates/intake-review.md`](../templates/intake-review.md).
+4. Record the authority declaration and files inspected.
+5. Inventory and classify every substantive claim.
+6. Search canon, story, development records, aliases, and terminology for prior coverage.
+7. Assign a disposition before modifying authoritative pages.
+8. Apply authorized changes, creating exception records where required.
+9. Record all changed and deliberately unchanged targets in the review.
+10. Run link, metadata, contradiction, duplication, and diff checks.
+11. Add a canon change-log entry for significant canon effects.
+12. Mark the review complete only when no claim lacks a disposition.
+13. When committed, record the Git commit hash in the review.
 
 ## Conversational refinement
 

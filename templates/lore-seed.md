@@ -34,6 +34,8 @@ Rules:
   direct-integration.
 - Return the final result as plain Markdown using the seed format below. Omit
   optional sections that have no supplied content; do not create filler prose.
+- End the final document with the literal `<!-- END OF SEED -->` marker on its
+  own line. Do not emit that marker until the full document is complete.
 
 My notes begin after this line:
 
@@ -153,6 +155,8 @@ spoiler-safe summaries.]
 
 [Ideas the author says are out of scope, rejected, retired, or not to be
 treated as canon.]
+
+<!-- END OF SEED -->
 ```
 
 ## Handoff to repository intake
@@ -161,3 +165,6 @@ Give the completed seed to Codex with the matching instruction from
 [`../references/canon-intake-quickstart.md`](../references/canon-intake-quickstart.md).
 Codex should preserve the entire finished document verbatim; it may reorganize
 authoritative repository pages later, but it must not rewrite the source record.
+If the marker is absent and the author has not explicitly confirmed
+completeness, Codex should request the remainder and wait before making any
+repository changes.

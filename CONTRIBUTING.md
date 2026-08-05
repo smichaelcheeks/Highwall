@@ -20,15 +20,18 @@ This repository is a controlled canon system. Contributions should improve clari
 
 For a batch of new information, follow [`references/intake-workflow.md`](references/intake-workflow.md):
 
-1. **Preserve the submission.** Store it in `intake/submissions/` with a stable ID and do not alter it after review begins.
-2. **Establish authority.** Record whether the author's instruction establishes canon, proposes possibilities, or supplies material for classification.
-3. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
-4. **Find the authority.** Search for existing authoritative pages and dependent references.
-5. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
-6. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
-7. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
-8. **Verify the result.** Check the diff, links, provenance, accidental canon changes, and leaked story spoilers.
-9. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
+1. **Confirm completeness.** Require the end-of-seed marker, explicit author
+   confirmation, or a complete attachment. If the source appears partial, wait
+   for the remainder before changing the repository.
+2. **Preserve the submission.** Store it in `intake/submissions/` with a stable ID and do not alter it after review begins.
+3. **Establish authority.** Record whether the author's instruction establishes canon, proposes possibilities, or supplies material for classification.
+4. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
+5. **Find the authority.** Search for existing authoritative pages and dependent references.
+6. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
+7. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
+8. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
+9. **Verify the result.** Check the diff, links, provenance, accidental canon changes, and leaked story spoilers.
+10. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
 
 For conversational refinement, declare a session mode and maintain a review checkpoint separating decisions, proposals, corrections, and questions. Before integrating new conversational facts, preserve the confirmed outcome in an immutable addendum from [`templates/conversation-addendum.md`](templates/conversation-addendum.md). Follow the detailed rules in [`references/intake-workflow.md`](references/intake-workflow.md).
 
