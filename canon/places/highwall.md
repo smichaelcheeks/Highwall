@@ -11,6 +11,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md"
+  - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
 ---
 
 # Highwall
@@ -37,12 +38,14 @@ displace the canyon's status as the only practical regional corridor.
 
 ## Geography and environment
 
-An intermittent, non-navigable river formed the canyon. For much of the year
-its flow is limited, but seasonal storms can produce catastrophic flash
-floods. The canyon limits expansion, restricts access to natural resources,
-and exposes the city to recurring disasters, while also providing Highwall's
-foundation, transportation corridor, marketplace, defensive feature, and
-principal regional advantage.
+The canyon was rapidly excavated by the catastrophic drainage of an ancient
+inland lake, which followed an inactive fault through the regional sandstone.
+The modern intermittent, non-navigable river inherited that landform. For much
+of the year its flow is limited, but seasonal storms can produce catastrophic
+flash floods. The canyon limits expansion, restricts access to natural
+resources, and exposes the city to recurring disasters, while also providing
+Highwall's foundation, transportation corridor, marketplace, defensive
+feature, and principal regional advantage.
 
 Most permanent structures are carved directly into the sandstone rather than
 built as freestanding buildings. The surrounding highlands supply timber,
@@ -143,9 +146,13 @@ event and political reality in its objective history.
   geographic, and character material remains reserved for dedicated pages and
   seeds.
 
+Detailed regional geology and the canyon's formation are documented in
+[Geology and Geomorphology of the Highwall Region](highwall-region-geology.md).
+
 ## Sources and decisions
 
 - [Authorial Design Principles confirmation review](../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md)
 - [Highwall Overview seed review](../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md)
 - [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
 - [Highwall Corridor clarification review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md)
+- [Geology and Geomorphology seed review](../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
