@@ -41,6 +41,9 @@ DISPOSITIONS = {
     "retire",
     "out-of-scope",
 }
+TRANSMISSION_STATUSES = {"complete"}
+COMPLETION_BASES = {"end-marker", "explicit-confirmation", "complete-attachment"}
+END_OF_SEED_MARKER = "<!-- END OF SEED -->"
 DEVELOPMENT_DISPOSITIONS = {"defer", "conflict", "retire"}
 CASE_ID = re.compile(r"^CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+$")
 SUBMISSION_ID = re.compile(r"^(CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+)-(S|A)\d{2}$")
@@ -160,6 +163,8 @@ class Validator:
             if submission_id in submissions:
                 self.error(path, f"duplicate submission_id also used by {submissions[submission_id].relative_to(ROOT)}")
             submissions[submission_id] = path
+            if self.is_new_submission(path):
+                self.validate_transmission_completeness(path, metadata)
 
         reviewed: dict[str, Path] = {}
         review_dir = ROOT / "development" / "intake-reviews"
@@ -185,6 +190,30 @@ class Validator:
         for submission_id, path in submissions.items():
             if submission_id not in reviewed:
                 self.error(path, f"no intake review found for {submission_id}")
+
+    def is_new_submission(self, path: Path) -> bool:
+        if not self.base_ref:
+            metadata = self.parse_front_matter(path) or {}
+            return "transmission_status" in metadata or "completion_basis" in metadata
+        relative_path = path.relative_to(ROOT).as_posix()
+        result = subprocess.run(
+            ["git", "cat-file", "-e", f"{self.base_ref}:{relative_path}"],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        return result.returncode != 0
+
+    def validate_transmission_completeness(self, path: Path, metadata: dict[str, str]) -> None:
+        status = metadata.get("transmission_status")
+        basis = metadata.get("completion_basis")
+        if status not in TRANSMISSION_STATUSES:
+            self.error(path, f"invalid or missing transmission_status: {status!r}")
+        if basis not in COMPLETION_BASES:
+            self.error(path, f"invalid or missing completion_basis: {basis!r}")
+        if basis == "end-marker" and END_OF_SEED_MARKER not in path.read_text(encoding="utf-8"):
+            self.error(path, f"completion_basis 'end-marker' requires {END_OF_SEED_MARKER}")
 
     def validate_review_claims(self, path: Path, submission_id: str) -> None:
         seen: set[str] = set()
@@ -251,7 +280,7 @@ class Validator:
             return 1
         print(
             f"Repository validation passed: {len(self.markdown_files)} Markdown files; "
-            "links, canon metadata, intake records, and immutability are valid."
+            "links, canon metadata, intake completeness, records, and immutability are valid."
         )
         return 0
 

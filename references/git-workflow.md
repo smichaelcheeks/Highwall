@@ -32,6 +32,20 @@ The `Repository integrity` workflow validates pull requests and pushes to `main`
 
 All third-party and GitHub-maintained Actions must be pinned to full commit SHAs. Keep the corresponding major-version comment beside each SHA for readability. Dependabot checks monthly for GitHub Actions updates and opens reviewable PRs rather than moving action versions implicitly.
 
+### Windows credential-backed GitHub CLI
+
+On Windows, sandboxed processes may be unable to read GitHub credentials stored
+in Windows Credential Manager even when `gh auth status` succeeds in the user's
+own terminal. For authenticated `gh` operations, request narrowly scoped
+escalation on the first attempt when the keyring is the configured credential
+source. Prefer reusable approvals for only the required operations, such as
+`gh pr create`, `gh pr view`, `gh pr checks`, `gh pr ready`, and `gh pr merge`.
+
+Do not disable the sandbox, request unrestricted shell access, expose a token,
+or store a token in repository files. `git push` is not a `gh` operation and
+retains its own scoped approval and authentication path. Connector-backed
+GitHub operations remain preferred when they can access the repository.
+
 ## Parallel branches
 
 Parallel branches are appropriate only when their semantic effects are independent. Different files alone do not prove independence.

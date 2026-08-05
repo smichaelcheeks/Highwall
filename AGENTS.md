@@ -29,16 +29,27 @@ For a new batch of setting information, also read [`references/canon-intake-quic
 
 Before changing authoritative content:
 
-1. Confirm the requested authority: `establish-canon`, `working-canon`, `establish-policy`, `proposal-only`, or `classify`.
-2. Confirm the session mode: `exploration`, `canon-authoring`, or `direct-integration`. Default to `exploration` when unspecified.
-3. Create a stable case ID and a short-lived `agent/<case-topic>` branch from synchronized `main`.
-4. Preserve the seed verbatim in `intake/submissions/`; do not replace it with a summary.
-5. Create the matching review in `development/intake-reviews/` and inventory every substantive claim before changing authoritative pages.
-6. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
-7. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
-8. Apply authorized changes to their single authoritative locations and add provenance links.
-9. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them.
-10. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+1. Confirm transmission completeness before any repository mutation. Require the
+   `<!-- END OF SEED -->` marker, an explicit author statement that the
+   transmission is complete, or a complete attachment. If none is present, or
+   the source appears truncated, stop and request the remainder. Do not create a
+   branch, submission, review, or authoritative change from a partial source.
+2. Confirm the requested authority: `establish-canon`, `working-canon`, `establish-policy`, `proposal-only`, or `classify`.
+3. Confirm the session mode: `exploration`, `canon-authoring`, or `direct-integration`. Default to `exploration` when unspecified.
+4. Create a stable case ID and a short-lived `agent/<case-topic>` branch from synchronized `main`.
+5. Preserve the complete seed verbatim in `intake/submissions/`; do not replace it with a summary.
+6. Create the matching review in `development/intake-reviews/` and inventory every substantive claim before changing authoritative pages.
+7. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
+8. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
+9. Apply authorized changes to their single authoritative locations and add provenance links.
+10. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
+11. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+
+Treat mid-sentence endings, missing promised sections, unclosed delimiters or
+code fences, abrupt list endings, and references to omitted continuation as
+possible truncation. Do not infer missing text. A short administrative request
+may use explicit author confirmation instead of the marker when its complete
+scope is unambiguous.
 
 If the user says only “put this where it goes,” do not infer whether the material is established canon, working canon, or a proposal. Ask unless the surrounding instruction makes that authority explicit.
 
@@ -50,6 +61,11 @@ If the user says only “put this where it goes,” do not infer whether the mat
 - Keep overlapping canon changes sequential even when Git could merge them textually.
 - Do not delete open or unmerged branches.
 - Do not reuse branch names.
+- On Windows, authenticated `gh` operations that require credentials stored in
+  Windows Credential Manager must request narrowly scoped escalation on the
+  first attempt. Prefer reusable approvals limited to the required `gh pr`
+  subcommand. Do not disable the sandbox or request unrestricted PowerShell or
+  GitHub CLI access. `git push` remains a separate Git operation and approval.
 
 ## Required verification
 
