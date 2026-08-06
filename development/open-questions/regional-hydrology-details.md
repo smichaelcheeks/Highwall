@@ -26,9 +26,6 @@ mechanisms and measurements are not.
 - Spring locations, distribution, reliability, and settlement roles are not established.
 - The hidden basin's detailed hydrology and retention mechanism are not
   established.
-- It is not established whether the canyon-entrance lake's collapse around 185
-  years ago caused the flood that destroyed the Old Wall at approximately the
-  same time.
 - Long-term climatic averages are not established.
 
 ## Possible answers

@@ -14,6 +14,7 @@ related:
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
 ---
 
 # Hydrology of the Highwall Region
@@ -78,9 +79,9 @@ overflows roughly once per decade, and that overflow joins the regular
 drainage basin for Dryrun.
 
 Another lake existed around 185 years ago at the entrance to Highwall's canyon
-from the inland-basin side. That lake collapsed around 185 years ago. It is not
-established whether its collapse caused the catastrophic flood that destroyed
-the Old Wall at approximately the same time.
+from the inland-basin side. Its collapse caused the catastrophic flood that
+destroyed the Old Wall around 185 years ago; the collapse and the Old Wall
+disaster were the same event.
 
 ## Hidden basin
 
@@ -104,3 +105,4 @@ Its water-retention mechanism is not established.
 
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
 - [Inland Basin Lake Chronology clarification review](../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md)
+- [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)

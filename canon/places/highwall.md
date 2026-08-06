@@ -13,6 +13,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md"
   - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
 ---
 
 # Highwall
@@ -125,7 +126,9 @@ Highwall has existed for centuries and developed continuously in response to
 the opportunities and dangers of the canyon.
 
 Approximately 185 years before the primary events of the novels, a catastrophic
-flood destroyed the original settlement, now called the Old Wall. Survivors
+flood destroyed the original settlement, now called the Old Wall. The flood
+was caused by the collapse of a lake at the inland-side entrance to Highwall's
+canyon; the collapse and the Old Wall disaster were the same event. Survivors
 relocated slightly downriver to a more favorable site and rebuilt. Modern
 Highwall considers itself a direct continuation of the Old Wall, supported by
 the continuation of institutions, traditions, families, and civic practices.
@@ -161,3 +164,4 @@ Region](highwall-region-hydrology.md).
 - [Highwall Corridor clarification review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md)
 - [Geology and Geomorphology seed review](../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
+- [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)

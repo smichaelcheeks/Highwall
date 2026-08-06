@@ -27,8 +27,9 @@ Record significant additions, revisions, reversals, and clarifications to canon.
   open. [Clarification addendum A01](../intake/submissions/2026-08-06-regional-hydrology-a01.md)
   distinguishes the ancient basin-filling lake, the smaller present saline
   lake, and the later canyon-entrance lake. This resolves the standing-water
-  contradiction without establishing whether the later collapse caused the
-  Old Wall flood.
+  contradiction. [Confirmation addendum A02](../intake/submissions/2026-08-06-regional-hydrology-a02.md)
+  establishes that the canyon-entrance lake collapse caused the Old Wall flood
+  and that both descriptions refer to the same event.
 
 ### 2026-08-05 — Establish Highwall regional geology and geomorphology
 

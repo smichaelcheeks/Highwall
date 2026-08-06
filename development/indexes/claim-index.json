@@ -3114,6 +3114,31 @@
     {
       "authoritative_targets": [
         "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02-C001",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
+      "subjects": [
+        "highwall",
+        "old-wall",
+        "inland-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a02.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02",
+      "summary": "The canyon-entrance lake collapse caused the destruction of the Old Wall; both descriptions refer to the same event.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`; `development/open-questions/regional-hydrology-details.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
         "canon/places/highwall-region-geology.md",
         "canon/places/highwall.md",
         "canon/places/upriver-highlands.md"
