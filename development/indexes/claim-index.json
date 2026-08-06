@@ -3029,6 +3029,831 @@
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Run full semantic audits periodically and for high-risk changes.",
       "target": "`references/consistency-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C001",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "The plateau is semi-arid and water availability varies substantially through the year.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C002",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Late-summer and autumn storms, winter snow, and spring snowmelt are the main seasonal inputs.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C003",
+      "classification": "canon",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Highwall occupies a narrow sandstone canyon.",
+      "target": "Existing canon"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C004",
+      "classification": "terminology",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Dryrun is a working, not final, name for the canyon river.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `development/open-questions/highwall-river-name.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C005",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Dryrun is seasonal or intermittent and often has little visible water.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C006",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Several destructive flash floods occur in a typical year and are normally expected.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C007",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Near its mouth Dryrun joins a larger perennial river that reaches the sea.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C008",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Regional sandstone stores groundwater plausibly rather than fantastically.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C009",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Groundwater contributes to regional springs and seeps; some are permanent and others seasonal.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C010",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Water movement is influenced by Whitestone, Redstone, canyon incision, precipitation, and sandstone groundwater.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C011",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Exact formation behavior, aquifer architecture, and surface-groundwater relationships are not established.",
+      "target": "[Regional hydrology details](../open-questions/regional-hydrology-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C012",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "The normally dry but frequently flooding river is a defining Highwall characteristic.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C013",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Late-summer and autumn upstream storms cause many of the most dangerous floods.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C014",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Flood risk emerges from watershed behavior interacting with the canyon.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C015",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "The inland basin has extensive salt flats, surrounding mountains and canyon uplands, with fresh water mainly at margins.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C016",
+      "classification": "canon",
+      "disposition": "conflict",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "The ancient lake no longer exists as a permanent body.",
+      "target": "[Inland-basin standing water](../contradictions/inland-basin-standing-water.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C017",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Highwall accesses a hidden enclosed basin beyond the Whitestone rim that retains enough water for limited reserve agriculture.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C018",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Highwall found the hidden basin by accidental excavation breakthrough; clans already knew natural routes.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/upriver-highlands.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C019",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "The hidden basin's retention mechanism and detailed hydrology are unknown.",
+      "target": "[Regional hydrology details](../open-questions/regional-hydrology-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C020",
+      "classification": "design guidance",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Water scarcity should influence society without making the region uninhabitable, and hydrology should be plausible and non-supernatural.",
+      "target": "Canon wording bounded to supplied facts"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C021",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Prolonged dry periods, regular seasonal floods, and occasional exceptional floods are supported.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C022",
+      "classification": "proposal",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Six groundwater and drainage mechanisms are proposals only.",
+      "target": "[Regional groundwater and drainage models](../proposals/regional-groundwater-and-drainage-models.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C023",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "River names, tributaries, watersheds, flow extents, spring locations, discharge, basin relationships, and climatic averages are unknown.",
+      "target": "[Highwall river name](../open-questions/highwall-river-name.md); [regional hydrology details](../open-questions/regional-hydrology-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C024",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Engineered water, exact quantities and aquifers, ecology, irrigation, flood chronology, and new waterway names are excluded.",
+      "target": "Adjacent documentation deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md",
+        "canon/places/upriver-highlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C025",
+      "classification": "dependency metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "history",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "dryrun",
+        "inland-basin",
+        "hidden-basin",
+        "whitestone",
+        "redstone"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
+      "summary": "Later climate, ecology, infrastructure, agriculture, flood history, settlement, transport, and water law may depend on this case.",
+      "target": "Review and open question"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

@@ -12,6 +12,20 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-06 — Establish regional hydrology
+
+- **Change:** Establish the semi-arid seasonal water cycle, Dryrun's
+  intermittent flow and frequent floods, sandstone groundwater, springs and
+  seeps, regional drainage, and Highwall's access to the hidden basin.
+- **Authority:** [Regional Hydrology seed](../intake/submissions/2026-08-06-regional-hydrology-s01.md)
+- **Review:** [Regional Hydrology seed review](intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
+- **Affected pages:** [`canon/places/highwall-region-hydrology.md`](../canon/places/highwall-region-hydrology.md),
+  [`canon/places/highwall.md`](../canon/places/highwall.md),
+  [`canon/places/highwall-region-geology.md`](../canon/places/highwall-region-geology.md),
+  and [`canon/places/upriver-highlands.md`](../canon/places/upriver-highlands.md)
+- **Notes:** Dryrun remains a working name and detailed hydrogeology remains
+  open. Conflicting claims about a remaining saline lake await resolution.
+
 ### 2026-08-05 — Establish Highwall regional geology and geomorphology
 
 - **Change:** Establish Whitestone and Redstone, the regional plateau and

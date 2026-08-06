@@ -9,6 +9,7 @@ tags:
   - geology
 related:
   - "highwall.md"
+  - "highwall-region-hydrology.md"
   - "upriver-highlands.md"
 provenance:
   - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
@@ -58,6 +59,10 @@ once occupied the basin before draining catastrophically. Salt flats left by
 that drainage cover much of the basin, and a saline lake remains there and
 periodically overflows.
 
+The continued existence of that permanent saline lake is disputed by the later
+hydrology seed and awaits resolution in the [inland-basin standing-water
+contradiction](../../development/contradictions/inland-basin-standing-water.md).
+
 ## Highwall canyon
 
 Highwall's canyon descends approximately 800 meters below the surrounding
@@ -76,6 +81,7 @@ without fundamentally creating it.
 
 - The [ages and additional names of regional geological features](../../development/open-questions/highwall-geological-ages-and-names.md)
   are not established.
+- Detailed water behavior is documented in [regional hydrology](highwall-region-hydrology.md).
 
 ## Sources and decisions
 
