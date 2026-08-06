@@ -9,9 +9,11 @@ tags:
   - geology
 related:
   - "highwall.md"
+  - "highwall-region-hydrology.md"
   - "upriver-highlands.md"
 provenance:
   - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md"
 ---
 
 # Geology and Geomorphology of the Highwall Region
@@ -53,10 +55,10 @@ floor of the inland basin beyond Highwall.
 ## Inland basin
 
 The inland basin is enclosed and occupies part of the inland plateau beyond
-Highwall. Mountains and canyons surround much of it. An ancient inland lake
-once occupied the basin before draining catastrophically. Salt flats left by
-that drainage cover much of the basin, and a saline lake remains there and
-periodically overflows.
+Highwall. Mountains and canyons surround much of it. An ancient lake once
+filled the entire basin before draining catastrophically millennia ago. Salt
+flats left by that drainage cover much of the basin. A much smaller saline lake
+remains in the present day and overflows roughly once per decade.
 
 ## Highwall canyon
 
@@ -76,7 +78,9 @@ without fundamentally creating it.
 
 - The [ages and additional names of regional geological features](../../development/open-questions/highwall-geological-ages-and-names.md)
   are not established.
+- Detailed water behavior is documented in [regional hydrology](highwall-region-hydrology.md).
 
 ## Sources and decisions
 
 - [Geology and Geomorphology seed review](../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
+- [Inland Basin Lake Chronology clarification review](../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md)

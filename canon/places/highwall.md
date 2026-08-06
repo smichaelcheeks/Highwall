@@ -12,6 +12,8 @@ provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md"
   - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
 ---
 
 # Highwall
@@ -40,12 +42,13 @@ displace the canyon's status as the only practical regional corridor.
 
 The canyon was rapidly excavated by the catastrophic drainage of an ancient
 inland lake, which followed an inactive fault through the regional sandstone.
-The modern intermittent, non-navigable river inherited that landform. For much
-of the year its flow is limited, but seasonal storms can produce catastrophic
-flash floods. The canyon limits expansion, restricts access to natural
-resources, and exposes the city to recurring disasters, while also providing
-Highwall's foundation, transportation corridor, marketplace, defensive
-feature, and principal regional advantage.
+The modern intermittent, non-navigable river inherited that landform. Its
+working development name is Dryrun. For much of the year its visible flow is
+limited, but several flash floods occur in a typical year, commonly after
+upstream late-summer or autumn storms. The canyon limits expansion, restricts
+access to natural resources, and exposes the city to recurring disasters,
+while also providing Highwall's foundation, transportation corridor,
+marketplace, defensive feature, and principal regional advantage.
 
 Most permanent structures are carved directly into the sandstone rather than
 built as freestanding buildings. The surrounding highlands supply timber,
@@ -123,7 +126,9 @@ Highwall has existed for centuries and developed continuously in response to
 the opportunities and dangers of the canyon.
 
 Approximately 185 years before the primary events of the novels, a catastrophic
-flood destroyed the original settlement, now called the Old Wall. Survivors
+flood destroyed the original settlement, now called the Old Wall. The flood
+was caused by the collapse of a lake at the inland-side entrance to Highwall's
+canyon; the collapse and the Old Wall disaster were the same event. Survivors
 relocated slightly downriver to a more favorable site and rebuilt. Modern
 Highwall considers itself a direct continuation of the Old Wall, supported by
 the continuation of institutions, traditions, families, and civic practices.
@@ -148,6 +153,8 @@ event and political reality in its objective history.
 
 Detailed regional geology and the canyon's formation are documented in
 [Geology and Geomorphology of the Highwall Region](highwall-region-geology.md).
+Regional water behavior is documented in the [Hydrology of the Highwall
+Region](highwall-region-hydrology.md).
 
 ## Sources and decisions
 
@@ -156,3 +163,5 @@ Detailed regional geology and the canyon's formation are documented in
 - [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
 - [Highwall Corridor clarification review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md)
 - [Geology and Geomorphology seed review](../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
+- [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
+- [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)
