@@ -24,7 +24,11 @@ Record significant additions, revisions, reversals, and clarifications to canon.
   [`canon/places/highwall-region-geology.md`](../canon/places/highwall-region-geology.md),
   and [`canon/places/upriver-highlands.md`](../canon/places/upriver-highlands.md)
 - **Notes:** Dryrun remains a working name and detailed hydrogeology remains
-  open. Conflicting claims about a remaining saline lake await resolution.
+  open. [Clarification addendum A01](../intake/submissions/2026-08-06-regional-hydrology-a01.md)
+  distinguishes the ancient basin-filling lake, the smaller present saline
+  lake, and the later canyon-entrance lake. This resolves the standing-water
+  contradiction without establishing whether the later collapse caused the
+  Old Wall flood.
 
 ### 2026-08-05 — Establish Highwall regional geology and geomorphology
 

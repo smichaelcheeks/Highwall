@@ -24,8 +24,11 @@ mechanisms and measurements are not.
 - Aquifer architecture, recharge, residence times, chemistry, water-table
   depths, and geological controls on springs and seeps are not established.
 - Spring locations, distribution, reliability, and settlement roles are not established.
-- Dryrun's relationship to the collapsed-lake basin and the hidden basin's
-  detailed hydrology and retention mechanism are not established.
+- The hidden basin's detailed hydrology and retention mechanism are not
+  established.
+- It is not established whether the canyon-entrance lake's collapse around 185
+  years ago caused the flood that destroyed the Old Wall at approximately the
+  same time.
 - Long-term climatic averages are not established.
 
 ## Possible answers

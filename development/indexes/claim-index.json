@@ -3034,6 +3034,87 @@
       "authoritative_targets": [
         "canon/places/highwall-region-hydrology.md",
         "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C001",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+      "subjects": [
+        "inland-basin",
+        "highwall",
+        "dryrun",
+        "old-wall"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
+      "summary": "The ancient lake filled the entire basin, collapsed millennia ago, and rapidly carved Highwall's canyon.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall-region-geology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C002",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+      "subjects": [
+        "inland-basin",
+        "highwall",
+        "dryrun",
+        "old-wall"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
+      "summary": "A much smaller present saline lake overflows roughly once per decade into the drainage basin for Highwall's river.",
+      "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall-region-geology.md`; [standing-water contradiction](../contradictions/inland-basin-standing-water.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "claim_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C003",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+      "subjects": [
+        "inland-basin",
+        "highwall",
+        "dryrun",
+        "old-wall"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
+      "summary": "Another lake at the inland-side canyon entrance collapsed around 185 years ago.",
+      "target": "`canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall-region-geology.md",
         "canon/places/highwall.md",
         "canon/places/upriver-highlands.md"
       ],

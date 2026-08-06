@@ -1,12 +1,13 @@
 ---
 title: Permanent standing water in the inland collapsed-lake basin
 type: contradiction
-status: open
+status: resolved
 date_opened: 2026-08-06
 related:
   - "../../canon/places/highwall-region-geology.md"
   - "../../canon/places/highwall-region-hydrology.md"
   - "../intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
+  - "../intake-reviews/2026-08-06-regional-hydrology-a01-review.md"
 ---
 
 # Does a permanent saline lake remain in the inland basin?
@@ -24,12 +25,11 @@ related:
 The conflict affects the basin's present geography and hydrology and later
 climate, ecology, settlement, and transportation work.
 
-## Current treatment
-
-Both source claims remain preserved. Geology retains its established
-statement; hydrology marks permanent standing water unresolved. No
-reconciliation is inferred.
-
 ## Resolution
 
-Pending explicit author decision.
+Resolved by
+[`CASE-2026-08-06-REGIONAL-HYDROLOGY-A01`](../../intake/submissions/2026-08-06-regional-hydrology-a01.md).
+The ancient lake that no longer exists filled the entire basin and collapsed
+millennia ago. The present saline lake is a distinct and much smaller body of
+water. It remains in the basin and overflows roughly once per decade. The
+earlier claims therefore describe different lakes and can stand together.

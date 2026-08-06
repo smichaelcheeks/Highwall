@@ -13,6 +13,7 @@ related:
   - "upriver-highlands.md"
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md"
 ---
 
 # Hydrology of the Highwall Region
@@ -37,8 +38,7 @@ flowing river. It often carries little visible water but can become extremely
 dangerous during floods.
 
 Near the canyon mouth, Dryrun joins a larger unnamed river that flows year-round
-and eventually reaches the sea. Its relationship to the inland basin is not
-established.
+and eventually reaches the sea.
 
 ## Groundwater, springs, and seeps
 
@@ -67,14 +67,20 @@ established.
 
 ## Inland collapsed-lake basin
 
-Extensive salt flats occupy the inland basin, surrounded in part by mountains
-and canyon-cut uplands. Fresh water is expected to occur primarily around the
+An ancient lake once filled the entire inland basin. It collapsed millennia
+ago, and the resulting megaflood rapidly carved Highwall's canyon. Extensive
+salt flats now occupy much of the basin, surrounded in part by mountains and
+canyon-cut uplands. Fresh water is expected to occur primarily around the
 basin margins rather than across the central salt flats.
 
-Whether a permanent saline lake remains is unresolved because the hydrology
-seed conflicts with established geology. Both claims are preserved in the
-[inland-basin standing-water
-contradiction](../../development/contradictions/inland-basin-standing-water.md).
+A much smaller saline lake remains in the basin in the present day. It
+overflows roughly once per decade, and that overflow joins the regular
+drainage basin for Dryrun.
+
+Another lake existed around 185 years ago at the entrance to Highwall's canyon
+from the inland-basin side. That lake collapsed around 185 years ago. It is not
+established whether its collapse caused the catastrophic flood that destroyed
+the Old Wall at approximately the same time.
 
 ## Hidden basin
 
@@ -97,3 +103,4 @@ Its water-retention mechanism is not established.
 ## Sources and decisions
 
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
+- [Inland Basin Lake Chronology clarification review](../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md)
