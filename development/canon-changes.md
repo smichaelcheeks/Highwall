@@ -12,6 +12,20 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-07 — Clarify climate authority and Salt Basin identity
+
+- **Change:** Confirm that Blueleaf harvesting and reed cultivation are
+  established regional activities while organism descriptions and biological
+  inventory details remain working canon; establish Salt Basin as another name
+  for the inland basin beyond Highwall where the clans live.
+- **Authority:** [Regional Climate Authority and Basin Terminology Clarification](../intake/submissions/2026-08-06-regional-climate-a01.md)
+- **Review:** [Regional Climate Authority and Basin Terminology Clarification Review](intake-reviews/2026-08-06-regional-climate-a01-review.md)
+- **Affected pages:** Regional climate, regional geology, and the working
+  flora/fauna inventory; the original climate review amendment and generated
+  claim index.
+- **Notes:** No organism description, cultivation mechanism, new basin
+  geography, clan detail, or story reveal was established.
+
 ### 2026-08-07 — Confirm Highwall's megaflood canyon origin
 
 - **Change:** Confirm that the ancient inland-lake drainage megaflood formed
