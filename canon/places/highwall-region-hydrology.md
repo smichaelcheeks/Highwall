@@ -12,6 +12,7 @@ related:
   - "highwall-region-climate.md"
   - "highwall-region-geology.md"
   - "upriver-highlands.md"
+  - "highwall-region-ecology.md"
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md"

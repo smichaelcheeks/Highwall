@@ -12,6 +12,7 @@ related:
   - "highwall-region-geology.md"
   - "highwall-region-hydrology.md"
   - "stormlands.md"
+  - "highwall-region-ecology.md"
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
 ---
