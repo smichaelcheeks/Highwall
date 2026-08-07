@@ -9,12 +9,14 @@ tags:
   - hydrology
 related:
   - "highwall.md"
+  - "highwall-region-climate.md"
   - "highwall-region-geology.md"
   - "upriver-highlands.md"
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
 ---
 
 # Hydrology of the Highwall Region
@@ -24,7 +26,8 @@ provenance:
 The plateau around [Highwall](highwall.md) is semi-arid rather than a true
 desert, and water availability changes substantially through the year. Its
 primary seasonal inputs are winter snowfall, spring snowmelt, and storms in
-late summer and autumn.
+late summer and autumn. Their atmospheric sources and regional distribution
+are documented in the [regional climate authority](highwall-region-climate.md).
 
 Water movement is expected to be strongly influenced by the resistant
 Whitestone cap, thick underlying Redstone, canyon incision, seasonal
@@ -59,6 +62,10 @@ Several flash floods occur in a typical year and are part of the canyon's
 normal environmental rhythm. Many of the most dangerous follow late-summer and
 autumn storms upstream rather than storms over Highwall itself. The setting
 also supports occasional exceptionally destructive floods.
+
+Spring snowmelt from the eastern mountains makes surface water most reliable
+in spring and increases groundwater recharge. Annual precipitation varies
+considerably, and multi-year droughts recur.
 
 The river's limited ordinary visible flow and its frequent destructive floods
 are defining features of Highwall's environment. Flood danger results from

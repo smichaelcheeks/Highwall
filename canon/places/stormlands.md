@@ -10,8 +10,10 @@ related:
   - "forge.md"
   - "delta.md"
   - "../economy/regional-trade-system.md"
+  - "highwall-region-climate.md"
 provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
 ---
 
 # Stormlands
@@ -19,6 +21,10 @@ provenance:
 ## Summary
 
 The Stormlands occupy the western portion of the downstream coastal plain.
+They receive the region's greatest winter precipitation. Frequent winter rain
+supports their extensive forests and the associated timber and shipbuilding
+resources. The atmospheric pattern is documented in the [regional climate
+authority](highwall-region-climate.md).
 
 ## Geography and resources
 

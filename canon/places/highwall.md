@@ -14,6 +14,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
 ---
 
 # Highwall
@@ -53,6 +54,11 @@ marketplace, defensive feature, and principal regional advantage.
 Most permanent structures are carved directly into the sandstone rather than
 built as freestanding buildings. The surrounding highlands supply timber,
 ores, livestock, and other specialty raw materials scarce within the canyon.
+
+The canyon runs north-south, producing pronounced daily and seasonal cycles of
+sunlight and shade. Its interior is generally more sheltered from wind than
+the exposed rim and surrounding plateau. Snowfall on the canyon floor is
+uncommon.
 
 ## Population and settlement
 
@@ -155,6 +161,8 @@ Detailed regional geology and the canyon's formation are documented in
 [Geology and Geomorphology of the Highwall Region](highwall-region-geology.md).
 Regional water behavior is documented in the [Hydrology of the Highwall
 Region](highwall-region-hydrology.md).
+Regional weather and seasonal patterns are documented in the [Climate of the
+Highwall Region](highwall-region-climate.md).
 
 ## Sources and decisions
 
@@ -165,3 +173,4 @@ Region](highwall-region-hydrology.md).
 - [Geology and Geomorphology seed review](../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md)
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
 - [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)
+- [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
