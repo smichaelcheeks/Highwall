@@ -143,4 +143,13 @@ story pages without the excluded detail.
 
 ## Amendments
 
-None.
+### 2026-08-07 — Canyon origin supersession
+
+[`CASE-2026-08-04-HIGHWALL-OVERVIEW-A01-C001`](2026-08-04-highwall-overview-a01-review.md)
+explicitly supersedes S01-C002. The ancient inland-lake drainage megaflood
+formed Highwall's canyon, and the modern intermittent river inherited it. The
+original row remains unchanged as a historical record. Seasonal flash-flood
+behavior remains independently established by the later regional hydrology
+case rather than by retaining the superseded compound claim. The accepted
+claim conflict and its resolution are preserved in the
+[Highwall canyon-origin contradiction report](../contradictions/highwall-canyon-origin.md).
