@@ -12,6 +12,22 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-07 — Confirm Highwall's megaflood canyon origin
+
+- **Change:** Confirm that the ancient inland-lake drainage megaflood formed
+  Highwall's canyon and that the modern intermittent river inherited it;
+  explicitly supersede the earlier accepted claim that the intermittent river
+  formed the canyon.
+- **Authority:** [Highwall Canyon Origin Supersession](../intake/submissions/2026-08-04-highwall-overview-a01.md)
+- **Review:** [Highwall Canyon Origin Supersession Review](intake-reviews/2026-08-04-highwall-overview-a01-review.md)
+- **Affected pages:** [`canon/places/highwall.md`](../canon/places/highwall.md)
+  provenance and source links, the original Highwall overview review
+  amendment, and the
+  [resolved canyon-origin contradiction](contradictions/highwall-canyon-origin.md).
+- **Notes:** Current Highwall and regional geology prose already represented
+  the megaflood model, so no setting prose changed. The correction resolves
+  accepted claim provenance while preserving the original source and review.
+
 ### 2026-08-07 — Establish regional ecology and working organism inventory
 
 - **Change:** Establish the region's broad ecological zones, seasonal drivers,

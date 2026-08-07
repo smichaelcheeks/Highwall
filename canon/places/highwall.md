@@ -15,6 +15,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
+  - "../../development/intake-reviews/2026-08-04-highwall-overview-a01-review.md"
 ---
 
 # Highwall
@@ -174,3 +175,4 @@ Highwall Region](highwall-region-climate.md).
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
 - [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)
 - [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
+- [Highwall Canyon Origin supersession review](../../development/intake-reviews/2026-08-04-highwall-overview-a01-review.md)

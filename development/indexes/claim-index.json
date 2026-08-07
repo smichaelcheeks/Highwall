@@ -677,6 +677,31 @@
       "target": "A01-C001"
     },
     {
+      "authoritative_targets": [
+        "canon/places/highwall.md",
+        "canon/places/highwall-region-geology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "claim_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01-C001",
+      "classification": "correction",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "history"
+      ],
+      "review": "development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
+      "subjects": [
+        "highwall",
+        "highwall-region",
+        "highwall-canyon"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-highwall-overview-a01.md",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01",
+      "summary": "The ancient lake-drainage megaflood formed Highwall's canyon; the modern intermittent river inherited it; this replaces the S01 river-formation claim.",
+      "target": "Original review amendment; resolved canyon-origin contradiction; `canon/places/highwall.md` provenance; canon change log"
+    },
+    {
       "authoritative_targets": [],
       "authority_basis": "explicit",
       "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
