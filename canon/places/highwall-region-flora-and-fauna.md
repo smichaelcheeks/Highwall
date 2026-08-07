@@ -14,6 +14,7 @@ related:
   - "stormlands.md"
 provenance:
   - "../../development/intake-reviews/2026-08-07-regional-ecology-s02-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md"
 ---
 
 # Flora and Fauna of the Highwall Region
@@ -24,6 +25,11 @@ This page is a working inventory of organisms intended to occupy the niches in
 the [established regional ecology](highwall-region-ecology.md). Entries may be
 refined, renamed, combined, or replaced while that broader structure remains
 consistent. The inventory is not a finalized biological catalog.
+
+The existence of established regional activities such as reed cultivation
+does not promote this page's organism descriptions, biological identities, or
+inventory entries. Those details retain this page's working status unless
+separately established.
 
 The region includes native and human-influenced organisms. Centuries of
 settlement and management have expanded or contracted some ranges. Communities
@@ -121,3 +127,4 @@ Possible fictionalization and future changes to common names remain
 ## Sources and decisions
 
 - [Regional Flora and Fauna seed review](../../development/intake-reviews/2026-08-07-regional-ecology-s02-review.md)
+- [Climate activity-boundary clarification review](../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md)

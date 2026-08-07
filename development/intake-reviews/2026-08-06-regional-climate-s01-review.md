@@ -179,4 +179,13 @@ in intake, and log the significant canon change.
 
 ## Amendments
 
-None.
+### 2026-08-07 — Authority and terminology clarification
+
+[`CASE-2026-08-06-REGIONAL-CLIMATE-A01-C001`](2026-08-06-regional-climate-a01-review.md)
+clarifies C018 and C025: Blueleaf harvesting and reed cultivation are
+established activities, while detailed practices and biological or inventory
+details remain working unless separately established.
+
+[`CASE-2026-08-06-REGIONAL-CLIMATE-A01-C002`](2026-08-06-regional-climate-a01-review.md)
+clarifies C012: Salt Basin is the established inland basin beyond Highwall
+where the clans live, not a distinct or hidden basin.

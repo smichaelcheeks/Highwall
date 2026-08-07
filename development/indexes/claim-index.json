@@ -3058,6 +3058,60 @@
     {
       "authoritative_targets": [
         "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall-region-flora-and-fauna.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C001",
+      "classification": "boundary metadata",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
+      "subjects": [
+        "highwall-region",
+        "inland-basin",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-a01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01",
+      "summary": "Blueleaf harvesting and reed cultivation are established activities, while detailed organism identities and inventory treatment remain working canon unless separately established.",
+      "target": "Climate boundary wording; working flora/fauna scope; original climate review amendment"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-geology.md",
+        "canon/places/highwall-region-flora-and-fauna.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C002",
+      "classification": "terminology",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
+      "subjects": [
+        "highwall-region",
+        "inland-basin",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-a01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01",
+      "summary": "Salt Basin is the inland basin beyond Highwall where the clans live, not a separate basin.",
+      "target": "Regional geology identity authority; climate contextual wording; original climate review amendment"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
         "canon/places/highwall-region-hydrology.md",
         "canon/places/highwall.md",
         "canon/places/stormlands.md"

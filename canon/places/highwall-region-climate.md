@@ -15,6 +15,7 @@ related:
   - "highwall-region-ecology.md"
 provenance:
   - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
+  - "../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md"
 ---
 
 # Climate of the Highwall Region
@@ -45,7 +46,8 @@ The eastern mountains receive the region's greatest snowfall, accumulate a
 substantial seasonal snowpack, supply most spring snowmelt, and promote
 late-summer thunderstorm development.
 
-The Salt Basin remains dry through much of the year. During storm season,
+The inland basin, also called the **Salt Basin**, remains dry through much of
+the year. During storm season,
 temporary freshwater runoff descends from the surrounding mountains. Seasonal
 flooding creates temporary wetlands around the basin margins before dry
 conditions return.
@@ -93,8 +95,10 @@ transitions toward winter conditions.
 
 Storm season is a defining regional cycle. It strongly influences travel,
 trade, seasonal labor, pastoral movement, Blueleaf harvests, reed cultivation,
-and flood preparedness. These relationships do not establish the detailed
-practices of any industry or community.
+and flood preparedness. Blueleaf harvesting and reed cultivation are
+established activities, but this climate relationship does not establish their
+detailed practices or the biological details of the organisms involved. Those
+organism-level details remain working canon unless separately established.
 
 ## Highwall Canyon microclimates
 
@@ -127,3 +131,4 @@ patterns, and the exact storm-belt extent remain [unestablished](../../developme
 ## Sources and decisions
 
 - [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
+- [Climate authority and basin terminology clarification](../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md)
