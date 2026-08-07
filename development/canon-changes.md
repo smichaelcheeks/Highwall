@@ -12,6 +12,24 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-07 — Establish regional ecology and working organism inventory
+
+- **Change:** Establish the region's broad ecological zones, seasonal drivers,
+  disturbance processes, ecological functions, and long-term human influence;
+  add a separate working inventory of flora and fauna occupying those niches.
+- **Authority:** [Regional Ecology seed](../intake/submissions/2026-08-07-regional-ecology-s01.md)
+  and [Regional Flora and Fauna seed](../intake/submissions/2026-08-07-regional-ecology-s02.md)
+- **Review:** [Regional Ecology seed review](intake-reviews/2026-08-07-regional-ecology-s01-review.md)
+  and [Regional Flora and Fauna seed review](intake-reviews/2026-08-07-regional-ecology-s02-review.md)
+- **Affected pages:** [`canon/places/highwall-region-ecology.md`](../canon/places/highwall-region-ecology.md),
+  [`canon/places/highwall-region-flora-and-fauna.md`](../canon/places/highwall-region-flora-and-fauna.md),
+  and reciprocal links from the regional geology, climate, hydrology, and
+  Stormlands authorities.
+- **Notes:** The ecological structure is established canon. Every named
+  organism and species-specific relationship remains working canon. Detailed
+  inventories and community boundaries remain unresolved; fictionalization
+  and name changes remain unapproved proposals.
+
 ### 2026-08-06 — Establish regional climate
 
 - **Change:** Establish the semi-arid regional climate, coastal rain shadow,

@@ -4760,6 +4760,1109 @@
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Later climate, ecology, infrastructure, agriculture, flood history, settlement, transport, and water law may depend on this case.",
       "target": "Review and open question"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C001",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Multiple interconnected ecological zones support different communities and operate across political and settlement boundaries.",
+      "target": "`canon/places/highwall-region-ecology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C002",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Elevation, water, floods, snow, sandstone geology, and seasonal water availability shape communities and productivity.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C003",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Human activity has altered distributions by expanding useful organisms and reducing others near settlements.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C004",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Wildfire is a recurring disturbance that renews appropriate ecosystems.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C005",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Floods reshape canyon habitat and move sediment, nutrients, seeds, and organic material.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C006",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "The semi-arid plateau has denser vegetation at reliable water and groundwater-supported woodland where water surfaces.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C007",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Cliffs, intermittent water, shade, stone, and flood elevation structure the canyon ecosystem.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C008",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "The basin ranges from salt flats to temporary wetlands, some maintained or expanded by human water management.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C009",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Coastal permanent water supports greater productivity and appropriate portions contain extensive forests.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C010",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Managed landscapes, agriculture, grazing, water management, and husbandry are ecological processes dependent on seasonal cycles.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C011",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Domesticated pollinators are part of agriculture where appropriate.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C012",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Pollinators, trophic roles, cliff niches, and distinct intermittent and permanent aquatic communities maintain ecological relationships.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C013",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Settlements benefit from and continually modify ecosystems; wildlife varies in tolerance of settlement.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C014",
+      "classification": "boundary metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Beliefs, institutional positions, character and reader knowledge, and spoilers are not established.",
+      "target": "Story and institutional pages deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C015",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Species inventories, niche occupants, community transitions, and outside-region distributions remain unknown.",
+      "target": "[Regional ecology details](../open-questions/regional-ecology-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C016",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Detailed inventories, taxonomy, food webs, crop and breed inventories, individual uses, and outside-region biodiversity are excluded.",
+      "target": "Excluded domains deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C017",
+      "classification": "dependency metadata",
+      "disposition": "link-only",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "coastal-plain"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
+      "summary": "Existing geology, geomorphology, climate, and hydrology seeds are source dependencies.",
+      "target": "Reciprocal related links"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C001",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "The listed organisms form a diverse, human-influenced working inventory subject to refinement or replacement.",
+      "target": "`canon/places/highwall-region-flora-and-fauna.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C002",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Settlement expands useful organisms and reduces nuisance or dangerous wildlife, including within Highwall.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C003",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Highwall and neighboring communities keep domesticated bees for agriculture and honey.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C004",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Plateau occupants include mesquite-like trees, grasses, shrubs, small grazers, wolves, raptors, insects, and dry-adapted reptiles.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C005",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Canyon occupants include murmurating swifts, corvids, raptors, bats, arthropods, reptiles, dogs, managed scavengers, and remote mountain lions.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C006",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Basin occupants include managed-wetland vegetation, waterfowl, amphibians, pollinators, grazers, and predatory birds.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C007",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Coastal occupants include massive redwood-analogue Stormlands conifers, river fish, large grazers, forest predators, and wetland birds.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C008",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Permanent rivers support fish, aquatic invertebrates, waterfowl, and riparian vegetation.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C009",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Cultivation and water management expanded useful plants; temporary-dam marshes are longstanding; Highwall wildlife shifted toward human tolerance.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C010",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Human-influenced examples are mesquite-like trees, reeds, honeybees, chickens, and settlement rabbits; scavengers and large predators are discouraged.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C011",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Mesquite-like trees provide food, shade, and habitat; bees support crops and native flowers.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C012",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Swifts and bats control insects; raptors regulate small animals; wolves and mountain lions occupy major predator niches.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C013",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Freshwater fish primarily inhabit permanent rivers, and seasonal wetlands provide breeding habitat.",
+      "target": "Working flora and fauna page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C014",
+      "classification": "canon",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Wildfire renews fire-adapted ecosystems.",
+      "target": "Regional ecology page"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C015",
+      "classification": "boundary metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Beliefs, institutional positions, character and reader knowledge, and spoilers are not established.",
+      "target": "Story and institutional pages deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C016",
+      "classification": "proposal",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Organisms may become fictional analogues and common names may change with language development.",
+      "target": "[Regional organism design alternatives](../proposals/regional-organism-design.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C017",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Precise inventories, endemic species, aquatic and insect diversity, and additional plant communities are unresolved.",
+      "target": "[Regional flora and fauna details](../open-questions/regional-flora-and-fauna-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-flora-and-fauna.md",
+        "canon/places/highwall-region-ecology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "claim_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C018",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "culture",
+        "economy"
+      ],
+      "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "plateau",
+        "highwall-canyon",
+        "salt-basin",
+        "stormlands",
+        "permanent-rivers"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
+      "summary": "Intelligent non-humans, mythic creatures, production detail, medicine, anatomy, taxonomy, and organisms outside the region are excluded.",
+      "target": "Excluded domains deliberately unchanged"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

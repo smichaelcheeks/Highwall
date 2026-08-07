@@ -11,6 +11,8 @@ related:
   - "delta.md"
   - "../economy/regional-trade-system.md"
   - "highwall-region-climate.md"
+  - "highwall-region-ecology.md"
+  - "highwall-region-flora-and-fauna.md"
 provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
   - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
