@@ -92,6 +92,7 @@ boundaries.
 ### Proposals under consideration
 
 None.
+
 ### Corrections and supersessions
 
 None.
