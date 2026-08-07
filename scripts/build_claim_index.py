@@ -27,6 +27,7 @@ def build_index() -> dict[str, object]:
                     **claim,
                     "case_id": metadata.get("case_id", ""),
                     "submission_id": metadata.get("submission_id", ""),
+                    "review_authority": metadata.get("authority", ""),
                     "review": path.relative_to(ROOT).as_posix(),
                     "submission": metadata.get("submission", ""),
                     "subjects": lists.get("subjects", []),
@@ -36,7 +37,7 @@ def build_index() -> dict[str, object]:
             )
     claims.sort(key=lambda item: str(item["claim_id"]))
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "authority": "navigation-only",
         "generated_from": "development/intake-reviews/*.md",
         "claims": claims,

@@ -42,3 +42,4 @@ Stormlands.
 ## Sources and decisions
 
 - [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
+- [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
