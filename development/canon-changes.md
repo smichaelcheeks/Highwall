@@ -12,6 +12,21 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-06 — Establish regional climate
+
+- **Change:** Establish the semi-arid regional climate, coastal rain shadow,
+  winter atmospheric rivers, late-summer storm season, mountain snowpack,
+  drought variability, climatic zones, and Highwall Canyon microclimates.
+- **Authority:** [Regional Climate seed](../intake/submissions/2026-08-06-regional-climate-s01.md)
+- **Review:** [Regional Climate seed review](intake-reviews/2026-08-06-regional-climate-s01-review.md)
+- **Affected pages:** [`canon/places/highwall-region-climate.md`](../canon/places/highwall-region-climate.md),
+  [`canon/places/highwall-region-hydrology.md`](../canon/places/highwall-region-hydrology.md),
+  [`canon/places/highwall.md`](../canon/places/highwall.md), and
+  [`canon/places/stormlands.md`](../canon/places/stormlands.md)
+- **Notes:** Precise meteorology, formal classification, temperature values,
+  hidden-basin climate, detailed canyon wind cycles, and marine-fog frequency
+  remain unresolved.
+
 ### 2026-08-06 — Establish regional hydrology
 
 - **Change:** Establish the semi-arid seasonal water cycle, Dryrun's

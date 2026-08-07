@@ -3032,6 +3032,806 @@
     },
     {
       "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C001",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The region is predominantly semi-arid; the coast is wetter; the escarpment creates a plateau rain shadow; elevation and distance from the sea create variation.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C002",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Most precipitation comes from winter atmospheric rivers from the western sea and late-summer or early-autumn tropical moisture from the south.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C003",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Winter snow, eastern-mountain snowpack, and spring snowmelt are important freshwater sources.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C004",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The eastern plateau has a more reliable late-summer storm season than the western plateau.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C005",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Late-summer storms are localized, so adjacent watersheds may receive very different rainfall.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C006",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Multiple flash floods occur in a typical year and usually originate upstream rather than over Highwall.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C007",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Annual precipitation varies considerably and multi-year droughts occur.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C008",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Highwall Canyon's north-south orientation produces pronounced light cycles; its floor is more sheltered than the wind-exposed plateau and rims.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C009",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The Stormlands receive the most winter precipitation; winter rain sustains forests that support timber and shipbuilding.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/stormlands.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C010",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The western and eastern plateaus are semi-arid, with the west drier from the rain shadow and the east having the more dependable storm season.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C011",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The eastern mountains receive the most snow, supply most spring snowmelt, and promote late-summer thunderstorms.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C012",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "The Salt Basin is usually dry; storm runoff creates temporary freshwater wetlands around its margins.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C013",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Winter brings western storms, Stormlands rain, rain-shadow drying, eastern-mountain snow, some plateau precipitation, and uncommon canyon-floor snow.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C014",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Spring snowmelt improves river reliability, increases groundwater recharge, and makes surface water most reliable.",
+      "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C015",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Early summer brings rising temperatures, plateau drying, generally favorable travel, and increasing reliance on springs, storage, and streamflow.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C016",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Interior heating begins storm season; thunderstorms affect the eastern plateau, mountain front, and upper watersheds, producing floods even without rain over Highwall.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C017",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Late autumn brings declining storms, cooling temperatures, and transition toward winter water conditions.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C018",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Storm season is a defining late-summer and early-autumn cycle that affects travel, trade, labor, pastoral movement, Blueleaf and reed work, and flood preparation.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C019",
+      "classification": "canon",
+      "disposition": "create",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Wind exposure matters for travel, construction, and life; elevation, slope, and exposure vary snow, moisture, and growing conditions.",
+      "target": "`canon/places/highwall-region-climate.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C020",
+      "classification": "dependency metadata",
+      "disposition": "link-only",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Climate drives established hydrology through snowmelt, storm floods, drought, rain shadow, and mountain effects downstream.",
+      "target": "Reciprocal climate-hydrology links"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C021",
+      "classification": "boundary metadata",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "No people, beliefs, institutional positions, character knowledge, reader knowledge, or spoilers are established.",
+      "target": "Character, culture, institution, and story pages deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C022",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Hidden-basin climate, temperatures, winds, atmospheric-river details, storm-belt extent, canyon wind cycles, and coastal fog remain unresolved.",
+      "target": "[Regional climate details](../open-questions/regional-climate-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C023",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Latitude, Köppen class, averages, frost dates, growing seasons, and severe-winter-storm frequency are unknown.",
+      "target": "[Regional climate details](../open-questions/regional-climate-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C024",
+      "classification": "source context",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Western-US, Pacific atmospheric-river, and North American Monsoon comparisons are inspirations.",
+      "target": "Immutable submission only"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall-region-climate.md",
+        "canon/places/highwall-region-hydrology.md",
+        "canon/places/highwall.md",
+        "canon/places/stormlands.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "claim_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C025",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "subjects": [
+        "highwall-region",
+        "highwall",
+        "stormlands",
+        "western-plateau",
+        "eastern-plateau",
+        "eastern-mountains",
+        "salt-basin"
+      ],
+      "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
+      "summary": "Ecology, agriculture, hydrology beyond climate drivers, engineered water, detailed meteorology and canyon winds, and historical climate events are excluded.",
+      "target": "Excluded domains deliberately unchanged"
+    },
+    {
+      "authoritative_targets": [
         "canon/places/highwall-region-hydrology.md",
         "canon/places/highwall-region-geology.md",
         "canon/places/highwall.md"
