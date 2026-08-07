@@ -8,6 +8,7 @@ related:
   - "../intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
   - "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md"
   - "../intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"
+  - "../../canon/government/regional-imperial-structure.md"
 ---
 
 # What is the complete regional sovereignty statement?
@@ -37,7 +38,7 @@ None proposed.
 
 ## Affected pages
 
-- Future regional government documentation
+- [Regional Imperial Structure](../../canon/government/regional-imperial-structure.md)
 
 ## Resolution
 

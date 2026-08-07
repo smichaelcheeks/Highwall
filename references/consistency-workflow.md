@@ -73,7 +73,10 @@ python scripts/build_claim_index.py --check
 ```
 
 The index is navigation-only. It cannot establish canon, replace reviews, or
-resolve contradictions. CI rejects a stale index.
+resolve contradictions. Each row surfaces the source review's declared
+`review_authority` so working and established claims can be distinguished
+during discovery; the linked review remains authoritative. Targeted case
+context displays the same field. CI rejects a stale index.
 
 ## Periodic audits
 

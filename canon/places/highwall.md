@@ -5,7 +5,14 @@ status: active
 canon_level: established
 aliases: []
 tags: []
-related: []
+related:
+  - "highwall-region-geology.md"
+  - "highwall-region-climate.md"
+  - "highwall-region-hydrology.md"
+  - "highwall-region-ecology.md"
+  - "highwall-region-flora-and-fauna.md"
+  - "../economy/regional-trade-system.md"
+  - "../government/regional-imperial-structure.md"
 provenance:
   - "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
@@ -164,6 +171,16 @@ Regional water behavior is documented in the [Hydrology of the Highwall
 Region](highwall-region-hydrology.md).
 Regional weather and seasonal patterns are documented in the [Climate of the
 Highwall Region](highwall-region-climate.md).
+
+## Related regional authorities
+
+- [Regional geology](highwall-region-geology.md)
+- [Regional climate](highwall-region-climate.md)
+- [Regional hydrology](highwall-region-hydrology.md)
+- [Established regional ecology](highwall-region-ecology.md)
+- [Working flora and fauna inventory](highwall-region-flora-and-fauna.md)
+- [Regional trade system](../economy/regional-trade-system.md)
+- [Regional imperial structure](../government/regional-imperial-structure.md)
 
 ## Sources and decisions
 

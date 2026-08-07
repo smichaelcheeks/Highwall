@@ -91,7 +91,8 @@ def main() -> int:
     for claim in matched_claims[: args.max_results]:
         lines.append(
             f"- `{claim['claim_id']}` — {claim['summary']} "
-            f"(`{claim['disposition']}`; `{claim['review']}`)"
+            f"(authority: `{claim['review_authority']}`; "
+            f"disposition: `{claim['disposition']}`; `{claim['review']}`)"
         )
     if not matched_claims:
         lines.append("- None found.")

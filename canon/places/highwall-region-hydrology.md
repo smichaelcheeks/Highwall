@@ -114,3 +114,4 @@ Its water-retention mechanism is not established.
 - [Regional Hydrology seed review](../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md)
 - [Inland Basin Lake Chronology clarification review](../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md)
 - [Old Wall Flood Cause confirmation review](../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md)
+- [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
