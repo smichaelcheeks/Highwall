@@ -158,4 +158,11 @@ and log the significant canon change.
 
 ## Amendments
 
-None.
+### 2026-08-07 — Forge downriver position
+
+[`CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C001` through `C003`](2026-08-04-regional-geography-economy-a03-review.md)
+supply the broad location and relative-order authority absent from the original
+Forge claim inventory. Forge is a downriver coastal-plain place, downstream of
+the Stormlands and upstream of Ledger and Delta in literal and supply-chain
+senses. Original claims C013-C015 remain unchanged and continue to establish
+Forge's production role.
