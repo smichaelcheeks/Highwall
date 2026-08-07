@@ -12,6 +12,25 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-07 — Clarify Forge's downriver position and Highwall's interface scope
+
+- **Change:** Establish `downriver` as Highwall shorthand for the coastal
+  plain; establish Forge as downstream of the Stormlands and upstream of
+  Ledger and Delta in literal and supply-chain senses; and confirm Highwall as
+  the principal interface for people, goods, and information between the
+  downriver princely city-states and upriver highland clans while preserving
+  nonexclusive local interaction and dispute handling within both sides.
+- **Authority:** [Forge Downriver Position Clarification](../intake/submissions/2026-08-04-regional-geography-economy-a03.md)
+  and [Highwall Interface Scope Clarification](../intake/submissions/2026-08-04-highwall-overview-a02.md)
+- **Review:** [Forge Downriver Position Clarification Review](intake-reviews/2026-08-04-regional-geography-economy-a03-review.md)
+  and [Highwall Interface Scope Clarification Review](intake-reviews/2026-08-04-highwall-overview-a02-review.md)
+- **Affected pages:** [`canon/places/forge.md`](../canon/places/forge.md),
+  [`canon/places/highwall.md`](../canon/places/highwall.md), and
+  [`canon/economy/regional-trade-system.md`](../canon/economy/regional-trade-system.md).
+- **Notes:** Forge's exact place type and position, communication systems,
+  dispute categories, institutions, and procedures remain unestablished. The
+  claim-to-canon audit remains an unchanged historical baseline.
+
 ### 2026-08-07 — Clarify climate authority and Salt Basin identity
 
 - **Change:** Confirm that Blueleaf harvesting and reed cultivation are

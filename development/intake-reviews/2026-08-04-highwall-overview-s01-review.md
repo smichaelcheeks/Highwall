@@ -153,3 +153,12 @@ behavior remains independently established by the later regional hydrology
 case rather than by retaining the superseded compound claim. The accepted
 claim conflict and its resolution are preserved in the
 [Highwall canyon-origin contradiction report](../contradictions/highwall-canyon-origin.md).
+
+### 2026-08-07 — Interface scope completion
+
+[`CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C001` through `C003`](2026-08-04-highwall-overview-a02-review.md)
+confirm the full scope of S01-C005 and bound its meaning. Highwall is the
+principal interface for people, goods, and information between downriver
+coastal-plain princely city-states and upriver highland clans. It remains
+important but nonexclusive for intra-coastal and intra-highland interactions,
+and some disputes are handled locally.

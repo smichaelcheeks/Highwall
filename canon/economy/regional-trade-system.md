@@ -18,6 +18,7 @@ related:
 provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"
+  - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md"
 ---
 
 # Regional Trade System
@@ -41,6 +42,9 @@ distinct, interdependent economic roles:
   regions, Highwall, and many upriver clans.
 - Highwall specializes in transportation, engineering, and facilitating trade
   between the upriver and downriver regions.
+
+Within this supply chain, Forge is downstream of the Stormlands and upstream
+of Ledger and Delta.
 
 ## Highwall's role
 
@@ -72,3 +76,4 @@ behind this system is documented in the
 
 - [Regional Geography and Economy seed review](../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md)
 - [Regional Geography and Economy correction review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md)
+- [Forge Downriver Position clarification review](../../development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md)

@@ -748,6 +748,84 @@
       "target": "Original review amendment; resolved canyon-origin contradiction; `canon/places/highwall.md` provenance; canon change log"
     },
     {
+      "authoritative_targets": [
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "claim_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C001",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "government"
+      ],
+      "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "highwall",
+        "upriver-highlands",
+        "downstream-polities"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
+      "summary": "Highwall is the principal interface between downriver coastal-plain princely city-states and upriver highland clans.",
+      "target": "`canon/places/highwall.md`; original S01 review amendment"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "claim_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C002",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "government"
+      ],
+      "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "highwall",
+        "upriver-highlands",
+        "downstream-polities"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
+      "summary": "People, goods, and information all interface at Highwall.",
+      "target": "`canon/places/highwall.md`; original S01 review amendment"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "claim_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C003",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "government"
+      ],
+      "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "highwall",
+        "upriver-highlands",
+        "downstream-polities"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
+      "summary": "Highwall is important but nonexclusive for intra-coastal and intra-highland interactions; some disputes are handled locally.",
+      "target": "`canon/places/highwall.md`"
+    },
+    {
       "authoritative_targets": [],
       "authority_basis": "explicit",
       "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
@@ -1722,6 +1800,90 @@
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02",
       "summary": "Alternative routes may exist, but their use is negligible.",
       "target": "`canon/places/highwall.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/forge.md",
+        "canon/economy/regional-trade-system.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "claim_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C001",
+      "classification": "terminology",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "forge",
+        "stormlands",
+        "ledger",
+        "delta"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
+      "summary": "In Highwall shorthand, `downriver` means on the coastal plain.",
+      "target": "`canon/places/forge.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/forge.md",
+        "canon/economy/regional-trade-system.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "claim_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C002",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "forge",
+        "stormlands",
+        "ledger",
+        "delta"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
+      "summary": "Forge is downriver and therefore on the coastal plain.",
+      "target": "`canon/places/forge.md`; original S01 review amendment"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/forge.md",
+        "canon/economy/regional-trade-system.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "claim_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C003",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "places",
+        "economy",
+        "terminology"
+      ],
+      "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+      "review_authority": "establish-canon",
+      "subjects": [
+        "forge",
+        "stormlands",
+        "ledger",
+        "delta"
+      ],
+      "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
+      "summary": "Forge is downstream of the Stormlands and upstream of Ledger and Delta in literal and supply-chain senses.",
+      "target": "`canon/places/forge.md`; `canon/economy/regional-trade-system.md`"
     },
     {
       "authoritative_targets": [],
