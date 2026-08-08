@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote
 
+from consistency_common import CLAIM_COLUMN_COUNT, parse_inline_list, split_markdown_row
+
 
 ROOT = Path(__file__).resolve().parents[1]
 FRONT_MATTER_REQUIRED = {
@@ -64,20 +66,26 @@ CONSISTENCY_DOMAINS = {
 }
 SUBJECT_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 DEVELOPMENT_DISPOSITIONS = {"defer", "conflict", "retire"}
+DEVELOPMENT_DISPOSITION_ROOTS = {
+    "defer": {"open-questions", "proposals"},
+    "conflict": {"contradictions"},
+    "retire": {"retired"},
+}
 CASE_ID = re.compile(r"^CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+$")
 SUBMISSION_ID = re.compile(r"^(CASE-\d{4}-\d{2}-\d{2}-[A-Z0-9-]+)-(S|A)\d{2}$")
 MARKDOWN_LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
 class Validator:
-    def __init__(self, base_ref: str | None) -> None:
+    def __init__(self, base_ref: str | None, root: Path = ROOT) -> None:
         self.base_ref = base_ref
+        self.root = root.resolve()
         self.errors: list[str] = []
-        self.markdown_files = sorted(ROOT.rglob("*.md"))
+        self.markdown_files = sorted(self.root.rglob("*.md"))
         self.anchor_cache: dict[Path, set[str]] = {}
 
     def error(self, path: Path | str, message: str) -> None:
-        display = path.relative_to(ROOT) if isinstance(path, Path) else path
+        display = path.relative_to(self.root) if isinstance(path, Path) else path
         self.errors.append(f"{display}: {message}")
 
     @staticmethod
@@ -117,6 +125,11 @@ class Validator:
                 current = field.group(1)
                 values[current] = []
             else:
+                inline = re.match(r"^([a-z_]+):\s*(\[.*\])\s*$", line)
+                if inline:
+                    parsed = parse_inline_list(inline.group(2))
+                    if parsed is not None:
+                        values[inline.group(1)] = parsed
                 current = None
         return values
 
@@ -157,9 +170,10 @@ class Validator:
                 if "TODO" in target or re.match(r"^(https?://|mailto:)", target):
                     continue
                 file_part, separator, anchor = target.partition("#")
+                file_part = file_part.replace("\\", "/")
                 target_path = path if not file_part else (path.parent / unquote(file_part)).resolve()
                 try:
-                    target_path.relative_to(ROOT)
+                    target_path.relative_to(self.root)
                 except ValueError:
                     self.error(path, f"link escapes repository: {raw_target}")
                     continue
@@ -171,7 +185,8 @@ class Validator:
                         self.error(path, f"missing heading anchor: {raw_target}")
 
     def validate_canon_front_matter(self) -> None:
-        for path in sorted((ROOT / "canon").rglob("*.md")):
+        list_fields = {"aliases", "tags", "related", "provenance"}
+        for path in sorted((self.root / "canon").rglob("*.md")):
             if path.name == "README.md":
                 continue
             metadata = self.parse_front_matter(path)
@@ -185,10 +200,14 @@ class Validator:
                 self.error(path, f"invalid canon status: {metadata.get('status')!r}")
             if metadata.get("canon_level") not in CANON_LEVELS:
                 self.error(path, f"invalid canon level: {metadata.get('canon_level')!r}")
+            parsed_lists = self.parse_front_matter_lists(path)
+            for field in sorted(list_fields & metadata.keys()):
+                if field not in parsed_lists:
+                    self.error(path, f"front matter field must be a list: {field}")
 
     def validate_intake(self) -> None:
         submissions: dict[str, Path] = {}
-        submission_dir = ROOT / "intake" / "submissions"
+        submission_dir = self.root / "intake" / "submissions"
         for path in sorted(submission_dir.glob("*.md")):
             if path.name == "README.md":
                 continue
@@ -204,13 +223,14 @@ class Validator:
             if not match or match.group(1) != case_id:
                 self.error(path, f"submission_id does not belong to case: {submission_id!r}")
             if submission_id in submissions:
-                self.error(path, f"duplicate submission_id also used by {submissions[submission_id].relative_to(ROOT)}")
+                self.error(path, f"duplicate submission_id also used by {submissions[submission_id].relative_to(self.root)}")
             submissions[submission_id] = path
             if self.is_new_submission(path):
                 self.validate_transmission_completeness(path, metadata)
 
         reviewed: dict[str, Path] = {}
-        review_dir = ROOT / "development" / "intake-reviews"
+        review_dir = self.root / "development" / "intake-reviews"
+        claim_owners: dict[str, Path] = {}
         for path in sorted(review_dir.glob("*.md")):
             if path.name == "README.md":
                 continue
@@ -230,7 +250,15 @@ class Validator:
                 self.error(path, f"invalid review status: {metadata.get('status')!r}")
             if self.is_new_path(path):
                 self.validate_impact_manifest(path)
-            self.validate_review_claims(path, submission_id)
+            for claim_id in self.validate_review_claims(path, submission_id):
+                if claim_id in claim_owners:
+                    self.error(
+                        path,
+                        "duplicate claim ID also used by "
+                        f"{claim_owners[claim_id].relative_to(self.root)}: {claim_id}",
+                    )
+                else:
+                    claim_owners[claim_id] = path
 
         for submission_id, path in submissions.items():
             if submission_id not in reviewed:
@@ -243,10 +271,10 @@ class Validator:
                 {"transmission_status", "completion_basis"} & metadata.keys()
                 or IMPACT_FIELDS & self.parse_front_matter_lists(path).keys()
             )
-        relative_path = path.relative_to(ROOT).as_posix()
+        relative_path = path.relative_to(self.root).as_posix()
         result = subprocess.run(
             ["git", "cat-file", "-e", f"{self.base_ref}:{relative_path}"],
-            cwd=ROOT,
+            cwd=self.root,
             check=False,
             capture_output=True,
             text=True,
@@ -272,9 +300,9 @@ class Validator:
             if domain not in CONSISTENCY_DOMAINS:
                 self.error(path, f"invalid consistency domain: {domain!r}")
         for target in lists["authoritative_targets"]:
-            target_path = (ROOT / target).resolve()
+            target_path = (self.root / target.replace("\\", "/")).resolve()
             try:
-                target_path.relative_to(ROOT)
+                target_path.relative_to(self.root)
             except ValueError:
                 self.error(path, f"authoritative target escapes repository: {target}")
                 continue
@@ -291,12 +319,18 @@ class Validator:
         if basis == "end-marker" and END_OF_SEED_MARKER not in path.read_text(encoding="utf-8"):
             self.error(path, f"completion_basis 'end-marker' requires {END_OF_SEED_MARKER}")
 
-    def validate_review_claims(self, path: Path, submission_id: str) -> None:
+    def validate_review_claims(self, path: Path, submission_id: str) -> set[str]:
         seen: set[str] = set()
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             if not re.match(r"^\|\s*CASE-.*-C\d{3}\s*\|", line):
                 continue
-            cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+            cells = split_markdown_row(line)
+            if len(cells) != CLAIM_COLUMN_COUNT:
+                self.error(
+                    path,
+                    f"line {line_number}: expected {CLAIM_COLUMN_COUNT} claim columns, found {len(cells)}",
+                )
+                continue
             claim_id = cells[0]
             if not claim_id.startswith(f"{submission_id}-C"):
                 self.error(path, f"line {line_number}: claim ID does not belong to review submission")
@@ -312,12 +346,28 @@ class Validator:
                 valid_target = False
                 for target in targets:
                     target_path = (path.parent / target.partition("#")[0]).resolve()
-                    if target_path.exists() and (ROOT / "development") in target_path.parents:
+                    development_root = self.root / "development"
+                    if not target_path.exists() or development_root not in target_path.parents:
+                        continue
+                    relative_parts = target_path.relative_to(development_root).parts
+                    if (
+                        relative_parts
+                        and relative_parts[0]
+                        in DEVELOPMENT_DISPOSITION_ROOTS[dispositions[0]]
+                    ):
                         valid_target = True
                 if not valid_target:
-                    self.error(path, f"line {line_number}: {dispositions[0]} must link to a development record")
+                    allowed = ", ".join(
+                        sorted(DEVELOPMENT_DISPOSITION_ROOTS[dispositions[0]])
+                    )
+                    self.error(
+                        path,
+                        f"line {line_number}: {dispositions[0]} must link to a "
+                        f"development record under {allowed}",
+                    )
         if not seen:
             self.error(path, "review contains no claim decision rows")
+        return seen
 
     def validate_submission_immutability(self) -> None:
         if not self.base_ref:
@@ -329,15 +379,18 @@ class Validator:
                 "--name-status",
                 "--diff-filter=MDR",
                 self.base_ref,
-                "HEAD",
                 "--",
                 "intake/submissions",
             ],
-            cwd=ROOT,
-            check=True,
+            cwd=self.root,
+            check=False,
             capture_output=True,
             text=True,
         )
+        if result.returncode != 0:
+            detail = result.stderr.strip() or "Git could not compare the requested ref"
+            self.error("intake/submissions", f"invalid comparison ref {self.base_ref!r}: {detail}")
+            return
         for line in result.stdout.splitlines():
             paths = line.split("\t")[1:]
             protected = [item for item in paths if Path(item).name != "README.md"]
@@ -364,8 +417,9 @@ class Validator:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base-ref", help="Base commit/ref used to enforce merged submission immutability")
+    parser.add_argument("--root", type=Path, default=ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args()
-    return Validator(args.base_ref).run()
+    return Validator(args.base_ref, args.root).run()
 
 
 if __name__ == "__main__":

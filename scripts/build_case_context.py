@@ -10,7 +10,6 @@ from pathlib import Path
 from consistency_common import ROOT
 
 
-INDEX = ROOT / "development" / "indexes" / "claim-index.json"
 SEARCH_ROOTS = ("canon", "story", "design", "development")
 
 
@@ -18,24 +17,24 @@ def normalize(values: list[str]) -> list[str]:
     return sorted({value.strip().lower() for value in values if value.strip()})
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--subject", action="append", default=[])
-    parser.add_argument("--domain", action="append", default=[])
-    parser.add_argument("--term", action="append", default=[])
-    parser.add_argument("--target", action="append", default=[])
-    parser.add_argument("--max-results", type=int, default=50)
-    parser.add_argument("--output", type=Path)
-    args = parser.parse_args()
-
-    subjects = normalize(args.subject)
-    domains = normalize(args.domain)
-    terms = normalize(args.term + [subject.replace("-", " ") for subject in subjects])
-    targets = normalize(args.target)
+def build_context(
+    root: Path,
+    index: dict[str, object],
+    *,
+    subjects: list[str] | None = None,
+    domains: list[str] | None = None,
+    terms: list[str] | None = None,
+    targets: list[str] | None = None,
+    max_results: int = 50,
+) -> str:
+    root = root.resolve()
+    subjects = normalize(subjects or [])
+    domains = normalize(domains or [])
+    terms = normalize((terms or []) + [subject.replace("-", " ") for subject in subjects])
+    targets = normalize(targets or [])
     if not any((subjects, domains, terms, targets)):
-        parser.error("provide at least one --subject, --domain, --term, or --target")
+        raise ValueError("provide at least one subject, domain, term, or target")
 
-    index = json.loads(INDEX.read_text(encoding="utf-8"))
     matched_claims: list[dict[str, object]] = []
     for claim in index["claims"]:
         haystack = " ".join(
@@ -58,8 +57,8 @@ def main() -> int:
     file_scores: list[tuple[int, str]] = []
     needles = terms + subjects + domains + [Path(target).name.lower() for target in targets]
     for root_name in SEARCH_ROOTS:
-        for path in sorted((ROOT / root_name).rglob("*.md")):
-            relative = path.relative_to(ROOT).as_posix()
+        for path in sorted((root / root_name).rglob("*.md")):
+            relative = path.relative_to(root).as_posix()
             text = path.read_text(encoding="utf-8").lower()
             score = sum(text.count(needle) for needle in needles if needle)
             if relative.lower() in targets:
@@ -83,12 +82,12 @@ def main() -> int:
         "## Relevant files and backlinks",
         "",
     ]
-    for score, relative in file_scores[: args.max_results]:
+    for score, relative in file_scores[:max_results]:
         lines.append(f"- `{relative}` (score {score})")
     if not file_scores:
         lines.append("- None found.")
     lines.extend(["", "## Indexed claims", ""])
-    for claim in matched_claims[: args.max_results]:
+    for claim in matched_claims[:max_results]:
         lifecycle: list[str] = []
         if claim.get("supersedes"):
             lifecycle.append("supersedes: " + ", ".join(claim["supersedes"]))
@@ -111,7 +110,34 @@ def main() -> int:
         )
     if not matched_claims:
         lines.append("- None found.")
-    report = "\n".join(lines) + "\n"
+    return "\n".join(lines) + "\n"
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--subject", action="append", default=[])
+    parser.add_argument("--domain", action="append", default=[])
+    parser.add_argument("--term", action="append", default=[])
+    parser.add_argument("--target", action="append", default=[])
+    parser.add_argument("--max-results", type=int, default=50)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--root", type=Path, default=ROOT, help=argparse.SUPPRESS)
+    args = parser.parse_args()
+    root = args.root.resolve()
+    index_path = root / "development" / "indexes" / "claim-index.json"
+    index = json.loads(index_path.read_text(encoding="utf-8"))
+    try:
+        report = build_context(
+            root,
+            index,
+            subjects=args.subject,
+            domains=args.domain,
+            terms=args.term,
+            targets=args.target,
+            max_results=args.max_results,
+        )
+    except ValueError as error:
+        parser.error(str(error))
     if args.output:
         args.output.write_text(report, encoding="utf-8")
     else:
