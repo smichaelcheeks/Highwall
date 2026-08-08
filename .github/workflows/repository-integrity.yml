@@ -29,6 +29,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Run repository integrity tests
+        run: python -m unittest discover -s tests -v
+
       - name: Validate repository
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
