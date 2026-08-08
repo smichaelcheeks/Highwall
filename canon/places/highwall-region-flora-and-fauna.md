@@ -113,8 +113,8 @@ within inhabited areas.
 
 ## Disturbance
 
-Wildfire periodically renews fire-adapted ecosystems, consistent with the
-established regional disturbance pattern.
+Regional disturbance processes are documented by the established
+[regional ecology authority](highwall-region-ecology.md).
 
 ## Open issues and proposals
 
