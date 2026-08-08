@@ -9,12 +9,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01",
       "summary": "Require immutable Actions and reviewed updates.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Workflow, Dependabot, GitHub Actions setting, and Git workflow"
     },
     {
@@ -25,12 +28,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01",
       "summary": "Use PR title and body for squash commits.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "GitHub merge settings and Git workflow"
     },
     {
@@ -41,12 +47,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01",
       "summary": "Keep Issues and disable Projects, Wiki, and Discussions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "GitHub repository settings and Git workflow"
     },
     {
@@ -57,12 +66,15 @@
       "classification": "Administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01",
       "summary": "Keep the repository private.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Repository visibility and branch-protection question"
     },
     {
@@ -73,12 +85,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a02.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02",
       "summary": "Add mandatory fresh-session Codex guidance.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`AGENTS.md`"
     },
     {
@@ -89,12 +104,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a02.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02",
       "summary": "Add a canon-intake quick start.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/canon-intake-quickstart.md`"
     },
     {
@@ -105,12 +123,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-a02.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02",
       "summary": "Enable local Python validation in VS Code.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Windows user environment and VS Code extensions"
     },
     {
@@ -121,12 +142,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-s01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01",
       "summary": "Automatically delete merged remote branches and clean local branches after verification.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "GitHub setting, `references/git-workflow.md`, and branch state"
     },
     {
@@ -137,12 +161,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-s01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01",
       "summary": "Use squash by default, retain regular merges, and disable rebase merges.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "GitHub settings and `references/git-workflow.md`"
     },
     {
@@ -153,12 +180,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-s01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01",
       "summary": "Resolve the tracked merge-policy question.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`development/open-questions/github-merge-policy.md`"
     },
     {
@@ -169,12 +199,20 @@
       "classification": "Administrative",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/main-branch-protection.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-github-merge-policy-s01.md",
       "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01",
       "summary": "Enable required reviews and status checks now.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[`development/open-questions/main-branch-protection.md`](../open-questions/main-branch-protection.md)"
     },
     {
@@ -185,12 +223,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01",
       "summary": "Preserve submissions independently.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`intake/`"
     },
     {
@@ -201,12 +242,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01",
       "summary": "Review every substantive claim separately.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`development/intake-reviews/` and review template"
     },
     {
@@ -217,12 +261,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01",
       "summary": "Use controlled dispositions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/intake-workflow.md`"
     },
     {
@@ -233,12 +280,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01",
       "summary": "Connect provenance and change history.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Front matter, canon templates, and change log"
     },
     {
@@ -249,12 +299,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Group evolving work into cases.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Intake workflow and templates"
     },
     {
@@ -265,12 +318,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Declare conversational session modes.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Intake workflow and templates"
     },
     {
@@ -281,12 +337,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Preserve confirmed conversation in addenda.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Conversation-addendum template"
     },
     {
@@ -297,12 +356,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Use short-lived branches and PRs.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/git-workflow.md`, this case's branch, and draft PR"
     },
     {
@@ -313,12 +375,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Treat setup as the precedent case.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "S01, A01, A02, and their reviews"
     },
     {
@@ -329,12 +394,20 @@
       "classification": "Administrative",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/github-merge-policy.md",
+          "status": "resolved"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02",
       "summary": "Configure branch protection now.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[`development/open-questions/github-merge-policy.md`](../open-questions/github-merge-policy.md)"
     },
     {
@@ -345,12 +418,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a03.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03",
       "summary": "Add deterministic integrity validation.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`.github/workflows/repository-integrity.yml`; `scripts/validate_repository.py`"
     },
     {
@@ -361,12 +437,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a03.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03",
       "summary": "Add restrained Markdown linting.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`.markdownlint-cli2.yaml`; workflow Markdown job"
     },
     {
@@ -377,12 +456,15 @@
       "classification": "Administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-a03.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03",
       "summary": "Keep spelling and external links non-blocking.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "No blocking jobs added"
     },
     {
@@ -393,12 +475,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Create a scalable documentation taxonomy.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/`, `story/`, `development/`, `references/`, `templates/`"
     },
     {
@@ -409,12 +494,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Separate canon, story, development, belief, and historical truth.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Directory indexes and repository standards"
     },
     {
@@ -425,12 +513,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Never invent lore or silently resolve contradictions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`CONTRIBUTING.md` and contradiction workflow"
     },
     {
@@ -441,12 +532,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Support YAML metadata and reusable templates.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/front-matter.md` and `templates/`"
     },
     {
@@ -457,12 +551,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Replace the placeholder README and add standards.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`README.md`; create supporting guidance"
     },
     {
@@ -473,12 +570,15 @@
       "classification": "Canon",
       "disposition": "out-of-scope",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s01.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01",
       "summary": "Add Highwall lore during initialization.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "None"
     },
     {
@@ -489,12 +589,15 @@
       "classification": "Administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02",
       "summary": "Establish the requested repository structure and safeguards without lore.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Existing foundation files"
     },
     {
@@ -505,12 +608,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-03-repository-foundation-s02.md",
       "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02",
       "summary": "Preserve the original seed accurately.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "S02 and this review"
     },
     {
@@ -521,12 +627,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01",
       "summary": "Establish a design section and supplied meta-level principles.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`design/README.md`; `design/principles.md`; boundary documentation"
     },
     {
@@ -537,12 +646,15 @@
       "classification": "Canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01",
       "summary": "Establish the canyon, floods, and centuries of adaptation.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -553,12 +665,15 @@
       "classification": "Canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01",
       "summary": "Establish general environmental influence across Highwall's systems.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -569,12 +684,15 @@
       "classification": "Canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01",
       "summary": "Establish Highwall's general institutional character.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -585,12 +703,15 @@
       "classification": "Canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-a01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01",
       "summary": "Establish Highwall's stated civic values.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -601,12 +722,15 @@
       "classification": "Proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Add a non-canon authorial-intent section.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001"
     },
     {
@@ -617,12 +741,15 @@
       "classification": "Proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Use competent, imperfect decision-makers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001"
     },
     {
@@ -633,12 +760,15 @@
       "classification": "Proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Prefer conflict from competing pressures over simple villains.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001"
     },
     {
@@ -649,12 +779,15 @@
       "classification": "Canon candidate",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Highwall is shaped by centuries of catastrophic canyon floods.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C002"
     },
     {
@@ -665,12 +798,15 @@
       "classification": "Canon candidate and proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Environmental pressure generally shaped Highwall's systems.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001, A01-C003"
     },
     {
@@ -681,12 +817,15 @@
       "classification": "Canon candidate and proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Institutions are competent but fallible.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001, A01-C004"
     },
     {
@@ -697,12 +836,15 @@
       "classification": "Canon candidate and proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Emphasize stewardship and continuity over exceptionalism.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001, A01-C005"
     },
     {
@@ -713,12 +855,15 @@
       "classification": "Proposal",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-authorial-design-principles-s01.md",
       "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01",
       "summary": "Reward observation and history rather than coincidence.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "A01-C001"
     },
     {
@@ -735,6 +880,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -745,6 +891,10 @@
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-a01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01",
       "summary": "The ancient lake-drainage megaflood formed Highwall's canyon; the modern intermittent river inherited it; this replaces the S01 river-formation claim.",
+      "superseded_by": [],
+      "supersedes": [
+        "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C002"
+      ],
       "target": "Original review amendment; resolved canyon-origin contradiction; `canon/places/highwall.md` provenance; canon change log"
     },
     {
@@ -761,6 +911,7 @@
         "economy",
         "government"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -771,6 +922,8 @@
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
       "summary": "Highwall is the principal interface between downriver coastal-plain princely city-states and upriver highland clans.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`; original S01 review amendment"
     },
     {
@@ -787,6 +940,7 @@
         "economy",
         "government"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -797,6 +951,8 @@
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
       "summary": "People, goods, and information all interface at Highwall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`; original S01 review amendment"
     },
     {
@@ -813,6 +969,7 @@
         "economy",
         "government"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -823,6 +980,8 @@
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-a02.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02",
       "summary": "Highwall is important but nonexclusive for intra-coastal and intra-highland interactions; some disputes are handled locally.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -833,12 +992,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall is a major city and civilization carved into a narrow sandstone canyon.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -849,12 +1011,17 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "An intermittent river formed the canyon and produces catastrophic flash floods after seasonal storms.",
+      "superseded_by": [
+        "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01-C001"
+      ],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -865,12 +1032,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "The canyon simultaneously constrains expansion and resources, creates disaster exposure, and supplies Highwall's principal regional advantages and civic spaces.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -881,12 +1051,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall primarily occupies one wall, the opposite wall has complementary uses, and most permanent structures are carved into sandstone.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -897,12 +1070,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "The non-navigable river canyon is the only practical highland-to-coast route, making Highwall the principal interface for people, goods, and information.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -913,12 +1089,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall is neither the largest nor strongest regional polity; its influence rests on expertise, institutions, law, engineering, and location.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -929,12 +1108,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Technology is broadly classical-Mediterranean in level, with advanced civic engineering but no industrial manufacturing.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -945,12 +1127,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall prospers through trade, craft, institutional knowledge, and logistics rather than abundant local resources.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -961,12 +1146,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Flood prediction, rescue, canyon engineering, archives, logistics, and jurisprudence are defining civic disciplines.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -977,12 +1165,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Visitors, long-term residents, and citizen stewards have distinct legal statuses.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -993,12 +1184,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Steward citizenship carries privileges, obligations, and commitment to the city's long-term welfare.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1009,12 +1203,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall trades and cooperates with upriver pastoral clans and maintains relations with downstream princely city-states and coastal polities.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1025,12 +1222,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "The surrounding highlands supply scarce timber, ores, livestock, and specialty raw materials.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1041,12 +1241,20 @@
       "classification": "question",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-river-name.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "The river's canonical name is not finalized.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Canonical name of Highwall's river](../open-questions/highwall-river-name.md)"
     },
     {
@@ -1057,12 +1265,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "A catastrophic flood destroyed the Old Wall about 185 years before the novels; survivors relocated slightly downriver and rebuilt.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1073,12 +1284,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Modern Highwall is a direct continuation of the Old Wall through institutions, traditions, families, and civic practices.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1089,12 +1303,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Stewardship, competence, reliability, preparation, responsibility, records, and institutional memory are civic values and public assets.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1105,12 +1322,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highwall's arbitration reputation and legal traditions are major sources of regional influence.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1121,12 +1341,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Civic offices retain titles whose military meanings evolved into civilian administrative roles.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1137,12 +1360,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Highland and downstream polities mutually depend on Highwall's markets, goods, law, connections, and passage.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1153,12 +1379,15 @@
       "classification": "belief",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Modern Highwall presents itself as autonomous and official histories emphasize continuity and reconstruction.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1169,12 +1398,15 @@
       "classification": "historical claim",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Official accounts incompletely represent objective history; interpretations of earlier politics and foreign relationships remain disputed.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1185,12 +1417,15 @@
       "classification": "story",
       "disposition": "out-of-scope",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Character knowledge is unstated and historical discoveries and archives are revealed gradually in the novels.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`story/` deliberately unchanged"
     },
     {
@@ -1201,12 +1436,15 @@
       "classification": "question",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "More overview-level layout may be appropriate after later geography seeds.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md` open issues"
     },
     {
@@ -1217,12 +1455,15 @@
       "classification": "administrative",
       "disposition": "out-of-scope",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Historical and geographic works are development inspirations, not sources of literal setting facts.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Canon deliberately unchanged"
     },
     {
@@ -1233,12 +1474,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-highwall-overview-s01.md",
       "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01",
       "summary": "Detailed characters, offices, institutions, religion, succession, story, economics, and geography are excluded for later seeds.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Specialized canon and story categories deliberately unchanged"
     },
     {
@@ -1249,12 +1493,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-intake-completeness-github-approvals-s01.md",
       "submission_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01",
       "summary": "Require an end marker or explicit completeness confirmation and stop before repository mutations when a transmission is incomplete or suspicious.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`AGENTS.md`; `references/intake-workflow.md`; `references/canon-intake-quickstart.md`; `templates/lore-seed.md`"
     },
     {
@@ -1265,12 +1512,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-intake-completeness-github-approvals-s01.md",
       "submission_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01",
       "summary": "Record and mechanically validate transmission completeness for every newly added seed or addendum.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/intake-submission.md`; `templates/conversation-addendum.md`; `scripts/validate_repository.py`; intake documentation"
     },
     {
@@ -1281,12 +1531,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-intake-completeness-github-approvals-s01.md",
       "submission_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01",
       "summary": "Use first-attempt scoped escalation for Windows `gh` commands needing Credential Manager and retain narrow reusable approvals instead of disabling the sandbox.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`AGENTS.md`; `references/git-workflow.md`"
     },
     {
@@ -1297,12 +1550,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Prefer author-supplied facts to polished prose and prohibit unsupplied explanatory or connective text.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1313,12 +1569,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Distinguish `Not established.`, `None.`, and `TODO:` according to whether information is absent, explicitly negative, or an actionable known gap.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`; `references/repository-standards.md`"
     },
     {
@@ -1329,12 +1588,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Keep facts owned by another planned seed brief and contextual rather than expanding or duplicating them.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1345,12 +1607,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Define objective truth as true regardless of personal or institutional belief.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1361,12 +1626,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Sources must be author-supplied and inferred inspirations must not be added.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1377,12 +1645,15 @@
       "classification": "administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Real-world comparisons are out-of-world development or source context, never fictional facts, and remain outside canon sections.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`; `references/repository-standards.md`"
     },
     {
@@ -1393,12 +1664,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01",
       "summary": "Retain the deterministic end-of-seed marker.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1409,12 +1683,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-a01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01",
       "summary": "Add explicit narrative truth levels.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1425,12 +1702,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-a01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01",
       "summary": "Add copyable repository-operation context.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1441,12 +1721,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01",
       "summary": "Add a reusable assistant instruction for preparing raw lore.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1457,12 +1740,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01",
       "summary": "Make authority and information boundaries explicit in the prepared seed.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1473,12 +1759,15 @@
       "classification": "Administrative",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01",
       "summary": "Prevent the drafting assistant from inventing gaps or repository metadata.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/lore-seed.md`"
     },
     {
@@ -1489,12 +1778,15 @@
       "classification": "Administrative",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-lore-seed-template-s01.md",
       "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01",
       "summary": "Connect the preparation template to the existing intake workflow.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`templates/README.md`; `references/canon-intake-quickstart.md`"
     },
     {
@@ -1505,12 +1797,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Each clan, city-state, and Highwall governs itself as an independent sovereign polity in internal affairs.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`"
     },
     {
@@ -1521,12 +1816,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Collectively, the region functions as a tributary province of an overseas empire.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`"
     },
     {
@@ -1537,12 +1835,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "The empire expects ships, food, soldiers, and other obligations.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -1553,12 +1854,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Polities contribute to regional obligations according to geographic and economic specialization rather than fulfilling them independently.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -1569,12 +1873,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Imperially, upriver clans fall within Highwall's provincial administration.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`"
     },
     {
@@ -1585,12 +1892,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Highwall facilitates upriver raw materials moving downstream to support imperial obligations.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -1601,12 +1911,15 @@
       "classification": "belief",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Regional polities officially recognize one another as independent sovereigns and interact through diplomacy, trade, treaties, and longstanding agreements.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`"
     },
     {
@@ -1617,12 +1930,15 @@
       "classification": "belief",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Official language emphasizes trade, cooperation, and shared obligations rather than tribute or subordination.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/government/regional-imperial-structure.md`"
     },
     {
@@ -1633,12 +1949,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Character knowledge is not established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`story/character-knowledge/` deliberately unchanged"
     },
     {
@@ -1649,12 +1968,15 @@
       "classification": "story",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Early story portions obscure the empire and use civic trade language for readers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`story/reveals/regional-imperial-relationship.md`"
     },
     {
@@ -1665,12 +1987,15 @@
       "classification": "story",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Later discoveries reveal a different imperial relationship than early narrative and official language suggest.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`story/reveals/regional-imperial-relationship.md`"
     },
     {
@@ -1681,12 +2006,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "The source contains no proposals or apparent contradictions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "No proposal or contradiction record"
     },
     {
@@ -1697,12 +2025,20 @@
       "classification": "question",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-river-names.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Major river names remain unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional river names](../open-questions/regional-river-names.md)"
     },
     {
@@ -1713,12 +2049,20 @@
       "classification": "question",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-distances-travel-times.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Approximate regional distances and travel times remain unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional distances and travel times](../open-questions/regional-distances-travel-times.md)"
     },
     {
@@ -1729,12 +2073,20 @@
       "classification": "question",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/additional-geographic-regions.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Additional geographic regions remain open.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Additional geographic regions](../open-questions/additional-geographic-regions.md)"
     },
     {
@@ -1745,12 +2097,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "The author lists a regional map and approved discussions as sources.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Canon deliberately unchanged"
     },
     {
@@ -1761,12 +2116,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01",
       "summary": "Detailed geology, named excluded locations, climate, hydrology, formation, layout, political history, institutions, and characters are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Detailed canon and story pages deliberately unchanged"
     },
     {
@@ -1777,12 +2135,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a02.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02",
       "summary": "Highwall's canyon is the only practical corridor between the inland plateau and downstream lowlands.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1793,12 +2154,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a02.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02",
       "summary": "Alternative routes may exist, but their use is negligible.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1816,6 +2180,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -1827,6 +2192,8 @@
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
       "summary": "In Highwall shorthand, `downriver` means on the coastal plain.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/forge.md`"
     },
     {
@@ -1844,6 +2211,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -1855,6 +2223,8 @@
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
       "summary": "Forge is downriver and therefore on the coastal plain.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/forge.md`; original S01 review amendment"
     },
     {
@@ -1872,6 +2242,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -1883,6 +2254,8 @@
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-a03.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03",
       "summary": "Forge is downstream of the Stormlands and upstream of Ledger and Delta in literal and supply-chain senses.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/forge.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -1893,12 +2266,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Distinct geographic regions have different economic specializations.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -1909,12 +2285,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall occupies the principal practical corridor between the inland plateau and downstream lowlands.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1925,12 +2304,15 @@
       "classification": "canon",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall's river is intermittent and non-navigable by ships.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1941,12 +2323,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall occupies a deep sandstone canyon cutting through the inland plateau.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -1957,12 +2342,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall specializes in transportation, engineering, and facilitating upriver-downriver trade.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -1973,12 +2361,15 @@
       "classification": "canon",
       "disposition": "update",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall is the primary upland-downstream trade interface but does not replace larger downstream commercial centers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -1989,12 +2380,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Upriver pastoral clans inhabit the plateau, surrounding highlands, and inland basin beyond Highwall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/upriver-highlands.md`"
     },
     {
@@ -2005,12 +2399,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Upriver clan economies emphasize herding and regional resource extraction.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2021,12 +2418,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "The Stormlands occupy the western downstream coastal plain.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/stormlands.md`"
     },
     {
@@ -2037,12 +2437,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "The Stormlands are the largest regional supplier of timber and ore.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2053,12 +2456,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Stormlands forests contain exceptionally large trees suitable for construction and shipbuilding.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/stormlands.md`"
     },
     {
@@ -2069,12 +2475,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Stormlands raw materials are exported to Highwall and downstream city-states.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2085,12 +2494,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Forge specializes in smelting and finished-goods manufacturing.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/forge.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -2101,12 +2513,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Forge produces ships, finished metal goods, and metal blanks for coinage.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2117,12 +2532,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Forge imports raw materials from the Stormlands.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2133,12 +2551,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Ledger is a noncontiguous collection of commercial cities and ports.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/ledger.md`"
     },
     {
@@ -2149,12 +2570,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Ledger specializes in banking, moneychanging, minting from metal blanks, commercial trust, precision measuring equipment, and classical-era optics.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2165,12 +2589,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Paper financial instruments are widely used within Ledger.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2181,12 +2608,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Ledger moneychangers at Highwall exchange coastal paper notes for metal coin acceptable to many upriver clans.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2197,12 +2627,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Delta is the setting's primary agricultural region.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/delta.md`; `canon/economy/regional-trade-system.md`"
     },
     {
@@ -2213,12 +2646,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Delta supplies food to coastal regions, Highwall, and many upriver clans.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2229,12 +2665,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Delta supports a significant naval presence.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/delta.md`"
     },
     {
@@ -2245,12 +2684,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Most Delta water comes from a river originating in the Stormlands.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/delta.md`; `canon/places/stormlands.md`"
     },
     {
@@ -2261,12 +2703,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Seasonal flood pulses from Highwall's canyon replenish nutrients in Delta farmland.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/delta.md`"
     },
     {
@@ -2277,12 +2722,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Stormlands exports, Forge production, Ledger services, Delta surplus, and Highwall intermediation form the regional dependency structure.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2293,12 +2741,15 @@
       "classification": "canon",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Highwall connects upriver pastoral clans with downstream city-states.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall.md`"
     },
     {
@@ -2309,12 +2760,15 @@
       "classification": "canon",
       "disposition": "create",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Many upriver clans prefer barter or metal coin to paper instruments.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/economy/regional-trade-system.md`"
     },
     {
@@ -2325,12 +2779,20 @@
       "classification": "canon",
       "disposition": "defer",
       "domains": [],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-sovereignty-source-completion.md",
+          "status": "resolved"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Each clan, city-state, and Highwall governs itself as an independent sovereign polity \"in its internal\" [sentence incomplete].",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Completion of the regional sovereignty statement](../open-questions/regional-sovereignty-source-completion.md)"
     },
     {
@@ -2341,12 +2803,15 @@
       "classification": "administrative",
       "disposition": "no-change",
       "domains": [],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
       "submission": "../../intake/submissions/2026-08-04-regional-geography-economy-s01.md",
       "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01",
       "summary": "Detailed geology, hydrology, city layout, and political history are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Specialized pages deliberately unchanged"
     },
     {
@@ -2364,6 +2829,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2376,6 +2842,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The region is underlain by two major sandstone formations: resistant upper Whitestone and softer lower Redstone.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2393,6 +2861,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2405,6 +2874,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Whitestone is the plateau's continuous uppermost caprock.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2422,6 +2893,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2434,6 +2906,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "About 250 meters of highly erosion-resistant Whitestone are exposed in Highwall's canyon walls.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2451,6 +2925,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2463,6 +2938,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Whitestone can support large excavated chambers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2480,6 +2957,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2492,6 +2970,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Redstone lies beneath Whitestone and extends well below the canyon floor.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2509,6 +2989,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2521,6 +3002,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "About 550 meters of Redstone are exposed in the canyon walls.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2538,6 +3021,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2550,6 +3034,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Redstone is easier to excavate and less erosion-resistant than Whitestone and cannot support chambers of the same scale.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2567,6 +3053,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2579,6 +3066,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "An ancient fault crosses the region, formed after both sandstone units, and later became inactive.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2596,6 +3085,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2608,6 +3098,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "An elevated sandstone plateau capped continuously by Whitestone dominates the region despite extensive valleys and smaller canyons.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2625,6 +3117,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2637,6 +3130,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Highwall occupies a local elevation maximum on the plateau.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2654,6 +3149,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2666,6 +3162,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The plateau terminates at a major escarpment overlooking the downstream coastal plain.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2683,6 +3181,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2695,6 +3194,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "An enclosed inland basin lies beyond Highwall within the inland plateau.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`; `canon/places/upriver-highlands.md`"
     },
     {
@@ -2712,6 +3213,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2724,6 +3226,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The basin floor is lower than the plateau and separated from it by a smaller escarpment.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2741,6 +3245,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2753,6 +3258,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Mountains and canyons surround much of the inland basin.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2770,6 +3277,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2782,6 +3290,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "An ancient inland lake occupied the basin and later drained catastrophically.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2799,6 +3309,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2811,6 +3322,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Much of the basin is salt flats left by the drainage, and a saline lake remains and periodically overflows.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2828,6 +3341,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2840,6 +3354,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Highwall's canyon cuts through all Whitestone and deep into Redstone, about 800 meters below the plateau.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2857,6 +3373,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2869,6 +3386,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Highwall's canyon is the only known regional site where erosion has fully breached Whitestone; no other known canyon penetrates it.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2886,6 +3405,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2898,6 +3418,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Redstone predates Whitestone.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -2915,6 +3437,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2927,6 +3450,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The lake-drainage megaflood followed the ancient fault and rapidly excavated essentially the entire modern canyon, breaching Whitestone into Redstone.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`"
     },
     {
@@ -2944,6 +3469,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2956,6 +3482,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The modern intermittent river inherited the megaflood canyon, and later erosion modified rather than fundamentally created it.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`; `development/open-questions/highwall-river-name.md`"
     },
     {
@@ -2973,6 +3501,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2985,6 +3514,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Whitestone's resistance preserves the plateau, and Redstone underlies it throughout the region.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`"
     },
     {
@@ -3002,6 +3533,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3014,6 +3546,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The canyon's megaflood origin rather than formation by the modern river is objective setting truth.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-geology.md`; `canon/places/highwall.md`"
     },
     {
@@ -3031,6 +3565,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3043,6 +3578,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Official position, character knowledge, and reader knowledge are not established; there are no spoiler notes.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`story/` deliberately unchanged"
     },
     {
@@ -3060,6 +3597,12 @@
         "places",
         "history"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-geological-ages-and-names.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3072,6 +3615,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The geological ages of Whitestone and Redstone are unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
     },
     {
@@ -3089,6 +3634,12 @@
         "places",
         "history"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-geological-ages-and-names.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3101,6 +3652,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The age of the catastrophic basin drainage is unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
     },
     {
@@ -3118,6 +3671,12 @@
         "places",
         "history"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-geological-ages-and-names.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3130,6 +3689,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Canonical geological names beyond Whitestone and Redstone are unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Highwall geological ages and additional names](../open-questions/highwall-geological-ages-and-names.md)"
     },
     {
@@ -3147,6 +3708,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3159,6 +3721,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "Climate, hydrology, flood behavior, ecology, settlement, transportation, engineering, excavation practices, architecture, and political geography and history are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Adjacent authoritative pages deliberately unchanged except necessary geological corrections"
     },
     {
@@ -3176,6 +3740,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3188,6 +3753,8 @@
       "submission": "../../intake/submissions/2026-08-05-geology-geomorphology-s01.md",
       "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01",
       "summary": "The source is author-approved worldbuilding discussion.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`intake/submissions/2026-08-05-geology-geomorphology-s01.md`"
     },
     {
@@ -3204,6 +3771,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3213,6 +3781,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Require impact manifests on new intake reviews.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Review template, validator, and intake workflow"
     },
     {
@@ -3229,6 +3799,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3238,6 +3809,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Use three consistency tiers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/consistency-workflow.md`"
     },
     {
@@ -3254,6 +3827,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3263,6 +3837,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Generate a non-authoritative claim index.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`scripts/build_claim_index.py`; `development/indexes/claim-index.json`"
     },
     {
@@ -3279,6 +3855,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3288,6 +3865,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Use controlled discovery metadata.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Review template, validator, and consistency workflow"
     },
     {
@@ -3304,6 +3883,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3313,6 +3893,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Add a targeted context builder.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`scripts/build_case_context.py`"
     },
     {
@@ -3329,6 +3911,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3338,6 +3921,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Use lightweight records for routine process-only maintenance.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Maintenance template and consistency workflow"
     },
     {
@@ -3354,6 +3939,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3363,6 +3949,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Use one-pass publication without check-result audit commits.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Git workflow, review template, and agent instructions"
     },
     {
@@ -3379,6 +3967,7 @@
       "domains": [
         "administration"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3388,6 +3977,8 @@
       "submission": "../../intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
       "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01",
       "summary": "Run full semantic audits periodically and for high-risk changes.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`references/consistency-workflow.md`"
     },
     {
@@ -3406,6 +3997,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3416,6 +4008,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-a01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01",
       "summary": "Blueleaf harvesting and reed cultivation are established activities, while detailed organism identities and inventory treatment remain working canon unless separately established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Climate boundary wording; working flora/fauna scope; original climate review amendment"
     },
     {
@@ -3434,6 +4028,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3444,6 +4039,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-a01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01",
       "summary": "Salt Basin is the inland basin beyond Highwall where the clans live, not a separate basin.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional geology identity authority; climate contextual wording; original climate review amendment"
     },
     {
@@ -3463,6 +4060,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3477,6 +4075,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The region is predominantly semi-arid; the coast is wetter; the escarpment creates a plateau rain shadow; elevation and distance from the sea create variation.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3496,6 +4096,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3510,6 +4111,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Most precipitation comes from winter atmospheric rivers from the western sea and late-summer or early-autumn tropical moisture from the south.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3529,6 +4132,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3543,6 +4147,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Winter snow, eastern-mountain snowpack, and spring snowmelt are important freshwater sources.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -3562,6 +4168,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3576,6 +4183,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The eastern plateau has a more reliable late-summer storm season than the western plateau.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3595,6 +4204,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3609,6 +4219,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Late-summer storms are localized, so adjacent watersheds may receive very different rainfall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3628,6 +4240,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3642,6 +4255,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Multiple flash floods occur in a typical year and usually originate upstream rather than over Highwall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3661,6 +4276,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3675,6 +4291,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Annual precipitation varies considerably and multi-year droughts occur.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -3694,6 +4312,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3708,6 +4327,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Highwall Canyon's north-south orientation produces pronounced light cycles; its floor is more sheltered than the wind-exposed plateau and rims.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall.md`"
     },
     {
@@ -3727,6 +4348,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3741,6 +4363,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The Stormlands receive the most winter precipitation; winter rain sustains forests that support timber and shipbuilding.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/stormlands.md`"
     },
     {
@@ -3760,6 +4384,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3774,6 +4399,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The western and eastern plateaus are semi-arid, with the west drier from the rain shadow and the east having the more dependable storm season.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3793,6 +4420,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3807,6 +4435,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The eastern mountains receive the most snow, supply most spring snowmelt, and promote late-summer thunderstorms.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3826,6 +4456,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3840,6 +4471,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "The Salt Basin is usually dry; storm runoff creates temporary freshwater wetlands around its margins.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3859,6 +4492,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3873,6 +4507,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Winter brings western storms, Stormlands rain, rain-shadow drying, eastern-mountain snow, some plateau precipitation, and uncommon canyon-floor snow.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall.md`"
     },
     {
@@ -3892,6 +4528,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3906,6 +4543,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Spring snowmelt improves river reliability, increases groundwater recharge, and makes surface water most reliable.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`; `canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -3925,6 +4564,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3939,6 +4579,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Early summer brings rising temperatures, plateau drying, generally favorable travel, and increasing reliance on springs, storage, and streamflow.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3958,6 +4600,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3972,6 +4615,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Interior heating begins storm season; thunderstorms affect the eastern plateau, mountain front, and upper watersheds, producing floods even without rain over Highwall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -3991,6 +4636,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4005,6 +4651,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Late autumn brings declining storms, cooling temperatures, and transition toward winter water conditions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -4024,6 +4672,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4038,6 +4687,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Storm season is a defining late-summer and early-autumn cycle that affects travel, trade, labor, pastoral movement, Blueleaf and reed work, and flood preparation.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -4057,6 +4708,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4071,6 +4723,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Wind exposure matters for travel, construction, and life; elevation, slope, and exposure vary snow, moisture, and growing conditions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-climate.md`"
     },
     {
@@ -4090,6 +4744,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4104,6 +4759,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Climate drives established hydrology through snowmelt, storm floods, drought, rain shadow, and mountain effects downstream.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Reciprocal climate-hydrology links"
     },
     {
@@ -4123,6 +4780,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4137,6 +4795,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "No people, beliefs, institutional positions, character knowledge, reader knowledge, or spoilers are established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Character, culture, institution, and story pages deliberately unchanged"
     },
     {
@@ -4156,6 +4816,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-climate-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4170,6 +4836,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Hidden-basin climate, temperatures, winds, atmospheric-river details, storm-belt extent, canyon wind cycles, and coastal fog remain unresolved.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional climate details](../open-questions/regional-climate-details.md)"
     },
     {
@@ -4189,6 +4857,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-climate-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4203,6 +4877,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Latitude, Köppen class, averages, frost dates, growing seasons, and severe-winter-storm frequency are unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional climate details](../open-questions/regional-climate-details.md)"
     },
     {
@@ -4222,6 +4898,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4236,6 +4913,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Western-US, Pacific atmospheric-river, and North American Monsoon comparisons are inspirations.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Immutable submission only"
     },
     {
@@ -4255,6 +4934,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4269,6 +4949,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-climate-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01",
       "summary": "Ecology, agriculture, hydrology beyond climate drivers, engineered water, detailed meteorology and canyon winds, and historical climate events are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Excluded domains deliberately unchanged"
     },
     {
@@ -4286,6 +4968,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4297,6 +4980,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
       "summary": "The ancient lake filled the entire basin, collapsed millennia ago, and rapidly carved Highwall's canyon.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall-region-geology.md`"
     },
     {
@@ -4314,6 +4999,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4325,6 +5011,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
       "summary": "A much smaller present saline lake overflows roughly once per decade into the drainage basin for Highwall's river.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall-region-geology.md`; [standing-water contradiction](../contradictions/inland-basin-standing-water.md)"
     },
     {
@@ -4342,6 +5030,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4353,6 +5042,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01",
       "summary": "Another lake at the inland-side canyon entrance collapsed around 185 years ago.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4369,6 +5060,7 @@
         "places",
         "history"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4379,6 +5071,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-a02.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02",
       "summary": "The canyon-entrance lake collapse caused the destruction of the Old Wall; both descriptions refer to the same event.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`; `development/open-questions/regional-hydrology-details.md`"
     },
     {
@@ -4399,6 +5093,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4413,6 +5108,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "The plateau is semi-arid and water availability varies substantially through the year.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4433,6 +5130,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4447,6 +5145,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Late-summer and autumn storms, winter snow, and spring snowmelt are the main seasonal inputs.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4467,6 +5167,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4481,6 +5182,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Highwall occupies a narrow sandstone canyon.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Existing canon"
     },
     {
@@ -4501,6 +5204,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4515,6 +5219,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Dryrun is a working, not final, name for the canyon river.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `development/open-questions/highwall-river-name.md`"
     },
     {
@@ -4535,6 +5241,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4549,6 +5256,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Dryrun is seasonal or intermittent and often has little visible water.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
     },
     {
@@ -4569,6 +5278,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4583,6 +5293,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Several destructive flash floods occur in a typical year and are normally expected.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
     },
     {
@@ -4603,6 +5315,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4617,6 +5330,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Near its mouth Dryrun joins a larger perennial river that reaches the sea.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4637,6 +5352,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4651,6 +5367,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Regional sandstone stores groundwater plausibly rather than fantastically.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4671,6 +5389,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4685,6 +5404,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Groundwater contributes to regional springs and seeps; some are permanent and others seasonal.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4705,6 +5426,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4719,6 +5441,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Water movement is influenced by Whitestone, Redstone, canyon incision, precipitation, and sandstone groundwater.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4739,6 +5463,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-hydrology-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4753,6 +5483,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Exact formation behavior, aquifer architecture, and surface-groundwater relationships are not established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional hydrology details](../open-questions/regional-hydrology-details.md)"
     },
     {
@@ -4773,6 +5505,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4787,6 +5520,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "The normally dry but frequently flooding river is a defining Highwall characteristic.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4807,6 +5542,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4821,6 +5557,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Late-summer and autumn upstream storms cause many of the most dangerous floods.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/highwall.md`"
     },
     {
@@ -4841,6 +5579,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4855,6 +5594,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Flood risk emerges from watershed behavior interacting with the canyon.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4875,6 +5616,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4889,6 +5631,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "The inland basin has extensive salt flats, surrounding mountains and canyon uplands, with fresh water mainly at margins.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4909,6 +5653,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/contradictions/inland-basin-standing-water.md",
+          "status": "resolved"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4923,6 +5673,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "The ancient lake no longer exists as a permanent body.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Inland-basin standing water](../contradictions/inland-basin-standing-water.md)"
     },
     {
@@ -4943,6 +5695,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4957,6 +5710,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Highwall accesses a hidden enclosed basin beyond the Whitestone rim that retains enough water for limited reserve agriculture.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -4977,6 +5732,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4991,6 +5747,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Highwall found the hidden basin by accidental excavation breakthrough; clans already knew natural routes.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`; `canon/places/upriver-highlands.md`"
     },
     {
@@ -5011,6 +5769,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-hydrology-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5025,6 +5789,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "The hidden basin's retention mechanism and detailed hydrology are unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional hydrology details](../open-questions/regional-hydrology-details.md)"
     },
     {
@@ -5045,6 +5811,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5059,6 +5826,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Water scarcity should influence society without making the region uninhabitable, and hydrology should be plausible and non-supernatural.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Canon wording bounded to supplied facts"
     },
     {
@@ -5079,6 +5848,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5093,6 +5863,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Prolonged dry periods, regular seasonal floods, and occasional exceptional floods are supported.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-hydrology.md`"
     },
     {
@@ -5113,6 +5885,12 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/proposals/regional-groundwater-and-drainage-models.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5127,6 +5905,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Six groundwater and drainage mechanisms are proposals only.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional groundwater and drainage models](../proposals/regional-groundwater-and-drainage-models.md)"
     },
     {
@@ -5147,6 +5927,16 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-river-name.md",
+          "status": "open"
+        },
+        {
+          "path": "development/open-questions/regional-hydrology-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5161,6 +5951,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "River names, tributaries, watersheds, flow extents, spring locations, discharge, basin relationships, and climatic averages are unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Highwall river name](../open-questions/highwall-river-name.md); [regional hydrology details](../open-questions/regional-hydrology-details.md)"
     },
     {
@@ -5181,6 +5973,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5195,6 +5988,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Engineered water, exact quantities and aquifers, ecology, irrigation, flood chronology, and new waterway names are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Adjacent documentation deliberately unchanged"
     },
     {
@@ -5215,6 +6010,7 @@
         "economy",
         "terminology"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5229,6 +6025,8 @@
       "submission": "../../intake/submissions/2026-08-06-regional-hydrology-s01.md",
       "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01",
       "summary": "Later climate, ecology, infrastructure, agriculture, flood history, settlement, transport, and water law may depend on this case.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Review and open question"
     },
     {
@@ -5248,6 +6046,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5261,6 +6060,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Multiple interconnected ecological zones support different communities and operate across political and settlement boundaries.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-ecology.md`"
     },
     {
@@ -5280,6 +6081,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5293,6 +6095,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Elevation, water, floods, snow, sandstone geology, and seasonal water availability shape communities and productivity.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5312,6 +6116,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5325,6 +6130,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Human activity has altered distributions by expanding useful organisms and reducing others near settlements.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5344,6 +6151,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5357,6 +6165,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Wildfire is a recurring disturbance that renews appropriate ecosystems.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5376,6 +6186,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5389,6 +6200,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Floods reshape canyon habitat and move sediment, nutrients, seeds, and organic material.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5408,6 +6221,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5421,6 +6235,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "The semi-arid plateau has denser vegetation at reliable water and groundwater-supported woodland where water surfaces.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5440,6 +6256,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5453,6 +6270,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Cliffs, intermittent water, shade, stone, and flood elevation structure the canyon ecosystem.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5472,6 +6291,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5485,6 +6305,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "The basin ranges from salt flats to temporary wetlands, some maintained or expanded by human water management.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5504,6 +6326,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5517,6 +6340,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Coastal permanent water supports greater productivity and appropriate portions contain extensive forests.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5536,6 +6361,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5549,6 +6375,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Managed landscapes, agriculture, grazing, water management, and husbandry are ecological processes dependent on seasonal cycles.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5568,6 +6396,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5581,6 +6410,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Domesticated pollinators are part of agriculture where appropriate.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5600,6 +6431,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5613,6 +6445,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Pollinators, trophic roles, cliff niches, and distinct intermittent and permanent aquatic communities maintain ecological relationships.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5632,6 +6466,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5645,6 +6480,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Settlements benefit from and continually modify ecosystems; wildlife varies in tolerance of settlement.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -5664,6 +6501,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5677,6 +6515,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Beliefs, institutional positions, character and reader knowledge, and spoilers are not established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Story and institutional pages deliberately unchanged"
     },
     {
@@ -5696,6 +6536,12 @@
         "culture",
         "economy"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-ecology-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5709,6 +6555,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Species inventories, niche occupants, community transitions, and outside-region distributions remain unknown.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional ecology details](../open-questions/regional-ecology-details.md)"
     },
     {
@@ -5728,6 +6576,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5741,6 +6590,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Detailed inventories, taxonomy, food webs, crop and breed inventories, individual uses, and outside-region biodiversity are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Excluded domains deliberately unchanged"
     },
     {
@@ -5760,6 +6611,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5773,6 +6625,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s01.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01",
       "summary": "Existing geology, geomorphology, climate, and hydrology seeds are source dependencies.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Reciprocal related links"
     },
     {
@@ -5792,6 +6646,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5806,6 +6661,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "The listed organisms form a diverse, human-influenced working inventory subject to refinement or replacement.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "`canon/places/highwall-region-flora-and-fauna.md`"
     },
     {
@@ -5825,6 +6682,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5839,6 +6697,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Settlement expands useful organisms and reduces nuisance or dangerous wildlife, including within Highwall.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -5858,6 +6718,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5872,6 +6733,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Highwall and neighboring communities keep domesticated bees for agriculture and honey.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -5891,6 +6754,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5905,6 +6769,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Plateau occupants include mesquite-like trees, grasses, shrubs, small grazers, wolves, raptors, insects, and dry-adapted reptiles.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -5924,6 +6790,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5938,6 +6805,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Canyon occupants include murmurating swifts, corvids, raptors, bats, arthropods, reptiles, dogs, managed scavengers, and remote mountain lions.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -5957,6 +6826,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -5971,6 +6841,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Basin occupants include managed-wetland vegetation, waterfowl, amphibians, pollinators, grazers, and predatory birds.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -5990,6 +6862,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6004,6 +6877,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Coastal occupants include massive redwood-analogue Stormlands conifers, river fish, large grazers, forest predators, and wetland birds.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6023,6 +6898,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6037,6 +6913,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Permanent rivers support fish, aquatic invertebrates, waterfowl, and riparian vegetation.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6056,6 +6934,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6070,6 +6949,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Cultivation and water management expanded useful plants; temporary-dam marshes are longstanding; Highwall wildlife shifted toward human tolerance.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6089,6 +6970,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6103,6 +6985,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Human-influenced examples are mesquite-like trees, reeds, honeybees, chickens, and settlement rabbits; scavengers and large predators are discouraged.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6122,6 +7006,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6136,6 +7021,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Mesquite-like trees provide food, shade, and habitat; bees support crops and native flowers.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6155,6 +7042,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6169,6 +7057,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Swifts and bats control insects; raptors regulate small animals; wolves and mountain lions occupy major predator niches.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6188,6 +7078,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6202,6 +7093,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Freshwater fish primarily inhabit permanent rivers, and seasonal wetlands provide breeding habitat.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Working flora and fauna page"
     },
     {
@@ -6221,6 +7114,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6235,6 +7129,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Wildfire renews fire-adapted ecosystems.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Regional ecology page"
     },
     {
@@ -6254,6 +7150,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6268,6 +7165,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Beliefs, institutional positions, character and reader knowledge, and spoilers are not established.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Story and institutional pages deliberately unchanged"
     },
     {
@@ -6287,6 +7186,12 @@
         "culture",
         "economy"
       ],
+      "exception_records": [
+        {
+          "path": "development/proposals/regional-organism-design.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6301,6 +7206,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Organisms may become fictional analogues and common names may change with language development.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional organism design alternatives](../proposals/regional-organism-design.md)"
     },
     {
@@ -6320,6 +7227,12 @@
         "culture",
         "economy"
       ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/regional-flora-and-fauna-details.md",
+          "status": "open"
+        }
+      ],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6334,6 +7247,8 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Precise inventories, endemic species, aquatic and insect diversity, and additional plant communities are unresolved.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "[Regional flora and fauna details](../open-questions/regional-flora-and-fauna-details.md)"
     },
     {
@@ -6353,6 +7268,7 @@
         "culture",
         "economy"
       ],
+      "exception_records": [],
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -6367,9 +7283,11 @@
       "submission": "../../intake/submissions/2026-08-07-regional-ecology-s02.md",
       "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02",
       "summary": "Intelligent non-humans, mythic creatures, production detail, medicine, anatomy, taxonomy, and organisms outside the region are excluded.",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "Excluded domains deliberately unchanged"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",
-  "schema_version": 2
+  "schema_version": 3
 }
