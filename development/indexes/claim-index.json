@@ -6031,6 +6031,426 @@
     },
     {
       "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C001",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Bind every audit conclusion to an exact Git baseline and use Git history as the changed-path authority.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/incremental-audit-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Treat impact manifests and the canon change log as interpretive aids that cannot replace the Git diff.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/consistency-workflow.md`; `references/incremental-audit-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C003",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Reuse audited relationships and authority chains rather than files, recognizing both changed and unchanged dependency effects.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/incremental-audit-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C004",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Carry a result forward only after checking all invalidation conditions, using the six controlled audit-coverage outcomes.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Reference and incremental-audit review template"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Keep generated context navigation-only and require semantic review for meaning, contradiction, authority, ownership, and narrative boundaries.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Reference, template, and context-builder warnings"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Require widening for the enumerated dependency risks while retaining existing Tier 3 triggers.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/consistency-workflow.md`; `references/incremental-audit-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C007",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Define a reusable incremental audit record and preserve historical audit reports as immutable snapshots.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`templates/incremental-audit-review.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C008",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Build deterministic Markdown context for resolved commits, ancestry, changed domains, review manifests, canon metadata, backlinks, and targeted context.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`scripts/build_incremental_audit_context.py`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C009",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Compare historical indexes by stable claim ID and distinguish additions, removals, indexed-field changes, supersession, exceptional status, review authority, and unchanged claims.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Context builder and isolated tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C010",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Fail clearly for unresolved commits, non-ancestor ranges, unreadable historical indexes, omitted working-tree changes, or insufficient repository structure.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Context builder and isolated tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C011",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Extend the standard-library regression suite across the specified success, failure, lifecycle, determinism, path, UTF-8, and dependency cases.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`tests/test_incremental_audit_context.py`; `tests/README.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C012",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Validate discovery against `027d0e3..856f0d4` without adding findings or editing historical audits.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Historical acceptance exercise recorded in this review"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C013",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Preserve all lore, story, design, authority, claim dispositions, historical submissions, completed audits, and deferred test-suite policy questions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Canon, story, design, historical records, and deferred policy areas"
+    },
+    {
+      "authoritative_targets": [
+        "references/incremental-audit-workflow.md",
+        "references/consistency-workflow.md",
+        "templates/incremental-audit-review.md",
+        "scripts/build_incremental_audit_context.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C014",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "repository-consistency",
+        "claim-provenance"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01",
+      "summary": "Publish the coherent case as a commit and draft PR, require both checks, and do not merge or mark ready without instruction.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Git and GitHub publication record"
+    },
+    {
+      "authoritative_targets": [
         "canon/places/highwall-region-ecology.md",
         "canon/places/highwall-region-flora-and-fauna.md",
         "canon/places/highwall-region-climate.md",

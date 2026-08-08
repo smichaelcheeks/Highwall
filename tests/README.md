@@ -1,8 +1,9 @@
 # Repository Integrity Tests
 
-The suite exercises the repository validator, claim parser and index, and
-targeted-context generator against deterministic synthetic repositories. It
-never writes to the real canon, intake records, reviews, or generated index.
+The suite exercises the repository validator, claim parser and index,
+targeted-context generator, and incremental-audit context builder against
+deterministic synthetic repositories. It never writes to the real canon,
+intake records, reviews, or generated index.
 
 Run the complete suite from the repository root:
 

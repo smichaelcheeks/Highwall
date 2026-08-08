@@ -90,6 +90,21 @@ snapshot or sustained story-drafting phase, after a major regional,
 chronological, political, or taxonomy change, or whenever targeted reviews
 repeatedly expose unexpected cross-domain effects.
 
+## Incremental audits
+
+After an audit establishes an exact Git baseline, use the
+[`incremental audit workflow`](incremental-audit-workflow.md) to determine which
+recorded relationships require renewed semantic review after later commits.
+The complete Git diff is the changed-path authority. Impact manifests, the
+canon change log, claim indexes, and generated context assist discovery but do
+not prove semantic consistency.
+
+Incremental reuse applies only after every recorded dependency and invalidation
+condition has been checked. An unchanged file may be affected by a changed
+dependency, and a changed file does not invalidate all of its relationships.
+Widen to Tier 2 or Tier 3 when the incremental record exposes the triggers in
+that workflow; the existing Tier 3 triggers above remain controlling.
+
 ## Maintenance boundary
 
 Routine process-only maintenance may use
