@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -12,6 +13,26 @@ from consistency_common import ROOT, parse_claim_rows, parse_front_matter
 
 
 OUTPUT = ROOT / "development" / "indexes" / "claim-index.json"
+EXCEPTIONAL_DISPOSITIONS = {"conflict", "defer", "retire"}
+MARKDOWN_LINK = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+
+
+def exception_records(review: Path, target: str) -> list[dict[str, str]]:
+    records: list[dict[str, str]] = []
+    for href in MARKDOWN_LINK.findall(target):
+        path = (review.parent / href).resolve()
+        try:
+            relative = path.relative_to(ROOT).as_posix()
+        except ValueError as error:
+            raise ValueError(f"Exception target escapes repository: {review}: {href}") from error
+        if not path.is_file():
+            raise ValueError(f"Missing exception record: {review}: {href}")
+        metadata, _ = parse_front_matter(path)
+        status = metadata.get("status", "")
+        if not status:
+            raise ValueError(f"Exception record has no status: {relative}")
+        records.append({"path": relative, "status": status})
+    return records
 
 
 def build_index() -> dict[str, object]:
@@ -22,9 +43,21 @@ def build_index() -> dict[str, object]:
             continue
         metadata, lists = parse_front_matter(path)
         for claim in parse_claim_rows(path):
+            disposition = str(claim["disposition"])
+            records = (
+                exception_records(path, str(claim["target"]))
+                if disposition in EXCEPTIONAL_DISPOSITIONS
+                else []
+            )
+            if disposition in EXCEPTIONAL_DISPOSITIONS and not records:
+                raise ValueError(
+                    f"Exceptional claim has no linked development record: {claim['claim_id']}"
+                )
             claims.append(
                 {
                     **claim,
+                    "exception_records": records,
+                    "superseded_by": [],
                     "case_id": metadata.get("case_id", ""),
                     "submission_id": metadata.get("submission_id", ""),
                     "review_authority": metadata.get("authority", ""),
@@ -35,9 +68,17 @@ def build_index() -> dict[str, object]:
                     "authoritative_targets": lists.get("authoritative_targets", []),
                 }
             )
+    claims_by_id = {str(claim["claim_id"]): claim for claim in claims}
+    for claim in claims:
+        for earlier_id in claim["supersedes"]:
+            if earlier_id not in claims_by_id:
+                raise ValueError(
+                    f"Claim {claim['claim_id']} supersedes missing claim {earlier_id}"
+                )
+            claims_by_id[earlier_id]["superseded_by"].append(claim["claim_id"])
     claims.sort(key=lambda item: str(item["claim_id"]))
     return {
-        "schema_version": 2,
+        "schema_version": 3,
         "authority": "navigation-only",
         "generated_from": "development/intake-reviews/*.md",
         "claims": claims,

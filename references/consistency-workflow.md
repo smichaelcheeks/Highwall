@@ -75,8 +75,13 @@ python scripts/build_claim_index.py --check
 The index is navigation-only. It cannot establish canon, replace reviews, or
 resolve contradictions. Each row surfaces the source review's declared
 `review_authority` so working and established claims can be distinguished
-during discovery; the linked review remains authoritative. Targeted case
-context displays the same field. CI rejects a stale index.
+during discovery. It also derives `supersedes` and `superseded_by` claim links
+and the current status of development records required by `defer`, `conflict`,
+and `retire` dispositions. These lifecycle fields are discovery aids; the
+linked review and development records remain authoritative. Targeted case
+context displays the same fields. CI rejects a stale index, a missing
+supersession target, or an exceptional disposition without a linked status
+record.
 
 ## Periodic audits
 

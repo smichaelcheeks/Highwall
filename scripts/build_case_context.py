@@ -89,10 +89,25 @@ def main() -> int:
         lines.append("- None found.")
     lines.extend(["", "## Indexed claims", ""])
     for claim in matched_claims[: args.max_results]:
+        lifecycle: list[str] = []
+        if claim.get("supersedes"):
+            lifecycle.append("supersedes: " + ", ".join(claim["supersedes"]))
+        if claim.get("superseded_by"):
+            lifecycle.append("superseded by: " + ", ".join(claim["superseded_by"]))
+        if claim.get("exception_records"):
+            lifecycle.append(
+                "exception records: "
+                + ", ".join(
+                    f"{record['path']} [{record['status']}]"
+                    for record in claim["exception_records"]
+                )
+            )
+        lifecycle_text = f"; {'; '.join(lifecycle)}" if lifecycle else ""
         lines.append(
             f"- `{claim['claim_id']}` — {claim['summary']} "
             f"(authority: `{claim['review_authority']}`; "
-            f"disposition: `{claim['disposition']}`; `{claim['review']}`)"
+            f"disposition: `{claim['disposition']}`{lifecycle_text}; "
+            f"`{claim['review']}`)"
         )
     if not matched_claims:
         lines.append("- None found.")

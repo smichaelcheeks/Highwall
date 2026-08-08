@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CLAIM_ROW = re.compile(r"^\|\s*(CASE-.*-C\d{3})\s*\|")
+CLAIM_ID = re.compile(r"CASE-[A-Z0-9-]+-C\d{3}")
 
 
 def parse_front_matter(path: Path) -> tuple[dict[str, str], dict[str, list[str]]]:
@@ -42,8 +43,8 @@ def parse_front_matter(path: Path) -> tuple[dict[str, str], dict[str, list[str]]
     return scalars, lists
 
 
-def parse_claim_rows(path: Path) -> list[dict[str, str]]:
-    claims: list[dict[str, str]] = []
+def parse_claim_rows(path: Path) -> list[dict[str, object]]:
+    claims: list[dict[str, object]] = []
     for line in path.read_text(encoding="utf-8").splitlines():
         if not CLAIM_ROW.match(line):
             continue
@@ -56,6 +57,7 @@ def parse_claim_rows(path: Path) -> list[dict[str, str]]:
                 "summary": cells[1],
                 "classification": cells[2].strip("`"),
                 "authority_basis": cells[3].strip("`"),
+                "supersedes": CLAIM_ID.findall(cells[4]),
                 "disposition": cells[6].strip("`"),
                 "target": cells[7],
             }
