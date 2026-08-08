@@ -65,11 +65,14 @@ The agent should:
 4. Synchronize `main` and create a case branch.
 5. Save the seed verbatim from [`../templates/intake-submission.md`](../templates/intake-submission.md).
 6. Create a claim-level review from [`../templates/intake-review.md`](../templates/intake-review.md).
-7. Search existing canon, story, development, aliases, and terminology.
-8. Assign every claim a controlled disposition before integration.
-9. Create or update authoritative pages using the relevant templates.
-10. Record contradictions and unresolved questions instead of choosing answers.
-11. Validate locally, push, and open a draft PR for review.
+7. Record the latest applicable semantic-audit baseline, examine the Git range
+   since it, generate incremental context, and evaluate mandatory Tier 3
+   triggers using Git history and completed review records.
+8. Search existing canon, story, development, aliases, and terminology.
+9. Assign every claim a controlled disposition before integration.
+10. Create or update authoritative pages using the relevant templates.
+11. Record contradictions and unresolved questions instead of choosing answers.
+12. Validate locally, push, and open a draft PR for review.
 
 ## Continuing the conversation
 
@@ -83,6 +86,8 @@ Before approving the PR, verify:
 
 - the seed is preserved accurately
 - every substantive claim appears in the review
+- the review records its audit baseline, Git range, prior relationship outcomes,
+  consistency tier, Tier 3 triggers, and completed-case count
 - authority and session mode match the instruction
 - facts are stored once and linked elsewhere
 - beliefs, story knowledge, and objective truth remain distinct

@@ -125,6 +125,44 @@ the tier rules and controlled vocabulary in
 [`consistency-workflow.md`](consistency-workflow.md). Existing reviews without
 these fields are historical records and do not need retroactive edits.
 
+## Audit baseline evaluation for lore intake
+
+Every new lore intake review records `lore_review: true` and evaluates the
+latest applicable semantic-audit baseline as part of ordinary intake. A lore
+review is any review authorized as `establish-canon` or `working-canon`, or any
+other review that may add, alter, retire, or materially reinterpret lore.
+Process-only reviews record `lore_review: false` and do not need the audit
+fields.
+
+Before integrating a lore claim, record:
+
+- the latest applicable semantic-audit baseline as a full commit hash, or
+  `none`;
+- the full `BASELINE..HEAD` Git range examined, or
+  `fresh-tier-3-required` when no reliable baseline exists;
+- whether incremental audit context was generated;
+- prior audited relationships considered and the results carried forward,
+  revalidated, invalidated, or widened;
+- the consistency tier required and actually performed;
+- whether a Tier 3 trigger is active and every applicable controlled trigger;
+  and
+- the number of completed canon cases since the latest comprehensive Tier 3
+  baseline, when deterministically available.
+
+Derive the baseline and case count from Git history and completed intake-review
+records. Count unique completed lore case IDs after the baseline; multiple
+submissions or addenda in one case count once. The canon change log and impact
+manifests assist interpretation but cannot establish the count or range alone.
+When the applicable baseline, case identity, completion state, or trigger is
+ambiguous, record the count as `unknown`, treat the baseline as unreliable, and
+perform a fresh Tier 3 audit rather than guessing reuse.
+
+The validator checks fields and deterministic triggers that repository data
+can establish. Reviewers remain responsible for semantic judgments about
+applicability, meaning, dependencies, and whether a change is major. Follow the
+mandatory Tier 3 rules in
+[`consistency-workflow.md`](consistency-workflow.md#mandatory-fresh-tier-3-audits).
+
 ## Claim inventory
 
 A substantive claim is any statement that could create, alter, contradict, retire, or materially contextualize repository knowledge. Break compound statements apart when their dispositions could differ. Minor wording, formatting, and connective prose need not receive separate IDs.
@@ -163,17 +201,20 @@ Use one of these values:
 2. Save the source using [`../templates/intake-submission.md`](../templates/intake-submission.md).
 3. Create a review using [`../templates/intake-review.md`](../templates/intake-review.md).
 4. Record the authority declaration and impact manifest.
-5. Inventory and classify every substantive claim.
-6. Generate targeted context, inspect the affected neighborhood, and widen the
+5. For a lore review, complete the audit baseline evaluation and generate
+   incremental context when a reliable baseline exists.
+6. Inventory and classify every substantive claim.
+7. Generate targeted context, inspect the affected neighborhood, and widen the
    manifest when new dependencies appear.
-7. Assign a disposition before modifying authoritative pages.
-8. Apply authorized changes, creating exception records where required.
-9. Record all changed and deliberately unchanged targets in the review.
-10. Run the required consistency tier, link, metadata, contradiction,
+8. Assign a disposition before modifying authoritative pages.
+9. Apply authorized changes, creating exception records where required.
+10. Record all changed and deliberately unchanged targets in the review.
+11. Run the required consistency tier, link, metadata, contradiction,
     duplication, generated-index, and diff checks.
-11. Add a canon change-log entry for significant canon effects.
-12. Mark the review complete only when no claim lacks a disposition.
-13. Record publication as pending; report the final commit, PR, and check state
+12. Add a canon change-log entry for significant canon effects.
+13. Mark the review complete only when no claim lacks a disposition and the
+    audit baseline evaluation is complete.
+14. Record publication as pending; report the final commit, PR, and check state
     from Git and GitHub without modifying the completed review.
 
 ## Conversational refinement

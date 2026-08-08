@@ -83,12 +83,31 @@ context displays the same fields. CI rejects a stale index, a missing
 supersession target, or an exceptional disposition without a linked status
 record.
 
-## Periodic audits
+## Mandatory fresh Tier 3 audits
 
-Run a Tier 3 audit after every ten completed canon cases, before a tagged canon
-snapshot or sustained story-drafting phase, after a major regional,
-chronological, political, or taxonomy change, or whenever targeted reviews
-repeatedly expose unexpected cross-domain effects.
+A fresh Tier 3 audit is required:
+
+- after every ten completed canon cases since the latest comprehensive Tier 3
+  baseline;
+- before a tagged canon snapshot;
+- before sustained story drafting;
+- after major regional, chronological, political, taxonomy, ownership, path,
+  or alias changes;
+- when one change affects three or more semantic domains;
+- when incremental or targeted reviews repeatedly expose unexpected
+  dependencies; or
+- when the prior baseline is missing, incomplete, or unreliable.
+
+Evaluate these triggers during every lore intake review, not as an optional
+later maintenance activity. Identify the latest applicable baseline, examine
+the full Git range since it, and record the required and performed tier. Count
+unique completed canon cases from Git history and completed review records;
+multiple submissions or addenda in one case count once. The canon change log
+and impact manifests may corroborate the evaluation but cannot determine it by
+themselves. Semantic judgment remains required when deciding applicability,
+whether a change is major, and whether unexpected dependencies are repeated.
+Ambiguity makes the baseline unreliable and therefore activates a fresh Tier 3
+review.
 
 ## Incremental audits
 
@@ -98,6 +117,11 @@ recorded relationships require renewed semantic review after later commits.
 The complete Git diff is the changed-path authority. Impact manifests, the
 canon change log, claim indexes, and generated context assist discovery but do
 not prove semantic consistency.
+
+For every lore intake review, apply this baseline evaluation within the regular
+intake record. The standalone incremental-audit template remains available for
+dedicated maintenance audits and rebaselines, but it is not a substitute for
+the intake-review fields.
 
 Incremental reuse applies only after every recorded dependency and invalidation
 condition has been checked. An unchanged file may be affected by a changed

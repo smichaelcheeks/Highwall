@@ -263,8 +263,181 @@ class ValidatorTests(unittest.TestCase):
         self.fixture.submission(
             completion_basis=None, transmission_status=None, include_marker=False
         )
-        self.fixture.review(include_impact=False)
+        self.fixture.review(include_impact=False, lore_review=None)
         self.assertEqual([], self.validate())
+
+    def test_new_review_requires_lore_review_classification(self) -> None:
+        self.fixture.review(lore_review=None)
+        self.assert_error("invalid or missing lore_review")
+
+    def test_process_review_does_not_require_audit_baseline_fields(self) -> None:
+        self.fixture.review(lore_review="false")
+        self.assertEqual([], self.validate())
+
+    def test_canon_authority_requires_lore_review_true(self) -> None:
+        self.fixture.review(authority="establish-canon", lore_review="false")
+        self.assert_error("requires lore_review: true")
+
+    def test_valid_lore_review_audit_evaluation_passes(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        self.assertEqual([], self.validate())
+
+    def test_lore_review_requires_audit_baseline_fields(self) -> None:
+        self.fixture.review(authority="establish-canon", lore_review="true")
+        self.assert_error("missing audit baseline fields")
+        self.assert_error("missing audit baseline list fields")
+
+    def test_semantic_baseline_requires_full_commit_hash(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            f"semantic_audit_baseline: {'0' * 40}",
+            "semantic_audit_baseline: 027d0e3",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("must be a full commit hash or 'none'")
+
+    def test_audit_range_must_start_at_baseline(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            f"{'0' * 40}..{'1' * 40}", f"{'2' * 40}..{'1' * 40}"
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("must start at semantic_audit_baseline")
+
+    def test_missing_baseline_requires_fresh_tier_3(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8")
+        text = text.replace(
+            f"semantic_audit_baseline: {'0' * 40}",
+            "semantic_audit_baseline: none",
+        ).replace(
+            f'audit_git_range: "{"0" * 40}..{"1" * 40}"',
+            "audit_git_range: fresh-tier-3-required",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("deterministic Tier 3 triggers are missing: missing-baseline")
+
+    def test_ten_completed_cases_requires_tier_3_trigger(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "completed_canon_cases_since_tier_three: 0",
+            "completed_canon_cases_since_tier_three: 10",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error(
+            "deterministic Tier 3 triggers are missing: ten-completed-canon-cases"
+        )
+
+    def test_unknown_case_count_requires_unreliable_baseline_trigger(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "completed_canon_cases_since_tier_three: 0",
+            "completed_canon_cases_since_tier_three: unknown",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error(
+            "deterministic Tier 3 triggers are missing: unreliable-baseline"
+        )
+
+    def test_three_domains_requires_tier_3_trigger(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "domains:\n  - administration",
+            "domains:\n  - administration\n  - history\n  - places",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error(
+            "deterministic Tier 3 triggers are missing: three-or-more-semantic-domains"
+        )
+
+    def test_active_tier_3_trigger_requires_tier_3_required(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8")
+        text = text.replace(
+            "tier_three_trigger_active: no", "tier_three_trigger_active: yes"
+        )
+        text = text.replace(
+            "tier_three_triggers: []",
+            "tier_three_triggers:\n  - tagged-canon-snapshot",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("active Tier 3 trigger requires consistency_tier_required: tier-3")
+
+    def test_complete_tier_3_review_requires_tier_3_performed(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8")
+        text = text.replace("consistency_tier_required: tier-2", "consistency_tier_required: tier-3")
+        text = text.replace(
+            "tier_three_trigger_active: no", "tier_three_trigger_active: yes"
+        )
+        text = text.replace(
+            "tier_three_triggers: []",
+            "tier_three_triggers:\n  - tagged-canon-snapshot",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("must record consistency_tier_performed: tier-3")
+
+    def test_prior_relationships_require_recorded_results(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "prior_audited_relationships: []",
+            "prior_audited_relationships:\n  - AUDIT-V01",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("prior audited relationships lack recorded results: AUDIT-V01")
+
+    def test_audit_results_must_name_considered_relationships(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "audit_results_carried_forward: []",
+            "audit_results_carried_forward:\n  - AUDIT-V01",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("audit results name unconsidered relationships: AUDIT-V01")
+
+    def test_complete_lore_review_cannot_leave_audit_fields_pending(self) -> None:
+        self.fixture.review(
+            authority="establish-canon", lore_review="true", include_audit=True
+        )
+        path = self.fixture.root / "development/intake-reviews/example-review.md"
+        text = path.read_text(encoding="utf-8").replace(
+            "incremental_context_generated: yes",
+            "incremental_context_generated: pending",
+        )
+        path.write_text(text, encoding="utf-8")
+        self.assert_error("complete lore review has pending audit fields")
 
     def test_missing_impact_manifest_field_fails(self) -> None:
         path = self.fixture.root / "development/intake-reviews/example-review.md"

@@ -6031,6 +6031,254 @@
     },
     {
       "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Integrate audit-baseline evaluation into every new lore intake review instead of leaving it as optional standalone maintenance.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Intake, consistency, incremental-audit, contributor, and agent guidance"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Require each lore review to record the baseline, Git range, context-generation state, prior relationships, four result categories, required/performed tier, Tier 3 state, and canon-case count.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`templates/intake-review.md` and validator schema"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Require a fresh Tier 3 audit after ten completed canon cases and before tagged snapshots or sustained story drafting.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Consistency, intake, incremental-audit, and template guidance"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Require Tier 3 after major regional, chronological, political, taxonomy, ownership, path, or alias changes and whenever three or more semantic domains are affected.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Consistency, intake, incremental-audit, template, and validator"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Require Tier 3 when repeated unexpected dependencies appear or the prior baseline is missing, incomplete, or unreliable.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Consistency, intake, incremental-audit, template, and validator"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Derive counters and trigger evaluation from Git history and review records, not solely from manifests or the canon change log, and use semantic judgment for ambiguity.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Intake, consistency, incremental-audit, and template guidance"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C007",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Extend validation and isolated tests so new reviews declare whether they are lore reviews and complete the required baseline evaluation when they are.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`scripts/validate_repository.py`, `tests/fixtures.py`, and `tests/test_validate_repository.py`"
+    },
+    {
+      "authoritative_targets": [
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/incremental-audit-workflow.md",
+        "templates/intake-review.md",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "claim_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C008",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "incremental-audit",
+        "canon-intake",
+        "repository-consistency"
+      ],
+      "submission": "../../intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01",
+      "summary": "Preserve the clarification as A01 and do not change lore, historical audits, claim authority, or existing deferred policy questions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Immutable A01, canon/story/design, historical records, and deferred policy areas"
+    },
+    {
+      "authoritative_targets": [
         "references/incremental-audit-workflow.md",
         "references/consistency-workflow.md",
         "templates/incremental-audit-review.md",

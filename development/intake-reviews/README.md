@@ -18,3 +18,9 @@ New reviews must include the impact manifest defined in
 [`../../references/consistency-workflow.md`](../../references/consistency-workflow.md).
 Use it to assemble targeted semantic context before applying changes. Historical
 reviews without manifests remain valid.
+
+Every new lore review must also complete the audit-baseline evaluation defined
+in [`../../references/intake-workflow.md`](../../references/intake-workflow.md).
+This makes incremental coverage part of normal canon intake. Determine the
+baseline, Git range, and completed-case count from Git history and completed
+review records; use semantic judgment for ambiguous dependencies and triggers.

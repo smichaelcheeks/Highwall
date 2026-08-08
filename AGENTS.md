@@ -42,15 +42,21 @@ Before changing authoritative content:
 6. Create the matching review in `development/intake-reviews/`, record its
    impact manifest, generate targeted context, and inventory every substantive
    claim before changing authoritative pages.
-7. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
-8. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
-9. Apply authorized changes to their single authoritative locations and add provenance links.
-10. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
-11. Apply the required consistency tier. Use repository-wide semantic review
-    for shared taxonomy, naming, chronology, geography, political structure,
-    paths, aliases, authority ownership, three or more affected domains, or
-    unexpected cross-domain effects.
-12. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+7. For every lore review, record the latest semantic-audit baseline, full Git
+   range examined, incremental-context state, prior relationships and outcomes,
+   required and performed consistency tier, Tier 3 triggers, and the completed
+   canon-case count since the latest comprehensive Tier 3 baseline.
+8. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
+9. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
+10. Apply authorized changes to their single authoritative locations and add provenance links.
+11. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
+12. Apply the required consistency tier. A fresh Tier 3 audit is mandatory
+    after ten completed canon cases; before a tagged canon snapshot or sustained
+    story drafting; after major regional, chronological, political, taxonomy,
+    ownership, path, or alias changes; for three or more affected domains; for
+    repeated unexpected dependencies; or when the baseline is missing,
+    incomplete, or unreliable.
+13. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
 
 Treat mid-sentence endings, missing promised sections, unclosed delimiters or
 code fences, abrupt list endings, and references to omitted continuation as

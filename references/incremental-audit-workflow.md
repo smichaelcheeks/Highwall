@@ -12,6 +12,12 @@ and its
 [`intake review`](../development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md).
 It grants no lore, story, design, or claim-disposition authority.
 
+The process was extended by
+[`CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01`](../intake/submissions/2026-08-07-incremental-audit-framework-a01.md)
+and its
+[`intake review`](../development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md)
+to make baseline evaluation a required part of every lore intake review.
+
 Historical audit reports are immutable snapshots. Do not rewrite them to fit
 this workflow. A later incremental record identifies the prior report and exact
 audited commit, then records new coverage decisions separately.
@@ -54,6 +60,22 @@ An incremental audit requires:
 If a prior result lacks sufficient dependency or invalidation information,
 record it as `not-assessed` and review it fresh. Do not infer its coverage from
 an unchanged path.
+
+## Integration with regular lore intake
+
+Incremental review is not an optional follow-up for lore intake. Every new lore
+review completes the audit-baseline fields in
+[`intake-review.md`](../templates/intake-review.md), examines the Git range from
+the latest applicable semantic baseline, and records the disposition of prior
+audited relationships. Use this standalone workflow and its dedicated record
+when conducting a maintenance audit or establishing a new baseline; use the
+same evidence and vocabulary inside the intake review for ordinary canon work.
+
+Determine baselines and completed-case counts from Git history and completed
+review records, not solely from the canon change log or impact manifests. When
+the evidence is ambiguous, missing, incomplete, or unreliable, do not guess a
+carry-forward decision: perform a fresh Tier 3 audit under
+[`consistency-workflow.md`](consistency-workflow.md#mandatory-fresh-tier-3-audits).
 
 ## Workflow
 

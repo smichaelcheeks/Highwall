@@ -9,6 +9,7 @@ submission_id: CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01
 authority: establish-policy
 session_mode: direct-integration
 reviewer: Codex
+lore_review: false
 subjects:
   - incremental-audit
   - repository-consistency
@@ -195,4 +196,8 @@ generated claim index; and publish a draft PR without changing lore.
 
 ## Amendments
 
-None.
+### 2026-08-08: Prospective lore-review classification
+
+Added `lore_review: false` so the clarification in A01 can distinguish this
+process-only review from lore intake under the prospective validator rule. No
+S01 claim, disposition, evidence, outcome, or publication state changed.
