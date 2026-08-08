@@ -122,6 +122,8 @@ class FixtureRepository:
         submission_id: str = SUBMISSION_ID,
         authority: str = "establish-policy",
         status: str = "complete",
+        lore_review: str | None = "false",
+        include_audit: bool = False,
         claims: list[str] | None = None,
         include_impact: bool = True,
         target: str = "canon/places/example-place.md",
@@ -136,6 +138,28 @@ class FixtureRepository:
             f"submission_id: {submission_id}",
             f"authority: {authority}",
         ]
+        if lore_review is not None:
+            metadata.append(f"lore_review: {lore_review}")
+        if include_audit:
+            baseline = "0" * 40
+            head = "1" * 40
+            metadata.extend(
+                [
+                    f"semantic_audit_baseline: {baseline}",
+                    f'audit_git_range: "{baseline}..{head}"',
+                    "incremental_context_generated: yes",
+                    "consistency_tier_required: tier-2",
+                    "consistency_tier_performed: tier-2",
+                    "tier_three_trigger_active: no",
+                    "completed_canon_cases_since_tier_three: 0",
+                    "prior_audited_relationships: []",
+                    "audit_results_carried_forward: []",
+                    "audit_results_revalidated: []",
+                    "audit_results_invalidated: []",
+                    "audit_results_widened: []",
+                    "tier_three_triggers: []",
+                ]
+            )
         if include_impact:
             metadata.extend(
                 [

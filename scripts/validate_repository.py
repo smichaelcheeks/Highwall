@@ -47,6 +47,48 @@ TRANSMISSION_STATUSES = {"complete"}
 COMPLETION_BASES = {"end-marker", "explicit-confirmation", "complete-attachment"}
 END_OF_SEED_MARKER = "<!-- END OF SEED -->"
 IMPACT_FIELDS = {"subjects", "domains", "search_terms", "authoritative_targets"}
+LORE_REVIEW_VALUES = {"true", "false"}
+LORE_AUTHORITIES = {"establish-canon", "working-canon"}
+AUDIT_SCALAR_FIELDS = {
+    "semantic_audit_baseline",
+    "audit_git_range",
+    "incremental_context_generated",
+    "consistency_tier_required",
+    "consistency_tier_performed",
+    "tier_three_trigger_active",
+    "completed_canon_cases_since_tier_three",
+}
+AUDIT_LIST_FIELDS = {
+    "prior_audited_relationships",
+    "audit_results_carried_forward",
+    "audit_results_revalidated",
+    "audit_results_invalidated",
+    "audit_results_widened",
+    "tier_three_triggers",
+}
+INCREMENTAL_CONTEXT_STATES = {"yes", "no", "pending"}
+CONSISTENCY_TIERS = {"tier-2", "tier-3"}
+PERFORMED_CONSISTENCY_TIERS = CONSISTENCY_TIERS | {"pending"}
+TRIGGER_STATES = {"yes", "no", "pending"}
+TIER_3_TRIGGERS = {
+    "ten-completed-canon-cases",
+    "tagged-canon-snapshot",
+    "sustained-story-drafting",
+    "major-regional-change",
+    "major-chronological-change",
+    "major-political-change",
+    "major-taxonomy-change",
+    "major-ownership-change",
+    "major-path-change",
+    "major-alias-change",
+    "three-or-more-semantic-domains",
+    "repeated-unexpected-dependencies",
+    "missing-baseline",
+    "incomplete-baseline",
+    "unreliable-baseline",
+}
+FULL_COMMIT = re.compile(r"^[0-9a-f]{40}$")
+GIT_RANGE = re.compile(r"^([0-9a-f]{40})\.\.([0-9a-f]{40})$")
 CONSISTENCY_DOMAINS = {
     "administration",
     "characters",
@@ -250,6 +292,7 @@ class Validator:
                 self.error(path, f"invalid review status: {metadata.get('status')!r}")
             if self.is_new_path(path):
                 self.validate_impact_manifest(path)
+                self.validate_lore_review(path, metadata)
             for claim_id in self.validate_review_claims(path, submission_id):
                 if claim_id in claim_owners:
                     self.error(
@@ -308,6 +351,176 @@ class Validator:
                 continue
             if not target_path.exists():
                 self.error(path, f"missing authoritative target: {target}")
+
+    def validate_lore_review(self, path: Path, metadata: dict[str, str]) -> None:
+        lore_review = metadata.get("lore_review")
+        if lore_review not in LORE_REVIEW_VALUES:
+            self.error(path, f"invalid or missing lore_review: {lore_review!r}")
+            return
+        if metadata.get("authority") in LORE_AUTHORITIES and lore_review != "true":
+            self.error(
+                path,
+                f"authority {metadata.get('authority')!r} requires lore_review: true",
+            )
+        if lore_review != "true":
+            return
+
+        missing_scalars = {
+            field for field in AUDIT_SCALAR_FIELDS if not metadata.get(field)
+        }
+        if missing_scalars:
+            self.error(
+                path,
+                "missing audit baseline fields: " + ", ".join(sorted(missing_scalars)),
+            )
+
+        lists = self.parse_front_matter_lists(path)
+        missing_lists = AUDIT_LIST_FIELDS - lists.keys()
+        if missing_lists:
+            self.error(
+                path,
+                "missing audit baseline list fields: " + ", ".join(sorted(missing_lists)),
+            )
+
+        baseline = metadata.get("semantic_audit_baseline", "")
+        git_range = metadata.get("audit_git_range", "")
+        if baseline != "none" and not FULL_COMMIT.fullmatch(baseline):
+            self.error(
+                path,
+                "semantic_audit_baseline must be a full commit hash or 'none'",
+            )
+        if baseline == "none":
+            if git_range and git_range != "fresh-tier-3-required":
+                self.error(
+                    path,
+                    "a missing semantic baseline requires audit_git_range: fresh-tier-3-required",
+                )
+        elif baseline:
+            match = GIT_RANGE.fullmatch(git_range)
+            if not match:
+                self.error(path, "audit_git_range must contain two full commit hashes")
+            elif match.group(1) != baseline:
+                self.error(path, "audit_git_range must start at semantic_audit_baseline")
+
+        context_state = metadata.get("incremental_context_generated")
+        if context_state not in INCREMENTAL_CONTEXT_STATES:
+            self.error(path, f"invalid incremental_context_generated: {context_state!r}")
+        tier_required = metadata.get("consistency_tier_required")
+        if tier_required not in CONSISTENCY_TIERS:
+            self.error(path, f"invalid consistency_tier_required: {tier_required!r}")
+        tier_performed = metadata.get("consistency_tier_performed")
+        if tier_performed not in PERFORMED_CONSISTENCY_TIERS:
+            self.error(path, f"invalid consistency_tier_performed: {tier_performed!r}")
+        trigger_active = metadata.get("tier_three_trigger_active")
+        if trigger_active not in TRIGGER_STATES:
+            self.error(path, f"invalid tier_three_trigger_active: {trigger_active!r}")
+
+        count_text = metadata.get("completed_canon_cases_since_tier_three", "")
+        count: int | None = None
+        if count_text.isdigit():
+            count = int(count_text)
+        elif count_text not in {"unknown", "pending"}:
+            self.error(
+                path,
+                "completed_canon_cases_since_tier_three must be a nonnegative integer, "
+                "'unknown', or 'pending'",
+            )
+
+        triggers = lists.get("tier_three_triggers", [])
+        invalid_triggers = sorted(set(triggers) - TIER_3_TRIGGERS)
+        if invalid_triggers:
+            self.error(path, f"invalid Tier 3 triggers: {', '.join(invalid_triggers)}")
+        if trigger_active == "yes" and not triggers:
+            self.error(
+                path,
+                "tier_three_trigger_active is yes but tier_three_triggers is empty",
+            )
+        if trigger_active == "no" and triggers:
+            self.error(
+                path,
+                "tier_three_trigger_active is no but tier_three_triggers is not empty",
+            )
+
+        required_triggers: set[str] = set()
+        if baseline == "none":
+            required_triggers.add("missing-baseline")
+        if count is not None and count >= 10:
+            required_triggers.add("ten-completed-canon-cases")
+        if count_text == "unknown":
+            required_triggers.add("unreliable-baseline")
+        if len(lists.get("domains", [])) >= 3:
+            required_triggers.add("three-or-more-semantic-domains")
+        missing_triggers = sorted(required_triggers - set(triggers))
+        if missing_triggers:
+            self.error(
+                path,
+                "deterministic Tier 3 triggers are missing: "
+                + ", ".join(missing_triggers),
+            )
+        if required_triggers and trigger_active != "yes":
+            self.error(
+                path,
+                "deterministic Tier 3 trigger requires tier_three_trigger_active: yes",
+            )
+        if trigger_active == "yes" and tier_required != "tier-3":
+            self.error(path, "active Tier 3 trigger requires consistency_tier_required: tier-3")
+
+        prior_relationships = lists.get("prior_audited_relationships", [])
+        audit_results = [
+            result
+            for field in AUDIT_LIST_FIELDS
+            if field.startswith("audit_results_")
+            for result in lists.get(field, [])
+        ]
+        missing_results = sorted(set(prior_relationships) - set(audit_results))
+        unknown_results = sorted(set(audit_results) - set(prior_relationships))
+        duplicate_results = sorted(
+            result for result in set(audit_results) if audit_results.count(result) > 1
+        )
+        if missing_results:
+            self.error(
+                path,
+                "prior audited relationships lack recorded results: "
+                + ", ".join(missing_results),
+            )
+        if unknown_results:
+            self.error(
+                path,
+                "audit results name unconsidered relationships: "
+                + ", ".join(unknown_results),
+            )
+        if duplicate_results:
+            self.error(
+                path,
+                "audit relationships have multiple results: "
+                + ", ".join(duplicate_results),
+            )
+
+        if metadata.get("status") == "complete":
+            pending = [
+                field
+                for field in (
+                    "incremental_context_generated",
+                    "consistency_tier_performed",
+                    "tier_three_trigger_active",
+                    "completed_canon_cases_since_tier_three",
+                )
+                if metadata.get(field) == "pending"
+            ]
+            if pending:
+                self.error(
+                    path,
+                    "complete lore review has pending audit fields: "
+                    + ", ".join(pending),
+                )
+            if tier_required == "tier-3" and tier_performed != "tier-3":
+                self.error(
+                    path,
+                    "complete lore review requiring Tier 3 must record "
+                    "consistency_tier_performed: tier-3",
+                )
+            if tier_required == "tier-2" and tier_performed not in CONSISTENCY_TIERS:
+                self.error(path, "complete lore review must record the tier performed")
 
     def validate_transmission_completeness(self, path: Path, metadata: dict[str, str]) -> None:
         status = metadata.get("transmission_status")

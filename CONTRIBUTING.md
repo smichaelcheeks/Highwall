@@ -28,14 +28,18 @@ For a batch of new information, follow [`references/intake-workflow.md`](referen
 4. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
 5. **Map the impact.** Record subjects, domains, search terms, and expected
    authoritative targets, then generate targeted context.
-6. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
-7. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
-8. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
-9. **Verify the result.** Apply the consistency tier required by
+6. **Evaluate the audit baseline.** For every lore review, examine Git history
+   from the latest applicable semantic baseline, record prior relationship
+   outcomes and Tier 3 triggers, and determine the completed canon-case count
+   from Git and review records.
+7. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
+8. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
+9. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
+10. **Verify the result.** Apply the consistency tier required by
    [`references/consistency-workflow.md`](references/consistency-workflow.md),
    then check the diff, links, provenance, accidental canon changes, and leaked
    story spoilers.
-10. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
+11. **Close the audit.** List every changed file, verification result, unresolved item, and resulting canon-change entry.
 
 For conversational refinement, declare a session mode and maintain a review checkpoint separating decisions, proposals, corrections, and questions. Before integrating new conversational facts, preserve the confirmed outcome in an immutable addendum from [`templates/conversation-addendum.md`](templates/conversation-addendum.md). Follow the detailed rules in [`references/intake-workflow.md`](references/intake-workflow.md).
 

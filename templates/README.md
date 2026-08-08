@@ -21,6 +21,7 @@ Copy the closest template when creating a page; do not edit a template to contai
 - [`conversation-addendum.md`](conversation-addendum.md)
 - [`intake-review.md`](intake-review.md)
 - [`maintenance-review.md`](maintenance-review.md)
+- [`incremental-audit-review.md`](incremental-audit-review.md)
 - [`decision-record.md`](decision-record.md)
 - [`open-question.md`](open-question.md)
 - [`contradiction-report.md`](contradiction-report.md)

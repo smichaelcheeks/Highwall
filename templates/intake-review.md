@@ -9,6 +9,14 @@ submission_id: CASE-YYYY-MM-DD-SLUG-S01
 authority: classify
 session_mode: exploration
 reviewer: TODO
+lore_review: TODO
+semantic_audit_baseline: TODO
+audit_git_range: TODO
+incremental_context_generated: pending
+consistency_tier_required: TODO
+consistency_tier_performed: pending
+tier_three_trigger_active: pending
+completed_canon_cases_since_tier_three: pending
 subjects:
   - TODO
 domains:
@@ -17,6 +25,12 @@ search_terms:
   - TODO
 authoritative_targets:
   - TODO
+prior_audited_relationships: []
+audit_results_carried_forward: []
+audit_results_revalidated: []
+audit_results_invalidated: []
+audit_results_widened: []
+tier_three_triggers: []
 related: []
 ---
 
@@ -35,6 +49,36 @@ The front-matter impact manifest is required for new reviews. Use stable
 kebab-case subject IDs, controlled domains from
 `../../references/consistency-workflow.md`, literal search terms, and
 repository-relative authoritative targets.
+
+## Audit baseline evaluation
+
+- **Lore review:** TODO: `true` for a new lore intake review; otherwise `false`.
+- **Latest applicable semantic-audit baseline:** TODO: full commit hash or `none`.
+- **Git range examined:** TODO: `BASELINE..HEAD` using full commit hashes, or
+  `fresh-tier-3-required` when no usable baseline exists.
+- **Incremental context generated:** TODO: `yes` or `no`.
+- **Prior audited relationships considered:** TODO: identify relationships or
+  `None`.
+- **Results carried forward:** TODO: relationship IDs or `None`.
+- **Results revalidated:** TODO: relationship IDs or `None`.
+- **Results invalidated:** TODO: relationship IDs or `None`.
+- **Results widened:** TODO: relationship IDs and Tier 2 or Tier 3 scope, or
+  `None`.
+- **Consistency tier required:** TODO: `tier-2` or `tier-3`.
+- **Consistency tier performed:** TODO: `tier-2` or `tier-3`.
+- **Tier 3 trigger active:** TODO: `yes` or `no`.
+- **Tier 3 triggers:** TODO: controlled trigger IDs or `None`.
+- **Completed canon cases since latest comprehensive Tier 3 baseline:** TODO:
+  nonnegative integer or `unknown`.
+
+Complete this section for every lore review and mirror its controlled values in
+front matter. Put each exact prior relationship ID in exactly one result list;
+record evidence and explanation in this section. Use Git history and completed
+review records to identify the baseline, range, and case count. The canon change
+log and impact manifests may assist discovery but are not sufficient evidence
+by themselves. Generate and inspect incremental context when a reliable prior
+baseline exists. Apply semantic judgment to ambiguous dependencies or triggers;
+an incomplete, missing, or unreliable baseline requires a fresh Tier 3 review.
 
 ## Files inspected
 
@@ -109,6 +153,12 @@ TODO or `None`.
 - [ ] The impact manifest covers every affected subject, domain, search term,
   and authoritative target.
 - [ ] Targeted context was generated and inspected before widening the search.
+- [ ] Lore-review status and audit-baseline fields are complete.
+- [ ] Git history and review records support the baseline, range, trigger, and
+  completed-case evaluation.
+- [ ] Every prior audited relationship considered has a recorded audit outcome.
+- [ ] The required consistency tier was performed, including any mandatory
+  fresh Tier 3 audit.
 
 ## Outcome
 
