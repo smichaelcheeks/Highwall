@@ -9509,7 +9509,9 @@
       "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s01.md",
       "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01",
       "summary": "Departing Councilor designates a preferred interim; Arbiter appoints, may choose another eligible person, and prompt ordinary-procedure special selection fills the term.",
-      "superseded_by": [],
+      "superseded_by": [
+        "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C003"
+      ],
       "supersedes": [],
       "target": "`canon/government/council.md`"
     },
@@ -10612,6 +10614,811 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "Source boundary"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C001",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Highwall government relies on accumulated experience and precedent and reactively develops procedures after observed hazards, failures, or weaknesses.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/highwall-civic-government.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C002",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Accumulated experience can make Highwall highly capable with known circumstances while leaving it vulnerable to unprecedented ones.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/highwall-civic-government.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C003",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "A departing Councilor designates a preferred interim successor who is presumptively accepted.",
+      "superseded_by": [],
+      "supersedes": [
+        "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C038"
+      ],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C004",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Before seating, the Arbiter or a sufficient number of Councilors may challenge the designate; the Councilor threshold is unknown.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`; `development/open-questions/highwall-civic-government-details.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C005",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "A challenged designate is rejected only by ordinary Council majority; without that majority the designate is seated.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C006",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "After rejection, the Arbiter names another eligible designate who undergoes the same process; the Arbiter cannot reject unilaterally.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C007",
+      "classification": "canon",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "A prompt ordinary-procedure special selection still determines who serves the remainder of the term.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C008",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Ordinary-majority rejection of an unseated designate is distinct from supermajority expulsion of a selected Councilor.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C009",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Professional constituencies use no uniform or universally preferred representative-selection method.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C010",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Selection may reflect multiple professions, competing internal interests, or one clear professional leader.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`; `canon/institutions/professional-civic-institutions.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C011",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Existing possible methods remain direct vote, selection by senior professionals, and selection associated with a singular head.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/council.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C012",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Arbiter-Designate restraint is informed by accumulated history and precedent.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/arbiter.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C013",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "An interim designate focuses on day-to-day government and continuity and avoids deferrable actions with substantial or long-lasting consequences.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/arbiter.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C014",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Designate restraint is not a fixed list of legal prohibitions, and Council consideration of demonstrated restraint remains unchanged.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/arbiter.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C015",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Emergency procedures may change as experience reveals hazards or circumstances that prior procedures did not address.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/highwall-civic-government.md`; `canon/government/storm-marshal.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C016",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Emergency review examines lessons as well as the emergency officeholder's conduct and decisions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/storm-marshal.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C017",
+      "classification": "canon",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "The Council may consider changes to law, procedure, preparedness, or institutional practice after observed emergency problems.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`canon/government/storm-marshal.md`"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C018",
+      "classification": "canon",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "The three stated tensions are complementary: experience has limits, temporary authority coexists with restraint, and variable professional methods coexist in one Council.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Authority interpretation"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C019",
+      "classification": "question",
+      "disposition": "defer",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [
+        {
+          "path": "development/open-questions/highwall-civic-government-details.md",
+          "status": "open"
+        }
+      ],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "Challenge thresholds and review standards, specific designate precedents, constituency-specific methods, and emergency-lesson implementation procedures remain unknown.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "[Highwall Civic Government Details](../open-questions/highwall-civic-government-details.md)"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C020",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "No proposals, individual methods, historical examples, further governmental changes, or broader reserved subjects are authorized.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Reserved canon domains"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/council.md",
+        "canon/government/arbiter.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "claim_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C021",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "culture",
+        "government",
+        "history",
+        "institutions",
+        "law"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "review_authority": "working-canon",
+      "subjects": [
+        "highwall",
+        "council",
+        "arbiter",
+        "storm-marshal",
+        "professional-civic-institutions"
+      ],
+      "submission": "../../intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02",
+      "summary": "The hypothetical death, collapse, closure, character, chronology, and consequence scenario establishes no lore or story fact.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`story/`"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

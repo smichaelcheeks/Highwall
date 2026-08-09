@@ -16,6 +16,7 @@ related:
   - "../places/highwall-region-hydrology.md"
 provenance:
   - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
 ---
 
 # Storm Marshal
@@ -65,6 +66,13 @@ maliciously or for personal benefit or vendetta. Good-faith decisions that
 prove suboptimal in hindsight are treated as unfortunate outcomes and learning
 opportunities, not grounds for formal punishment.
 
+As a working-canon clarification, the review also examines what Highwall should
+learn from the emergency. The Council may consider whether observed hazards,
+failures, or response problems should change laws, procedures, preparedness,
+or institutional practices. After-action review therefore serves institutional
+learning as well as judging the conduct and decisions of the emergency
+officeholder.
+
 ## Lesser emergency authority
 
 Council law recognizes that an emergency may require extraordinary action
@@ -76,7 +84,9 @@ not established.
 Use of that authority is subject to an after-action Council review modeled on
 Storm Marshal review. Because the Arbiter is under examination, the Arbiter
 does not participate as a reviewer. The Council may terminate an
-Arbiter-declared emergency against the Arbiter's wishes.
+Arbiter-declared emergency against the Arbiter's wishes. As with Storm Marshal
+review, the Council also examines lessons for future law, procedure,
+preparedness, and institutional practice.
 
 ## Bespoke activation
 
@@ -98,3 +108,4 @@ The numerical threshold is not established.
 ## Sources and decisions
 
 - [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- [Highwall Civic Government Clarifications review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)

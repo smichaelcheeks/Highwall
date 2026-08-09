@@ -16,6 +16,7 @@ related:
   - "../places/highwall.md"
 provenance:
   - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
 ---
 
 # Professional Civic Institutions of Highwall
@@ -33,7 +34,9 @@ Arbiter coordinates among them, resolves disputes, and retains formal authority
 to direct them. Professional Council constituencies may encompass several
 related professions without placing those professions in one administrative
 hierarchy, and constituencies do not necessarily correspond one-to-one with
-institutions or professions.
+institutions or professions. Their representative-selection procedures may
+therefore reflect different internal structures and interests rather than a
+uniform model; the [Council](../government/council.md) owns those procedures.
 
 ## Market institution
 
@@ -86,3 +89,4 @@ are not established.
 ## Sources and decisions
 
 - [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- [Highwall Civic Government Clarifications review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)

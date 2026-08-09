@@ -20,6 +20,7 @@ related:
   - "../history/highwall-governmental-continuity.md"
 provenance:
   - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
 ---
 
 # Arbiter of Highwall
@@ -77,6 +78,17 @@ Arbiter-Designate. The designate exercises the interim office until the Council
 formally selects the next Arbiter and is expected during that interval to avoid
 decisions with long-term implications.
 
+As a working-canon clarification, the designate is expected to focus primarily
+on day-to-day government and continuity, and largely to refrain from actions
+with substantial or long-lasting consequences when those actions can
+reasonably await selection of the next Arbiter.
+
+Accumulated history and precedent guide this expected restraint; it is not
+established as a fixed list of legally prohibited acts. The temporary
+officeholder retains the authority necessary to maintain government while
+using circumstance and precedent to distinguish caretaker administration from
+decisions better left to a formally selected Arbiter.
+
 The designate is formally a placeholder and in practice also serves as a
 right-hand or apprentice. Designation lets the incumbent's preferred successor
 learn the office, demonstrate fitness, and become visible to the Council, but
@@ -98,3 +110,4 @@ emergency powers are not established.
 ## Sources and decisions
 
 - [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- [Highwall Civic Government Clarifications review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)

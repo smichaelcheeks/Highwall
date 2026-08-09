@@ -15,6 +15,7 @@ related:
   - "../institutions/professional-civic-institutions.md"
 provenance:
   - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
 ---
 
 # Council of Highwall
@@ -46,8 +47,12 @@ change.
 
 Geographic Councilors are selected by direct vote based on residence.
 Professional Councilors are selected by procedures appropriate to their
-constituencies, which may include direct vote, vote by senior professionals, or
-selection associated with professional leadership.
+constituencies. No one mechanism is inherently preferred for all professional
+constituencies. Procedures may include direct vote, vote by senior
+professionals, or selection associated with a singular professional head.
+They may reflect whether a constituency contains several professions or
+competing interests, or instead has one clear professional leader who may be
+best suited to represent it.
 
 Admission to Stewardship requires admission through a recognized profession.
 A steward who belongs to multiple professions must designate one professional
@@ -71,12 +76,22 @@ governmental say.
 Councilors serve two-year terms. Geographic and professional selections occur
 in alternating years, and constituents have no recall mechanism.
 
-A Councilor expecting to leave early is expected to name a preferred
-replacement. The Arbiter formally appoints an interim replacement and is
-ordinarily expected, but not required, to select that designate. Any different
-appointee must meet the eligibility requirements for the same seat. A prompt
-special selection using the constituency's ordinary procedure fills the
-remainder of the term.
+A Councilor leaving early designates a preferred interim successor, who is
+presumptively accepted. Before the designate is seated, the Arbiter or a
+sufficient number of Councilors may challenge the designation. The number of
+Councilors required to initiate a challenge is not established.
+
+A challenged designate comes before the Council for review. Rejection requires
+an ordinary majority; unless that majority votes to reject, the designate is
+seated as interim Councilor. If the Council rejects the designate, the Arbiter
+designates another person eligible for that specific seat, and the replacement
+undergoes the same process. The Arbiter may initiate review but may not
+unilaterally reject the departing Councilor's choice.
+
+A prompt special selection using the constituency's ordinary procedure then
+determines who fills the remainder of the term. The ordinary-majority standard
+for rejecting an unseated interim designate is distinct from the shared
+constitutional supermajority required to expel a duly selected Councilor.
 
 The Council may expel one of its members by the shared constitutional
 supermajority. Expulsion creates a vacancy filled through the normal selection
@@ -98,3 +113,4 @@ on the [office page](arbiter.md).
 ## Sources and decisions
 
 - [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- [Highwall Civic Government Clarifications review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)
