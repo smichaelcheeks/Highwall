@@ -13,6 +13,8 @@ related:
   - "highwall-region-flora-and-fauna.md"
   - "../economy/regional-trade-system.md"
   - "../government/regional-imperial-structure.md"
+  - "../government/highwall-civic-government.md"
+  - "../institutions/professional-civic-institutions.md"
 provenance:
   - "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md"
@@ -24,6 +26,7 @@ provenance:
   - "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-a01-review.md"
   - "../../development/intake-reviews/2026-08-04-highwall-overview-a02-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
 ---
 
 # Highwall
@@ -85,9 +88,10 @@ city's long-term welfare rather than residence alone.
 
 ## Government and institutions
 
-Highwall's institutions are generally functional, well-designed, and staffed
-by capable people. They remain susceptible to blind spots, over-optimization,
-rare events, and changing circumstances.
+Highwall's institutions are generally functional and well-designed. Their
+design is intentional, and they are staffed by capable people. They remain
+susceptible to blind spots, over-optimization, rare events, competing
+priorities, and changing circumstances.
 
 Modern Highwall presents itself as an autonomous civic authority governing its
 own affairs while maintaining longstanding political and economic relations
@@ -95,6 +99,9 @@ with neighboring powers. Its legal traditions and reputation for impartial
 arbitration extend beyond the city and are principal sources of regional
 influence. Some civic titles retain terminology from earlier military roles
 whose functions have become civilian and administrative.
+
+Highwall's governing bodies, offices, and allocation of public authority are
+documented in [Highwall Civic Government](../government/highwall-civic-government.md).
 
 Highwall also remains an important interface for interactions within the
 coastal plain and within the highlands, but it is not exclusive in either
@@ -189,6 +196,8 @@ Highwall Region](highwall-region-climate.md).
 - [Working flora and fauna inventory](highwall-region-flora-and-fauna.md)
 - [Regional trade system](../economy/regional-trade-system.md)
 - [Regional imperial structure](../government/regional-imperial-structure.md)
+- [Highwall civic government](../government/highwall-civic-government.md)
+- [Professional civic institutions](../institutions/professional-civic-institutions.md)
 
 ## Sources and decisions
 
@@ -202,3 +211,4 @@ Highwall Region](highwall-region-climate.md).
 - [Regional Climate seed review](../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md)
 - [Highwall Canyon Origin supersession review](../../development/intake-reviews/2026-08-04-highwall-overview-a01-review.md)
 - [Highwall Interface Scope clarification review](../../development/intake-reviews/2026-08-04-highwall-overview-a02-review.md)
+- [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
