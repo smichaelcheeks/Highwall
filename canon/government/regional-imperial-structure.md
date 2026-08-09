@@ -11,6 +11,7 @@ related:
   - "../places/highwall.md"
   - "../places/upriver-highlands.md"
   - "../economy/regional-trade-system.md"
+  - "highwall-civic-government.md"
   - "../../story/reveals/regional-imperial-relationship.md"
 provenance:
   - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"

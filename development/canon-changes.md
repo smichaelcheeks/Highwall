@@ -12,6 +12,29 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-09 — Establish Highwall civic government and offices
+
+- **Change:** Establish the mixed-authority structure of Highwall's divided
+  civic sovereignty; the Council, Arbiter, and Arbiter-Designate; ordinary and
+  bespoke Storm Marshal command; professional civic institutions; office
+  selection, tenure, oversight, and succession; bounded external
+  administration; and the supplied governmental continuity after the Old Wall.
+- **Authority:** [Highwall Civic Government and Offices seed](../intake/submissions/2026-08-09-highwall-civic-government-s01.md)
+- **Review:** [Highwall Civic Government and Offices seed review](intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- **Affected pages:** [`canon/government/highwall-civic-government.md`](../canon/government/highwall-civic-government.md),
+  [`canon/government/council.md`](../canon/government/council.md),
+  [`canon/government/arbiter.md`](../canon/government/arbiter.md),
+  [`canon/government/storm-marshal.md`](../canon/government/storm-marshal.md),
+  [`canon/institutions/professional-civic-institutions.md`](../canon/institutions/professional-civic-institutions.md),
+  [`canon/history/highwall-governmental-continuity.md`](../canon/history/highwall-governmental-continuity.md),
+  [`canon/places/highwall.md`](../canon/places/highwall.md), and
+  [`canon/government/regional-imperial-structure.md`](../canon/government/regional-imperial-structure.md).
+- **Notes:** The pages remain working canon overall while explicitly preserving
+  the source's narrower established-canon constraints. The constitutional
+  threshold and other supplied unknowns remain open; three office alternatives
+  remain unapproved. No reserved legal, cultural, military, economic,
+  geographic, or narrative detail was added.
+
 ### 2026-08-07 — Clarify Forge's downriver position and Highwall's interface scope
 
 - **Change:** Establish `downriver` as Highwall shorthand for the coastal
