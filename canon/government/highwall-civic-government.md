@@ -17,6 +17,7 @@ related:
   - "../places/highwall.md"
 provenance:
   - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+  - "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
 ---
 
 # Highwall Civic Government
@@ -45,6 +46,20 @@ These arrangements create intentional constitutional tensions rather than
 resolved contradictions. The Council's formal primacy coexists with the
 Arbiter's practical interpretive power, and institutional autonomy coexists
 with the Arbiter's formal power of direction.
+
+## Precedent and procedural adaptation
+
+Highwall's governmental procedures rely substantially on accumulated
+experience and precedent. When hazards, failures, or institutional weaknesses
+become apparent, Highwall tends to learn from them and develop procedures for
+similar circumstances. This reactive development can make its institutions
+highly capable where experience is deep, but does not guarantee preparedness
+for circumstances outside that accumulated experience.
+
+Emergency review is one explicit connection between experience and later
+institutional development. Its possible effects on law, procedure,
+preparedness, and institutional practice are described with
+[Storm Marshal](storm-marshal.md).
 
 ## Oversight and institutional accommodation
 
@@ -110,3 +125,4 @@ Unapproved office-selection alternatives are preserved in
 ## Sources and decisions
 
 - [Highwall Civic Government and Offices review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md)
+- [Highwall Civic Government Clarifications review](../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)

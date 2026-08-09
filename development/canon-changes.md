@@ -12,6 +12,24 @@ Record significant additions, revisions, reversals, and clarifications to canon.
 - **Affected pages:** TODO
 - **Notes:** TODO
 
+### 2026-08-09 — Clarify Highwall civic government
+
+- **Change:** Replace the interim Councilor appointment rule with presumptive
+  succession subject to Council review; clarify precedent-guided
+  Arbiter-Designate restraint, variable professional representative selection,
+  and the institutional-learning function of emergency review.
+- **Authority:** [Highwall Civic Government Clarifications seed](../intake/submissions/2026-08-09-highwall-civic-government-s02.md)
+- **Review:** [Highwall Civic Government Clarifications seed review](intake-reviews/2026-08-09-highwall-civic-government-s02-review.md)
+- **Affected pages:** [`canon/government/highwall-civic-government.md`](../canon/government/highwall-civic-government.md),
+  [`canon/government/council.md`](../canon/government/council.md),
+  [`canon/government/arbiter.md`](../canon/government/arbiter.md),
+  [`canon/government/storm-marshal.md`](../canon/government/storm-marshal.md),
+  and [`canon/institutions/professional-civic-institutions.md`](../canon/institutions/professional-civic-institutions.md).
+- **Notes:** S02-C003 supersedes S01-C038. The challenge threshold, review
+  standards, specific precedents, constituency-specific methods, and
+  emergency-lesson implementation procedures remain open. The hypothetical
+  plot scenario establishes no canon or story fact.
+
 ### 2026-08-09 — Establish Highwall civic government and offices
 
 - **Change:** Establish the mixed-authority structure of Highwall's divided
