@@ -1,5 +1,8 @@
 # Repository Standards
 
+These standards govern the Highwall CLOTH. The architecture and terminology
+are defined in the [`CLOTH / THREAD model`](cloth-thread-model.md).
+
 ## Naming and layout
 
 - Use lowercase kebab-case filenames, such as `example-place.md`.
@@ -85,6 +88,24 @@ Submission files are immutable after review begins. Derived classifications, dec
 Every substantive claim must receive a disposition, even when no repository content changes. Reviews record concise, evidence-based rationale: the applicable repository rule, the source or existing page considered, and the reason the disposition follows. They do not need a transcript of private or exploratory reasoning.
 
 Use stable submission and claim identifiers so canon changes, contradiction reports, decisions, and Git commits can refer back to the exact reviewed material. Follow [`intake-workflow.md`](intake-workflow.md).
+
+A traceable provenance or dependency chain is a THREAD. An explicitly
+unresolved relationship may remain a loose thread without being erroneous; a
+missing or irreconcilable provenance connection is a broken thread and should
+be repaired or explicitly documented. Pulling a thread discovers sources and
+consequences but does not grant authority to change knowledge.
+
+## Semantic and mechanical changes
+
+A semantic change alters what the CLOTH records, authorizes, leaves unresolved,
+or requires contributors to do. Lore, story, governance, taxonomy, authority,
+contradiction, and ownership changes require a governed stitch and weave.
+
+A mechanical change preserves meaning, such as an unambiguous typo,
+formatting, link, equivalent-path, or generated-file repair. Mechanical edits
+do not create semantic authority. Changes to these repository standards and
+other CLOTH governance are themselves semantic and must use the governed
+process when available.
 
 ## Contradictions
 

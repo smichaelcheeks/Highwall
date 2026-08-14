@@ -1,6 +1,9 @@
 # Intake Workflow
 
-This workflow turns batches of new information into traceable repository changes while preserving the original source and every material processing decision.
+This workflow processes a **stitch**, the author-facing unit of intentional
+semantic change, and **weaves** an accepted delta into the Highwall CLOTH while
+preserving the source and every material processing decision. See the
+[`CLOTH / THREAD model`](cloth-thread-model.md).
 
 ## Records and responsibilities
 
@@ -18,10 +21,11 @@ Do not combine these records. In particular, never append reviewer conclusions t
 
 ## Transmission completeness gate
 
-Confirm that a seed or addendum is complete before creating a branch, intake
+Confirm that a stitch or addendum is complete before creating a branch, intake
 record, review, or authoritative change. Completeness requires one of:
 
-- the literal `<!-- END OF SEED -->` marker in the submitted document
+- the current literal `<!-- END OF STITCH -->` marker in the submitted document
+- the legacy literal `<!-- END OF SEED -->` marker in the submitted document
 - an explicit author statement that the transmission is complete
 - a complete attachment whose boundaries are available for inspection
 
@@ -40,19 +44,25 @@ completion_basis: end-marker
 
 Controlled `completion_basis` values are `end-marker`,
 `explicit-confirmation`, and `complete-attachment`. When `end-marker` is used,
-the immutable submission must contain the literal marker. The validator applies
-these requirements to submissions newly added relative to the supplied base
-ref, preserving compatibility with historical merged intake records.
+the immutable submission must contain either recognized literal marker.
+`<!-- END OF STITCH -->` is current; `<!-- END OF SEED -->` remains accepted
+indefinitely for legacy compatibility. The validator applies these requirements
+to submissions newly added relative to the supplied base ref, preserving
+compatibility with historical merged intake records.
 
 ## Cases, submissions, and claim IDs
 
-A case groups one seed submission with every conversational addendum, correction, and review that develops from it. Create a stable case ID from the seed date and topic:
+A case groups an initial stitch submission with every conversational addendum,
+correction, and review that develops from it. Create a stable case ID from the
+submission date and topic:
 
 ```text
 CASE-YYYY-MM-DD-SLUG
 ```
 
-Within the case, identify the seed as `S01` and conversational addenda as `A01`, `A02`, and so on:
+Within the case, identify the initial submission as `S01` and conversational
+addenda as `A01`, `A02`, and so on. The stable `S` sequence is a technical
+identifier and does not rename the conceptual change unit:
 
 ```text
 CASE-YYYY-MM-DD-SLUG-S01
@@ -60,7 +70,9 @@ CASE-YYYY-MM-DD-SLUG-A01
 CASE-YYYY-MM-DD-SLUG-A01-C001
 ```
 
-If a case requires another independently supplied seed, increment the seed sequence. IDs remain stable even if prose is later quoted, summarized, corrected, or superseded elsewhere.
+If a case requires another independently supplied submission, increment the
+`S` sequence. IDs remain stable even if prose is later quoted, summarized,
+corrected, or superseded elsewhere.
 
 Every addendum records its parent submission, its sequence within the case, and any earlier claim IDs it supersedes. Supersession changes authority going forward but does not erase the earlier claim or review.
 
@@ -92,7 +104,7 @@ For conversational claims, also record the authority basis:
 
 - `explicit`: the author directly approved or instructed the claim
 - `session-mode`: the declared mode authorizes the definite statement
-- `source-authority`: the parent seed already authorizes the claim and the conversation only clarifies wording
+- `source-authority`: the parent submission already authorizes the claim and the conversation only clarifies wording
 - `pending`: the discussion does not yet authorize repository integration
 
 Reviewer inference is never an authority basis.
@@ -207,7 +219,8 @@ Use one of these values:
 7. Generate targeted context, inspect the affected neighborhood, and widen the
    manifest when new dependencies appear.
 8. Assign a disposition before modifying authoritative pages.
-9. Apply authorized changes, creating exception records where required.
+9. Weave authorized changes through affected THREADs, creating exception
+   records where required.
 10. Record all changed and deliberately unchanged targets in the review.
 11. Run the required consistency tier, link, metadata, contradiction,
     duplication, generated-index, and diff checks.
@@ -219,7 +232,8 @@ Use one of these values:
 
 ## Conversational refinement
 
-Keep the seed immutable while its review remains open. During conversation, maintain a checkpoint that separates:
+Keep the submission immutable while its review remains open. During
+conversation, maintain a checkpoint that separates:
 
 - established decisions
 - proposals still under consideration
@@ -243,7 +257,11 @@ The existing review may remain open without a new addendum while the conversatio
 
 ## Amendments and corrections
 
-Do not revise a processed submission. A correction is a new seed or conversational addendum in the same case that links to the original and names superseded claim IDs. If a review itself contains an error, append a dated amendment describing the correction, its reason, and any resulting file changes. Preserve the earlier entry so the audit trail remains intelligible.
+Do not revise a processed submission. A correction is a new submission or
+conversational addendum in the same case that links to the original and names
+superseded claim IDs. If a review itself contains an error, append a dated
+amendment describing the correction, its reason, and any resulting file
+changes. Preserve the earlier entry so the audit trail remains intelligible.
 
 ## Review rationale
 

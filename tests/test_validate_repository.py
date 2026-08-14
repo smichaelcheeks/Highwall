@@ -250,14 +250,25 @@ class ValidatorTests(unittest.TestCase):
 
     def test_end_marker_basis_requires_literal_marker(self) -> None:
         self.fixture.submission(include_marker=False)
-        self.assert_error("requires <!-- END OF SEED -->")
+        self.assert_error("requires <!-- END OF STITCH --> or <!-- END OF SEED -->")
+
+    def test_current_end_of_stitch_marker_is_accepted(self) -> None:
+        self.fixture.submission(marker="<!-- END OF STITCH -->")
+        self.assertEqual([], self.validate())
+
+    def test_legacy_end_of_seed_marker_remains_accepted(self) -> None:
+        self.fixture.submission(marker="<!-- END OF SEED -->")
+        self.assertEqual([], self.validate())
 
     def test_marker_mentioned_only_in_prose_does_not_satisfy_literal_rule(self) -> None:
         self.fixture.submission(
             include_marker=False,
-            body="# Example\n\nThe phrase END OF SEED is discussed administratively.",
+            body=(
+                "# Example\n\nThe phrases END OF STITCH and END OF SEED "
+                "are discussed administratively."
+            ),
         )
-        self.assert_error("requires <!-- END OF SEED -->")
+        self.assert_error("requires <!-- END OF STITCH --> or <!-- END OF SEED -->")
 
     def test_historical_submission_without_completeness_metadata_is_accepted(self) -> None:
         self.fixture.submission(
