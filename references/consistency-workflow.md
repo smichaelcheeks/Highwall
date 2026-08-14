@@ -3,6 +3,11 @@
 Use this workflow to keep semantic review proportional to a case's likely
 effects while retaining full deterministic repository validation.
 
+In CLOTH terminology, consistency review **pulls affected THREADs**: it traces
+authority and provenance backward and semantic dependencies forward. This
+discovery determines the scope of a weave but does not itself authorize a
+change. See the [`CLOTH / THREAD model`](cloth-thread-model.md).
+
 ## Impact manifests
 
 Every new intake review declares four nonempty front-matter lists:
@@ -55,12 +60,18 @@ canon and development pages, and backlinks. Widen the manifest and rerun when a
 new dependency, alias, or affected subject appears. Ordinary cases stop after
 the complete affected neighborhood is reviewed.
 
+This is the ordinary mechanism for pulling the THREADs named by an impact
+manifest.
+
 ### Tier 3: repository-wide semantic audit
 
 Review the complete canon and claim set when a change alters shared taxonomy,
 naming, chronology, geography, political structure, repository boundaries,
 paths, aliases, or ownership; affects three or more domains; or exposes
 unexpected cross-domain effects.
+
+Tier 3 pulls THREADs repository-wide when targeted tracing cannot reliably
+bound the consequences.
 
 ## Claim index
 

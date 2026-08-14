@@ -11419,6 +11419,435 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "`story/`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C001",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Highwall is an instance of a domain-independent CLOTH: a governed, coherent, traceable body of evolving knowledge.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/cloth-thread-model.md`; `README.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C002",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "THREAD names a traceable provenance and dependency chain; claims and stitches may participate in multiple intersecting THREADs.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/cloth-thread-model.md`; `references/consistency-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Pulling a thread traces provenance backward or dependencies forward but grants no authority to change knowledge.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/consistency-workflow.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C004",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Loose threads are legitimate unresolved relationships; broken threads are provenance or traceability failures.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/cloth-thread-model.md`; `references/repository-standards.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Stitch is the preferred author-facing semantic change unit and must not collapse submissions, reviews, current-state changes, exception records, or publication history.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/intake-workflow.md`; templates and navigation documentation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Weaving is governed integration across the affected knowledge state, not merely editing an obvious target.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/intake-workflow.md`; `references/git-workflow.md`; `AGENTS.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C007",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Semantic integration follows stitch, review/authority, weave, current-state changes, validation, and publication; semantic changes require traceable authority.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/cloth-thread-model.md`; workflow documentation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C008",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Semantic and mechanical changes remain distinct, and mechanical edits gain no semantic authority.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/repository-standards.md`; `references/cloth-thread-model.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C009",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Coherence preserves conflicts, uncertainty, perspective, lifecycle, authority, and confidence distinctions rather than forcing agreement.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/cloth-thread-model.md`; `README.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C010",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "CLOTH governance is itself governed knowledge; process self-modification must remain explicit and auditable.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/repository-standards.md`; `CONTRIBUTING.md`"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C011",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "`<!-- END OF STITCH -->` becomes the current marker; either it or legacy `<!-- END OF SEED -->` satisfies `completion_basis: end-marker`.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`scripts/validate_repository.py`; tests; templates; instructions"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C012",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "Historical submissions and specifically named legacy artifacts remain unchanged; technical record names remain where precise.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Immutable submissions, historical reviews, canon provenance labels, generated historical claims"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/intake-workflow.md",
+        "references/consistency-workflow.md",
+        "references/git-workflow.md"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "claim_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C013",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "thread-traceability",
+        "stitch-processing",
+        "transmission-completeness"
+      ],
+      "submission": "../../intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01",
+      "summary": "The repository must not adopt pure event sourcing, a graph database, wholesale record renames, weakened validation, or altered lore authority.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Storage architecture, technical record types, lore and story corpus"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

@@ -77,6 +77,7 @@ class FixtureRepository:
         completion_basis: str | None = "end-marker",
         transmission_status: str | None = "complete",
         include_marker: bool = True,
+        marker: str = "<!-- END OF STITCH -->",
         body: str = "# Example Submission\n\nSynthetic administrative input.",
     ) -> Path:
         metadata = [
@@ -92,7 +93,7 @@ class FixtureRepository:
             metadata.append(f"completion_basis: {completion_basis}")
         metadata.extend(["---", "", body])
         if include_marker:
-            metadata.extend(["", "<!-- END OF SEED -->"])
+            metadata.extend(["", marker])
         metadata.append("")
         return self.write(relative, "\n".join(metadata))
 

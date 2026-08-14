@@ -45,7 +45,9 @@ DISPOSITIONS = {
 }
 TRANSMISSION_STATUSES = {"complete"}
 COMPLETION_BASES = {"end-marker", "explicit-confirmation", "complete-attachment"}
-END_OF_SEED_MARKER = "<!-- END OF SEED -->"
+END_OF_STITCH_MARKER = "<!-- END OF STITCH -->"
+LEGACY_END_OF_SEED_MARKER = "<!-- END OF SEED -->"
+END_MARKERS = (END_OF_STITCH_MARKER, LEGACY_END_OF_SEED_MARKER)
 IMPACT_FIELDS = {"subjects", "domains", "search_terms", "authoritative_targets"}
 LORE_REVIEW_VALUES = {"true", "false"}
 LORE_AUTHORITIES = {"establish-canon", "working-canon"}
@@ -529,8 +531,14 @@ class Validator:
             self.error(path, f"invalid or missing transmission_status: {status!r}")
         if basis not in COMPLETION_BASES:
             self.error(path, f"invalid or missing completion_basis: {basis!r}")
-        if basis == "end-marker" and END_OF_SEED_MARKER not in path.read_text(encoding="utf-8"):
-            self.error(path, f"completion_basis 'end-marker' requires {END_OF_SEED_MARKER}")
+        if basis == "end-marker":
+            body = path.read_text(encoding="utf-8")
+            if not any(marker in body for marker in END_MARKERS):
+                recognized = " or ".join(END_MARKERS)
+                self.error(
+                    path,
+                    f"completion_basis 'end-marker' requires {recognized}",
+                )
 
     def validate_review_claims(self, path: Path, submission_id: str) -> set[str]:
         seen: set[str] = set()

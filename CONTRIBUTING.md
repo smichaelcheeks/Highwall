@@ -1,6 +1,9 @@
 # Contributing to Highwall
 
-This repository is a controlled canon system. Contributions should improve clarity and consistency without expanding the setting beyond explicit instructions.
+This repository is a governed CLOTH and controlled canon system. Contributions
+should improve clarity and consistency without expanding the setting beyond
+explicit instructions. See the
+[`CLOTH / THREAD model`](references/cloth-thread-model.md).
 
 ## Non-negotiable rules
 
@@ -18,11 +21,12 @@ This repository is a controlled canon system. Contributions should improve clari
 
 ## Contribution workflow
 
-For a batch of new information, follow [`references/intake-workflow.md`](references/intake-workflow.md):
+For a new stitch, follow [`references/intake-workflow.md`](references/intake-workflow.md):
 
-1. **Confirm completeness.** Require the end-of-seed marker, explicit author
-   confirmation, or a complete attachment. If the source appears partial, wait
-   for the remainder before changing the repository.
+1. **Confirm completeness.** Require the current `<!-- END OF STITCH -->`
+   marker, the legacy `<!-- END OF SEED -->` marker, explicit author
+   confirmation, or a complete attachment. If the source appears partial,
+   wait for the remainder before changing the repository.
 2. **Preserve the submission.** Store it in `intake/submissions/` with a stable ID and do not alter it after review begins.
 3. **Establish authority.** Record whether the author's instruction establishes canon, proposes possibilities, or supplies material for classification.
 4. **Inventory claims.** Give every substantive claim a stable ID in a separate intake review.
@@ -33,7 +37,8 @@ For a batch of new information, follow [`references/intake-workflow.md`](referen
    outcomes and Tier 3 triggers, and determine the completed canon-case count
    from Git and review records.
 7. **Assign a disposition.** Record what will or will not change, the target, evidence, and rationale for every claim.
-8. **Apply approved changes.** Use the appropriate content templates and link rather than duplicate.
+8. **Weave approved changes.** Pull affected THREADs, use the appropriate
+   content templates, and link rather than duplicate.
 9. **Expose uncertainty.** Create an open question, proposal, or contradiction report instead of selecting an unsupported answer.
 10. **Verify the result.** Apply the consistency tier required by
    [`references/consistency-workflow.md`](references/consistency-workflow.md),

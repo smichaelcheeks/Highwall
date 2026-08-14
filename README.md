@@ -1,6 +1,18 @@
 # Highwall
 
-Highwall is the canonical knowledge repository for the original fantasy setting of the same name. It is intended to support encyclopedic reference, novel development, search, continuity review, and careful collaboration between human authors and AI assistants.
+Highwall is a governed knowledge repository for the original fantasy setting
+of the same name. It is an instance of a **CLOTH**—a **Coherent Library of
+Ongoing Thought and History**—and supports encyclopedic reference, novel
+development, search, continuity review, and careful collaboration between
+human authors and AI assistants.
+
+A CLOTH preserves current knowledge together with provenance, authority,
+uncertainty, history, and change relationships. **THREADs**—**Traceable
+Histories of Requirements, Evidence, Authority, and Decisions**—connect that
+knowledge through time. See the authoritative
+[`CLOTH / THREAD model`](references/cloth-thread-model.md) for stitches,
+weaving, loose and broken threads, and the boundaries that keep technical
+records distinct.
 
 This repository begins as a structure, not a body of lore. No setting fact is canon unless it is explicitly recorded in an appropriate canon page.
 
@@ -15,7 +27,7 @@ This repository begins as a structure, not a body of lore. No setting fact is ca
 - [`references/`](references/README.md) contains repository standards and external research notes.
 - [`templates/`](templates/README.md) contains reusable page structures.
 
-## Organizational philosophy
+## CLOTH philosophy
 
 Treat this repository like documentation for a large software project:
 
@@ -25,6 +37,11 @@ Treat this repository like documentation for a large software project:
 4. Keep proposals and brainstorming outside `canon/` until they are explicitly approved.
 5. Surface contradictions; never resolve them silently.
 6. Prefer explicit unknowns and TODOs over invented answers.
+
+Coherence does not mean forcing every statement to agree. Explicitly
+represented contradictions, provisional claims, historical accounts, and
+unanswered questions are coherent states; collapsing those distinctions is
+not.
 
 Directory placement describes the kind of information. Page metadata describes its maturity and authority. A file under `canon/` can therefore be marked `working` while it is being reviewed, but an idea in `development/` does not become canon merely because it is polished.
 
@@ -36,11 +53,23 @@ When sources disagree, create a contradiction report in [`development/contradict
 
 ## Information intake and audit trail
 
-New batches of information enter through [`intake/submissions/`](intake/submissions/README.md). Once submitted, an intake file is treated as immutable: corrections or additions arrive in a new submission rather than rewriting the original source.
+Author-facing semantic changes are prepared as **stitches**. A stitch enters
+through [`intake/submissions/`](intake/submissions/README.md), where its source
+is preserved as an immutable submission; corrections or additions arrive in a
+new submission or addendum rather than rewriting the original source.
 
 Each processed submission receives a separate report under [`development/intake-reviews/`](development/intake-reviews/README.md). The report gives every substantive claim a stable identifier and records its classification, disposition, target file, evidence, and concise rationale. This creates a traceable path from submitted information to repository changes without mixing source material with AI-generated analysis.
 
-When a seed document develops through conversation, related material remains grouped under one case ID. Confirmed conversational decisions are preserved as numbered, immutable addenda; exploratory discussion remains non-canonical unless its outcome is explicitly approved or authorized by the declared session mode.
+When a stitch develops through conversation, related material remains grouped
+under one case ID. Confirmed conversational decisions are preserved as
+numbered, immutable addenda; exploratory discussion remains non-canonical
+unless its outcome is explicitly approved or authorized by the declared
+session mode.
+
+To **weave** an accepted stitch is to trace and integrate all of its affected
+THREADs across the coherent repository state. The intake review, impact
+manifest, controlled dispositions, consistency tiers, validation, and
+publication history govern that weave.
 
 The complete workflow and controlled decision vocabulary are defined in [`references/intake-workflow.md`](references/intake-workflow.md).
 
