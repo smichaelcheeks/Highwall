@@ -1,6 +1,8 @@
 ---
 title: Council of Highwall
 type: institution
+entity_id: entity-council-of-highwall
+relationships: []
 status: active
 canon_level: working
 aliases:

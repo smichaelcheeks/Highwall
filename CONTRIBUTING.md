@@ -99,6 +99,7 @@ Before pushing, run the same deterministic integrity check used by CI:
 ```powershell
 python scripts/validate_repository.py --base-ref origin/main
 python scripts/build_claim_index.py --check
+python scripts/build_graph_index.py --check
 ```
 
 The base-ref argument enforces immutability for submissions that have already merged. Omit it only when validating a standalone checkout without a comparison ref.

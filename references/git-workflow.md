@@ -33,7 +33,7 @@ Open a draft pull request while a case is still being refined. Its description s
 
 Mark the PR ready only when every included review is complete or the PR clearly documents why an unresolved administrative item does not block the proposed changes. A completed review may still record publication as pending while GitHub checks run.
 
-The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
+The `Repository integrity` workflow validates pull requests and pushes to `main`. It checks internal links, canon metadata, graph structure and index freshness, intake and review relationships, controlled claim dispositions, development records for exceptional dispositions, and the immutability of submissions already present on the base branch. A separate restrained Markdown job checks repository-maintained prose while excluding immutable author submissions.
 
 All third-party and GitHub-maintained Actions must be pinned to full commit SHAs. Keep the corresponding major-version comment beside each SHA for readability. Dependabot checks monthly for GitHub Actions updates and opens reviewable PRs rather than moving action versions implicitly.
 

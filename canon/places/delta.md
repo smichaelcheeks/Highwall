@@ -1,6 +1,8 @@
 ---
 title: Delta
 type: region
+entity_id: entity-delta
+relationships: []
 status: active
 canon_level: established
 aliases: []

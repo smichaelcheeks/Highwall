@@ -12325,6 +12325,166 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "Historical submissions and dated reviews"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/consistency-workflow.md",
+        "AGENTS.md",
+        "templates/place.md",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "claim_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C001",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "knowledge-graph",
+        "entity-identity",
+        "relationship-identity",
+        "graph-index"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-entity-relationship-graph-s01.md",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01",
+      "summary": "Establish an explicit entity/relationship graph implementation as repository policy.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/graph-structure.md`; front-matter schema; validator; templates"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/consistency-workflow.md",
+        "AGENTS.md",
+        "templates/place.md",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "claim_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C002",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "knowledge-graph",
+        "entity-identity",
+        "relationship-identity",
+        "graph-index"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-entity-relationship-graph-s01.md",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01",
+      "summary": "Use a generated graph index over Markdown-first authoritative records.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`scripts/build_graph_index.py`; `development/indexes/knowledge-graph.json`; CI and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/consistency-workflow.md",
+        "AGENTS.md",
+        "templates/place.md",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "claim_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C003",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "knowledge-graph",
+        "entity-identity",
+        "relationship-identity",
+        "graph-index"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-entity-relationship-graph-s01.md",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01",
+      "summary": "Preserve existing lore and provenance while implementing the graph.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Canon prose, canon levels, statuses, legacy `related` navigation, and existing provenance"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/cloth-thread-model.md",
+        "references/repository-standards.md",
+        "references/consistency-workflow.md",
+        "AGENTS.md",
+        "templates/place.md",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "claim_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "cloth-architecture",
+        "knowledge-graph",
+        "entity-identity",
+        "relationship-identity",
+        "graph-index"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-entity-relationship-graph-s01.md",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01",
+      "summary": "Migrate authoritative records incrementally.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Current canon records, templates, graph index migration inventory"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

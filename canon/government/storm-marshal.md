@@ -1,6 +1,8 @@
 ---
 title: Storm Marshal
 type: government-office
+entity_id: entity-storm-marshal
+relationships: []
 status: active
 canon_level: working
 aliases: []

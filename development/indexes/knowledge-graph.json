@@ -1,0 +1,816 @@
+{
+  "authority": "navigation-only",
+  "entities": [
+    {
+      "aliases": [
+        "Arbiter",
+        "First Steward",
+        "Speaker of the Council",
+        "Chief Magistrate"
+      ],
+      "canon_level": "working",
+      "entity_id": "entity-arbiter",
+      "path": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
+      ],
+      "record_type": "government-office",
+      "status": "active",
+      "title": "Arbiter of Highwall"
+    },
+    {
+      "aliases": [
+        "Council"
+      ],
+      "canon_level": "working",
+      "entity_id": "entity-council-of-highwall",
+      "path": "canon/government/council.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
+      ],
+      "record_type": "institution",
+      "status": "active",
+      "title": "Council of Highwall"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-delta",
+      "path": "canon/places/delta.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Delta"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-forge",
+      "path": "canon/places/forge.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md"
+      ],
+      "record_type": "place",
+      "status": "active",
+      "title": "Forge"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-highwall",
+      "path": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+        "../../development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
+        "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+        "../../development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
+        "../../development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+      ],
+      "record_type": "place",
+      "status": "active",
+      "title": "Highwall"
+    },
+    {
+      "aliases": [],
+      "canon_level": "working",
+      "entity_id": "entity-highwall-civic-government",
+      "path": "canon/government/highwall-civic-government.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
+      ],
+      "record_type": "political-system",
+      "status": "active",
+      "title": "Highwall Civic Government"
+    },
+    {
+      "aliases": [],
+      "canon_level": "working",
+      "entity_id": "entity-highwall-governmental-continuity",
+      "path": "canon/history/highwall-governmental-continuity.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
+      ],
+      "record_type": "historical-development",
+      "status": "active",
+      "title": "Continuity of Highwall Government"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-highwall-region-climate",
+      "path": "canon/places/highwall-region-climate.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Climate of the Highwall Region"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-highwall-region-ecology",
+      "path": "canon/places/highwall-region-ecology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-07-regional-ecology-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Ecology of the Highwall Region"
+    },
+    {
+      "aliases": [],
+      "canon_level": "working",
+      "entity_id": "entity-highwall-region-flora-and-fauna",
+      "path": "canon/places/highwall-region-flora-and-fauna.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Flora and Fauna of the Highwall Region"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-highwall-region-geology",
+      "path": "canon/places/highwall-region-geology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-a01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Geology and Geomorphology of the Highwall Region"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-highwall-region-hydrology",
+      "path": "canon/places/highwall-region-hydrology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Hydrology of the Highwall Region"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-ledger",
+      "path": "canon/places/ledger.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Ledger"
+    },
+    {
+      "aliases": [],
+      "canon_level": "working",
+      "entity_id": "entity-professional-civic-institutions",
+      "path": "canon/institutions/professional-civic-institutions.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
+      ],
+      "record_type": "institution",
+      "status": "active",
+      "title": "Professional Civic Institutions of Highwall"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-regional-imperial-structure",
+      "path": "canon/government/regional-imperial-structure.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"
+      ],
+      "record_type": "political-system",
+      "status": "active",
+      "title": "Regional Imperial Structure"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-regional-trade-system",
+      "path": "canon/economy/regional-trade-system.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md"
+      ],
+      "record_type": "economic-system",
+      "status": "active",
+      "title": "Regional Trade System"
+    },
+    {
+      "aliases": [],
+      "canon_level": "working",
+      "entity_id": "entity-storm-marshal",
+      "path": "canon/government/storm-marshal.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+        "../../development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md"
+      ],
+      "record_type": "government-office",
+      "status": "active",
+      "title": "Storm Marshal"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-stormlands",
+      "path": "canon/places/stormlands.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Stormlands"
+    },
+    {
+      "aliases": [],
+      "canon_level": "established",
+      "entity_id": "entity-upriver-highlands",
+      "path": "canon/places/upriver-highlands.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+        "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+        "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md"
+      ],
+      "record_type": "region",
+      "status": "active",
+      "title": "Upriver Highlands"
+    }
+  ],
+  "generated_from": "Markdown records with explicit graph metadata",
+  "relationship_types": [
+    {
+      "authority_effect": "navigation-only",
+      "definition": "Preserves an explicitly maintained generic `related` association without asserting a more specific domain relationship.",
+      "directionality": "symmetric",
+      "relationship_type": "related-to"
+    }
+  ],
+  "relationships": [
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-civic-government",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-civic-government"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-climate",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-region-climate"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-ecology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-region-ecology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-flora-and-fauna",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-region-flora-and-fauna"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-geology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-region-geology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-professional-institutions",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-professional-civic-institutions"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-regional-imperial-structure",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-regional-imperial-structure"
+    },
+    {
+      "authoritative_record": "canon/places/highwall.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-related-to-regional-trade-system",
+      "relationship_type": "related-to",
+      "source": "entity-highwall",
+      "target": "entity-regional-trade-system"
+    }
+  ],
+  "schema_version": 1,
+  "unmigrated_related_links": [
+    {
+      "legacy_target": "../history/highwall-governmental-continuity.md",
+      "source_entity_id": "entity-arbiter",
+      "source_path": "canon/government/arbiter.md",
+      "target_entity_id": "entity-highwall-governmental-continuity"
+    },
+    {
+      "legacy_target": "../institutions/professional-civic-institutions.md",
+      "source_entity_id": "entity-arbiter",
+      "source_path": "canon/government/arbiter.md",
+      "target_entity_id": "entity-professional-civic-institutions"
+    },
+    {
+      "legacy_target": "council.md",
+      "source_entity_id": "entity-arbiter",
+      "source_path": "canon/government/arbiter.md",
+      "target_entity_id": "entity-council-of-highwall"
+    },
+    {
+      "legacy_target": "highwall-civic-government.md",
+      "source_entity_id": "entity-arbiter",
+      "source_path": "canon/government/arbiter.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "storm-marshal.md",
+      "source_entity_id": "entity-arbiter",
+      "source_path": "canon/government/arbiter.md",
+      "target_entity_id": "entity-storm-marshal"
+    },
+    {
+      "legacy_target": "../institutions/professional-civic-institutions.md",
+      "source_entity_id": "entity-council-of-highwall",
+      "source_path": "canon/government/council.md",
+      "target_entity_id": "entity-professional-civic-institutions"
+    },
+    {
+      "legacy_target": "arbiter.md",
+      "source_entity_id": "entity-council-of-highwall",
+      "source_path": "canon/government/council.md",
+      "target_entity_id": "entity-arbiter"
+    },
+    {
+      "legacy_target": "highwall-civic-government.md",
+      "source_entity_id": "entity-council-of-highwall",
+      "source_path": "canon/government/council.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "storm-marshal.md",
+      "source_entity_id": "entity-council-of-highwall",
+      "source_path": "canon/government/council.md",
+      "target_entity_id": "entity-storm-marshal"
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-delta",
+      "source_path": "canon/places/delta.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "highwall.md",
+      "source_entity_id": "entity-delta",
+      "source_path": "canon/places/delta.md",
+      "target_entity_id": "entity-highwall"
+    },
+    {
+      "legacy_target": "stormlands.md",
+      "source_entity_id": "entity-delta",
+      "source_path": "canon/places/delta.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-forge",
+      "source_path": "canon/places/forge.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "stormlands.md",
+      "source_entity_id": "entity-forge",
+      "source_path": "canon/places/forge.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "../history/highwall-governmental-continuity.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-highwall-governmental-continuity"
+    },
+    {
+      "legacy_target": "../institutions/professional-civic-institutions.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-professional-civic-institutions"
+    },
+    {
+      "legacy_target": "arbiter.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-arbiter"
+    },
+    {
+      "legacy_target": "council.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-council-of-highwall"
+    },
+    {
+      "legacy_target": "regional-imperial-structure.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-regional-imperial-structure"
+    },
+    {
+      "legacy_target": "storm-marshal.md",
+      "source_entity_id": "entity-highwall-civic-government",
+      "source_path": "canon/government/highwall-civic-government.md",
+      "target_entity_id": "entity-storm-marshal"
+    },
+    {
+      "legacy_target": "../government/arbiter.md",
+      "source_entity_id": "entity-highwall-governmental-continuity",
+      "source_path": "canon/history/highwall-governmental-continuity.md",
+      "target_entity_id": "entity-arbiter"
+    },
+    {
+      "legacy_target": "../government/council.md",
+      "source_entity_id": "entity-highwall-governmental-continuity",
+      "source_path": "canon/history/highwall-governmental-continuity.md",
+      "target_entity_id": "entity-council-of-highwall"
+    },
+    {
+      "legacy_target": "../government/highwall-civic-government.md",
+      "source_entity_id": "entity-highwall-governmental-continuity",
+      "source_path": "canon/history/highwall-governmental-continuity.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "../places/highwall.md",
+      "source_entity_id": "entity-highwall-governmental-continuity",
+      "source_path": "canon/history/highwall-governmental-continuity.md",
+      "target_entity_id": "entity-highwall"
+    },
+    {
+      "legacy_target": "highwall-region-ecology.md",
+      "source_entity_id": "entity-highwall-region-climate",
+      "source_path": "canon/places/highwall-region-climate.md",
+      "target_entity_id": "entity-highwall-region-ecology"
+    },
+    {
+      "legacy_target": "highwall-region-geology.md",
+      "source_entity_id": "entity-highwall-region-climate",
+      "source_path": "canon/places/highwall-region-climate.md",
+      "target_entity_id": "entity-highwall-region-geology"
+    },
+    {
+      "legacy_target": "highwall-region-hydrology.md",
+      "source_entity_id": "entity-highwall-region-climate",
+      "source_path": "canon/places/highwall-region-climate.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "stormlands.md",
+      "source_entity_id": "entity-highwall-region-climate",
+      "source_path": "canon/places/highwall-region-climate.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "highwall-region-climate.md",
+      "source_entity_id": "entity-highwall-region-ecology",
+      "source_path": "canon/places/highwall-region-ecology.md",
+      "target_entity_id": "entity-highwall-region-climate"
+    },
+    {
+      "legacy_target": "highwall-region-flora-and-fauna.md",
+      "source_entity_id": "entity-highwall-region-ecology",
+      "source_path": "canon/places/highwall-region-ecology.md",
+      "target_entity_id": "entity-highwall-region-flora-and-fauna"
+    },
+    {
+      "legacy_target": "highwall-region-geology.md",
+      "source_entity_id": "entity-highwall-region-ecology",
+      "source_path": "canon/places/highwall-region-ecology.md",
+      "target_entity_id": "entity-highwall-region-geology"
+    },
+    {
+      "legacy_target": "highwall-region-hydrology.md",
+      "source_entity_id": "entity-highwall-region-ecology",
+      "source_path": "canon/places/highwall-region-ecology.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "stormlands.md",
+      "source_entity_id": "entity-highwall-region-ecology",
+      "source_path": "canon/places/highwall-region-ecology.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "highwall-region-ecology.md",
+      "source_entity_id": "entity-highwall-region-flora-and-fauna",
+      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
+      "target_entity_id": "entity-highwall-region-ecology"
+    },
+    {
+      "legacy_target": "highwall-region-hydrology.md",
+      "source_entity_id": "entity-highwall-region-flora-and-fauna",
+      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "stormlands.md",
+      "source_entity_id": "entity-highwall-region-flora-and-fauna",
+      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "highwall-region-ecology.md",
+      "source_entity_id": "entity-highwall-region-geology",
+      "source_path": "canon/places/highwall-region-geology.md",
+      "target_entity_id": "entity-highwall-region-ecology"
+    },
+    {
+      "legacy_target": "highwall-region-hydrology.md",
+      "source_entity_id": "entity-highwall-region-geology",
+      "source_path": "canon/places/highwall-region-geology.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "upriver-highlands.md",
+      "source_entity_id": "entity-highwall-region-geology",
+      "source_path": "canon/places/highwall-region-geology.md",
+      "target_entity_id": "entity-upriver-highlands"
+    },
+    {
+      "legacy_target": "highwall-region-climate.md",
+      "source_entity_id": "entity-highwall-region-hydrology",
+      "source_path": "canon/places/highwall-region-hydrology.md",
+      "target_entity_id": "entity-highwall-region-climate"
+    },
+    {
+      "legacy_target": "highwall-region-ecology.md",
+      "source_entity_id": "entity-highwall-region-hydrology",
+      "source_path": "canon/places/highwall-region-hydrology.md",
+      "target_entity_id": "entity-highwall-region-ecology"
+    },
+    {
+      "legacy_target": "highwall-region-geology.md",
+      "source_entity_id": "entity-highwall-region-hydrology",
+      "source_path": "canon/places/highwall-region-hydrology.md",
+      "target_entity_id": "entity-highwall-region-geology"
+    },
+    {
+      "legacy_target": "upriver-highlands.md",
+      "source_entity_id": "entity-highwall-region-hydrology",
+      "source_path": "canon/places/highwall-region-hydrology.md",
+      "target_entity_id": "entity-upriver-highlands"
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-ledger",
+      "source_path": "canon/places/ledger.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "highwall.md",
+      "source_entity_id": "entity-ledger",
+      "source_path": "canon/places/ledger.md",
+      "target_entity_id": "entity-highwall"
+    },
+    {
+      "legacy_target": "../government/arbiter.md",
+      "source_entity_id": "entity-professional-civic-institutions",
+      "source_path": "canon/institutions/professional-civic-institutions.md",
+      "target_entity_id": "entity-arbiter"
+    },
+    {
+      "legacy_target": "../government/council.md",
+      "source_entity_id": "entity-professional-civic-institutions",
+      "source_path": "canon/institutions/professional-civic-institutions.md",
+      "target_entity_id": "entity-council-of-highwall"
+    },
+    {
+      "legacy_target": "../government/highwall-civic-government.md",
+      "source_entity_id": "entity-professional-civic-institutions",
+      "source_path": "canon/institutions/professional-civic-institutions.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "../government/storm-marshal.md",
+      "source_entity_id": "entity-professional-civic-institutions",
+      "source_path": "canon/institutions/professional-civic-institutions.md",
+      "target_entity_id": "entity-storm-marshal"
+    },
+    {
+      "legacy_target": "../../story/reveals/regional-imperial-relationship.md",
+      "source_entity_id": "entity-regional-imperial-structure",
+      "source_path": "canon/government/regional-imperial-structure.md",
+      "target_entity_id": ""
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-regional-imperial-structure",
+      "source_path": "canon/government/regional-imperial-structure.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "../places/upriver-highlands.md",
+      "source_entity_id": "entity-regional-imperial-structure",
+      "source_path": "canon/government/regional-imperial-structure.md",
+      "target_entity_id": "entity-upriver-highlands"
+    },
+    {
+      "legacy_target": "highwall-civic-government.md",
+      "source_entity_id": "entity-regional-imperial-structure",
+      "source_path": "canon/government/regional-imperial-structure.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "../government/regional-imperial-structure.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-regional-imperial-structure"
+    },
+    {
+      "legacy_target": "../places/delta.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-delta"
+    },
+    {
+      "legacy_target": "../places/forge.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-forge"
+    },
+    {
+      "legacy_target": "../places/ledger.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-ledger"
+    },
+    {
+      "legacy_target": "../places/stormlands.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-stormlands"
+    },
+    {
+      "legacy_target": "../places/upriver-highlands.md",
+      "source_entity_id": "entity-regional-trade-system",
+      "source_path": "canon/economy/regional-trade-system.md",
+      "target_entity_id": "entity-upriver-highlands"
+    },
+    {
+      "legacy_target": "../institutions/professional-civic-institutions.md",
+      "source_entity_id": "entity-storm-marshal",
+      "source_path": "canon/government/storm-marshal.md",
+      "target_entity_id": "entity-professional-civic-institutions"
+    },
+    {
+      "legacy_target": "../places/highwall-region-hydrology.md",
+      "source_entity_id": "entity-storm-marshal",
+      "source_path": "canon/government/storm-marshal.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "arbiter.md",
+      "source_entity_id": "entity-storm-marshal",
+      "source_path": "canon/government/storm-marshal.md",
+      "target_entity_id": "entity-arbiter"
+    },
+    {
+      "legacy_target": "council.md",
+      "source_entity_id": "entity-storm-marshal",
+      "source_path": "canon/government/storm-marshal.md",
+      "target_entity_id": "entity-council-of-highwall"
+    },
+    {
+      "legacy_target": "highwall-civic-government.md",
+      "source_entity_id": "entity-storm-marshal",
+      "source_path": "canon/government/storm-marshal.md",
+      "target_entity_id": "entity-highwall-civic-government"
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "delta.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-delta"
+    },
+    {
+      "legacy_target": "forge.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-forge"
+    },
+    {
+      "legacy_target": "highwall-region-climate.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-highwall-region-climate"
+    },
+    {
+      "legacy_target": "highwall-region-ecology.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-highwall-region-ecology"
+    },
+    {
+      "legacy_target": "highwall-region-flora-and-fauna.md",
+      "source_entity_id": "entity-stormlands",
+      "source_path": "canon/places/stormlands.md",
+      "target_entity_id": "entity-highwall-region-flora-and-fauna"
+    },
+    {
+      "legacy_target": "../economy/regional-trade-system.md",
+      "source_entity_id": "entity-upriver-highlands",
+      "source_path": "canon/places/upriver-highlands.md",
+      "target_entity_id": "entity-regional-trade-system"
+    },
+    {
+      "legacy_target": "highwall-region-geology.md",
+      "source_entity_id": "entity-upriver-highlands",
+      "source_path": "canon/places/upriver-highlands.md",
+      "target_entity_id": "entity-highwall-region-geology"
+    },
+    {
+      "legacy_target": "highwall-region-hydrology.md",
+      "source_entity_id": "entity-upriver-highlands",
+      "source_path": "canon/places/upriver-highlands.md",
+      "target_entity_id": "entity-highwall-region-hydrology"
+    },
+    {
+      "legacy_target": "highwall.md",
+      "source_entity_id": "entity-upriver-highlands",
+      "source_path": "canon/places/upriver-highlands.md",
+      "target_entity_id": "entity-highwall"
+    }
+  ]
+}

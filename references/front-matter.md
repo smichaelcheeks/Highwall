@@ -8,6 +8,8 @@ All canon content pages must begin with YAML front matter. Index `README.md` fil
 ---
 title: TODO
 type: TODO
+entity_id: entity-stable-slug
+relationships: []
 status: draft
 canon_level: working
 aliases: []
@@ -23,6 +25,8 @@ provenance: []
 | --- | --- | --- |
 | `title` | Yes | Human-readable canonical title |
 | `type` | Yes | Subject kind, such as `character`, `place`, or `historical-event` |
+| `entity_id` | Yes | Stable graph identity in the form `entity-<slug>` |
+| `relationships` | Yes | Addressable typed graph relationships maintained on this record |
 | `status` | Yes | Document workflow state |
 | `canon_level` | Yes | Authority of the page's approved claims |
 | `aliases` | Yes | Alternate names and spellings; use an empty list when none are documented |
@@ -57,5 +61,10 @@ related:
 ```
 
 Keep relationships meaningful and reciprocal when useful. Do not list every page that happens to mention the subject.
+
+`related` remains the human-readable compatibility field during incremental
+migration. New graph relationships use the controlled schema in
+[`graph-structure.md`](graph-structure.md); do not infer a typed relationship
+from prose or silently mint a relationship type.
 
 `provenance` is cumulative. Add the intake review or decision record responsible for a material change; do not remove earlier entries merely because a later submission revises the page. The detailed review identifies which individual claims were affected.

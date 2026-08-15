@@ -1,6 +1,8 @@
 ---
 title: Flora and Fauna of the Highwall Region
 type: region
+entity_id: entity-highwall-region-flora-and-fauna
+relationships: []
 status: active
 canon_level: working
 aliases: []

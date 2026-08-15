@@ -1,6 +1,8 @@
 ---
 title: Regional Trade System
 type: economic-system
+entity_id: entity-regional-trade-system
+relationships: []
 status: active
 canon_level: established
 aliases: []

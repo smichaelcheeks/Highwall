@@ -1,6 +1,8 @@
 ---
 title: Forge
 type: place
+entity_id: entity-forge
+relationships: []
 status: active
 canon_level: established
 aliases: []

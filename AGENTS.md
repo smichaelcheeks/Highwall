@@ -108,6 +108,7 @@ Run before pushing:
 ```powershell
 python scripts/validate_repository.py --base-ref origin/main
 python scripts/build_claim_index.py --check
+python scripts/build_graph_index.py --check
 ```
 
 Also run `git diff --check` and inspect the complete diff for invented lore, duplicated authority, unrecorded decisions, broken narrative boundaries, and unrelated changes.

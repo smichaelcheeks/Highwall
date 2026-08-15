@@ -1,6 +1,62 @@
 ---
 title: Highwall
 type: place
+entity_id: entity-highwall
+relationships:
+  - relationship_id: relationship-highwall-related-to-geology
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-region-geology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-climate
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-region-climate
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-hydrology
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-ecology
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-region-ecology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-flora-and-fauna
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-region-flora-and-fauna
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-regional-trade-system
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-regional-trade-system
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-regional-imperial-structure
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-regional-imperial-structure
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-civic-government
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-highwall-civic-government
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+  - relationship_id: relationship-highwall-related-to-professional-institutions
+    relationship_type: related-to
+    source: entity-highwall
+    target: entity-professional-civic-institutions
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
 status: active
 canon_level: established
 aliases: []

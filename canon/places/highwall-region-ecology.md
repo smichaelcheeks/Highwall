@@ -1,6 +1,8 @@
 ---
 title: Ecology of the Highwall Region
 type: region
+entity_id: entity-highwall-region-ecology
+relationships: []
 status: active
 canon_level: established
 aliases: []

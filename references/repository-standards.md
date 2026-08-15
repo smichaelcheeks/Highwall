@@ -106,6 +106,10 @@ Durable graph relationship types are governed ontology. Contributors may
 propose a new relationship type but must not silently establish one while
 integrating an otherwise unrelated patch. See the authoritative
 [`CLOTH / THREAD model`](cloth-thread-model.md).
+Explicit entities and relationships must follow
+[`graph-structure.md`](graph-structure.md) and the controlled
+[`relationship-types.md`](relationship-types.md) registry. The generated graph
+index is navigation-only; its Markdown sources retain authority.
 
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits

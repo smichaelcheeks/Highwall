@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from consistency_common import CLAIM_COLUMN_COUNT, parse_inline_list, split_markdown_row
+from graph_common import GraphValidationError, build_graph_data
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,7 +22,9 @@ FRONT_MATTER_REQUIRED = {
     "canon_level",
     "aliases",
     "tags",
+    "entity_id",
     "related",
+    "relationships",
     "provenance",
 }
 CANON_STATUSES = {"draft", "review", "active", "deprecated"}
@@ -234,7 +237,7 @@ class Validator:
                         self.error(path, f"missing heading anchor: {raw_target}")
 
     def validate_canon_front_matter(self) -> None:
-        list_fields = {"aliases", "tags", "related", "provenance"}
+        list_fields = {"aliases", "tags", "related", "relationships", "provenance"}
         for path in sorted((self.root / "canon").rglob("*.md")):
             if path.name == "README.md":
                 continue
@@ -253,6 +256,12 @@ class Validator:
             for field in sorted(list_fields & metadata.keys()):
                 if field not in parsed_lists:
                     self.error(path, f"front matter field must be a list: {field}")
+
+    def validate_graph(self) -> None:
+        try:
+            build_graph_data(self.root)
+        except GraphValidationError as error:
+            self.errors.extend(error.errors)
 
     def validate_intake(self) -> None:
         submissions: dict[str, Path] = {}
@@ -626,6 +635,7 @@ class Validator:
     def run(self) -> int:
         self.validate_links()
         self.validate_canon_front_matter()
+        self.validate_graph()
         self.validate_intake()
         self.validate_submission_immutability()
         if self.errors:
@@ -635,7 +645,8 @@ class Validator:
             return 1
         print(
             f"Repository validation passed: {len(self.markdown_files)} Markdown files; "
-            "links, canon metadata, intake completeness, records, and immutability are valid."
+            "links, canon metadata, graph structure, intake completeness, records, and "
+            "immutability are valid."
         )
         return 0
 
