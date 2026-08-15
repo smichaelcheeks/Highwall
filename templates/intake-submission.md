@@ -19,7 +19,7 @@ related: []
 
 ## Author instruction
 
-TODO: Preserve the instruction that establishes how this stitch may be used.
+TODO: Preserve the instruction that establishes how this patch may be used.
 
 ## Session mode
 
@@ -29,8 +29,9 @@ TODO: Record `exploration`, `canon-authoring`, or `direct-integration`. Use `exp
 
 TODO: Record `end-marker`, `explicit-confirmation`, or `complete-attachment` as
 the `completion_basis`. Do not create this submission until completeness is
-confirmed. Preserve the current literal `<!-- END OF STITCH -->` marker or the
-legacy literal `<!-- END OF SEED -->` marker when either is the basis.
+confirmed. Preserve the current literal `<!-- END OF PATCH -->` marker, or the
+legacy `<!-- END OF STITCH -->` / `<!-- END OF SEED -->` marker when one of
+those is the actual basis.
 
 ## Submitted information
 
