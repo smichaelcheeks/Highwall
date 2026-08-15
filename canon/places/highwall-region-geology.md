@@ -2,7 +2,19 @@
 title: Geology and Geomorphology of the Highwall Region
 type: region
 entity_id: entity-highwall-region-geology
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-region-geology-related-to-highwall-region-hydrology
+    relationship_type: related-to
+    source: entity-highwall-region-geology
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-geology-related-to-upriver-highlands
+    relationship_type: related-to
+    source: entity-highwall-region-geology
+    target: entity-upriver-highlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []

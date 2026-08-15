@@ -2,7 +2,31 @@
 title: Ecology of the Highwall Region
 type: region
 entity_id: entity-highwall-region-ecology
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna
+    relationship_type: related-to
+    source: entity-highwall-region-ecology
+    target: entity-highwall-region-flora-and-fauna
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-ecology-related-to-highwall-region-geology
+    relationship_type: related-to
+    source: entity-highwall-region-ecology
+    target: entity-highwall-region-geology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-ecology-related-to-highwall-region-hydrology
+    relationship_type: related-to
+    source: entity-highwall-region-ecology
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-ecology-related-to-stormlands
+    relationship_type: related-to
+    source: entity-highwall-region-ecology
+    target: entity-stormlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []
