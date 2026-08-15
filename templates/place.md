@@ -1,6 +1,8 @@
 ---
 title: TODO
 type: place
+entity_id: TODO
+relationships: []
 status: draft
 canon_level: working
 aliases: []

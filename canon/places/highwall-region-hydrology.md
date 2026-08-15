@@ -1,6 +1,8 @@
 ---
 title: Hydrology of the Highwall Region
 type: region
+entity_id: entity-highwall-region-hydrology
+relationships: []
 status: active
 canon_level: established
 aliases: []

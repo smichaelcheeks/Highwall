@@ -1,6 +1,8 @@
 ---
 title: Upriver Highlands
 type: region
+entity_id: entity-upriver-highlands
+relationships: []
 status: active
 canon_level: established
 aliases: []

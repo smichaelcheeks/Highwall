@@ -79,6 +79,21 @@ unexpected cross-domain effects.
 Tier 3 pulls THREADs repository-wide when targeted tracing cannot reliably
 bound the consequences.
 
+## Knowledge graph index
+
+`development/indexes/knowledge-graph.json` is generated from explicit graph
+metadata on maintained Markdown records:
+
+```powershell
+python scripts/build_graph_index.py
+python scripts/build_graph_index.py --check
+```
+
+The graph index is navigation-only. Validation rejects duplicate identities,
+uncontrolled relationship types, unresolved endpoints, and missing relationship
+provenance. Its unmigrated-link inventory supports incremental conversion of
+legacy `related` links without changing their meaning.
+
 ## Claim index
 
 `development/indexes/claim-index.json` is generated from intake-review claim

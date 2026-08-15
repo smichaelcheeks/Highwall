@@ -43,13 +43,14 @@ represented contradictions, provisional claims, historical accounts, and
 unanswered questions are coherent states; collapsing those distinctions is
 not.
 
-CLOTH also uses a graph-oriented conceptual model. Entities, relationships,
+CLOTH also uses an implemented graph-oriented model. Entities, relationships,
 and claims are addressable knowledge objects; explicit relationships allow an
 agent to pull a THREAD through known provenance and dependencies rather than
 relying on semantic search for every hop. Highwall remains a Markdown-first
-implementation, so its pages, reviews, links, indexes, and exception records
-act as human-readable projections of that graph rather than requiring a graph
-database.
+implementation: authoritative pages carry stable entity IDs and explicit,
+controlled relationship objects, while a generated navigation index supports
+machine traversal without requiring a graph database. Migration from legacy
+links is incremental. See [`references/graph-structure.md`](references/graph-structure.md).
 
 Directory placement describes the kind of information. Page metadata describes its maturity and authority. A file under `canon/` can therefore be marked `working` while it is being reviewed, but an idea in `development/` does not become canon merely because it is polished.
 

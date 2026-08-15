@@ -1,6 +1,8 @@
 ---
 title: Arbiter of Highwall
 type: government-office
+entity_id: entity-arbiter
+relationships: []
 status: active
 canon_level: working
 aliases:

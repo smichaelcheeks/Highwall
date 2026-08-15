@@ -1,6 +1,8 @@
 ---
 title: Climate of the Highwall Region
 type: region
+entity_id: entity-highwall-region-climate
+relationships: []
 status: active
 canon_level: established
 aliases: []

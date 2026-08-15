@@ -82,8 +82,8 @@ Do not rename every participating record to “patch.”
 
 ## Graph-oriented knowledge abstraction
 
-CLOTH uses a graph-oriented conceptual model even when a particular
-implementation, such as Highwall, remains Markdown-first.
+CLOTH uses a graph-oriented conceptual model. Highwall implements that model
+with Markdown-first authoritative records and a generated graph index.
 
 The core knowledge primitives are:
 
@@ -101,10 +101,13 @@ follow explicit relationships instead of depending on semantic search for every
 hop. Semantic search remains valuable for discovering missing, implicit, or
 unmodeled relationships.
 
-Highwall does not currently require a graph database or an atomic rewrite of
-all lore. Its canon pages, intake reviews, claim index, provenance links,
-contradiction records, and semantic audits already act as partial projections
-of this graph model.
+Highwall does not require a graph database or an atomic rewrite of all lore.
+Stable entity IDs and addressable, controlled relationship objects are added
+incrementally to maintained Markdown records. The generated
+`development/indexes/knowledge-graph.json` projects those records for machine
+traversal and inventories legacy `related` links that have not yet been
+migrated. The Markdown records remain authoritative. See
+[`graph-structure.md`](graph-structure.md).
 
 ## Recursive relationships and reification
 

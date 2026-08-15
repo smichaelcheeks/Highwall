@@ -1,6 +1,8 @@
 ---
 title: Stormlands
 type: region
+entity_id: entity-stormlands
+relationships: []
 status: active
 canon_level: established
 aliases: []

@@ -1,6 +1,8 @@
 ---
 title: Ledger
 type: region
+entity_id: entity-ledger
+relationships: []
 status: active
 canon_level: established
 aliases: []

@@ -45,6 +45,9 @@ jobs:
       - name: Check generated claim index
         run: python scripts/build_claim_index.py --check
 
+      - name: Check generated knowledge graph
+        run: python scripts/build_graph_index.py --check
+
   markdown:
     name: Markdown style
     runs-on: ubuntu-latest

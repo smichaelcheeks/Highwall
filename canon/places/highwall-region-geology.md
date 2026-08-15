@@ -1,6 +1,8 @@
 ---
 title: Geology and Geomorphology of the Highwall Region
 type: region
+entity_id: entity-highwall-region-geology
+relationships: []
 status: active
 canon_level: established
 aliases: []

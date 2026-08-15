@@ -1,6 +1,8 @@
 ---
 title: Continuity of Highwall Government
 type: historical-development
+entity_id: entity-highwall-governmental-continuity
+relationships: []
 status: active
 canon_level: working
 aliases: []

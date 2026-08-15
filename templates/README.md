@@ -29,6 +29,11 @@ Copy the closest template when creating a page; do not edit a template to contai
 
 Canon templates default to `status: draft` and `canon_level: working`. Those defaults do not grant approval; change `canon_level` to `established` only when explicitly authorized.
 
+Replace `entity_id: TODO` with a stable ID under
+[`../references/graph-structure.md`](../references/graph-structure.md). Leave
+`relationships: []` empty unless an authorized, controlled relationship is
+being recorded with resolvable endpoints and provenance.
+
 The lore-patch template is author-facing. The intake-submission template is
 the repository-facing wrapper that assigns identifiers and preserves a
 completed patch source verbatim. Do not ask a drafting assistant to manufacture repository

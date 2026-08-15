@@ -1,6 +1,8 @@
 ---
 title: Professional Civic Institutions of Highwall
 type: institution
+entity_id: entity-professional-civic-institutions
+relationships: []
 status: active
 canon_level: working
 aliases: []

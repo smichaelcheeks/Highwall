@@ -26,10 +26,18 @@ class FixtureRepository:
             "development/open-questions",
             "development/contradictions",
             "development/retired",
+            "references",
             "story",
             "design",
         ):
             (self.root / directory).mkdir(parents=True, exist_ok=True)
+        self.write(
+            "references/relationship-types.md",
+            "# Relationship Types\n\n"
+            "| Type | Direction | Semantics | Definition |\n"
+            "| --- | --- | --- | --- |\n"
+            "| `related-to` | symmetric | navigation-only | Synthetic generic association. |\n",
+        )
 
     def cleanup(self) -> None:
         self._temporary.cleanup()
@@ -57,6 +65,8 @@ class FixtureRepository:
                     "---",
                     f"title: {title}",
                     "type: place",
+                    "entity_id: entity-example-place",
+                    "relationships: []",
                     f"status: {status}",
                     f"canon_level: {canon_level}",
                     list_fields,

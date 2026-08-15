@@ -1,6 +1,8 @@
 ---
 title: Highwall Civic Government
 type: political-system
+entity_id: entity-highwall-civic-government
+relationships: []
 status: active
 canon_level: working
 aliases: []

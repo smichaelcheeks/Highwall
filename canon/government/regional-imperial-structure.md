@@ -1,6 +1,8 @@
 ---
 title: Regional Imperial Structure
 type: political-system
+entity_id: entity-regional-imperial-structure
+relationships: []
 status: active
 canon_level: established
 aliases: []

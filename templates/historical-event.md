@@ -1,6 +1,8 @@
 ---
 title: TODO
 type: historical-event
+entity_id: TODO
+relationships: []
 status: draft
 canon_level: working
 aliases: []
