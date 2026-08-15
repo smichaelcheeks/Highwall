@@ -14,7 +14,7 @@ development/intake-reviews/2026-08-03-topic-a01-review.md
 
 A review is complete only when every substantive claim has a disposition and
 the verification section reflects the resulting repository state. Reviews in
-the same case collectively preserve the stitch-to-conversation history. Later
+the same case collectively preserve the patch-to-conversation history. Later
 corrections belong in a new addendum and review; corrections to the review
 record itself use a dated amendment. Do not rewrite history invisibly.
 

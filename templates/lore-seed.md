@@ -1,17 +1,17 @@
-# Lore Stitch Authoring Template
+# Lore Patch Authoring Template
 
 Use this template before repository intake when you want ChatGPT or another
-assistant to organize raw lore into a clear stitch. The finished stitch is
+assistant to organize raw lore into a clear patch. The finished patch is
 source material, not a canon page. Repository processing later preserves it
 verbatim inside an intake submission and audits its claims separately.
 
 The `lore-seed.md` filename is retained for compatibility with existing links;
-new author-facing prose and output use stitch terminology.
+new author-facing prose and output use patch terminology.
 
 ## Copyable assistant instruction
 
 ```text
-Help me turn my notes and answers into a structured Highwall lore stitch.
+Help me turn my notes and answers into a structured Highwall lore patch.
 
 Rules:
 - Do not invent facts, explanations, names, motives, dates, relationships, or
@@ -34,7 +34,7 @@ Rules:
   I supplied them, and do not treat my consideration of an option as approval.
 - Preserve intentional ambiguity and spoiler boundaries exactly as I identify
   them.
-- When a fact belongs primarily to another planned stitch, mention it only
+- When a fact belongs primarily to another planned patch, mention it only
   briefly if necessary for context. Do not expand or duplicate that material.
 - Treat comparisons to real-world history, geography, cultures, or institutions
   as development context, never as fictional setting facts. Include them only
@@ -46,10 +46,10 @@ Rules:
   of: established canon, working canon, or proposal only; and its intended
   repository session mode as one of: exploration, canon-authoring, or
   direct-integration.
-- Return the final result as plain Markdown using the stitch format below.
+- Return the final result as plain Markdown using the patch format below.
 - Omit optional sections that have no supplied content; do not create filler
   prose.
-- End the final document with the literal `<!-- END OF STITCH -->` marker on its
+- End the final document with the literal `<!-- END OF PATCH -->` marker on its
   own line. Do not emit that marker until the full document is complete.
 
 My notes begin after this line:
@@ -60,8 +60,8 @@ My notes begin after this line:
 ## Optional repository context
 
 ```text
-Highwall is a governed CLOTH and controlled canon repository. A lore stitch is
-preserved source material, not automatically canon. Codex later preserves the finished stitch
+Highwall is a governed CLOTH and controlled canon repository. A lore patch is
+preserved source material, not automatically canon. Codex later preserves the finished patch
 verbatim, inventories every substantive claim in a separate review, records
 every decision and deliberate non-change, and places authorized facts in one
 authoritative location.
@@ -76,7 +76,7 @@ additions are preserved in separately numbered addenda. Contradictions are
 documented rather than silently resolved. Missing information remains unknown
 or becomes an open question. Repository identifiers, dispositions, file
 destinations, validation, branches, and draft pull requests are Codex's
-responsibility, not the stitch-preparation assistant's.
+responsibility, not the patch-preparation assistant's.
 
 Real-world places, cultures, histories, and institutions may be identified as
 out-of-world inspirations or source context when the author explicitly supplies
@@ -84,17 +84,17 @@ them. They are not in-world entities or setting facts and do not belong in
 canon sections.
 ```
 
-## Stitch output format
+## Patch output format
 
 ```markdown
-# [Stitch title]
+# [Patch title]
 
 ## Authority
 
 - **Intended authority:** [Established canon | Working canon | Proposal only]
 - **Intended session mode:** [Exploration | Canon-authoring | Direct-integration]
 - **Author's instruction:** [What the author wants done with this material]
-- **Scope:** [Subjects covered by this stitch]
+- **Scope:** [Subjects covered by this patch]
 
 ## Setting truths
 
@@ -134,7 +134,7 @@ account to its stated source.]
 ### Objective setting truth
 
 [What is actually true in the setting, regardless of what any person or
-institution believes. Refer to the relevant fact elsewhere in the stitch rather
+institution believes. Refer to the relevant fact elsewhere in the patch rather
 than duplicating its full explanation.]
 
 ### Official or institutional position
@@ -179,12 +179,12 @@ explicitly identifies them.]
 [Ideas the author says are out of scope, rejected, retired, or not to be
 treated as canon.]
 
-<!-- END OF STITCH -->
+<!-- END OF PATCH -->
 ```
 
 ## Handoff to repository intake
 
-Give the completed stitch to Codex with the matching instruction from
+Give the completed patch to Codex with the matching instruction from
 [`../references/canon-intake-quickstart.md`](../references/canon-intake-quickstart.md).
 Codex should preserve the entire finished document verbatim; it may reorganize
 authoritative repository pages later, but it must not rewrite the source record.

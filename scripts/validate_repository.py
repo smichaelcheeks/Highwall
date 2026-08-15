@@ -45,9 +45,14 @@ DISPOSITIONS = {
 }
 TRANSMISSION_STATUSES = {"complete"}
 COMPLETION_BASES = {"end-marker", "explicit-confirmation", "complete-attachment"}
-END_OF_STITCH_MARKER = "<!-- END OF STITCH -->"
+END_OF_PATCH_MARKER = "<!-- END OF PATCH -->"
+LEGACY_END_OF_STITCH_MARKER = "<!-- END OF STITCH -->"
 LEGACY_END_OF_SEED_MARKER = "<!-- END OF SEED -->"
-END_MARKERS = (END_OF_STITCH_MARKER, LEGACY_END_OF_SEED_MARKER)
+END_MARKERS = (
+    END_OF_PATCH_MARKER,
+    LEGACY_END_OF_STITCH_MARKER,
+    LEGACY_END_OF_SEED_MARKER,
+)
 IMPACT_FIELDS = {"subjects", "domains", "search_terms", "authoritative_targets"}
 LORE_REVIEW_VALUES = {"true", "false"}
 LORE_AUTHORITIES = {"establish-canon", "working-canon"}

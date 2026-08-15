@@ -15,7 +15,7 @@ Copy the closest template when creating a page; do not edit a template to contai
 
 ## Development templates
 
-- [`lore-seed.md`](lore-seed.md) prepares a lore stitch with ChatGPT or another
+- [`lore-seed.md`](lore-seed.md) prepares a lore patch with ChatGPT or another
   assistant before repository intake; it is not itself an intake record. The
   legacy filename remains stable for links and compatibility.
 - [`intake-submission.md`](intake-submission.md)
@@ -29,7 +29,7 @@ Copy the closest template when creating a page; do not edit a template to contai
 
 Canon templates default to `status: draft` and `canon_level: working`. Those defaults do not grant approval; change `canon_level` to `established` only when explicitly authorized.
 
-The lore-stitch template is author-facing. The intake-submission template is
+The lore-patch template is author-facing. The intake-submission template is
 the repository-facing wrapper that assigns identifiers and preserves a
-completed stitch source verbatim. Do not ask a drafting assistant to manufacture repository
+completed patch source verbatim. Do not ask a drafting assistant to manufacture repository
 metadata or processing decisions.

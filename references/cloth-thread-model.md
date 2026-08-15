@@ -23,7 +23,7 @@ need not contain every category.
 A THREAD may connect an intended outcome, source evidence, assumptions,
 claims, authority decisions, open questions, contradictions, clarifications,
 supersessions, authoritative knowledge, and downstream effects. A claim may
-participate in multiple THREADs, a stitch may affect multiple THREADs, and
+participate in multiple THREADs, a patch may affect multiple THREADs, and
 THREADs may intersect through shared knowledge. THREAD names the relationship,
 not every claim or document participating in it.
 
@@ -44,27 +44,31 @@ authoritative knowledge without identifiable authority or a downstream claim
 disconnected from its supporting decision. Repair a broken thread when
 possible; otherwise document the deficiency explicitly.
 
-## Stitches and weaving
+## Patches and stitching
 
-A **stitch** is the author-facing unit of intentional semantic change prepared
-for integration into a CLOTH. It may add, clarify, supersede, retire, relate, or
-change knowledge or governance. **Weaving** is the governed integration that
-determines the accepted stitch's consequences across the coherent current
-state, not merely an edit to the most obvious target.
+A **patch** is the author-facing unit of intentional semantic change prepared
+for a CLOTH. It is a bounded, declarative delta that may add, clarify,
+supersede, retire, relate, reclassify, or otherwise change knowledge or
+repository governance.
+
+To **stitch a patch into CLOTH** is to perform the governed semantic
+integration that determines the patch's consequences across the coherent
+current state. Stitching is broader than editing the most obvious target file.
+It pulls every affected THREAD, identifies dependencies and supersessions,
+creates required exception records, updates authoritative locations and
+provenance, and applies the required consistency review.
 
 The conceptual order is:
 
-**Stitch → review and authority determination → weave → integration review and
-current-state changes → validation → publication**
+**Patch → review and authority determination → stitch/integration → integration
+review and current-state changes → validation → publication**
 
-The accepted delta authorizes the weave. The weave locates existing
-representations and dependencies, identifies confirmation, contradiction,
-duplication, and supersession, creates exception records where needed, updates
-authoritative locations and provenance, and determines semantic audit scope.
-The resulting diff records current-state changes; the review records how and
-why they were derived; Git and the pull request record publication.
+The accepted delta authorizes the integration. The integration determines the
+consequences. The resulting diff records current-state changes; the review
+records how and why they were derived; Git and the pull request record
+publication.
 
-Stitch is a conceptual change unit, not a replacement for the distinct
+Patch is a conceptual change unit, not a replacement for the distinct
 technical records used to process it. Continue to preserve separately:
 
 1. the immutable submission or author instruction;
@@ -74,7 +78,76 @@ technical records used to process it. Continue to preserve separately:
 5. Git and pull-request publication history.
 
 Technical names such as `intake-submission` and `intake-review` remain correct.
-Do not rename every participating record to “stitch.”
+Do not rename every participating record to “patch.”
+
+## Graph-oriented knowledge abstraction
+
+CLOTH uses a graph-oriented conceptual model even when a particular
+implementation, such as Highwall, remains Markdown-first.
+
+The core knowledge primitives are:
+
+1. **Entity** — an addressable thing or concept in the knowledge domain.
+2. **Relationship** — an addressable, typed connection between knowledge
+   objects.
+3. **Claim** — an assertion about an entity or relationship, with provenance,
+   authority, lifecycle, confidence, and scope as applicable.
+4. **Patch** — the bounded semantic transaction that changes claims, entities,
+   relationships, or governance under traceable authority.
+
+Documents remain useful human-readable projections and may remain the
+maintained authoritative surfaces. The graph abstraction exists so agents can
+follow explicit relationships instead of depending on semantic search for every
+hop. Semantic search remains valuable for discovering missing, implicit, or
+unmodeled relationships.
+
+Highwall does not currently require a graph database or an atomic rewrite of
+all lore. Its canon pages, intake reviews, claim index, provenance links,
+contradiction records, and semantic audits already act as partial projections
+of this graph model.
+
+## Recursive relationships and reification
+
+Entities and relationships are both addressable knowledge objects. A
+relationship may therefore be the endpoint of another relationship when the
+new relationship is specifically about that connection rather than merely
+about either original endpoint.
+
+For example, a generic process may `apply_to` a particular repository, while a
+team-specific policy may govern that particular `applies_to` relationship.
+Attaching the team rule directly to the generic process or repository would
+incorrectly broaden its scope.
+
+Relationship recursion must remain semantically justified rather than
+arbitrary. When a relationship accumulates substantial independent identity,
+behavior, rules, history, or additional relationships, **reify** it: represent
+the relationship concept as an entity and connect its participants through
+simpler typed relationships.
+
+> Relationships may be addressed and related to directly. When a relationship
+> becomes a durable domain concept with substantial independent structure,
+> reify it as an entity.
+
+Relationship types should use a controlled vocabulary where practical. Agents
+may propose new types but may not silently mint durable ontology terms. A new
+relationship type is a semantic governance change and requires appropriate
+authority.
+
+## Local paper trails
+
+The immutable patch/submission archive remains the global evidentiary record.
+For practical retrieval, an entity or relationship may maintain a local history
+that points to the patches, claims, decisions, or evidence that changed that
+knowledge object.
+
+Local history should reference authoritative records rather than duplicate
+full rationale. Normal retrieval should therefore be able to proceed:
+
+**knowledge object → current claims → local history → related objects → original
+patch when deeper provenance is needed**
+
+This makes pulling a THREAD efficient without requiring an agent to replay the
+entire global intake history.
 
 ## Coherence and authority
 
@@ -85,9 +158,9 @@ is coherent; a provisional claim presented as established fact, or a character
 belief presented as objective truth, is not.
 
 Truth kind, lifecycle authority, and confidence remain distinct. Reviewer
-confidence and repository presence do not create authority. A source may
-authoritatively establish that an actor believes a claim without establishing
-the claim as objective truth.
+confidence and repository presence do not create authority. An explicit graph
+edge likewise assists discovery but does not create authority merely by
+existing.
 
 The repository is maintained current state with durable source and
 supersession history, not a pure event-sourced system that must be mechanically
@@ -100,7 +173,7 @@ replayed byte for byte. Its governing invariant is:
 
 A **semantic change** alters what the CLOTH says, treats as authoritative,
 leaves unresolved, or requires future contributors to do. Lore, story truth,
-authority, contradiction resolution, governance, taxonomy, and ownership
+authority, contradiction resolution, governance, taxonomy, ontology, and ownership
 changes therefore require governed integration.
 
 A **mechanical change** preserves meaning, as with an unambiguous typo,
@@ -109,32 +182,39 @@ file refresh. Mechanical maintenance does not acquire semantic authority merely
 because it changes files.
 
 The CLOTH's operating rules are themselves governed knowledge. Changes to
-intake, weaving, consistency tiers, dispositions, authority, templates,
-validation, terminology, agent instructions, or semantic governance must use
-the governed process when available. The CLOTH may weave stitches that change
-how later stitches are woven, but that self-modification must remain explicit,
-attributable, reviewable, and auditable.
+intake, patches, stitching, consistency tiers, dispositions, authority,
+templates, validation, terminology, ontology, agent instructions, or semantic
+governance must use the governed process when available. The CLOTH may stitch
+patches that change how later patches are stitched, but that self-modification
+must remain explicit, attributable, reviewable, and auditable.
 
 ## Terminology compatibility
 
-Use **stitch** as the preferred general author-facing term for newly prepared
-semantic change. Retain **seed** where it identifies immutable historical
-submissions, specifically named legacy artifacts, legacy completion markers,
-or compatibility behavior. Never rewrite immutable submissions for
-terminology alone.
+Use **patch** as the preferred general author-facing term for newly prepared
+semantic change. Use **stitch** and **stitching** for the governed integration
+operation. Retain **stitch** as a historical noun and **seed** where they
+identify immutable historical submissions, specifically named legacy
+artifacts, legacy completion markers, or compatibility behavior. Never rewrite
+immutable submissions for terminology alone.
 
-New stitches use the completion marker:
+New patches use the completion marker:
+
+```text
+<!-- END OF PATCH -->
+```
+
+The prior marker remains accepted indefinitely:
 
 ```text
 <!-- END OF STITCH -->
 ```
 
-The legacy marker remains accepted indefinitely:
+The oldest legacy marker also remains accepted indefinitely:
 
 ```text
 <!-- END OF SEED -->
 ```
 
-Either recognized literal marker satisfies `completion_basis: end-marker`.
-The transmission-completeness guarantee and all distinct source, review,
-authority, provenance, and publication boundaries remain unchanged.
+Any recognized literal marker satisfies `completion_basis: end-marker`. The
+transmission-completeness guarantee and all distinct source, review, authority,
+provenance, and publication boundaries remain unchanged.
