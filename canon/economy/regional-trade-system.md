@@ -2,7 +2,19 @@
 title: Regional Trade System
 type: economic-system
 entity_id: entity-regional-trade-system
-relationships: []
+relationships:
+  - relationship_id: relationship-regional-trade-system-related-to-stormlands
+    relationship_type: related-to
+    source: entity-regional-trade-system
+    target: entity-stormlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+  - relationship_id: relationship-regional-trade-system-related-to-upriver-highlands
+    relationship_type: related-to
+    source: entity-regional-trade-system
+    target: entity-upriver-highlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []

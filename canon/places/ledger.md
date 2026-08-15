@@ -2,7 +2,13 @@
 title: Ledger
 type: region
 entity_id: entity-ledger
-relationships: []
+relationships:
+  - relationship_id: relationship-ledger-related-to-regional-trade-system
+    relationship_type: related-to
+    source: entity-ledger
+    target: entity-regional-trade-system
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []
