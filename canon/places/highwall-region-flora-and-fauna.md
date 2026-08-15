@@ -2,7 +2,19 @@
 title: Flora and Fauna of the Highwall Region
 type: region
 entity_id: entity-highwall-region-flora-and-fauna
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology
+    relationship_type: related-to
+    source: entity-highwall-region-flora-and-fauna
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-flora-and-fauna-related-to-stormlands
+    relationship_type: related-to
+    source: entity-highwall-region-flora-and-fauna
+    target: entity-stormlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []

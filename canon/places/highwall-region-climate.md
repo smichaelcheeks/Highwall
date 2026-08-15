@@ -2,7 +2,31 @@
 title: Climate of the Highwall Region
 type: region
 entity_id: entity-highwall-region-climate
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-region-climate-related-to-highwall-region-ecology
+    relationship_type: related-to
+    source: entity-highwall-region-climate
+    target: entity-highwall-region-ecology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-climate-related-to-highwall-region-geology
+    relationship_type: related-to
+    source: entity-highwall-region-climate
+    target: entity-highwall-region-geology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-climate-related-to-highwall-region-hydrology
+    relationship_type: related-to
+    source: entity-highwall-region-climate
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-region-climate-related-to-stormlands
+    relationship_type: related-to
+    source: entity-highwall-region-climate
+    target: entity-stormlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []

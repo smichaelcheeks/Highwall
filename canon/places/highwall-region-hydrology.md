@@ -2,7 +2,13 @@
 title: Hydrology of the Highwall Region
 type: region
 entity_id: entity-highwall-region-hydrology
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-region-hydrology-related-to-upriver-highlands
+    relationship_type: related-to
+    source: entity-highwall-region-hydrology
+    target: entity-upriver-highlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []

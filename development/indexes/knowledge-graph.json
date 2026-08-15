@@ -396,6 +396,136 @@
       "target": "entity-council-of-highwall"
     },
     {
+      "authoritative_record": "canon/places/highwall-region-climate.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-ecology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-climate",
+      "target": "entity-highwall-region-ecology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-climate.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-geology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-climate",
+      "target": "entity-highwall-region-geology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-climate.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-climate",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-climate.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-climate-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-climate",
+      "target": "entity-stormlands"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-ecology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-ecology",
+      "target": "entity-highwall-region-flora-and-fauna"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-ecology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-geology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-ecology",
+      "target": "entity-highwall-region-geology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-ecology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-ecology",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-ecology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-ecology-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-ecology",
+      "target": "entity-stormlands"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-flora-and-fauna.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-flora-and-fauna",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-flora-and-fauna.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-flora-and-fauna",
+      "target": "entity-stormlands"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-geology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-geology",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-geology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-geology-related-to-upriver-highlands",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-geology",
+      "target": "entity-upriver-highlands"
+    },
+    {
+      "authoritative_record": "canon/places/highwall-region-hydrology.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-region-hydrology-related-to-upriver-highlands",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-region-hydrology",
+      "target": "entity-upriver-highlands"
+    },
+    {
       "authoritative_record": "canon/places/highwall.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
@@ -541,120 +671,6 @@
       "target_entity_id": "entity-highwall"
     },
     {
-      "legacy_target": "highwall-region-ecology.md",
-      "source_entity_id": "entity-highwall-region-climate",
-      "source_path": "canon/places/highwall-region-climate.md",
-      "target_entity_id": "entity-highwall-region-ecology"
-    },
-    {
-      "legacy_target": "highwall-region-geology.md",
-      "source_entity_id": "entity-highwall-region-climate",
-      "source_path": "canon/places/highwall-region-climate.md",
-      "target_entity_id": "entity-highwall-region-geology"
-    },
-    {
-      "legacy_target": "highwall-region-hydrology.md",
-      "source_entity_id": "entity-highwall-region-climate",
-      "source_path": "canon/places/highwall-region-climate.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "stormlands.md",
-      "source_entity_id": "entity-highwall-region-climate",
-      "source_path": "canon/places/highwall-region-climate.md",
-      "target_entity_id": "entity-stormlands"
-    },
-    {
-      "legacy_target": "highwall-region-climate.md",
-      "source_entity_id": "entity-highwall-region-ecology",
-      "source_path": "canon/places/highwall-region-ecology.md",
-      "target_entity_id": "entity-highwall-region-climate"
-    },
-    {
-      "legacy_target": "highwall-region-flora-and-fauna.md",
-      "source_entity_id": "entity-highwall-region-ecology",
-      "source_path": "canon/places/highwall-region-ecology.md",
-      "target_entity_id": "entity-highwall-region-flora-and-fauna"
-    },
-    {
-      "legacy_target": "highwall-region-geology.md",
-      "source_entity_id": "entity-highwall-region-ecology",
-      "source_path": "canon/places/highwall-region-ecology.md",
-      "target_entity_id": "entity-highwall-region-geology"
-    },
-    {
-      "legacy_target": "highwall-region-hydrology.md",
-      "source_entity_id": "entity-highwall-region-ecology",
-      "source_path": "canon/places/highwall-region-ecology.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "stormlands.md",
-      "source_entity_id": "entity-highwall-region-ecology",
-      "source_path": "canon/places/highwall-region-ecology.md",
-      "target_entity_id": "entity-stormlands"
-    },
-    {
-      "legacy_target": "highwall-region-ecology.md",
-      "source_entity_id": "entity-highwall-region-flora-and-fauna",
-      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
-      "target_entity_id": "entity-highwall-region-ecology"
-    },
-    {
-      "legacy_target": "highwall-region-hydrology.md",
-      "source_entity_id": "entity-highwall-region-flora-and-fauna",
-      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "stormlands.md",
-      "source_entity_id": "entity-highwall-region-flora-and-fauna",
-      "source_path": "canon/places/highwall-region-flora-and-fauna.md",
-      "target_entity_id": "entity-stormlands"
-    },
-    {
-      "legacy_target": "highwall-region-ecology.md",
-      "source_entity_id": "entity-highwall-region-geology",
-      "source_path": "canon/places/highwall-region-geology.md",
-      "target_entity_id": "entity-highwall-region-ecology"
-    },
-    {
-      "legacy_target": "highwall-region-hydrology.md",
-      "source_entity_id": "entity-highwall-region-geology",
-      "source_path": "canon/places/highwall-region-geology.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "upriver-highlands.md",
-      "source_entity_id": "entity-highwall-region-geology",
-      "source_path": "canon/places/highwall-region-geology.md",
-      "target_entity_id": "entity-upriver-highlands"
-    },
-    {
-      "legacy_target": "highwall-region-climate.md",
-      "source_entity_id": "entity-highwall-region-hydrology",
-      "source_path": "canon/places/highwall-region-hydrology.md",
-      "target_entity_id": "entity-highwall-region-climate"
-    },
-    {
-      "legacy_target": "highwall-region-ecology.md",
-      "source_entity_id": "entity-highwall-region-hydrology",
-      "source_path": "canon/places/highwall-region-hydrology.md",
-      "target_entity_id": "entity-highwall-region-ecology"
-    },
-    {
-      "legacy_target": "highwall-region-geology.md",
-      "source_entity_id": "entity-highwall-region-hydrology",
-      "source_path": "canon/places/highwall-region-hydrology.md",
-      "target_entity_id": "entity-highwall-region-geology"
-    },
-    {
-      "legacy_target": "upriver-highlands.md",
-      "source_entity_id": "entity-highwall-region-hydrology",
-      "source_path": "canon/places/highwall-region-hydrology.md",
-      "target_entity_id": "entity-upriver-highlands"
-    },
-    {
       "legacy_target": "../economy/regional-trade-system.md",
       "source_entity_id": "entity-ledger",
       "source_path": "canon/places/ledger.md",
@@ -751,40 +767,10 @@
       "target_entity_id": "entity-forge"
     },
     {
-      "legacy_target": "highwall-region-climate.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-highwall-region-climate"
-    },
-    {
-      "legacy_target": "highwall-region-ecology.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-highwall-region-ecology"
-    },
-    {
-      "legacy_target": "highwall-region-flora-and-fauna.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-highwall-region-flora-and-fauna"
-    },
-    {
       "legacy_target": "../economy/regional-trade-system.md",
       "source_entity_id": "entity-upriver-highlands",
       "source_path": "canon/places/upriver-highlands.md",
       "target_entity_id": "entity-regional-trade-system"
-    },
-    {
-      "legacy_target": "highwall-region-geology.md",
-      "source_entity_id": "entity-upriver-highlands",
-      "source_path": "canon/places/upriver-highlands.md",
-      "target_entity_id": "entity-highwall-region-geology"
-    },
-    {
-      "legacy_target": "highwall-region-hydrology.md",
-      "source_entity_id": "entity-upriver-highlands",
-      "source_path": "canon/places/upriver-highlands.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
     },
     {
       "legacy_target": "highwall.md",
