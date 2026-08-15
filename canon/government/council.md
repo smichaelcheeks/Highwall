@@ -2,7 +2,25 @@
 title: Council of Highwall
 type: institution
 entity_id: entity-council-of-highwall
-relationships: []
+relationships:
+  - relationship_id: relationship-council-of-highwall-related-to-highwall-civic-government
+    relationship_type: related-to
+    source: entity-council-of-highwall
+    target: entity-highwall-civic-government
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-council-of-highwall-related-to-professional-civic-institutions
+    relationship_type: related-to
+    source: entity-council-of-highwall
+    target: entity-professional-civic-institutions
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-council-of-highwall-related-to-storm-marshal
+    relationship_type: related-to
+    source: entity-council-of-highwall
+    target: entity-storm-marshal
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases:

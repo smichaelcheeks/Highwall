@@ -2,7 +2,37 @@
 title: Arbiter of Highwall
 type: government-office
 entity_id: entity-arbiter
-relationships: []
+relationships:
+  - relationship_id: relationship-arbiter-related-to-council-of-highwall
+    relationship_type: related-to
+    source: entity-arbiter
+    target: entity-council-of-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-arbiter-related-to-highwall-civic-government
+    relationship_type: related-to
+    source: entity-arbiter
+    target: entity-highwall-civic-government
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-arbiter-related-to-highwall-governmental-continuity
+    relationship_type: related-to
+    source: entity-arbiter
+    target: entity-highwall-governmental-continuity
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-arbiter-related-to-professional-civic-institutions
+    relationship_type: related-to
+    source: entity-arbiter
+    target: entity-professional-civic-institutions
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-arbiter-related-to-storm-marshal
+    relationship_type: related-to
+    source: entity-arbiter
+    target: entity-storm-marshal
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases:

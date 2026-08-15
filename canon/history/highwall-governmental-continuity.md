@@ -2,7 +2,13 @@
 title: Continuity of Highwall Government
 type: historical-development
 entity_id: entity-highwall-governmental-continuity
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-governmental-continuity-related-to-council-of-highwall
+    relationship_type: related-to
+    source: entity-highwall-governmental-continuity
+    target: entity-council-of-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []

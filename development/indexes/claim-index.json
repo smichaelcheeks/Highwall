@@ -11859,6 +11859,76 @@
     },
     {
       "authoritative_targets": [
+        "canon/government/arbiter.md",
+        "canon/government/council.md",
+        "canon/government/highwall-civic-government.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md",
+        "canon/history/highwall-governmental-continuity.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "government",
+        "institutions"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "civic-governance",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-civic-governance-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01",
+      "summary": "Set up the next round of graph integration.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "This case branch, submission, and review"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/arbiter.md",
+        "canon/government/council.md",
+        "canon/government/highwall-civic-government.md",
+        "canon/government/storm-marshal.md",
+        "canon/institutions/professional-civic-institutions.md",
+        "canon/history/highwall-governmental-continuity.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "derived",
+      "case_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "government",
+        "institutions"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "civic-governance",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-civic-governance-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01",
+      "summary": "Apply the established migration policy without introducing new lore or relationship semantics.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Six scoped canon records and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
         "references/cloth-thread-model.md",
         "references/repository-standards.md",
         "references/intake-workflow.md",
