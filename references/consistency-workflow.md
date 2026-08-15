@@ -5,8 +5,14 @@ effects while retaining full deterministic repository validation.
 
 In CLOTH terminology, consistency review **pulls affected THREADs**: it traces
 authority and provenance backward and semantic dependencies forward. This
-discovery determines the scope of a weave but does not itself authorize a
+discovery determines the scope of an integration but does not itself authorize a
 change. See the [`CLOTH / THREAD model`](cloth-thread-model.md).
+
+Follow explicit graph relationships when they are available. Use semantic
+search, manifests, backlinks, and indexed claims to discover missing, implicit,
+or unmodeled relationships and widen the review when those discoveries expose
+additional effects. An explicit relationship assists traversal but never grants
+authority by itself.
 
 ## Impact manifests
 

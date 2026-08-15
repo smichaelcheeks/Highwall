@@ -3,7 +3,7 @@
 Git history and pull requests provide the publication layer for the CLOTH's
 intake audit trail. They do not replace submissions, reviews, decisions, or the
 canon change log. In the semantic integration sequence, publication follows
-the authorized stitch, review and authority determination, weave,
+the authorized patch, review and authority determination, stitching,
 current-state changes, and validation. See the
 [`CLOTH / THREAD model`](cloth-thread-model.md).
 

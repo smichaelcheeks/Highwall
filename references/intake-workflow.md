@@ -1,7 +1,7 @@
 # Intake Workflow
 
-This workflow processes a **stitch**, the author-facing unit of intentional
-semantic change, and **weaves** an accepted delta into the Highwall CLOTH while
+This workflow processes a **patch**, the author-facing unit of intentional
+semantic change, and **stitches** an accepted delta into the Highwall CLOTH while
 preserving the source and every material processing decision. See the
 [`CLOTH / THREAD model`](cloth-thread-model.md).
 
@@ -21,10 +21,11 @@ Do not combine these records. In particular, never append reviewer conclusions t
 
 ## Transmission completeness gate
 
-Confirm that a stitch or addendum is complete before creating a branch, intake
+Confirm that a patch or addendum is complete before creating a branch, intake
 record, review, or authoritative change. Completeness requires one of:
 
-- the current literal `<!-- END OF STITCH -->` marker in the submitted document
+- the current literal `<!-- END OF PATCH -->` marker in the submitted document
+- the legacy literal `<!-- END OF STITCH -->` marker in the submitted document
 - the legacy literal `<!-- END OF SEED -->` marker in the submitted document
 - an explicit author statement that the transmission is complete
 - a complete attachment whose boundaries are available for inspection
@@ -44,15 +45,16 @@ completion_basis: end-marker
 
 Controlled `completion_basis` values are `end-marker`,
 `explicit-confirmation`, and `complete-attachment`. When `end-marker` is used,
-the immutable submission must contain either recognized literal marker.
-`<!-- END OF STITCH -->` is current; `<!-- END OF SEED -->` remains accepted
-indefinitely for legacy compatibility. The validator applies these requirements
-to submissions newly added relative to the supplied base ref, preserving
+the immutable submission must contain a recognized literal marker.
+`<!-- END OF PATCH -->` is current; `<!-- END OF STITCH -->` and
+`<!-- END OF SEED -->` remain accepted indefinitely for legacy compatibility.
+The validator applies these requirements to submissions newly added relative
+to the supplied base ref, preserving
 compatibility with historical merged intake records.
 
 ## Cases, submissions, and claim IDs
 
-A case groups an initial stitch submission with every conversational addendum,
+A case groups an initial patch submission with every conversational addendum,
 correction, and review that develops from it. Create a stable case ID from the
 submission date and topic:
 
@@ -219,7 +221,7 @@ Use one of these values:
 7. Generate targeted context, inspect the affected neighborhood, and widen the
    manifest when new dependencies appear.
 8. Assign a disposition before modifying authoritative pages.
-9. Weave authorized changes through affected THREADs, creating exception
+9. Stitch authorized patches through affected THREADs, creating exception
    records where required.
 10. Record all changed and deliberately unchanged targets in the review.
 11. Run the required consistency tier, link, metadata, contradiction,

@@ -31,17 +31,18 @@ For a new batch of setting information, also read [`references/canon-intake-quic
 Before changing authoritative content:
 
 1. Confirm transmission completeness before any repository mutation. Require the
-   current `<!-- END OF STITCH -->` marker, the legacy
-   `<!-- END OF SEED -->` marker, an explicit author statement that the
-   transmission is complete, or a complete attachment. If none is present, or
-   the source appears truncated, stop and request the remainder. Do not create
-   a branch, submission, review, or authoritative change from a partial source.
+   current `<!-- END OF PATCH -->` marker, the legacy
+   `<!-- END OF STITCH -->` or `<!-- END OF SEED -->` marker, an explicit
+   author statement that the transmission is complete, or a complete
+   attachment. If none is present, or the source appears truncated, stop and
+   request the remainder. Do not create a branch, submission, review, or
+   authoritative change from a partial source.
 2. Confirm the requested authority: `establish-canon`, `working-canon`, `establish-policy`, `proposal-only`, or `classify`.
 3. Confirm the session mode: `exploration`, `canon-authoring`, or `direct-integration`. Default to `exploration` when unspecified.
 4. Create a stable case ID and a short-lived `agent/<case-topic>` branch from synchronized `main`.
-5. Preserve the complete stitch source verbatim in `intake/submissions/`; do
-   not replace it with a summary. Retain legacy “seed” wording in historical
-   artifacts where it identifies their original form.
+5. Preserve the complete patch source verbatim in `intake/submissions/`; do not
+   replace it with a summary. Retain legacy “stitch” or “seed” wording in
+   historical artifacts where it identifies their original form.
 6. Create the matching review in `development/intake-reviews/`, record its
    impact manifest, generate targeted context, and inventory every substantive
    claim before changing authoritative pages.
@@ -51,23 +52,32 @@ Before changing authoritative content:
    canon-case count since the latest comprehensive Tier 3 baseline.
 8. Give every claim a controlled disposition and concise, evidence-based rationale, including claims that cause no file change.
 9. Create required open-question, proposal, contradiction, decision, or retired records before applying dependent changes.
-10. Weave authorized changes through every affected THREAD, update their single
-    authoritative locations, and add provenance links. Pulling a THREAD
+10. Stitch authorized patches through every affected THREAD, update their
+    single authoritative locations, and add provenance links. Follow explicit
+    graph relationships where available and widen via semantic search when
+    discovery exposes missing or implicit dependencies. Pulling a THREAD
     discovers dependencies but never supplies authority by itself.
-11. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
-12. Apply the required consistency tier. A fresh Tier 3 audit is mandatory
+11. Treat entities and relationships as addressable knowledge objects when
+    applying the CLOTH graph model. A relationship may participate in another
+    relationship when the second relation is specifically about that
+    connection. Reify a relationship as an entity when it develops substantial
+    independent identity, rules, history, or further structure. Do not silently
+    mint new durable relationship types without authority.
+12. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
+13. Apply the required consistency tier. A fresh Tier 3 audit is mandatory
     after ten completed canon cases; before a tagged canon snapshot or sustained
     story drafting; after major regional, chronological, political, taxonomy,
     ownership, path, or alias changes; for three or more affected domains; for
     repeated unexpected dependencies; or when the baseline is missing,
     incomplete, or unreliable.
-13. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+14. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
 
-Use the conceptual order: stitch → review and authority determination → weave →
-integration review/current-state changes → validation → publication. Keep the
-submission, review, current-state changes, exception records, and Git/PR history
-distinct; do not rename every technical record to “stitch.” The authoritative
-terminology is in [`references/cloth-thread-model.md`](references/cloth-thread-model.md).
+Use the conceptual order: patch → review and authority determination →
+stitch/integration → integration review/current-state changes → validation →
+publication. Keep the submission, review, current-state changes, exception
+records, and Git/PR history distinct; do not rename every technical record to
+“patch.” The authoritative terminology and graph abstraction are in
+[`references/cloth-thread-model.md`](references/cloth-thread-model.md).
 
 Treat mid-sentence endings, missing promised sections, unclosed delimiters or
 code fences, abrupt list endings, and references to omitted continuation as

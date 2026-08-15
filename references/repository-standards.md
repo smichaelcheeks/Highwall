@@ -98,8 +98,14 @@ consequences but does not grant authority to change knowledge.
 ## Semantic and mechanical changes
 
 A semantic change alters what the CLOTH records, authorizes, leaves unresolved,
-or requires contributors to do. Lore, story, governance, taxonomy, authority,
-contradiction, and ownership changes require a governed stitch and weave.
+or requires contributors to do. Lore, story, governance, taxonomy, ontology,
+authority, contradiction, and ownership changes require a governed patch and
+stitching process.
+
+Durable graph relationship types are governed ontology. Contributors may
+propose a new relationship type but must not silently establish one while
+integrating an otherwise unrelated patch. See the authoritative
+[`CLOTH / THREAD model`](cloth-thread-model.md).
 
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits

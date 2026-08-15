@@ -77,7 +77,7 @@ class FixtureRepository:
         completion_basis: str | None = "end-marker",
         transmission_status: str | None = "complete",
         include_marker: bool = True,
-        marker: str = "<!-- END OF STITCH -->",
+        marker: str = "<!-- END OF PATCH -->",
         body: str = "# Example Submission\n\nSynthetic administrative input.",
     ) -> Path:
         metadata = [

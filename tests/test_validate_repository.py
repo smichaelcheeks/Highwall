@@ -250,9 +250,16 @@ class ValidatorTests(unittest.TestCase):
 
     def test_end_marker_basis_requires_literal_marker(self) -> None:
         self.fixture.submission(include_marker=False)
-        self.assert_error("requires <!-- END OF STITCH --> or <!-- END OF SEED -->")
+        self.assert_error(
+            "requires <!-- END OF PATCH --> or <!-- END OF STITCH --> or "
+            "<!-- END OF SEED -->"
+        )
 
-    def test_current_end_of_stitch_marker_is_accepted(self) -> None:
+    def test_current_end_of_patch_marker_is_accepted(self) -> None:
+        self.fixture.submission(marker="<!-- END OF PATCH -->")
+        self.assertEqual([], self.validate())
+
+    def test_legacy_end_of_stitch_marker_remains_accepted(self) -> None:
         self.fixture.submission(marker="<!-- END OF STITCH -->")
         self.assertEqual([], self.validate())
 
@@ -264,11 +271,14 @@ class ValidatorTests(unittest.TestCase):
         self.fixture.submission(
             include_marker=False,
             body=(
-                "# Example\n\nThe phrases END OF STITCH and END OF SEED "
-                "are discussed administratively."
+                "# Example\n\nThe phrases END OF PATCH, END OF STITCH, and "
+                "END OF SEED are discussed administratively."
             ),
         )
-        self.assert_error("requires <!-- END OF STITCH --> or <!-- END OF SEED -->")
+        self.assert_error(
+            "requires <!-- END OF PATCH --> or <!-- END OF STITCH --> or "
+            "<!-- END OF SEED -->"
+        )
 
     def test_historical_submission_without_completeness_metadata_is_accepted(self) -> None:
         self.fixture.submission(
