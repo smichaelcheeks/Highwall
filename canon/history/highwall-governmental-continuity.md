@@ -9,6 +9,12 @@ relationships:
     target: entity-council-of-highwall
     provenance:
       - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-governmental-continuity-related-to-highwall
+    relationship_type: related-to
+    source: entity-highwall-governmental-continuity
+    target: entity-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []

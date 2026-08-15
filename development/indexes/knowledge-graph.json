@@ -358,6 +358,16 @@
     {
       "authoritative_record": "canon/places/delta.md",
       "provenance": [
+        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-delta-related-to-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-delta",
+      "target": "entity-highwall"
+    },
+    {
+      "authoritative_record": "canon/places/delta.md",
+      "provenance": [
         "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
       ],
       "relationship_id": "relationship-delta-related-to-regional-trade-system",
@@ -434,6 +444,16 @@
       "relationship_type": "related-to",
       "source": "entity-highwall-governmental-continuity",
       "target": "entity-council-of-highwall"
+    },
+    {
+      "authoritative_record": "canon/history/highwall-governmental-continuity.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-governmental-continuity-related-to-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-governmental-continuity",
+      "target": "entity-highwall"
     },
     {
       "authoritative_record": "canon/places/highwall-region-climate.md",
@@ -658,6 +678,16 @@
     {
       "authoritative_record": "canon/places/ledger.md",
       "provenance": [
+        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-ledger-related-to-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-ledger",
+      "target": "entity-highwall"
+    },
+    {
+      "authoritative_record": "canon/places/ledger.md",
+      "provenance": [
         "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
       ],
       "relationship_id": "relationship-ledger-related-to-regional-trade-system",
@@ -724,28 +754,20 @@
       "relationship_type": "related-to",
       "source": "entity-regional-trade-system",
       "target": "entity-upriver-highlands"
+    },
+    {
+      "authoritative_record": "canon/places/upriver-highlands.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-upriver-highlands-related-to-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-upriver-highlands",
+      "target": "entity-highwall"
     }
   ],
   "schema_version": 1,
   "unmigrated_related_links": [
-    {
-      "legacy_target": "highwall.md",
-      "source_entity_id": "entity-delta",
-      "source_path": "canon/places/delta.md",
-      "target_entity_id": "entity-highwall"
-    },
-    {
-      "legacy_target": "../places/highwall.md",
-      "source_entity_id": "entity-highwall-governmental-continuity",
-      "source_path": "canon/history/highwall-governmental-continuity.md",
-      "target_entity_id": "entity-highwall"
-    },
-    {
-      "legacy_target": "highwall.md",
-      "source_entity_id": "entity-ledger",
-      "source_path": "canon/places/ledger.md",
-      "target_entity_id": "entity-highwall"
-    },
     {
       "legacy_target": "../../story/reveals/regional-imperial-relationship.md",
       "source_entity_id": "entity-regional-imperial-structure",
@@ -757,12 +779,6 @@
       "source_entity_id": "entity-storm-marshal",
       "source_path": "canon/government/storm-marshal.md",
       "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "highwall.md",
-      "source_entity_id": "entity-upriver-highlands",
-      "source_path": "canon/places/upriver-highlands.md",
-      "target_entity_id": "entity-highwall"
     }
   ]
 }

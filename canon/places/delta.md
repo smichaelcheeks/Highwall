@@ -3,6 +3,12 @@ title: Delta
 type: region
 entity_id: entity-delta
 relationships:
+  - relationship_id: relationship-delta-related-to-highwall
+    relationship_type: related-to
+    source: entity-delta
+    target: entity-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
   - relationship_id: relationship-delta-related-to-regional-trade-system
     relationship_type: related-to
     source: entity-delta

@@ -12558,6 +12558,76 @@
     },
     {
       "authoritative_targets": [
+        "canon/places/highwall.md",
+        "canon/places/delta.md",
+        "canon/places/ledger.md",
+        "canon/places/upriver-highlands.md",
+        "canon/history/highwall-governmental-continuity.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "link-only",
+      "domains": [
+        "administration",
+        "government",
+        "history",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "highwall",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-highwall-hub-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01",
+      "summary": "Build the identified Highwall-centered graph-migration round.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Four source records and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
+        "canon/places/highwall.md",
+        "canon/places/delta.md",
+        "canon/places/ledger.md",
+        "canon/places/upriver-highlands.md",
+        "canon/history/highwall-governmental-continuity.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "source-authority",
+      "case_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "government",
+        "history",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "highwall",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-highwall-hub-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01",
+      "summary": "Preserve lore, provenance, legacy links, and the stated exclusions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "All non-relationship canon content and excluded graph inventory"
+    },
+    {
+      "authoritative_targets": [
         "canon/places/highwall-region-climate.md",
         "canon/places/highwall-region-ecology.md",
         "canon/places/highwall-region-flora-and-fauna.md",
