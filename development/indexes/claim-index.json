@@ -12628,6 +12628,74 @@
     },
     {
       "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/regional-imperial-structure.md",
+        "canon/economy/regional-trade-system.md",
+        "canon/places/upriver-highlands.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "link-only",
+      "domains": [
+        "administration",
+        "government",
+        "economy",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-imperial-structure",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-imperial-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01",
+      "summary": "Build the identified regional imperial graph-migration round.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Regional Imperial Structure and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/highwall-civic-government.md",
+        "canon/government/regional-imperial-structure.md",
+        "canon/economy/regional-trade-system.md",
+        "canon/places/upriver-highlands.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "source-authority",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "government",
+        "economy",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-imperial-structure",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-imperial-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01",
+      "summary": "Preserve lore, provenance, legacy links, and the stated exclusions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "All non-relationship canon content and excluded graph inventory"
+    },
+    {
+      "authoritative_targets": [
         "canon/economy/regional-trade-system.md",
         "canon/places/delta.md",
         "canon/places/forge.md",

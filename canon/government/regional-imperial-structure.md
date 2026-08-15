@@ -2,7 +2,25 @@
 title: Regional Imperial Structure
 type: political-system
 entity_id: entity-regional-imperial-structure
-relationships: []
+relationships:
+  - relationship_id: relationship-regional-imperial-structure-related-to-highwall-civic-government
+    relationship_type: related-to
+    source: entity-regional-imperial-structure
+    target: entity-highwall-civic-government
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+  - relationship_id: relationship-regional-imperial-structure-related-to-regional-trade-system
+    relationship_type: related-to
+    source: entity-regional-imperial-structure
+    target: entity-regional-trade-system
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+  - relationship_id: relationship-regional-imperial-structure-related-to-upriver-highlands
+    relationship_type: related-to
+    source: entity-regional-imperial-structure
+    target: entity-upriver-highlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []
