@@ -21,6 +21,12 @@ relationships:
     target: entity-upriver-highlands
     provenance:
       - "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+  - relationship_id: relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal
+    relationship_type: related-to
+    source: entity-regional-imperial-structure
+    target: entity-regional-imperial-relationship-reveal
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []

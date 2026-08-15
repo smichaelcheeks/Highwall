@@ -1,3 +1,19 @@
+---
+title: Regional Imperial Relationship Reveal
+type: reader-reveal
+entity_id: entity-regional-imperial-relationship-reveal
+relationships: []
+status: active
+aliases: []
+tags:
+  - story
+  - reveal
+related: []
+provenance:
+  - "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"
+  - "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
+---
+
 # Regional Imperial Relationship Reveal
 
 ## Objective truth
