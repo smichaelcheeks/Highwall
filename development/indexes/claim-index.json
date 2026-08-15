@@ -12625,6 +12625,76 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "All non-relationship canon content and excluded graph inventory"
+    },
+    {
+      "authoritative_targets": [
+        "canon/economy/regional-trade-system.md",
+        "canon/places/delta.md",
+        "canon/places/forge.md",
+        "canon/places/ledger.md",
+        "canon/places/stormlands.md",
+        "canon/places/upriver-highlands.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "link-only",
+      "domains": [
+        "administration",
+        "economy",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-trade",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-trade-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01",
+      "summary": "Build the identified regional trade graph-migration round.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Six scoped economy-and-place records and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
+        "canon/economy/regional-trade-system.md",
+        "canon/places/delta.md",
+        "canon/places/forge.md",
+        "canon/places/ledger.md",
+        "canon/places/stormlands.md",
+        "canon/places/upriver-highlands.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "source-authority",
+      "case_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "economy",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-trade",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-trade-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01",
+      "summary": "Preserve lore, provenance, legacy links, and the stated exclusions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "All non-relationship canon content and excluded graph inventory"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

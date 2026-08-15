@@ -356,6 +356,46 @@
       "target": "entity-storm-marshal"
     },
     {
+      "authoritative_record": "canon/places/delta.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-delta-related-to-regional-trade-system",
+      "relationship_type": "related-to",
+      "source": "entity-delta",
+      "target": "entity-regional-trade-system"
+    },
+    {
+      "authoritative_record": "canon/places/delta.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-delta-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-delta",
+      "target": "entity-stormlands"
+    },
+    {
+      "authoritative_record": "canon/places/forge.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-forge-related-to-regional-trade-system",
+      "relationship_type": "related-to",
+      "source": "entity-forge",
+      "target": "entity-regional-trade-system"
+    },
+    {
+      "authoritative_record": "canon/places/forge.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-forge-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-forge",
+      "target": "entity-stormlands"
+    },
+    {
       "authoritative_record": "canon/government/highwall-civic-government.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
@@ -616,6 +656,16 @@
       "target": "entity-regional-trade-system"
     },
     {
+      "authoritative_record": "canon/places/ledger.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-ledger-related-to-regional-trade-system",
+      "relationship_type": "related-to",
+      "source": "entity-ledger",
+      "target": "entity-regional-trade-system"
+    },
+    {
       "authoritative_record": "canon/institutions/professional-civic-institutions.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
@@ -624,39 +674,35 @@
       "relationship_type": "related-to",
       "source": "entity-professional-civic-institutions",
       "target": "entity-storm-marshal"
+    },
+    {
+      "authoritative_record": "canon/economy/regional-trade-system.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-trade-system-related-to-stormlands",
+      "relationship_type": "related-to",
+      "source": "entity-regional-trade-system",
+      "target": "entity-stormlands"
+    },
+    {
+      "authoritative_record": "canon/economy/regional-trade-system.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-trade-system-related-to-upriver-highlands",
+      "relationship_type": "related-to",
+      "source": "entity-regional-trade-system",
+      "target": "entity-upriver-highlands"
     }
   ],
   "schema_version": 1,
   "unmigrated_related_links": [
     {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-delta",
-      "source_path": "canon/places/delta.md",
-      "target_entity_id": "entity-regional-trade-system"
-    },
-    {
       "legacy_target": "highwall.md",
       "source_entity_id": "entity-delta",
       "source_path": "canon/places/delta.md",
       "target_entity_id": "entity-highwall"
-    },
-    {
-      "legacy_target": "stormlands.md",
-      "source_entity_id": "entity-delta",
-      "source_path": "canon/places/delta.md",
-      "target_entity_id": "entity-stormlands"
-    },
-    {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-forge",
-      "source_path": "canon/places/forge.md",
-      "target_entity_id": "entity-regional-trade-system"
-    },
-    {
-      "legacy_target": "stormlands.md",
-      "source_entity_id": "entity-forge",
-      "source_path": "canon/places/forge.md",
-      "target_entity_id": "entity-stormlands"
     },
     {
       "legacy_target": "regional-imperial-structure.md",
@@ -669,12 +715,6 @@
       "source_entity_id": "entity-highwall-governmental-continuity",
       "source_path": "canon/history/highwall-governmental-continuity.md",
       "target_entity_id": "entity-highwall"
-    },
-    {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-ledger",
-      "source_path": "canon/places/ledger.md",
-      "target_entity_id": "entity-regional-trade-system"
     },
     {
       "legacy_target": "highwall.md",
@@ -713,64 +753,10 @@
       "target_entity_id": "entity-regional-imperial-structure"
     },
     {
-      "legacy_target": "../places/delta.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-delta"
-    },
-    {
-      "legacy_target": "../places/forge.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-forge"
-    },
-    {
-      "legacy_target": "../places/ledger.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-ledger"
-    },
-    {
-      "legacy_target": "../places/stormlands.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-stormlands"
-    },
-    {
-      "legacy_target": "../places/upriver-highlands.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-upriver-highlands"
-    },
-    {
       "legacy_target": "../places/highwall-region-hydrology.md",
       "source_entity_id": "entity-storm-marshal",
       "source_path": "canon/government/storm-marshal.md",
       "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-regional-trade-system"
-    },
-    {
-      "legacy_target": "delta.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-delta"
-    },
-    {
-      "legacy_target": "forge.md",
-      "source_entity_id": "entity-stormlands",
-      "source_path": "canon/places/stormlands.md",
-      "target_entity_id": "entity-forge"
-    },
-    {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-upriver-highlands",
-      "source_path": "canon/places/upriver-highlands.md",
-      "target_entity_id": "entity-regional-trade-system"
     },
     {
       "legacy_target": "highwall.md",

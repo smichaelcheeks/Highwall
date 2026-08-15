@@ -2,7 +2,19 @@
 title: Delta
 type: region
 entity_id: entity-delta
-relationships: []
+relationships:
+  - relationship_id: relationship-delta-related-to-regional-trade-system
+    relationship_type: related-to
+    source: entity-delta
+    target: entity-regional-trade-system
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+  - relationship_id: relationship-delta-related-to-stormlands
+    relationship_type: related-to
+    source: entity-delta
+    target: entity-stormlands
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []
