@@ -1,6 +1,6 @@
 ---
 title: CLOTH Patch and Graph Model
- type: intake-submission
+type: intake-submission
 case_id: CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL
 submission_id: CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01
 sequence: 1
