@@ -200,6 +200,19 @@
     },
     {
       "aliases": [],
+      "canon_level": "",
+      "entity_id": "entity-regional-imperial-relationship-reveal",
+      "path": "story/reveals/regional-imperial-relationship.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+        "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
+      ],
+      "record_type": "reader-reveal",
+      "status": "active",
+      "title": "Regional Imperial Relationship Reveal"
+    },
+    {
+      "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-regional-imperial-structure",
       "path": "canon/government/regional-imperial-structure.md",
@@ -718,6 +731,16 @@
     {
       "authoritative_record": "canon/government/regional-imperial-structure.md",
       "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
+      "relationship_type": "related-to",
+      "source": "entity-regional-imperial-structure",
+      "target": "entity-regional-imperial-relationship-reveal"
+    },
+    {
+      "authoritative_record": "canon/government/regional-imperial-structure.md",
+      "provenance": [
         "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
       ],
       "relationship_id": "relationship-regional-imperial-structure-related-to-regional-trade-system",
@@ -777,12 +800,5 @@
     }
   ],
   "schema_version": 1,
-  "unmigrated_related_links": [
-    {
-      "legacy_target": "../../story/reveals/regional-imperial-relationship.md",
-      "source_entity_id": "entity-regional-imperial-structure",
-      "source_path": "canon/government/regional-imperial-structure.md",
-      "target_entity_id": ""
-    }
-  ]
+  "unmigrated_related_links": []
 }

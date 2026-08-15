@@ -12766,6 +12766,70 @@
     },
     {
       "authoritative_targets": [
+        "canon/government/regional-imperial-structure.md",
+        "story/reveals/regional-imperial-relationship.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "government",
+        "story"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-imperial-structure",
+        "regional-imperial-relationship-reveal",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-imperial-reveal-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01",
+      "summary": "Merge the preceding migration if its checks remain satisfactory.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Git and PR publication history"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/regional-imperial-structure.md",
+        "story/reveals/regional-imperial-relationship.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "link-only",
+      "domains": [
+        "administration",
+        "government",
+        "story"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "regional-imperial-structure",
+        "regional-imperial-relationship-reveal",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-regional-imperial-reveal-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01",
+      "summary": "Build what is needed for the last unresolved graph inventory item.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Regional Imperial Structure, Regional Imperial Relationship Reveal, and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
         "canon/economy/regional-trade-system.md",
         "canon/places/delta.md",
         "canon/places/forge.md",
