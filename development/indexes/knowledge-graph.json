@@ -676,6 +676,36 @@
       "target": "entity-storm-marshal"
     },
     {
+      "authoritative_record": "canon/government/regional-imperial-structure.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-imperial-structure-related-to-highwall-civic-government",
+      "relationship_type": "related-to",
+      "source": "entity-regional-imperial-structure",
+      "target": "entity-highwall-civic-government"
+    },
+    {
+      "authoritative_record": "canon/government/regional-imperial-structure.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-imperial-structure-related-to-regional-trade-system",
+      "relationship_type": "related-to",
+      "source": "entity-regional-imperial-structure",
+      "target": "entity-regional-trade-system"
+    },
+    {
+      "authoritative_record": "canon/government/regional-imperial-structure.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-regional-imperial-structure-related-to-upriver-highlands",
+      "relationship_type": "related-to",
+      "source": "entity-regional-imperial-structure",
+      "target": "entity-upriver-highlands"
+    },
+    {
       "authoritative_record": "canon/economy/regional-trade-system.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
@@ -705,12 +735,6 @@
       "target_entity_id": "entity-highwall"
     },
     {
-      "legacy_target": "regional-imperial-structure.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-regional-imperial-structure"
-    },
-    {
       "legacy_target": "../places/highwall.md",
       "source_entity_id": "entity-highwall-governmental-continuity",
       "source_path": "canon/history/highwall-governmental-continuity.md",
@@ -727,30 +751,6 @@
       "source_entity_id": "entity-regional-imperial-structure",
       "source_path": "canon/government/regional-imperial-structure.md",
       "target_entity_id": ""
-    },
-    {
-      "legacy_target": "../economy/regional-trade-system.md",
-      "source_entity_id": "entity-regional-imperial-structure",
-      "source_path": "canon/government/regional-imperial-structure.md",
-      "target_entity_id": "entity-regional-trade-system"
-    },
-    {
-      "legacy_target": "../places/upriver-highlands.md",
-      "source_entity_id": "entity-regional-imperial-structure",
-      "source_path": "canon/government/regional-imperial-structure.md",
-      "target_entity_id": "entity-upriver-highlands"
-    },
-    {
-      "legacy_target": "highwall-civic-government.md",
-      "source_entity_id": "entity-regional-imperial-structure",
-      "source_path": "canon/government/regional-imperial-structure.md",
-      "target_entity_id": "entity-highwall-civic-government"
-    },
-    {
-      "legacy_target": "../government/regional-imperial-structure.md",
-      "source_entity_id": "entity-regional-trade-system",
-      "source_path": "canon/economy/regional-trade-system.md",
-      "target_entity_id": "entity-regional-imperial-structure"
     },
     {
       "legacy_target": "../places/highwall-region-hydrology.md",
