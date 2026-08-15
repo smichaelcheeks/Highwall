@@ -10,9 +10,9 @@ A CLOTH preserves current knowledge together with provenance, authority,
 uncertainty, history, and change relationships. **THREADs**—**Traceable
 Histories of Requirements, Evidence, Authority, and Decisions**—connect that
 knowledge through time. See the authoritative
-[`CLOTH / THREAD model`](references/cloth-thread-model.md) for stitches,
-weaving, loose and broken threads, and the boundaries that keep technical
-records distinct.
+[`CLOTH / THREAD model`](references/cloth-thread-model.md) for patches,
+stitching, graph-oriented knowledge relationships, loose and broken threads,
+and the boundaries that keep technical records distinct.
 
 This repository begins as a structure, not a body of lore. No setting fact is canon unless it is explicitly recorded in an appropriate canon page.
 
@@ -43,6 +43,14 @@ represented contradictions, provisional claims, historical accounts, and
 unanswered questions are coherent states; collapsing those distinctions is
 not.
 
+CLOTH also uses a graph-oriented conceptual model. Entities, relationships,
+and claims are addressable knowledge objects; explicit relationships allow an
+agent to pull a THREAD through known provenance and dependencies rather than
+relying on semantic search for every hop. Highwall remains a Markdown-first
+implementation, so its pages, reviews, links, indexes, and exception records
+act as human-readable projections of that graph rather than requiring a graph
+database.
+
 Directory placement describes the kind of information. Page metadata describes its maturity and authority. A file under `canon/` can therefore be marked `working` while it is being reviewed, but an idea in `development/` does not become canon merely because it is polished.
 
 ## Managing canon
@@ -53,23 +61,28 @@ When sources disagree, create a contradiction report in [`development/contradict
 
 ## Information intake and audit trail
 
-Author-facing semantic changes are prepared as **stitches**. A stitch enters
+Author-facing semantic changes are prepared as **patches**. A patch enters
 through [`intake/submissions/`](intake/submissions/README.md), where its source
 is preserved as an immutable submission; corrections or additions arrive in a
 new submission or addendum rather than rewriting the original source.
 
 Each processed submission receives a separate report under [`development/intake-reviews/`](development/intake-reviews/README.md). The report gives every substantive claim a stable identifier and records its classification, disposition, target file, evidence, and concise rationale. This creates a traceable path from submitted information to repository changes without mixing source material with AI-generated analysis.
 
-When a stitch develops through conversation, related material remains grouped
+When a patch develops through conversation, related material remains grouped
 under one case ID. Confirmed conversational decisions are preserved as
 numbered, immutable addenda; exploratory discussion remains non-canonical
 unless its outcome is explicitly approved or authorized by the declared
 session mode.
 
-To **weave** an accepted stitch is to trace and integrate all of its affected
+To **stitch a patch into CLOTH** is to trace and integrate all of its affected
 THREADs across the coherent repository state. The intake review, impact
 manifest, controlled dispositions, consistency tiers, validation, and
-publication history govern that weave.
+publication history govern that integration.
+
+The immutable submission archive remains the global paper trail, while local
+knowledge objects may maintain concise histories pointing back to the patches,
+claims, and decisions that changed them. This lets normal retrieval start from
+the object and follow its THREADs before opening the full historical patch.
 
 The complete workflow and controlled decision vocabulary are defined in [`references/intake-workflow.md`](references/intake-workflow.md).
 
