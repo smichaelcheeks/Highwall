@@ -3,6 +3,12 @@ title: Ledger
 type: region
 entity_id: entity-ledger
 relationships:
+  - relationship_id: relationship-ledger-related-to-highwall
+    relationship_type: related-to
+    source: entity-ledger
+    target: entity-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
   - relationship_id: relationship-ledger-related-to-regional-trade-system
     relationship_type: related-to
     source: entity-ledger

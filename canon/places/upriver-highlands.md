@@ -2,7 +2,13 @@
 title: Upriver Highlands
 type: region
 entity_id: entity-upriver-highlands
-relationships: []
+relationships:
+  - relationship_id: relationship-upriver-highlands-related-to-highwall
+    relationship_type: related-to
+    source: entity-upriver-highlands
+    target: entity-highwall
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
 status: active
 canon_level: established
 aliases: []
