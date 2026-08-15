@@ -2,7 +2,25 @@
 title: Highwall Civic Government
 type: political-system
 entity_id: entity-highwall-civic-government
-relationships: []
+relationships:
+  - relationship_id: relationship-highwall-civic-government-related-to-highwall-governmental-continuity
+    relationship_type: related-to
+    source: entity-highwall-civic-government
+    target: entity-highwall-governmental-continuity
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-civic-government-related-to-professional-civic-institutions
+    relationship_type: related-to
+    source: entity-highwall-civic-government
+    target: entity-professional-civic-institutions
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+  - relationship_id: relationship-highwall-civic-government-related-to-storm-marshal
+    relationship_type: related-to
+    source: entity-highwall-civic-government
+    target: entity-storm-marshal
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []

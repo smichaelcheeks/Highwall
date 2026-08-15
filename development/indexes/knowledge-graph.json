@@ -276,6 +276,126 @@
   ],
   "relationships": [
     {
+      "authoritative_record": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-arbiter-related-to-council-of-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-arbiter",
+      "target": "entity-council-of-highwall"
+    },
+    {
+      "authoritative_record": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-arbiter-related-to-highwall-civic-government",
+      "relationship_type": "related-to",
+      "source": "entity-arbiter",
+      "target": "entity-highwall-civic-government"
+    },
+    {
+      "authoritative_record": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-arbiter-related-to-highwall-governmental-continuity",
+      "relationship_type": "related-to",
+      "source": "entity-arbiter",
+      "target": "entity-highwall-governmental-continuity"
+    },
+    {
+      "authoritative_record": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-arbiter-related-to-professional-civic-institutions",
+      "relationship_type": "related-to",
+      "source": "entity-arbiter",
+      "target": "entity-professional-civic-institutions"
+    },
+    {
+      "authoritative_record": "canon/government/arbiter.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-arbiter-related-to-storm-marshal",
+      "relationship_type": "related-to",
+      "source": "entity-arbiter",
+      "target": "entity-storm-marshal"
+    },
+    {
+      "authoritative_record": "canon/government/council.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-council-of-highwall-related-to-highwall-civic-government",
+      "relationship_type": "related-to",
+      "source": "entity-council-of-highwall",
+      "target": "entity-highwall-civic-government"
+    },
+    {
+      "authoritative_record": "canon/government/council.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-council-of-highwall-related-to-professional-civic-institutions",
+      "relationship_type": "related-to",
+      "source": "entity-council-of-highwall",
+      "target": "entity-professional-civic-institutions"
+    },
+    {
+      "authoritative_record": "canon/government/council.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-council-of-highwall-related-to-storm-marshal",
+      "relationship_type": "related-to",
+      "source": "entity-council-of-highwall",
+      "target": "entity-storm-marshal"
+    },
+    {
+      "authoritative_record": "canon/government/highwall-civic-government.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-civic-government",
+      "target": "entity-highwall-governmental-continuity"
+    },
+    {
+      "authoritative_record": "canon/government/highwall-civic-government.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-civic-government-related-to-professional-civic-institutions",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-civic-government",
+      "target": "entity-professional-civic-institutions"
+    },
+    {
+      "authoritative_record": "canon/government/highwall-civic-government.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-civic-government-related-to-storm-marshal",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-civic-government",
+      "target": "entity-storm-marshal"
+    },
+    {
+      "authoritative_record": "canon/history/highwall-governmental-continuity.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
+      "relationship_type": "related-to",
+      "source": "entity-highwall-governmental-continuity",
+      "target": "entity-council-of-highwall"
+    },
+    {
       "authoritative_record": "canon/places/highwall.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
@@ -364,64 +484,20 @@
       "relationship_type": "related-to",
       "source": "entity-highwall",
       "target": "entity-regional-trade-system"
+    },
+    {
+      "authoritative_record": "canon/institutions/professional-civic-institutions.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-professional-civic-institutions-related-to-storm-marshal",
+      "relationship_type": "related-to",
+      "source": "entity-professional-civic-institutions",
+      "target": "entity-storm-marshal"
     }
   ],
   "schema_version": 1,
   "unmigrated_related_links": [
-    {
-      "legacy_target": "../history/highwall-governmental-continuity.md",
-      "source_entity_id": "entity-arbiter",
-      "source_path": "canon/government/arbiter.md",
-      "target_entity_id": "entity-highwall-governmental-continuity"
-    },
-    {
-      "legacy_target": "../institutions/professional-civic-institutions.md",
-      "source_entity_id": "entity-arbiter",
-      "source_path": "canon/government/arbiter.md",
-      "target_entity_id": "entity-professional-civic-institutions"
-    },
-    {
-      "legacy_target": "council.md",
-      "source_entity_id": "entity-arbiter",
-      "source_path": "canon/government/arbiter.md",
-      "target_entity_id": "entity-council-of-highwall"
-    },
-    {
-      "legacy_target": "highwall-civic-government.md",
-      "source_entity_id": "entity-arbiter",
-      "source_path": "canon/government/arbiter.md",
-      "target_entity_id": "entity-highwall-civic-government"
-    },
-    {
-      "legacy_target": "storm-marshal.md",
-      "source_entity_id": "entity-arbiter",
-      "source_path": "canon/government/arbiter.md",
-      "target_entity_id": "entity-storm-marshal"
-    },
-    {
-      "legacy_target": "../institutions/professional-civic-institutions.md",
-      "source_entity_id": "entity-council-of-highwall",
-      "source_path": "canon/government/council.md",
-      "target_entity_id": "entity-professional-civic-institutions"
-    },
-    {
-      "legacy_target": "arbiter.md",
-      "source_entity_id": "entity-council-of-highwall",
-      "source_path": "canon/government/council.md",
-      "target_entity_id": "entity-arbiter"
-    },
-    {
-      "legacy_target": "highwall-civic-government.md",
-      "source_entity_id": "entity-council-of-highwall",
-      "source_path": "canon/government/council.md",
-      "target_entity_id": "entity-highwall-civic-government"
-    },
-    {
-      "legacy_target": "storm-marshal.md",
-      "source_entity_id": "entity-council-of-highwall",
-      "source_path": "canon/government/council.md",
-      "target_entity_id": "entity-storm-marshal"
-    },
     {
       "legacy_target": "../economy/regional-trade-system.md",
       "source_entity_id": "entity-delta",
@@ -453,58 +529,10 @@
       "target_entity_id": "entity-stormlands"
     },
     {
-      "legacy_target": "../history/highwall-governmental-continuity.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-highwall-governmental-continuity"
-    },
-    {
-      "legacy_target": "../institutions/professional-civic-institutions.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-professional-civic-institutions"
-    },
-    {
-      "legacy_target": "arbiter.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-arbiter"
-    },
-    {
-      "legacy_target": "council.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-council-of-highwall"
-    },
-    {
       "legacy_target": "regional-imperial-structure.md",
       "source_entity_id": "entity-highwall-civic-government",
       "source_path": "canon/government/highwall-civic-government.md",
       "target_entity_id": "entity-regional-imperial-structure"
-    },
-    {
-      "legacy_target": "storm-marshal.md",
-      "source_entity_id": "entity-highwall-civic-government",
-      "source_path": "canon/government/highwall-civic-government.md",
-      "target_entity_id": "entity-storm-marshal"
-    },
-    {
-      "legacy_target": "../government/arbiter.md",
-      "source_entity_id": "entity-highwall-governmental-continuity",
-      "source_path": "canon/history/highwall-governmental-continuity.md",
-      "target_entity_id": "entity-arbiter"
-    },
-    {
-      "legacy_target": "../government/council.md",
-      "source_entity_id": "entity-highwall-governmental-continuity",
-      "source_path": "canon/history/highwall-governmental-continuity.md",
-      "target_entity_id": "entity-council-of-highwall"
-    },
-    {
-      "legacy_target": "../government/highwall-civic-government.md",
-      "source_entity_id": "entity-highwall-governmental-continuity",
-      "source_path": "canon/history/highwall-governmental-continuity.md",
-      "target_entity_id": "entity-highwall-civic-government"
     },
     {
       "legacy_target": "../places/highwall.md",
@@ -639,30 +667,6 @@
       "target_entity_id": "entity-highwall"
     },
     {
-      "legacy_target": "../government/arbiter.md",
-      "source_entity_id": "entity-professional-civic-institutions",
-      "source_path": "canon/institutions/professional-civic-institutions.md",
-      "target_entity_id": "entity-arbiter"
-    },
-    {
-      "legacy_target": "../government/council.md",
-      "source_entity_id": "entity-professional-civic-institutions",
-      "source_path": "canon/institutions/professional-civic-institutions.md",
-      "target_entity_id": "entity-council-of-highwall"
-    },
-    {
-      "legacy_target": "../government/highwall-civic-government.md",
-      "source_entity_id": "entity-professional-civic-institutions",
-      "source_path": "canon/institutions/professional-civic-institutions.md",
-      "target_entity_id": "entity-highwall-civic-government"
-    },
-    {
-      "legacy_target": "../government/storm-marshal.md",
-      "source_entity_id": "entity-professional-civic-institutions",
-      "source_path": "canon/institutions/professional-civic-institutions.md",
-      "target_entity_id": "entity-storm-marshal"
-    },
-    {
       "legacy_target": "../../story/reveals/regional-imperial-relationship.md",
       "source_entity_id": "entity-regional-imperial-structure",
       "source_path": "canon/government/regional-imperial-structure.md",
@@ -723,34 +727,10 @@
       "target_entity_id": "entity-upriver-highlands"
     },
     {
-      "legacy_target": "../institutions/professional-civic-institutions.md",
-      "source_entity_id": "entity-storm-marshal",
-      "source_path": "canon/government/storm-marshal.md",
-      "target_entity_id": "entity-professional-civic-institutions"
-    },
-    {
       "legacy_target": "../places/highwall-region-hydrology.md",
       "source_entity_id": "entity-storm-marshal",
       "source_path": "canon/government/storm-marshal.md",
       "target_entity_id": "entity-highwall-region-hydrology"
-    },
-    {
-      "legacy_target": "arbiter.md",
-      "source_entity_id": "entity-storm-marshal",
-      "source_path": "canon/government/storm-marshal.md",
-      "target_entity_id": "entity-arbiter"
-    },
-    {
-      "legacy_target": "council.md",
-      "source_entity_id": "entity-storm-marshal",
-      "source_path": "canon/government/storm-marshal.md",
-      "target_entity_id": "entity-council-of-highwall"
-    },
-    {
-      "legacy_target": "highwall-civic-government.md",
-      "source_entity_id": "entity-storm-marshal",
-      "source_path": "canon/government/storm-marshal.md",
-      "target_entity_id": "entity-highwall-civic-government"
     },
     {
       "legacy_target": "../economy/regional-trade-system.md",

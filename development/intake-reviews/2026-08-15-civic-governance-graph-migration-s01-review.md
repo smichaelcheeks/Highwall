@@ -1,7 +1,7 @@
 ---
 title: Civic Governance Graph Migration Review
 type: intake-review
-status: in-progress
+status: complete
 reviewed_on: 2026-08-15
 submission: "../../intake/submissions/2026-08-15-civic-governance-graph-migration-s01.md"
 case_id: CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION
@@ -124,25 +124,67 @@ this review.
 - Validate unique IDs, controlled types, endpoints, provenance, deterministic
   index freshness, and semantic equivalence.
 
+## Files changed
+
+| File or group | Change | Claim IDs |
+| --- | --- | --- |
+| `canon/government/arbiter.md` | Add five addressable `related-to` objects for its existing civic-cluster pairs. | C002 |
+| `canon/government/council.md` | Add three addressable `related-to` objects for its existing civic-cluster pairs. | C002 |
+| `canon/government/highwall-civic-government.md` | Add three addressable `related-to` objects for its existing civic-cluster pairs. | C002 |
+| `canon/history/highwall-governmental-continuity.md` | Add the existing one-way Council association as an addressable `related-to` object. | C002 |
+| `canon/institutions/professional-civic-institutions.md` | Add the existing Storm Marshal pair as an addressable `related-to` object. | C002 |
+| `development/indexes/knowledge-graph.json` | Regenerate the navigation index at 19 entities, 22 relationships, and 49 unmigrated links. | C002 |
+| Submission, review, and claim index | Preserve the instruction, scope and dispositions; index both case claims. | C001-C002 |
+
+For reciprocal pairs, the relationship object is stored once on a record that
+already maintained the legacy association. The Council-continuity pair was
+one-way, so its object remains owned by the continuity record that maintained
+that link.
+
+## Files deliberately unchanged
+
+| File or group | Reason | Claim IDs |
+| --- | --- | --- |
+| `canon/government/storm-marshal.md` | Its four in-scope symmetric pairs are owned once on the counterpart records; duplicating them would create duplicate graph relationships. | C002 |
+| Canon prose and existing front-matter fields | The batch migrates navigation structure only; status, canon level, aliases, tags, legacy `related`, and cumulative provenance remain unchanged. | C002 |
+| All excluded domains and the relationship-type registry | No other migration batch or semantic vocabulary was authorized. | C002 |
+
+## Exceptions created
+
+None. No open question, proposal, contradiction, decision, or retired record is
+required for a navigation-equivalent migration.
+
 ## Verification plan
 
-- [ ] Every planned pair exists in the pre-migration legacy inventory.
-- [ ] Exactly 13 unique relationship IDs are added.
-- [ ] Every relationship uses navigation-only `related-to`.
-- [ ] Every endpoint resolves and every relationship points to this review.
-- [ ] Existing canon prose and metadata remain otherwise byte-equivalent.
-- [ ] The generated graph reports 19 entities, 22 relationships, and 49
+- [x] Every planned pair exists in the pre-migration legacy inventory.
+- [x] Exactly 13 unique relationship IDs are added.
+- [x] Every relationship uses navigation-only `related-to`.
+- [x] Every endpoint resolves and every relationship points to this review.
+- [x] Existing canon prose and metadata remain otherwise byte-equivalent.
+- [x] The generated graph reports 19 entities, 22 relationships, and 49
   unmigrated legacy links.
-- [ ] Unit tests and required repository validation pass.
-- [ ] The complete diff contains no unrelated changes.
+- [x] Unit tests and required repository validation pass.
+- [x] The complete diff contains no unrelated changes.
+
+Local verification completed on 2026-08-15:
+
+- `python -m unittest discover -s tests -v`: 163 tests passed.
+- `python scripts/validate_repository.py --base-ref origin/main`: passed
+  across 188 Markdown files.
+- `python scripts/build_graph_index.py --check`: current at 19 entities, 22
+  relationships, and 49 unmigrated legacy links.
+- `python scripts/build_claim_index.py --check`: current at 407 claims.
+- `git diff --check`: passed.
+- The complete canon diff contains only the 13 reviewed relationship objects;
+  no narrative or pre-existing metadata line changed.
 
 ## Outcome
 
-- **Review status:** `in-progress`
-- **Setup status:** Complete; authoritative relationship mutation has not begun.
-- **Exceptions:** None planned.
-- **Outstanding action:** Execute the reviewed batch, reconcile validation and
-  the final diff, then publish through a draft PR.
+- **Review status:** `complete`
+- **Integration status:** Complete locally; publication pending.
+- **Exceptions:** None.
+- **Outstanding action:** Publish the final commit, require both GitHub checks,
+  and merge under the author's explicit instruction.
 
 ## Amendments
 

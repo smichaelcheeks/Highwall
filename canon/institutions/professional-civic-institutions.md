@@ -2,7 +2,13 @@
 title: Professional Civic Institutions of Highwall
 type: institution
 entity_id: entity-professional-civic-institutions
-relationships: []
+relationships:
+  - relationship_id: relationship-professional-civic-institutions-related-to-storm-marshal
+    relationship_type: related-to
+    source: entity-professional-civic-institutions
+    target: entity-storm-marshal
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []
