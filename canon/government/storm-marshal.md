@@ -2,7 +2,13 @@
 title: Storm Marshal
 type: government-office
 entity_id: entity-storm-marshal
-relationships: []
+relationships:
+  - relationship_id: relationship-storm-marshal-related-to-highwall-region-hydrology
+    relationship_type: related-to
+    source: entity-storm-marshal
+    target: entity-highwall-region-hydrology
+    provenance:
+      - "../../development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md"
 status: active
 canon_level: working
 aliases: []

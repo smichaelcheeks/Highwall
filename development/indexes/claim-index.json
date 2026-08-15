@@ -12833,6 +12833,70 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "All non-relationship canon content and excluded graph inventory"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/storm-marshal.md",
+        "canon/places/highwall-region-hydrology.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C001",
+      "classification": "administrative",
+      "disposition": "link-only",
+      "domains": [
+        "administration",
+        "government",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "storm-marshal",
+        "highwall-region-hydrology",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-storm-marshal-hydrology-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01",
+      "summary": "Build the identified Storm Marshal hydrology graph-migration round.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Storm Marshal and the generated graph index"
+    },
+    {
+      "authoritative_targets": [
+        "canon/government/storm-marshal.md",
+        "canon/places/highwall-region-hydrology.md",
+        "development/indexes/knowledge-graph.json"
+      ],
+      "authority_basis": "source-authority",
+      "case_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION",
+      "claim_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C002",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "government",
+        "places"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "storm-marshal",
+        "highwall-region-hydrology",
+        "graph-migration",
+        "related-navigation"
+      ],
+      "submission": "../../intake/submissions/2026-08-15-storm-marshal-hydrology-graph-migration-s01.md",
+      "submission_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01",
+      "summary": "Preserve lore, provenance, the legacy link, and the story exclusion.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "All non-relationship canon content and the unresolved story inventory row"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

@@ -756,6 +756,16 @@
       "target": "entity-upriver-highlands"
     },
     {
+      "authoritative_record": "canon/government/storm-marshal.md",
+      "provenance": [
+        "../../development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md"
+      ],
+      "relationship_id": "relationship-storm-marshal-related-to-highwall-region-hydrology",
+      "relationship_type": "related-to",
+      "source": "entity-storm-marshal",
+      "target": "entity-highwall-region-hydrology"
+    },
+    {
       "authoritative_record": "canon/places/upriver-highlands.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
@@ -773,12 +783,6 @@
       "source_entity_id": "entity-regional-imperial-structure",
       "source_path": "canon/government/regional-imperial-structure.md",
       "target_entity_id": ""
-    },
-    {
-      "legacy_target": "../places/highwall-region-hydrology.md",
-      "source_entity_id": "entity-storm-marshal",
-      "source_path": "canon/government/storm-marshal.md",
-      "target_entity_id": "entity-highwall-region-hydrology"
     }
   ]
 }
