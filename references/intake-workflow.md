@@ -239,10 +239,12 @@ Use one of these values:
     maintained claim changed by the integration. The event must be the next
     contiguous event for that object, use a compatible controlled change type,
     and cite an authorizing intake claim whose target names the object ID. The
-    review authority must authorize the object and actual state component
-    changed, the disposition must match the action, and compound changes must
-    append every applicable event class. Never reactivate a published retired
-    or superseded object.
+    review authority must authorize both the prior and resulting object state,
+    the disposition must match the action, and compound changes must append
+    every applicable event class with the validator-calculated transition
+    hash. Never reactivate a published retired or superseded object. Treat
+    lifecycle and reciprocal supersession as semantic identity changes, not
+    administrative graph maintenance.
 12. Run the required consistency tier, link, metadata, contradiction,
     duplication, generated-index, and diff checks.
 13. Add a canon change-log entry for significant canon effects.

@@ -69,7 +69,8 @@ Before changing authoritative content:
     disclosure, or multi-object scope; bind it to exact prose markers and exact
     review-claim provenance.
 13. For every schema-v2 entity, relationship, or maintained claim changed by
-    an integration, append a local history event. Never rewrite a published
+    an integration, append a transition-bound local history event authorized
+    against both the baseline and resulting state. Never rewrite a published
     event, reuse an object ID, mutate published relationship endpoints or type,
     or delete a superseded or retired object instead of preserving its
     tombstone.

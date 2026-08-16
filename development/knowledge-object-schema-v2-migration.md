@@ -10,6 +10,7 @@ related:
   - "../references/cloth-thread-model.md"
   - "intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md"
   - "intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md"
+  - "intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
 ---
 
 # Knowledge Object Schema V2 Migration
@@ -29,7 +30,7 @@ not equivalent to a completed knowledge migration.
 | --- | --- | --- |
 | Policy and schema | Knowledge claims, intake claims, histories, lifecycle, provenance, and completion invariants are authoritative policy. | Complete in foundation case with A01 and A02 corrections |
 | Parser and projection | Maintained metadata and governance records are parsed structurally and emitted in a unified navigation-only projection. | Complete in foundation case with A01 and A02 corrections |
-| Prospective validation | New and changed objects enforce identity, per-change history, lifecycle, ownership, authorized provenance, and content-boundary rules. | Complete in foundation case with A01 and A02 corrections |
+| Prospective validation | New and changed objects enforce identity, per-change history, lifecycle, ownership, authorized provenance, and content-boundary rules. | Reopened by A03 after the second audit found boundary, transition, authority, supersession, event-truth, and registry bypasses |
 | Entity history migration | Every current entity has audited history coverage and an explicit migration disposition. | Pending |
 | Relationship history migration | Every current relationship has audited history, lifecycle, provenance, ownership, and pair validation. | Pending |
 | Intake-claim crosswalk | Every indexed intake claim maps to a maintained claim or an explicit non-current-state category. | Pending |
@@ -77,4 +78,4 @@ The program may be marked complete only when:
 
 | Stage publication | Case or PR | Result |
 | --- | --- | --- |
-| Schema-v2 foundation and completion corrections | `CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2` | S01, A01, and A02 reviews complete; publication pending on draft PR #41 |
+| Schema-v2 foundation and completion corrections | `CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2` | S01, A01, and A02 reviews complete; A03 remediation and independent reaudit in progress on draft PR #41 |

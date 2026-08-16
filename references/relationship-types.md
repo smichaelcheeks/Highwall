@@ -20,6 +20,14 @@ inverse. Controlled provenance policies are `navigation`, `semantic-canon`,
 `semantic-working`, and `administrative`. Changing any of these fields is
 governed ontology work.
 
+Definitions must be nonempty. A declared inverse must exist and name the
+originating type in return, have compatible directionality and authority
+effect, reverse the source and target kind sets, and use the same provenance
+policy. Symmetric types must be self-inverse and permit the same endpoint kinds
+on both sides. Navigation-only types use `navigation` provenance; semantic
+types use `semantic-canon` or `semantic-working`. Validation rejects an
+incoherent registry before evaluating relationship instances.
+
 Provenance policies apply to every schema-v2 relationship and its exact intake
 claims:
 

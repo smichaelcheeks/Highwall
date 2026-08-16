@@ -50,6 +50,7 @@ HISTORY_FIELDS = {
     "sequence",
     "object_id",
     "change_type",
+    "transition_sha256",
     "review_claims",
     "summary",
 }
@@ -97,6 +98,13 @@ REGISTRY_PROVENANCE_POLICIES = {
 }
 OBJECT_KINDS = {"entity", "relationship", "claim", "history", "intake-claim"}
 ENTITY_GRAPH_METADATA_FIELDS = {
+    "entity_id",
+    "graph_status",
+    "history_coverage",
+    "supersedes",
+    "superseded_by",
+}
+ENTITY_REGISTRATION_METADATA_FIELDS = {
     "entity_id",
     "graph_status",
     "history_coverage",
@@ -288,6 +296,7 @@ def parse_histories(path: Path) -> tuple[list[dict[str, object]], list[str]]:
             "sequence": sequence,
             "object_id": scalar_text(value.get("object_id")),
             "change_type": scalar_text(value.get("change_type")),
+            "transition_sha256": scalar_text(value.get("transition_sha256")),
             "review_claims": string_list(
                 value.get("review_claims"), "history.review_claims", local_errors
             ),
@@ -367,6 +376,16 @@ def relationship_type_registry(
                 "references/relationship-types.md: semantic relationship "
                 f"{relationship_type} requires semantic provenance policy"
             )
+        if authority_effect == "navigation-only" and provenance_policy != "navigation":
+            errors.append(
+                "references/relationship-types.md: navigation-only relationship "
+                f"{relationship_type} requires navigation provenance policy"
+            )
+        definition = cells[8].strip()
+        if not definition:
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} has an empty definition"
+            )
         types[relationship_type] = {
             "relationship_type": relationship_type,
             "directionality": directionality,
@@ -376,7 +395,7 @@ def relationship_type_registry(
             "self_link": self_link,
             "inverse": inverse,
             "provenance_policy": provenance_policy,
-            "definition": cells[8],
+            "definition": definition,
         }
     if not types:
         errors.append("references/relationship-types.md: no controlled types found")
@@ -389,6 +408,44 @@ def relationship_type_registry(
         if record["directionality"] == "symmetric" and inverse != relationship_type:
             errors.append(
                 f"references/relationship-types.md: symmetric {relationship_type} must be its own inverse"
+            )
+        if record["directionality"] == "symmetric" and (
+            record["source_kinds"] != record["target_kinds"]
+        ):
+            errors.append(
+                f"references/relationship-types.md: symmetric {relationship_type} "
+                "must permit the same source and target kinds"
+            )
+        if inverse == "none" or inverse not in types:
+            continue
+        inverse_record = types[inverse]
+        if inverse_record["inverse"] != relationship_type:
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} inverse is not "
+                f"reciprocal from {inverse}"
+            )
+        if inverse_record["directionality"] != record["directionality"]:
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} and {inverse} "
+                "have incompatible directionality"
+            )
+        if (
+            record["source_kinds"] != inverse_record["target_kinds"]
+            or record["target_kinds"] != inverse_record["source_kinds"]
+        ):
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} and {inverse} "
+                "have incompatible inverse endpoint kinds"
+            )
+        if record["authority_effect"] != inverse_record["authority_effect"]:
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} and {inverse} "
+                "have incompatible authority effects"
+            )
+        if record["provenance_policy"] != inverse_record["provenance_policy"]:
+            errors.append(
+                f"references/relationship-types.md: {relationship_type} and {inverse} "
+                "have incompatible provenance policies"
             )
     return types, errors
 
@@ -405,31 +462,110 @@ def resolve_repository_pointer(root: Path, owner: Path, pointer: str) -> Path | 
     return resolved
 
 
+CLAIM_MARKER_LINE = re.compile(
+    r"<!-- claim:(claim-[a-z0-9]+(?:-[a-z0-9]+)*):(start|end) -->[ \t]*(?:\n)?"
+)
+CLAIM_BOUNDARY_LINE = re.compile(
+    r"(?m)^<!-- claim:claim-[a-z0-9]+(?:-[a-z0-9]+)*:(?:start|end) -->[ \t]*\n?"
+)
+
+
+def parse_claim_passages(
+    metadata: Mapping[str, object], path: Path
+) -> tuple[dict[str, str], str, list[str]]:
+    """Bind declared maintained claims to non-overlapping exact body passages."""
+    body = markdown_body(path)
+    errors: list[str] = []
+    markers: list[tuple[int, int, str, str]] = []
+    offset = 0
+    for line_number, line in enumerate(body.splitlines(keepends=True), start=1):
+        match = CLAIM_MARKER_LINE.fullmatch(line)
+        if "<!-- claim:" in line and match is None:
+            errors.append(f"malformed claim boundary on body line {line_number}")
+        elif match is not None:
+            markers.append((offset, offset + len(line), match.group(1), match.group(2)))
+        offset += len(line)
+
+    open_marker: tuple[int, int, str] | None = None
+    seen: set[str] = set()
+    passages: dict[str, str] = {}
+    spans: list[tuple[int, int, str]] = []
+    for start, end, claim_id, marker_kind in markers:
+        if marker_kind == "start":
+            if open_marker is not None:
+                errors.append(
+                    f"nested claim boundary {claim_id} inside {open_marker[2]}"
+                )
+                continue
+            if claim_id in seen:
+                errors.append(f"duplicate claim boundary for {claim_id}")
+            open_marker = (start, end, claim_id)
+            continue
+        if open_marker is None:
+            errors.append(f"claim boundary {claim_id} has an end marker before its start")
+            continue
+        open_start, content_start, open_id = open_marker
+        open_marker = None
+        if claim_id != open_id:
+            errors.append(
+                f"claim boundary {open_id} closes with mismatched end marker {claim_id}"
+            )
+            continue
+        content = body[content_start:start].strip("\n")
+        if not content.strip():
+            errors.append(f"claim boundary {claim_id} has an empty bounded passage")
+            continue
+        if claim_id in passages:
+            errors.append(f"duplicate claim boundary for {claim_id}")
+            continue
+        seen.add(claim_id)
+        passages[claim_id] = content
+        spans.append((open_start, end, claim_id))
+    if open_marker is not None:
+        errors.append(f"claim boundary {open_marker[2]} has no end marker")
+
+    declared: list[str] = []
+    raw_claims = metadata.get("claims", [])
+    if isinstance(raw_claims, list):
+        for value in raw_claims:
+            if isinstance(value, Mapping):
+                content_id = scalar_text(value.get("content_id"))
+                if content_id:
+                    declared.append(content_id)
+    for claim_id in sorted(set(declared)):
+        if claim_id not in passages:
+            errors.append(f"declared claim {claim_id} has no matching claim boundary")
+    for claim_id in sorted(passages):
+        if claim_id not in declared:
+            errors.append(f"undeclared claim boundary {claim_id}")
+    if len(declared) != len(set(declared)):
+        errors.append("duplicate declared claim content_id")
+
+    if errors:
+        return passages, body, errors
+    residual: list[str] = []
+    cursor = 0
+    for start, end, claim_id in sorted(spans):
+        residual.append(body[cursor:start])
+        residual.append(f"<!-- maintained-claim:{claim_id} -->\n")
+        cursor = end
+    residual.append(body[cursor:])
+    return passages, "".join(residual), []
+
+
 def claim_content(path: Path, content_id: str) -> tuple[str, str | None]:
-    """Return normalized bounded claim content and an error, if any."""
-    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
-    start = f"<!-- claim:{content_id}:start -->"
-    end = f"<!-- claim:{content_id}:end -->"
-    if text.count(start) != 1 or text.count(end) != 1:
+    """Return a structurally bound maintained-claim passage."""
+    try:
+        metadata = parse_front_matter_data(path)
+    except ValueError as error:
+        return "", str(error)
+    passages, _, errors = parse_claim_passages(metadata, path)
+    if errors:
+        relevant = [error for error in errors if content_id in error]
+        return "", "; ".join(relevant or errors)
+    if content_id not in passages:
         return "", "must have exactly one matching start and end marker"
-    start_index = text.index(start) + len(start)
-    end_index = text.index(end)
-    if end_index <= start_index:
-        return "", "has an end marker before its start marker"
-    content = text[start_index:end_index].strip("\n")
-    if not content.strip():
-        return "", "has an empty bounded passage"
-    return content, None
-
-
-CLAIM_BLOCK = re.compile(
-    r"<!-- claim:(claim-[a-z0-9]+(?:-[a-z0-9]+)*):start -->.*?"
-    r"<!-- claim:\1:end -->",
-    re.DOTALL,
-)
-CLAIM_BOUNDARY = re.compile(
-    r"(?m)^<!-- claim:claim-[a-z0-9]+(?:-[a-z0-9]+)*:(?:start|end) -->\r?\n?"
-)
+    return passages[content_id], None
 
 
 def stable_state_hash(value: object) -> str:
@@ -438,6 +574,31 @@ def stable_state_hash(value: object) -> str:
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
     )
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def stable_transition_hash(
+    *,
+    kind: str,
+    object_id: str,
+    before_state_sha256: str,
+    after_state_sha256: str,
+    before_path: str,
+    after_path: str,
+    actions: list[str],
+) -> str:
+    """Bind a history event to one complete canonical object transition."""
+    return stable_state_hash(
+        {
+            "transition_schema": 1,
+            "kind": kind,
+            "object_id": object_id,
+            "before_state_sha256": before_state_sha256,
+            "after_state_sha256": after_state_sha256,
+            "before_path": before_path,
+            "after_path": after_path,
+            "actions": sorted(actions),
+        }
+    )
 
 
 def markdown_body(path: Path) -> str:
@@ -459,10 +620,7 @@ def entity_state(metadata: Mapping[str, object], path: Path) -> dict[str, object
         for key, value in metadata.items()
         if key not in {"relationships", "claims", "history"}
     }
-    body = CLAIM_BLOCK.sub(
-        lambda match: f"<!-- maintained-claim:{match.group(1)} -->",
-        markdown_body(path),
-    )
+    _, body, _ = parse_claim_passages(metadata, path)
     return {"metadata": owned_metadata, "body": body}
 
 
@@ -505,7 +663,18 @@ def collect_record_readable_snapshots(root: Path) -> dict[str, str]:
             if not metadata:
                 continue
             content_state, _ = entity_state_components(metadata, path)
-            content_state["body"] = CLAIM_BOUNDARY.sub("", markdown_body(path))
+            readable_metadata = content_state.get("metadata", {})
+            if isinstance(readable_metadata, dict):
+                content_state["metadata"] = {
+                    key: value
+                    for key, value in readable_metadata.items()
+                    if key not in ENTITY_REGISTRATION_METADATA_FIELDS
+                }
+            _, _, claim_errors = parse_claim_passages(metadata, path)
+            body = markdown_body(path)
+            if not claim_errors:
+                body = CLAIM_BOUNDARY_LINE.sub("", body)
+            content_state["body"] = body
             snapshots[path.relative_to(root).as_posix()] = stable_state_hash(
                 content_state
             )
@@ -549,6 +718,18 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                     "state_sha256": stable_state_hash(state),
                     "content_state_sha256": stable_state_hash(content_state),
                     "graph_metadata_sha256": stable_state_hash(graph_metadata),
+                    "supersession_sha256": stable_state_hash(
+                        {
+                            "supersedes": string_list(
+                                metadata.get("supersedes"), "entity.supersedes", []
+                            ),
+                            "superseded_by": string_list(
+                                metadata.get("superseded_by"),
+                                "entity.superseded_by",
+                                [],
+                            ),
+                        }
+                    ),
                 }
             parsed_relationships, _ = parse_relationships(path)
             for relationship in parsed_relationships:
@@ -563,6 +744,12 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                         **relationship,
                         "state_sha256": stable_state_hash(relationship),
                         "non_lifecycle_sha256": stable_state_hash(non_lifecycle),
+                        "supersession_sha256": stable_state_hash(
+                            {
+                                "supersedes": relationship["supersedes"],
+                                "superseded_by": relationship["superseded_by"],
+                            }
+                        ),
                         "authoritative_record": relative,
                     }
             parsed_claims, _ = parse_knowledge_claims(path)
@@ -586,6 +773,12 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                         "state_sha256": stable_state_hash(claim_state),
                         "non_lifecycle_metadata_sha256": stable_state_hash(
                             non_lifecycle_metadata
+                        ),
+                        "supersession_sha256": stable_state_hash(
+                            {
+                                "supersedes": claim["supersedes"],
+                                "superseded_by": claim["superseded_by"],
+                            }
                         ),
                         "authoritative_record": relative,
                     }
@@ -937,9 +1130,13 @@ def build_graph_data(root: Path) -> dict[str, object]:
         parsed_relationships, relationship_errors = parse_relationships(path)
         parsed_claims, claim_errors = parse_knowledge_claims(path)
         parsed_histories, history_errors = parse_histories(path)
+        boundary_errors: list[str] = []
+        if scalar_text(metadata.get("entity_id")) or "claims" in metadata:
+            _, _, boundary_errors = parse_claim_passages(metadata, path)
         errors.extend(f"{relative}: {error}" for error in relationship_errors)
         errors.extend(f"{relative}: {error}" for error in claim_errors)
         errors.extend(f"{relative}: {error}" for error in history_errors)
+        errors.extend(f"{relative}: {error}" for error in boundary_errors)
 
         entity_id = scalar_text(metadata.get("entity_id"))
         if entity_id:
@@ -1201,6 +1398,9 @@ def build_graph_data(root: Path) -> dict[str, object]:
             errors.append(f"{label} is not stored on its object's authoritative record")
         if history["change_type"] not in HISTORY_CHANGE_TYPES:
             errors.append(f"{label} has invalid change_type {history['change_type']!r}")
+        transition_sha256 = str(history["transition_sha256"])
+        if transition_sha256 and not re.fullmatch(r"[0-9a-f]{64}", transition_sha256):
+            errors.append(f"{label} has invalid transition_sha256")
         if not str(history["summary"]).strip():
             errors.append(f"{label} has an empty summary")
         review_claims = history["review_claims"]
@@ -1222,7 +1422,14 @@ def build_graph_data(root: Path) -> dict[str, object]:
                 maintained_claim
                 and maintained_claim["truth_kind"] in {"proposal", "question"}
             )
-            if object_kind_name == "relationship":
+            if history["change_type"] == "moved":
+                allowed_history_authorities = {
+                    "establish-policy",
+                    "establish-canon",
+                    "working-canon",
+                }
+                navigation_relationship = False
+            elif object_kind_name == "relationship":
                 relationship = relationships_by_id.get(object_id, {})
                 registry = relationship_types.get(
                     str(relationship.get("relationship_type", "")), {}

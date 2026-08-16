@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import contextlib
 import io
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -34,6 +35,44 @@ class ValidatorTests(unittest.TestCase):
             any(text in error for error in self.validate(base_ref)),
             f"expected error containing {text!r}",
         )
+
+    def bind_transition_hashes(self, base_ref: str) -> None:
+        """Insert validator-calculated bindings into new fixture history events."""
+        expected: dict[str, str] = {}
+        for error in self.validate(base_ref):
+            match = re.search(
+                r"history (history-[a-z0-9-]+) transition_sha256 must equal "
+                r"([0-9a-f]{64})",
+                error,
+            )
+            if match:
+                expected[match.group(1)] = match.group(2)
+        self.assertTrue(expected, "fixture produced no transition hashes to bind")
+        remaining = set(expected)
+        for path in self.fixture.root.rglob("*.md"):
+            lines = path.read_text(encoding="utf-8").splitlines(keepends=True)
+            output: list[str] = []
+            current_history = ""
+            changed = False
+            for line in lines:
+                stripped = line.strip()
+                if stripped.startswith("- history_id: "):
+                    current_history = stripped.partition(":")[2].strip()
+                output.append(line)
+                if (
+                    current_history in expected
+                    and stripped.startswith("change_type: ")
+                ):
+                    newline = "\r\n" if line.endswith("\r\n") else "\n"
+                    output.append(
+                        f"    transition_sha256: {expected[current_history]}{newline}"
+                    )
+                    remaining.discard(current_history)
+                    current_history = ""
+                    changed = True
+            if changed:
+                path.write_text("".join(output), encoding="utf-8")
+        self.assertEqual(set(), remaining)
 
     def install_schema_v2_objects(self) -> Path:
         relationship_id = "relationship-example-related-to-second"
@@ -348,6 +387,7 @@ history:
             text.replace("    summary: Added the fixture claim.\n", "    summary: Added the fixture claim.\n" + event),
             encoding="utf-8",
         )
+        self.bind_transition_hashes(baseline)
         self.assertEqual([], self.validate(baseline))
 
     def test_claim_content_change_rejects_generic_history_type(self) -> None:
@@ -437,6 +477,7 @@ history:
             ),
             encoding="utf-8",
         )
+        self.bind_transition_hashes(baseline)
         self.assertEqual([], self.validate(baseline))
 
     def test_entity_prose_change_requires_appended_history(self) -> None:
@@ -503,6 +544,7 @@ history:
             ),
             encoding="utf-8",
         )
+        self.bind_transition_hashes(baseline)
         self.assertEqual([], self.validate(baseline))
 
     def test_existing_record_registration_accepts_policy_authority(self) -> None:
@@ -547,6 +589,7 @@ history:
             ),
             encoding="utf-8",
         )
+        self.bind_transition_hashes(baseline)
         self.assertEqual([], self.validate(baseline))
 
     def test_retired_entity_cannot_be_reactivated(self) -> None:
@@ -650,6 +693,69 @@ history:
         )
         moved = page.with_name("renamed-example-place.md")
         page.rename(moved)
+        self.bind_transition_hashes(baseline)
+        self.assertEqual([], self.validate(baseline))
+
+    def test_policy_authority_can_record_content_neutral_owner_move(self) -> None:
+        page = self.install_schema_v2_objects()
+        move_case = "CASE-2000-01-02-MOVE"
+        move_submission = f"{move_case}-S01"
+        move_claim = f"{move_submission}-C001"
+        self.fixture.submission(
+            relative="intake/submissions/move-submission.md",
+            case_id=move_case,
+            submission_id=move_submission,
+        )
+        self.fixture.review(
+            relative="development/intake-reviews/move-review.md",
+            submission_relative="intake/submissions/move-submission.md",
+            case_id=move_case,
+            submission_id=move_submission,
+            authority="establish-policy",
+            claims=[
+                self.fixture.claim_row(
+                    claim_id=move_claim,
+                    disposition="update",
+                    target=(
+                        "entity-example-place "
+                        "relationship-example-related-to-second "
+                        "claim-example-place-exists"
+                    ),
+                )
+            ],
+        )
+        baseline = self.fixture.initialize_git()
+        events = f"""  - history_id: history-example-entity-002
+    sequence: 2
+    object_id: entity-example-place
+    change_type: moved
+    review_claims:
+      - {move_claim}
+    summary: Recorded the content-neutral owner move.
+  - history_id: history-example-relationship-002
+    sequence: 2
+    object_id: relationship-example-related-to-second
+    change_type: moved
+    review_claims:
+      - {move_claim}
+    summary: Moved the relationship with its owner.
+  - history_id: history-example-claim-002
+    sequence: 2
+    object_id: claim-example-place-exists
+    change_type: moved
+    review_claims:
+      - {move_claim}
+    summary: Moved the claim with its owner.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "    summary: Added the fixture claim.\n",
+                "    summary: Added the fixture claim.\n" + events,
+            ),
+            encoding="utf-8",
+        )
+        page.rename(page.with_name("renamed-example-place.md"))
+        self.bind_transition_hashes(baseline)
         self.assertEqual([], self.validate(baseline))
 
     def test_owner_path_move_rejects_generic_history_types(self) -> None:
@@ -1205,6 +1311,513 @@ history:
     def test_invalid_comparison_ref_reports_validation_error(self) -> None:
         self.fixture.initialize_git()
         self.assert_error("invalid comparison ref", "missing-ref")
+
+    def test_working_authority_cannot_downgrade_established_entity(self) -> None:
+        page = self.install_policy_registered_entity()
+        review = self.fixture.root / "development/intake-reviews/example-review.md"
+        review.write_text(
+            review.read_text(encoding="utf-8").replace(
+                "authority: establish-policy", "authority: working-canon"
+            ),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+        event = f"""  - history_id: history-example-policy-entity-002
+    sequence: 2
+    object_id: entity-example-place
+    change_type: metadata-changed
+    review_claims:
+      - {CLAIM_ID}
+    summary: Deliberately attempted to lower established entity authority.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("canon_level: established", "canon_level: working")
+            .replace(
+                "    summary: Registered the fixture entity without changing its content.\n",
+                "    summary: Registered the fixture entity without changing its content.\n"
+                + event,
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error(
+            "uses authority 'working-canon' for entity content change",
+            baseline,
+        )
+
+    def test_classify_authority_cannot_downgrade_established_claim(self) -> None:
+        claim_id = "claim-example-established"
+        page = self.fixture.root / "canon/places/example-place.md"
+        self.fixture.development_record(
+            "development/retired/example-retired.md",
+            status="retired",
+            record_type="retired",
+        )
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    disposition="create", target=claim_id
+                ),
+                self.fixture.claim_row(
+                    claim_id=UPDATE_CLAIM_ID,
+                    disposition="update",
+                    target=claim_id,
+                ),
+                self.fixture.claim_row(
+                    claim_id=RETIRE_CLAIM_ID,
+                    disposition="retire",
+                    target=(
+                        f"{claim_id} "
+                        "[Retired record](../retired/example-retired.md)"
+                    ),
+                ),
+            ],
+        )
+        schema = f"""relationships: []
+claims:
+  - claim_id: {claim_id}
+    content_id: {claim_id}
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-example-place
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+history:
+  - history_id: history-example-established-claim-001
+    sequence: 1
+    object_id: {claim_id}
+    change_type: claim-added
+    review_claims:
+      - {CLAIM_ID}
+    summary: Added the established fixture claim.
+"""
+        body = f"""<!-- claim:{claim_id}:start -->
+The fixture assertion is established.
+<!-- claim:{claim_id}:end -->"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("relationships: []\n", schema)
+            .replace("Synthetic administrative fixture.", body),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+        review = self.fixture.root / "development/intake-reviews/example-review.md"
+        review.write_text(
+            review.read_text(encoding="utf-8").replace(
+                "authority: establish-canon", "authority: classify"
+            ),
+            encoding="utf-8",
+        )
+        events = f"""  - history_id: history-example-established-claim-002
+    sequence: 2
+    object_id: {claim_id}
+    change_type: metadata-changed
+    review_claims:
+      - {UPDATE_CLAIM_ID}
+    summary: Deliberately attempted to lower established claim authority.
+  - history_id: history-example-established-claim-003
+    sequence: 3
+    object_id: {claim_id}
+    change_type: retired
+    review_claims:
+      - {RETIRE_CLAIM_ID}
+    summary: Deliberately attempted to retire established content under classify authority.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("authority_level: established", "authority_level: unresolved")
+            .replace("lifecycle: active", "lifecycle: retired")
+            .replace(
+                "    summary: Added the established fixture claim.\n",
+                "    summary: Added the established fixture claim.\n" + events,
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error(
+            "uses authority 'classify' for claim metadata change",
+            baseline,
+        )
+
+    def test_new_entity_requires_established_initial_event(self) -> None:
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    classification="canon",
+                    disposition="create",
+                    target="entity-new-place",
+                )
+            ],
+        )
+        baseline = self.fixture.initialize_git()
+        page = self.fixture.canon_page(
+            "canon/places/new-place.md", title="New Place"
+        )
+        schema = f"""graph_status: active
+history_coverage: prospective
+supersedes: []
+superseded_by: []
+relationships: []
+claims: []
+history:
+  - history_id: history-new-place-001
+    sequence: 1
+    object_id: entity-new-place
+    change_type: graph-registered
+    review_claims:
+      - {CLAIM_ID}
+    summary: Deliberately mislabeled a new entity as a registration.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("entity-example-place", "entity-new-place")
+            .replace("relationships: []\n", schema),
+            encoding="utf-8",
+        )
+        self.assert_error("initial publication; expected one of ['established']", baseline)
+
+    def test_new_entity_with_established_transition_passes(self) -> None:
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    classification="canon",
+                    disposition="create",
+                    target="entity-new-place",
+                )
+            ],
+        )
+        baseline = self.fixture.initialize_git()
+        page = self.fixture.canon_page(
+            "canon/places/new-place.md", title="New Place"
+        )
+        schema = f"""graph_status: active
+history_coverage: complete
+supersedes: []
+superseded_by: []
+relationships: []
+claims: []
+history:
+  - history_id: history-new-place-001
+    sequence: 1
+    object_id: entity-new-place
+    change_type: established
+    review_claims:
+      - {CLAIM_ID}
+    summary: Established the new fixture entity.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("entity-example-place", "entity-new-place")
+            .replace("relationships: []\n", schema),
+            encoding="utf-8",
+        )
+        self.bind_transition_hashes(baseline)
+        self.assertEqual([], self.validate(baseline))
+
+    def test_existing_record_requires_graph_registered_initial_event(self) -> None:
+        page = self.fixture.write(
+            "story/example-story.md",
+            "---\ntitle: Example Story\ntype: story\nstatus: active\n---\n\n"
+            "# Example Story\n\nSynthetic narrative fixture.\n",
+        )
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    classification="story",
+                    disposition="create",
+                    target="entity-example-story",
+                )
+            ],
+            target="story/example-story.md",
+        )
+        baseline = self.fixture.initialize_git()
+        schema = f"""entity_id: entity-example-story
+graph_status: active
+history_coverage: prospective
+supersedes: []
+superseded_by: []
+relationships: []
+claims: []
+history:
+  - history_id: history-example-story-001
+    sequence: 1
+    object_id: entity-example-story
+    change_type: established
+    review_claims:
+      - {CLAIM_ID}
+    summary: Deliberately mislabeled registration as establishment.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "status: active\n", "status: active\n" + schema
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error(
+            "schema-v2 registration; expected one of ['graph-registered']",
+            baseline,
+        )
+
+    def test_establish_canon_can_promote_working_entity(self) -> None:
+        page = self.install_policy_registered_entity()
+        review = self.fixture.root / "development/intake-reviews/example-review.md"
+        review.write_text(
+            review.read_text(encoding="utf-8").replace(
+                "authority: establish-policy", "authority: establish-canon"
+            ),
+            encoding="utf-8",
+        )
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "canon_level: established", "canon_level: working"
+            ),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+        event = f"""  - history_id: history-example-policy-entity-002
+    sequence: 2
+    object_id: entity-example-place
+    change_type: metadata-changed
+    review_claims:
+      - {CLAIM_ID}
+    summary: Promoted the working fixture entity to established authority.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("canon_level: working", "canon_level: established")
+            .replace(
+                "    summary: Registered the fixture entity without changing its content.\n",
+                "    summary: Registered the fixture entity without changing its content.\n"
+                + event,
+            ),
+            encoding="utf-8",
+        )
+        self.bind_transition_hashes(baseline)
+        self.assertEqual([], self.validate(baseline))
+
+    def test_policy_authority_cannot_rewire_established_supersession(self) -> None:
+        self.fixture.review(
+            authority="establish-policy",
+            claims=[
+                self.fixture.claim_row(
+                    disposition="update",
+                    target=(
+                        "entity-example-place entity-replacement-one "
+                        "entity-replacement-two"
+                    ),
+                )
+            ],
+        )
+
+        def schema(
+            entity_id: str,
+            *,
+            graph_status: str,
+            supersedes: str = "[]",
+            superseded_by: str = "[]",
+            history_slug: str,
+        ) -> str:
+            return f"""graph_status: {graph_status}
+history_coverage: prospective
+supersedes: {supersedes}
+superseded_by: {superseded_by}
+relationships: []
+claims: []
+history:
+  - history_id: history-{history_slug}-001
+    sequence: 1
+    object_id: {entity_id}
+    change_type: graph-registered
+    review_claims:
+      - {CLAIM_ID}
+    summary: Registered the existing fixture entity.
+"""
+
+        old = self.fixture.root / "canon/places/example-place.md"
+        old.write_text(
+            old.read_text(encoding="utf-8").replace(
+                "relationships: []\n",
+                schema(
+                    "entity-example-place",
+                    graph_status="superseded",
+                    superseded_by="[entity-replacement-one]",
+                    history_slug="example-place",
+                ),
+            ),
+            encoding="utf-8",
+        )
+        replacement_one = self.fixture.canon_page(
+            "canon/places/replacement-one.md", title="Replacement One"
+        )
+        replacement_one.write_text(
+            replacement_one.read_text(encoding="utf-8")
+            .replace("entity-example-place", "entity-replacement-one")
+            .replace(
+                "relationships: []\n",
+                schema(
+                    "entity-replacement-one",
+                    graph_status="active",
+                    supersedes="[entity-example-place]",
+                    history_slug="replacement-one",
+                ),
+            ),
+            encoding="utf-8",
+        )
+        replacement_two = self.fixture.canon_page(
+            "canon/places/replacement-two.md", title="Replacement Two"
+        )
+        replacement_two.write_text(
+            replacement_two.read_text(encoding="utf-8")
+            .replace("entity-example-place", "entity-replacement-two")
+            .replace(
+                "relationships: []\n",
+                schema(
+                    "entity-replacement-two",
+                    graph_status="active",
+                    history_slug="replacement-two",
+                ),
+            ),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+
+        def append_event(path: Path, slug: str, object_id: str) -> None:
+            event = f"""  - history_id: history-{slug}-002
+    sequence: 2
+    object_id: {object_id}
+    change_type: metadata-changed
+    review_claims:
+      - {CLAIM_ID}
+    summary: Deliberately attempted to rewire established supersession.
+"""
+            path.write_text(
+                path.read_text(encoding="utf-8").replace(
+                    "    summary: Registered the existing fixture entity.\n",
+                    "    summary: Registered the existing fixture entity.\n" + event,
+                ),
+                encoding="utf-8",
+            )
+
+        old.write_text(
+            old.read_text(encoding="utf-8").replace(
+                "superseded_by: [entity-replacement-one]",
+                "superseded_by: [entity-replacement-two]",
+            ),
+            encoding="utf-8",
+        )
+        replacement_one.write_text(
+            replacement_one.read_text(encoding="utf-8").replace(
+                "supersedes: [entity-example-place]", "supersedes: []"
+            ),
+            encoding="utf-8",
+        )
+        replacement_two.write_text(
+            replacement_two.read_text(encoding="utf-8").replace(
+                "supersedes: []", "supersedes: [entity-example-place]"
+            ),
+            encoding="utf-8",
+        )
+        append_event(old, "example-place", "entity-example-place")
+        append_event(replacement_one, "replacement-one", "entity-replacement-one")
+        append_event(replacement_two, "replacement-two", "entity-replacement-two")
+
+        self.assert_error(
+            "uses authority 'establish-policy' for entity supersession change",
+            baseline,
+        )
+
+    def test_changed_object_requires_exact_transition_hash(self) -> None:
+        page = self.install_schema_v2_objects()
+        baseline = self.fixture.initialize_git()
+        event = f"""  - history_id: history-example-claim-002
+    sequence: 2
+    object_id: claim-example-place-exists
+    change_type: claim-clarified
+    review_claims:
+      - {UPDATE_CLAIM_ID}
+    summary: Clarified the bounded fixture wording without a transition binding.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("The wall is red.", "The wall is amber.")
+            .replace(
+                "    summary: Added the fixture claim.\n",
+                "    summary: Added the fixture claim.\n" + event,
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error("transition_sha256 must equal", baseline)
+
+    def test_incorrect_transition_hash_is_rejected(self) -> None:
+        page = self.install_schema_v2_objects()
+        baseline = self.fixture.initialize_git()
+        event = f"""  - history_id: history-example-claim-002
+    sequence: 2
+    object_id: claim-example-place-exists
+    change_type: claim-clarified
+    review_claims:
+      - {UPDATE_CLAIM_ID}
+    summary: Clarified the bounded fixture wording.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8")
+            .replace("The wall is red.", "The wall is amber.")
+            .replace(
+                "    summary: Added the fixture claim.\n",
+                "    summary: Added the fixture claim.\n" + event,
+            ),
+            encoding="utf-8",
+        )
+        self.bind_transition_hashes(baseline)
+        page.write_text(
+            re.sub(
+                r"transition_sha256: [0-9a-f]{64}",
+                "transition_sha256: " + "0" * 64,
+                page.read_text(encoding="utf-8"),
+                count=1,
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error("transition_sha256 must equal", baseline)
+
+    def test_appended_history_without_state_transition_is_rejected(self) -> None:
+        page = self.install_schema_v2_objects()
+        baseline = self.fixture.initialize_git()
+        event = f"""  - history_id: history-example-entity-002
+    sequence: 2
+    object_id: entity-example-place
+    change_type: metadata-changed
+    review_claims:
+      - {UPDATE_CLAIM_ID}
+    summary: Deliberately recorded an event without changing the object.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "    summary: Added the fixture claim.\n",
+                "    summary: Added the fixture claim.\n" + event,
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error("has no object transition", baseline)
 
 
 if __name__ == "__main__":

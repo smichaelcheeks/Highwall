@@ -38,7 +38,7 @@ provenance: []
 | `superseded_by` | Schema-v2 target | Later entity IDs that replace this entity |
 | `relationships` | Yes | Addressable typed graph relationships maintained on this record |
 | `claims` | Schema-v2 target | Decision-worthy maintained knowledge claims owned by this record |
-| `history` | Schema-v2 target | Append-only local changelog entries for objects owned by this record |
+| `history` | Schema-v2 target | Append-only, transition-bound local changelog entries for objects owned by this record |
 | `status` | Yes | Document workflow state |
 | `canon_level` | Yes | Authority of the page's approved claims |
 | `aliases` | Yes | Alternate names and spellings; use an empty list when none are documented |
@@ -91,3 +91,14 @@ Maintained claim and history provenance uses exact intake-review claim IDs in
 addition to review paths. `CASE-...-C...` identifies an immutable intake claim;
 `claim-...` identifies a maintained knowledge assertion. Never substitute one
 identity class for the other.
+
+Every prospectively appended history entry includes a 64-character lowercase
+`transition_sha256` calculated by repository validation from the complete
+baseline-to-result object transition. Do not copy a hash from another event or
+invent one manually; validation reports the required value for an otherwise
+complete event. Compound event classes for one object transition share the
+same hash.
+
+Maintained-claim markers must appear alone on exact boundary lines and bind
+one-to-one with declared `content_id` values. Invalid or undeclared boundaries
+do not remove prose from entity ownership and fail validation.

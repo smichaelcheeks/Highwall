@@ -19,8 +19,9 @@ explicit instructions. See the
 - Record significant canon changes and the decision authorizing them.
 - Keep maintained knowledge-claim IDs distinct from immutable intake-claim
   IDs. Every schema-v2 object change must append a compatible local history
-  event whose exact review claim authorizes and names the changed object and
-  state. Match dispositions to creation, update, link, supersession, or
+  event bound to the exact baseline-to-result transition; its review claim
+  must authorize both states and name the changed object. Match dispositions
+  to creation, update, link, supersession, or
   retirement; record every class in a compound change; and never reactivate a
   published tombstone.
 - Do not treat external research, prior drafts, or retired ideas as canon.

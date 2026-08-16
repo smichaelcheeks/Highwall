@@ -94,6 +94,11 @@ kinds, self-link behavior, inverse behavior, and provenance policy. Validation
 rejects duplicate symmetric pairs, prohibited self-links, unauthorized or
 irrelevant provenance, and ownership inconsistent with directionality.
 
+Every registry row has a nonempty definition. Declared inverse types must name
+one another, use compatible directionality and authority effects, reverse
+their permitted endpoint kinds, and use compatible provenance policies.
+Symmetric types are self-inverse and permit the same kinds at both ends.
+
 ## Maintained knowledge claims
 
 A decision-worthy assertion becomes addressable through a stable `claim-...`
@@ -129,6 +134,13 @@ The maintained assertion appears here.
 The generated projection hashes the normalized bounded passage for change
 detection. The hash remains navigation metadata; the bounded Markdown passage
 is authoritative.
+
+Claim boundaries are parsed before any passage is excluded from entity state.
+Every declared `content_id` must bind exactly one nonempty passage, and every
+boundary pair must name one declared claim. Malformed, undeclared, duplicate,
+nested, overlapping, mismatched, or unmatched markers fail validation. An
+invalid boundary therefore remains entity-owned text and cannot create a hash
+exclusion.
 
 Prospective validation includes that content hash in the claim's canonical
 state. Changing bounded content under an existing claim ID therefore requires
@@ -184,6 +196,7 @@ history:
     sequence: 1
     object_id: entity-highwall
     change_type: graph-registered
+    transition_sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
     review_claims:
       - CASE-YYYY-MM-DD-EXAMPLE-S01-C001
     summary: Registered the existing page as a graph entity.
@@ -195,6 +208,13 @@ reviews retain full rationale and Git retains exact file changes. A migration
 entry uses `graph-registered` and must not falsely claim that pre-existing lore
 was newly established.
 
+Every prospectively appended event carries the validator-calculated
+`transition_sha256`. It binds the object kind and ID, baseline and resulting
+canonical-state hashes, baseline and resulting owner paths, and the complete
+sorted action set. All events for one compound transition carry the same hash.
+An event with a missing or different hash, an event class outside that action
+set, or an appended event without an object transition is invalid.
+
 Event authority follows the object and the state actually changed, not merely
 the fact that a history row is administrative metadata. Established canon
 entity content requires `establish-canon`; working or unresolved canon content
@@ -204,6 +224,14 @@ and administrative entity content uses `establish-policy`. Policy authority
 may register an existing object, record an owner-path move, or maintain
 graph-only coverage metadata, but it cannot authorize a lore or story content
 change.
+
+Authority is evaluated across the baseline and resulting states. The allowed
+set is the intersection of both states' requirements, so demotion, retirement,
+or supersession cannot lower its own authorization threshold. Lifecycle and
+`supersedes` or `superseded_by` changes are semantic identity changes, not
+administrative graph metadata. Every object changed by reciprocal
+supersession appends its own transition-bound history and cites a review claim
+that names that object.
 
 History dispositions are action-specific:
 
@@ -224,13 +252,17 @@ record while changing its readable content requires both `moved` and
 `metadata-changed` events; a move or lifecycle event cannot conceal a content
 or metadata change.
 
-Base-ref validation compares isolated canonical state for each object. Entity
-state excludes nested relationship, maintained-claim, and history metadata;
-bounded claim passages are represented by stable claim markers rather than
-their content. Relationship state contains that relationship's metadata, and
-claim state contains its metadata plus its bounded-content hash. Every state or
-owner-path change must append a compatible next event for that object. An older
-event cannot satisfy a later change.
+Base-ref validation compares isolated canonical state for each object and
+classifies the complete baseline-to-result transition. Entity state excludes
+nested relationship, maintained-claim, and history metadata; only structurally
+bound claim passages are represented by stable claim markers rather than their
+content. Entity readable content, administrative graph coverage, lifecycle,
+and supersession remain separately detectable. Relationship state contains
+that relationship's metadata, and claim state contains its metadata plus its
+bounded-content hash. Every changed field must map to a controlled action;
+unknown state changes fail closed. Every state or owner-path change must append
+a compatible next event for that exact transition. An older event cannot
+satisfy a later change.
 
 Historical coverage that has not been reconstructed remains explicitly
 provenance-only in the migration ledger. Missing events are not presented as a
@@ -320,8 +352,11 @@ endpoints or type cannot be mutated in place. Owning paths remain mutable: a
 move preserves the earlier event content and appends a controlled `moved`
 event on the relocated record. A generic metadata event cannot stand in for a
 move, lifecycle transition, or bounded claim-content change. Tombstones cannot
-return to an active lifecycle, event authority must authorize the changed
-state, and compound changes must append every applicable event class.
+return to an active lifecycle, event authority must authorize both the prior
+and resulting state, and compound changes must append every applicable event
+class bound to the same deterministic transition. New entities require
+`established`; pre-existing readable records entering the graph require
+`graph-registered`. The event types are not interchangeable.
 
 Structural validation cannot prove semantic correctness. Relationship scope,
 claim meaning, authority, canon equivalence, and story boundaries still require

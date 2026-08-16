@@ -2516,6 +2516,46 @@
       "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md"
     },
     {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C001",
+      "evidence": "An undeclared marker block could conceal arbitrary prose from entity hashing.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C002",
+      "evidence": "Existing validation matched broad events after detecting selected state components.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C003",
+      "evidence": "Compatible event names were not tied to exact before and after state.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C004",
+      "evidence": "Working or classify authority could lower current authority and be judged against the weaker result.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C005",
+      "evidence": "Policy metadata could rewire established replacement meaning.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C006",
+      "evidence": "New and pre-existing entities could use either initial event type.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C007",
+      "evidence": "Empty definitions and nonreciprocal directed inverses passed.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C008",
+      "evidence": "Two green suites failed to cover adjacent prohibited states.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md"
+    },
+    {
       "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001",
       "evidence": "Current claim index contains intake dispositions and does not identify maintained fact objects.",
       "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md"
@@ -16591,6 +16631,294 @@
     },
     {
       "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "An undeclared marker block could conceal arbitrary prose from entity hashing.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Parse and bind every maintained-claim boundary before excluding claim content from entity state.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Claim parser, canonical state, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Existing validation matched broad events after detecting selected state components.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Classify the complete baseline-to-result transition without a permissive fallback.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Transition model, validator, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Compatible event names were not tied to exact before and after state.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Bind appended histories to the exact deterministic transition.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "History schema, transition hashing, validator, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Working or classify authority could lower current authority and be judged against the weaker result.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Derive authority from baseline and resulting state.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Authority matrix, validator, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Policy metadata could rewire established replacement meaning.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Treat lifecycle and supersession as semantic identity transitions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "State components, supersession validation, provenance relevance, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "New and pre-existing entities could use either initial event type.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Require the one truthful initial event determined by Git history.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Initial-transition validation and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C007",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Empty definitions and nonreciprocal directed inverses passed.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Validate every relationship-type semantic contract field and inverse invariant.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Relationship registry parser, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C008",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Two green suites failed to cover adjacent prohibited states.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Prove an adversarial invariant matrix and require independent audit before re-closing validation.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Tests, migration ledger, generated indexes, and PR #41"
+    },
+    {
+      "authoritative_targets": [
         "references/cloth-thread-model.md",
         "references/graph-structure.md",
         "references/front-matter.md",
@@ -17410,6 +17738,14 @@
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C002",
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C003",
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C004",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C001",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C002",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C003",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C004",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C005",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C006",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C007",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C008",
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001",
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C002",
       "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C003",
@@ -18850,6 +19186,13 @@
     {
       "authority": "establish-policy",
       "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "path": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "status": "in-progress",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
       "path": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
       "status": "complete",
       "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01"
@@ -19178,6 +19521,13 @@
       "path": "intake/submissions/2026-08-16-knowledge-object-schema-v2-a02.md",
       "record_type": "conversation-addendum",
       "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "path": "intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03"
     },
     {
       "authority": "establish-policy",

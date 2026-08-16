@@ -302,7 +302,7 @@ Synthetic maintained assertion.
             text.replace("relationships: []\n", "relationships: []\n" + claims),
             encoding="utf-8",
         )
-        with self.assertRaisesRegex(GraphValidationError, "matching start and end marker"):
+        with self.assertRaisesRegex(GraphValidationError, "matching claim boundary"):
             build_graph_data(self.fixture.root)
 
     def test_active_claim_rejects_retire_disposition(self) -> None:
@@ -572,6 +572,139 @@ history:
             encoding="utf-8",
         )
         with self.assertRaisesRegex(GraphValidationError, "superseded without a replacement"):
+            build_graph_data(self.fixture.root)
+
+    def test_undeclared_claim_boundary_is_rejected(self) -> None:
+        page = self.fixture.root / "canon/places/example-place.md"
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "Synthetic administrative fixture.",
+                "<!-- claim:claim-undeclared:start -->\n"
+                "Text that must remain entity-owned.\n"
+                "<!-- claim:claim-undeclared:end -->",
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "undeclared claim boundary"):
+            build_graph_data(self.fixture.root)
+
+    def test_nested_claim_boundaries_are_rejected(self) -> None:
+        page = self.fixture.root / "canon/places/example-place.md"
+        text = page.read_text(encoding="utf-8")
+        claims = """claims:
+  - claim_id: claim-outer
+    content_id: claim-outer
+  - claim_id: claim-inner
+    content_id: claim-inner
+"""
+        body = """<!-- claim:claim-outer:start -->
+Outer content.
+<!-- claim:claim-inner:start -->
+Inner content.
+<!-- claim:claim-inner:end -->
+<!-- claim:claim-outer:end -->"""
+        page.write_text(
+            text.replace("relationships: []\n", "relationships: []\n" + claims).replace(
+                "Synthetic administrative fixture.", body
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "nested claim boundary"):
+            build_graph_data(self.fixture.root)
+
+    def test_registry_requires_nonempty_definition(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8").replace(
+                "Synthetic generic association.", ""
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "empty definition"):
+            build_graph_data(self.fixture.root)
+
+    def test_registry_requires_reciprocal_directed_inverse(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8")
+            + "| `parent-of` | `directed` | `semantic` | `entity` | `claim` | `forbidden` | `child-of` | `semantic-canon` | Synthetic parent relation. |\n"
+            + "| `child-of` | `directed` | `semantic` | `claim` | `entity` | `forbidden` | `related-to` | `semantic-canon` | Synthetic child relation. |\n",
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "inverse is not reciprocal"):
+            build_graph_data(self.fixture.root)
+
+    def test_registry_requires_inverse_endpoint_reversal(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8")
+            + "| `parent-of` | `directed` | `semantic` | `entity` | `claim` | `forbidden` | `child-of` | `semantic-canon` | Synthetic parent relation. |\n"
+            + "| `child-of` | `directed` | `semantic` | `entity` | `claim` | `forbidden` | `parent-of` | `semantic-canon` | Synthetic child relation. |\n",
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "inverse endpoint kinds"):
+            build_graph_data(self.fixture.root)
+
+    def test_claim_boundary_malformed_forms_fail_closed(self) -> None:
+        cases = (
+            (
+                "Inline <!-- claim:claim-inline:start --> marker.",
+                "malformed claim boundary",
+            ),
+            (
+                "<!-- claim:claim-ended:end -->",
+                "end marker before its start",
+            ),
+            (
+                "<!-- claim:claim-first:start -->\nText.\n"
+                "<!-- claim:claim-second:end -->",
+                "mismatched end marker",
+            ),
+            (
+                "<!-- claim:claim-repeat:start -->\nOne.\n"
+                "<!-- claim:claim-repeat:end -->\n"
+                "<!-- claim:claim-repeat:start -->\nTwo.\n"
+                "<!-- claim:claim-repeat:end -->",
+                "duplicate claim boundary",
+            ),
+        )
+        for body, expected in cases:
+            with self.subTest(expected=expected):
+                fixture = FixtureRepository().build_valid()
+                try:
+                    page = fixture.root / "canon/places/example-place.md"
+                    page.write_text(
+                        page.read_text(encoding="utf-8").replace(
+                            "Synthetic administrative fixture.", body
+                        ),
+                        encoding="utf-8",
+                    )
+                    with self.assertRaisesRegex(GraphValidationError, expected):
+                        build_graph_data(fixture.root)
+                finally:
+                    fixture.cleanup()
+
+    def test_symmetric_registry_requires_matching_endpoint_kinds(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8").replace(
+                "`entity, relationship, claim` | `entity, relationship, claim`",
+                "`entity` | `claim`",
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "same source and target kinds"):
+            build_graph_data(self.fixture.root)
+
+    def test_navigation_registry_requires_navigation_provenance(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8").replace(
+                "| `navigation` |", "| `administrative` |"
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "requires navigation provenance"):
             build_graph_data(self.fixture.root)
 
 

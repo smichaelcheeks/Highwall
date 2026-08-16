@@ -24,7 +24,10 @@ from graph_common import (
     build_graph_data,
     collect_record_readable_snapshots,
     collect_object_snapshots,
+    claim_provenance_authorities,
     entity_content_authorities,
+    relationship_provenance_authorities,
+    stable_transition_hash,
 )
 
 
@@ -314,9 +317,63 @@ class Validator:
         intake_claims_by_id = {
             str(item["claim_id"]): item for item in graph["intake_claims"]
         }
-        current_entities_by_id = {
-            str(item["entity_id"]): item for item in graph["entities"]
+        relationship_types_by_id = {
+            str(item["relationship_type"]): item for item in graph["relationship_types"]
         }
+
+        def authority_intersection(*groups: set[str]) -> set[str]:
+            if not groups:
+                return set()
+            allowed = set(groups[0])
+            for group in groups[1:]:
+                allowed &= group
+            return allowed
+
+        def entity_transition_authorities(
+            earlier: dict[str, object] | None,
+            item: dict[str, object],
+        ) -> set[str]:
+            groups: list[set[str]] = []
+            if earlier:
+                groups.append(entity_content_authorities(earlier))
+            groups.append(entity_content_authorities(item))
+            return authority_intersection(*groups)
+
+        def transition_authorities(
+            *,
+            kind: str,
+            object_id: str,
+            item: dict[str, object],
+            earlier: dict[str, object] | None,
+            reason: str,
+        ) -> set[str]:
+            if reason in {"schema-v2 registration", "owner-path move"}:
+                return {
+                    "establish-policy",
+                    "establish-canon",
+                    "working-canon",
+                }
+            if kind == "entity":
+                if reason == "entity graph-metadata change":
+                    return {
+                        "establish-policy",
+                        "establish-canon",
+                        "working-canon",
+                    }
+                return entity_transition_authorities(earlier, item)
+            if kind == "relationship":
+                relationship_type = str(item.get("relationship_type", ""))
+                registry = relationship_types_by_id.get(relationship_type, {})
+                return relationship_provenance_authorities(
+                    str(registry.get("provenance_policy", ""))
+                )
+            if kind == "claim":
+                groups: list[set[str]] = []
+                if earlier:
+                    groups.append(claim_provenance_authorities(earlier))
+                groups.append(claim_provenance_authorities(item))
+                return authority_intersection(*groups)
+            return {"establish-policy"}
 
         for kind in ("entities", "relationships", "claims"):
             for object_id in sorted(baseline[kind]):
@@ -402,9 +459,14 @@ class Validator:
             path = str(item[path_field])
             state_changed = earlier is None or item["state_sha256"] != earlier["state_sha256"]
             moved = earlier is not None and path != str(earlier[path_field])
-            if not state_changed and not moved:
-                return False
             events = appended_histories(object_id)
+            if not state_changed and not moved:
+                if events:
+                    self.error(
+                        path,
+                        f"new history for unchanged {kind} {object_id} has no object transition",
+                    )
+                return False
             if not events:
                 self.error(
                     path,
@@ -418,11 +480,15 @@ class Validator:
                 and path in baseline_readable_records
             )
             if earlier is None:
-                initial_types = {
-                    "entity": {"graph-registered", "established"},
-                    "relationship": {"relationship-added"},
-                    "claim": {"claim-added"},
-                }[kind]
+                initial_types = (
+                    {"graph-registered"}
+                    if preexisting_unregistered_entity
+                    else {
+                        "entity": {"established"},
+                        "relationship": {"relationship-added"},
+                        "claim": {"claim-added"},
+                    }[kind]
+                )
                 initial_reason = (
                     "schema-v2 registration"
                     if preexisting_unregistered_entity
@@ -499,8 +565,66 @@ class Validator:
                 != earlier.get("non_lifecycle_metadata_sha256")
             ):
                 required_event_types.append(("claim metadata change", {"metadata-changed"}))
+            supersession_changed = bool(
+                (earlier is not None and (
+                    item.get("supersession_sha256")
+                    != earlier.get("supersession_sha256")
+                ))
+                or (
+                    preexisting_unregistered_entity
+                    and (item.get("supersedes") or item.get("superseded_by"))
+                )
+            )
+            if supersession_changed:
+                required_event_types.append(
+                    (f"{kind} supersession change", {"metadata-changed"})
+                )
             if state_changed and not required_event_types:
-                required_event_types.append(("object-state change", {"metadata-changed"}))
+                self.error(
+                    path,
+                    f"changed {kind} {object_id} has an unclassified object-state change",
+                )
+            before_state_sha256 = (
+                str(earlier["state_sha256"])
+                if earlier is not None
+                else (
+                    str(baseline_readable_records.get(path, ""))
+                    if preexisting_unregistered_entity
+                    else ""
+                )
+            )
+            before_path = (
+                str(earlier[path_field])
+                if earlier is not None
+                else (path if preexisting_unregistered_entity else "")
+            )
+            expected_transition_sha256 = stable_transition_hash(
+                kind=kind,
+                object_id=object_id,
+                before_state_sha256=before_state_sha256,
+                after_state_sha256=str(item["state_sha256"]),
+                before_path=before_path,
+                after_path=path,
+                actions=[reason for reason, _ in required_event_types],
+            )
+            applicable_types = {
+                change_type
+                for _, change_types in required_event_types
+                for change_type in change_types
+            }
+            for event in events:
+                if str(event.get("transition_sha256", "")) != expected_transition_sha256:
+                    self.error(
+                        path,
+                        f"history {event['history_id']} transition_sha256 must equal "
+                        f"{expected_transition_sha256}",
+                    )
+                if str(event["change_type"]) not in applicable_types:
+                    self.error(
+                        path,
+                        f"history {event['history_id']} change_type "
+                        f"{event['change_type']!r} is not applicable to transition on {object_id}",
+                    )
             for reason, expected in required_event_types:
                 matching_events = [
                     event for event in events if str(event["change_type"]) in expected
@@ -512,22 +636,24 @@ class Validator:
                         f"change_type for {reason}; expected one of {sorted(expected)}",
                     )
                     continue
-                if kind == "entity" and (
-                    reason in {"initial publication", "entity content change"}
-                ):
-                    entity = current_entities_by_id.get(object_id, item)
-                    allowed_authorities = entity_content_authorities(entity)
-                    for event in matching_events:
-                        for claim_id in event["review_claims"]:
-                            claim = intake_claims_by_id.get(str(claim_id), {})
-                            authority = str(claim.get("review_authority", ""))
-                            if authority not in allowed_authorities:
-                                self.error(
-                                    path,
-                                    f"history {event['history_id']} uses authority "
-                                    f"{authority!r} for {reason} on {object_id}; "
-                                    f"expected one of {sorted(allowed_authorities)}",
-                                )
+                allowed_authorities = transition_authorities(
+                    kind=kind,
+                    object_id=object_id,
+                    item=item,
+                    earlier=earlier,
+                    reason=reason,
+                )
+                for event in matching_events:
+                    for claim_id in event["review_claims"]:
+                        claim = intake_claims_by_id.get(str(claim_id), {})
+                        authority = str(claim.get("review_authority", ""))
+                        if authority not in allowed_authorities:
+                            self.error(
+                                path,
+                                f"history {event['history_id']} uses authority "
+                                f"{authority!r} for {reason} on {object_id}; "
+                                f"expected one of {sorted(allowed_authorities)}",
+                            )
             return True
 
         for entity_id, item in current["entities"].items():

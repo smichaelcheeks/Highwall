@@ -130,6 +130,13 @@ action-compatible dispositions. Retired and superseded lifecycles are
 permanent, and a compound change appends every applicable event class rather
 than allowing one event to conceal another state change.
 
+Prospective history is bound to the complete baseline-to-result transition,
+not merely a compatible event label. Required authority is derived from both
+states, with prior authority acting as a floor. Supersession is semantic
+identity rather than administrative graph metadata. Maintained-claim passages
+are excluded from entity state only after every declaration and boundary is
+structurally bound one-to-one; invalid boundaries fail closed.
+
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits
 do not create semantic authority. Changes to these repository standards and
