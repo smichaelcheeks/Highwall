@@ -15,9 +15,20 @@ The workflow maintains distinct records:
 4. **Exception records:** open questions, proposals, contradictions, decisions, or retired ideas under `development/`.
 5. **Canon change log:** concise index of significant canon effects.
 6. **Git history:** durable record of the exact file changes associated with the review.
-7. **Claim index:** generated, non-authoritative navigation across review claims.
+7. **Claim index:** generated, non-authoritative navigation across immutable
+   intake-review claims.
+8. **Maintained claims and histories:** addressable current-state assertions
+   and local changelogs on their natural owning Markdown records when schema-v2
+   criteria apply.
 
 Do not combine these records. In particular, never append reviewer conclusions to the original submission.
+
+An intake claim ID does not become the durable identity of an assertion merely
+because its disposition is `create` or `update`. When the resulting assertion
+needs independent citation, authority, lifecycle, contradiction, disclosure,
+or multi-object scope, create or update a distinct maintained `claim-...`
+object, bind its exact prose, and cite the intake claim in its provenance and
+local history.
 
 ## Transmission completeness gate
 
@@ -224,12 +235,22 @@ Use one of these values:
 9. Stitch authorized patches through affected THREADs, creating exception
    records where required.
 10. Record all changed and deliberately unchanged targets in the review.
-11. Run the required consistency tier, link, metadata, contradiction,
+11. Append local history for every schema-v2 entity, relationship, or
+    maintained claim changed by the integration. The event must be the next
+    contiguous event for that object, use a compatible controlled change type,
+    and cite an authorizing intake claim whose target names the object ID. The
+    review authority must authorize both the prior and resulting object state,
+    the disposition must match the action, and compound changes must append
+    every applicable event class with the validator-calculated transition
+    hash. Never reactivate a published retired or superseded object. Treat
+    lifecycle and reciprocal supersession as semantic identity changes, not
+    administrative graph maintenance.
+12. Run the required consistency tier, link, metadata, contradiction,
     duplication, generated-index, and diff checks.
-12. Add a canon change-log entry for significant canon effects.
-13. Mark the review complete only when no claim lacks a disposition and the
+13. Add a canon change-log entry for significant canon effects.
+14. Mark the review complete only when no claim lacks a disposition and the
     audit baseline evaluation is complete.
-14. Record publication as pending; report the final commit, PR, and check state
+15. Record publication as pending; report the final commit, PR, and check state
     from Git and GitHub without modifying the completed review.
 
 ## Conversational refinement

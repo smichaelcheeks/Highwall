@@ -79,10 +79,12 @@ unexpected cross-domain effects.
 Tier 3 pulls THREADs repository-wide when targeted tracing cannot reliably
 bound the consequences.
 
-## Knowledge graph index
+## Unified knowledge-object index
 
 `development/indexes/knowledge-graph.json` is generated from explicit graph
-metadata on maintained Markdown records:
+metadata on maintained Markdown records together with immutable submissions,
+reviews, complete indexed intake-claim objects, decisions, exception records,
+and evidence references needed for traversal:
 
 ```powershell
 python scripts/build_graph_index.py
@@ -90,9 +92,14 @@ python scripts/build_graph_index.py --check
 ```
 
 The graph index is navigation-only. Validation rejects duplicate identities,
-uncontrolled relationship types, unresolved endpoints, and missing relationship
-provenance. Its unmigrated-link inventory supports incremental conversion of
-legacy `related` links without changing their meaning.
+uncontrolled relationship types, invalid endpoint kinds, unresolved endpoints,
+invalid ownership, duplicate symmetric pairs, prohibited self-links, invalid
+claim boundaries, unappended or rewritten history, broken lifecycle or
+supersession, and unauthorized, irrelevant, or missing provenance.
+Its migration inventory exposes records still lacking schema-v2 lifecycle,
+history, exact review-claim provenance, or intake-claim crosswalk coverage.
+Its unmigrated-link inventory retains compatibility with legacy `related`
+links without changing their meaning.
 
 ## Claim index
 
@@ -104,16 +111,17 @@ python scripts/build_claim_index.py
 python scripts/build_claim_index.py --check
 ```
 
-The index is navigation-only. It cannot establish canon, replace reviews, or
+This compatibility index is navigation-only. It cannot establish canon, replace reviews, or
 resolve contradictions. Each row surfaces the source review's declared
 `review_authority` so working and established claims can be distinguished
-during discovery. It also derives `supersedes` and `superseded_by` claim links
-and the current status of development records required by `defer`, `conflict`,
-and `retire` dispositions. These lifecycle fields are discovery aids; the
-linked review and development records remain authoritative. Targeted case
-context displays the same fields. CI rejects a stale index, a missing
-supersession target, or an exceptional disposition without a linked status
-record.
+during discovery, and preserves the row's evidence cell as navigation data
+without copying review-owned rationale. It also derives `supersedes` and
+`superseded_by` claim links and the current status of development records
+required by `defer`, `conflict`, and `retire` dispositions. These lifecycle
+fields are discovery aids; the linked review and development records remain
+authoritative. Targeted case context displays the same fields. CI rejects a
+stale index, a missing supersession target, or an exceptional disposition
+without a linked status record.
 
 ## Mandatory fresh Tier 3 audits
 

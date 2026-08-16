@@ -4,14 +4,31 @@
 from __future__ import annotations
 
 import argparse
+import io
 import re
 import subprocess
 import sys
+import tarfile
+import tempfile
 from pathlib import Path
 from urllib.parse import unquote
 
-from consistency_common import CLAIM_COLUMN_COUNT, parse_inline_list, split_markdown_row
-from graph_common import GraphValidationError, build_graph_data
+from consistency_common import (
+    CLAIM_COLUMN_COUNT,
+    parse_front_matter_data,
+    scalar_text,
+    split_markdown_row,
+)
+from graph_common import (
+    GraphValidationError,
+    build_graph_data,
+    collect_record_readable_snapshots,
+    collect_object_snapshots,
+    claim_provenance_authorities,
+    entity_content_authorities,
+    relationship_provenance_authorities,
+    stable_transition_hash,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,48 +159,28 @@ class Validator:
 
     @staticmethod
     def parse_front_matter(path: Path) -> dict[str, str] | None:
-        lines = path.read_text(encoding="utf-8").splitlines()
-        if not lines or lines[0] != "---":
-            return None
         try:
-            end = lines.index("---", 1)
+            data = parse_front_matter_data(path)
         except ValueError:
             return None
-        values: dict[str, str] = {}
-        for line in lines[1:end]:
-            match = re.match(r"^([a-z_]+):(?:\s*(.*))?$", line)
-            if match:
-                values[match.group(1)] = (match.group(2) or "").strip().strip('"')
-        return values
+        if not data:
+            return None
+        return {
+            key: "" if isinstance(value, (dict, list)) else scalar_text(value)
+            for key, value in data.items()
+        }
 
     @staticmethod
     def parse_front_matter_lists(path: Path) -> dict[str, list[str]]:
-        lines = path.read_text(encoding="utf-8").splitlines()
-        if not lines or lines[0] != "---":
-            return {}
         try:
-            end = lines.index("---", 1)
+            data = parse_front_matter_data(path)
         except ValueError:
             return {}
-        values: dict[str, list[str]] = {}
-        current: str | None = None
-        for line in lines[1:end]:
-            item = re.match(r"^\s+-\s+(.+?)\s*$", line)
-            if item and current:
-                values[current].append(item.group(1).strip().strip('"'))
-                continue
-            field = re.match(r"^([a-z_]+):\s*$", line)
-            if field:
-                current = field.group(1)
-                values[current] = []
-            else:
-                inline = re.match(r"^([a-z_]+):\s*(\[.*\])\s*$", line)
-                if inline:
-                    parsed = parse_inline_list(inline.group(2))
-                    if parsed is not None:
-                        values[inline.group(1)] = parsed
-                current = None
-        return values
+        return {
+            key: [scalar_text(item) for item in value]
+            for key, value in data.items()
+            if isinstance(value, list)
+        } | {key: [] for key, value in data.items() if value is None or value == ""}
 
     @staticmethod
     def slugify(heading: str) -> str:
@@ -259,9 +256,451 @@ class Validator:
 
     def validate_graph(self) -> None:
         try:
-            build_graph_data(self.root)
+            graph = build_graph_data(self.root)
         except GraphValidationError as error:
             self.errors.extend(error.errors)
+            return
+        if self.base_ref:
+            self.validate_graph_evolution(graph)
+
+    def changed_paths(self) -> set[str]:
+        if not self.base_ref:
+            return set()
+        result = subprocess.run(
+            ["git", "diff", "--name-only", self.base_ref, "--"],
+            cwd=self.root,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            detail = result.stderr.strip() or "Git could not compare the requested ref"
+            self.error("graph", f"invalid comparison ref {self.base_ref!r}: {detail}")
+            return set()
+        return {line.replace("\\", "/") for line in result.stdout.splitlines() if line}
+
+    def validate_graph_evolution(self, graph: dict[str, object]) -> None:
+        """Enforce durable identity and append-only graph evolution against Git."""
+        if not self.base_ref:
+            return
+        archive = subprocess.run(
+            ["git", "archive", "--format=tar", self.base_ref],
+            cwd=self.root,
+            check=False,
+            capture_output=True,
+        )
+        if archive.returncode != 0:
+            detail = archive.stderr.decode("utf-8", errors="replace").strip()
+            self.error(
+                "graph",
+                f"could not read graph baseline {self.base_ref!r}: {detail or 'git archive failed'}",
+            )
+            return
+        with tempfile.TemporaryDirectory(prefix="highwall-graph-base-") as directory:
+            baseline_root = Path(directory)
+            try:
+                with tarfile.open(fileobj=io.BytesIO(archive.stdout), mode="r:") as tar:
+                    tar.extractall(baseline_root, filter="data")
+            except (tarfile.TarError, OSError) as error:
+                self.error("graph", f"could not extract graph baseline: {error}")
+                return
+            baseline = collect_object_snapshots(baseline_root)
+            baseline_readable_records = collect_record_readable_snapshots(
+                baseline_root
+            )
+
+        current = collect_object_snapshots(self.root)
+        current_readable_records = collect_record_readable_snapshots(self.root)
+        current_histories_by_object: dict[str, list[dict[str, object]]] = {}
+        for item in current["histories"].values():
+            current_histories_by_object.setdefault(str(item["object_id"]), []).append(item)
+        intake_claims_by_id = {
+            str(item["claim_id"]): item for item in graph["intake_claims"]
+        }
+        relationship_types_by_id = {
+            str(item["relationship_type"]): item for item in graph["relationship_types"]
+        }
+
+        def authority_intersection(*groups: set[str]) -> set[str]:
+            if not groups:
+                return set()
+            allowed = set(groups[0])
+            for group in groups[1:]:
+                allowed &= group
+            return allowed
+
+        def entity_transition_authorities(
+            earlier: dict[str, object] | None,
+            item: dict[str, object],
+        ) -> set[str]:
+            groups: list[set[str]] = []
+            if earlier:
+                groups.append(entity_content_authorities(earlier))
+            groups.append(entity_content_authorities(item))
+            return authority_intersection(*groups)
+
+        def transition_authorities(
+            *,
+            kind: str,
+            object_id: str,
+            item: dict[str, object],
+            earlier: dict[str, object] | None,
+            reason: str,
+        ) -> set[str]:
+            if reason in {"schema-v2 registration", "owner-path move"}:
+                return {
+                    "establish-policy",
+                    "establish-canon",
+                    "working-canon",
+                }
+            if kind == "entity":
+                if reason == "entity graph-metadata change":
+                    return {
+                        "establish-policy",
+                        "establish-canon",
+                        "working-canon",
+                    }
+                return entity_transition_authorities(earlier, item)
+            if kind == "relationship":
+                relationship_type = str(item.get("relationship_type", ""))
+                registry = relationship_types_by_id.get(relationship_type, {})
+                return relationship_provenance_authorities(
+                    str(registry.get("provenance_policy", ""))
+                )
+            if kind == "claim":
+                groups: list[set[str]] = []
+                if earlier:
+                    groups.append(claim_provenance_authorities(earlier))
+                groups.append(claim_provenance_authorities(item))
+                return authority_intersection(*groups)
+            return {"establish-policy"}
+
+        for kind in ("entities", "relationships", "claims"):
+            for object_id in sorted(baseline[kind]):
+                if object_id not in current[kind]:
+                    self.error(
+                        baseline[kind][object_id]["path"]
+                        if kind == "entities"
+                        else baseline[kind][object_id]["authoritative_record"],
+                        f"published {kind[:-1]} {object_id} was removed instead of retained as a tombstone",
+                    )
+
+        for relationship_id, earlier in baseline["relationships"].items():
+            later = current["relationships"].get(relationship_id)
+            if later is None:
+                continue
+            for field in ("relationship_type", "source", "target"):
+                if earlier[field] != later[field]:
+                    self.error(
+                        str(later["authoritative_record"]),
+                        f"published relationship {relationship_id} changed immutable {field}",
+                    )
+
+        for entity_id, earlier in baseline["entities"].items():
+            later = current["entities"].get(entity_id)
+            if later is not None and earlier["record_type"] != later["record_type"]:
+                self.error(
+                    str(later["path"]),
+                    f"published entity {entity_id} changed immutable record_type",
+                )
+
+        for claim_id, earlier in baseline["claims"].items():
+            later = current["claims"].get(claim_id)
+            if later is None:
+                continue
+            for field in ("truth_kind", "about"):
+                if earlier[field] != later[field]:
+                    self.error(
+                        str(later["authoritative_record"]),
+                        f"published claim {claim_id} changed immutable {field}",
+                    )
+
+        for history_id, earlier in baseline["histories"].items():
+            later = current["histories"].get(history_id)
+            if later is None:
+                self.error(
+                    str(earlier["authoritative_record"]),
+                    f"published history event {history_id} was removed",
+                )
+            elif {
+                key: value for key, value in earlier.items() if key != "authoritative_record"
+            } != {
+                key: value for key, value in later.items() if key != "authoritative_record"
+            }:
+                self.error(
+                    str(later["authoritative_record"]),
+                    f"published history event {history_id} was rewritten",
+                )
+
+        inventory = graph["migration_inventory"]
+        missing_status = set(inventory["entities_without_graph_status"]) | set(
+            inventory["relationships_without_graph_status"]
+        )
+        missing_history_coverage = set(
+            inventory["entities_without_history_coverage"]
+        ) | set(inventory["relationships_without_history_coverage"])
+        baseline_history_ids = set(baseline["histories"])
+
+        def appended_histories(object_id: str) -> list[dict[str, object]]:
+            return [
+                event
+                for event in current_histories_by_object.get(object_id, [])
+                if str(event["history_id"]) not in baseline_history_ids
+            ]
+
+        def require_change_event(
+            *,
+            kind: str,
+            object_id: str,
+            item: dict[str, object],
+            earlier: dict[str, object] | None,
+            path_field: str,
+        ) -> bool:
+            path = str(item[path_field])
+            state_changed = earlier is None or item["state_sha256"] != earlier["state_sha256"]
+            moved = earlier is not None and path != str(earlier[path_field])
+            events = appended_histories(object_id)
+            if not state_changed and not moved:
+                if events:
+                    self.error(
+                        path,
+                        f"new history for unchanged {kind} {object_id} has no object transition",
+                    )
+                return False
+            if not events:
+                self.error(
+                    path,
+                    f"new or changed {kind} {object_id} did not append local history",
+                )
+                return True
+            required_event_types: list[tuple[str, set[str]]] = []
+            preexisting_unregistered_entity = bool(
+                kind == "entity"
+                and earlier is None
+                and path in baseline_readable_records
+            )
+            if earlier is None:
+                initial_types = (
+                    {"graph-registered"}
+                    if preexisting_unregistered_entity
+                    else {
+                        "entity": {"established"},
+                        "relationship": {"relationship-added"},
+                        "claim": {"claim-added"},
+                    }[kind]
+                )
+                initial_reason = (
+                    "schema-v2 registration"
+                    if preexisting_unregistered_entity
+                    else "initial publication"
+                )
+                required_event_types.append((initial_reason, initial_types))
+            if moved:
+                required_event_types.append(("owner-path move", {"moved"}))
+            lifecycle_field = "lifecycle" if kind == "claim" else "graph_status"
+            lifecycle = str(item.get(lifecycle_field, ""))
+            prior_lifecycle = str(earlier.get(lifecycle_field, "")) if earlier else ""
+            registering = earlier is not None and not prior_lifecycle and bool(lifecycle)
+            if (
+                earlier is not None
+                and prior_lifecycle in {"superseded", "retired"}
+                and lifecycle != prior_lifecycle
+            ):
+                self.error(
+                    path,
+                    f"published {kind} {object_id} cannot transition from "
+                    f"tombstone lifecycle {prior_lifecycle!r} to {lifecycle!r}",
+                )
+            if registering:
+                required_event_types.append(("schema-v2 registration", {"graph-registered"}))
+            elif lifecycle != prior_lifecycle and lifecycle in {"superseded", "retired"}:
+                required_event_types.append((f"{lifecycle} lifecycle transition", {lifecycle}))
+            entity_content_changed = False
+            if kind == "entity" and earlier is not None:
+                entity_content_changed = (
+                    item.get("content_state_sha256")
+                    != earlier.get("content_state_sha256")
+                )
+            elif preexisting_unregistered_entity:
+                entity_content_changed = (
+                    current_readable_records.get(path)
+                    != baseline_readable_records.get(path)
+                )
+            if entity_content_changed:
+                required_event_types.append(("entity content change", {"metadata-changed"}))
+            if (
+                kind == "entity"
+                and earlier is not None
+                and not registering
+                and item.get("graph_metadata_sha256")
+                != earlier.get("graph_metadata_sha256")
+            ):
+                required_event_types.append(
+                    ("entity graph-metadata change", {"metadata-changed"})
+                )
+            if (
+                kind == "relationship"
+                and earlier is not None
+                and not registering
+                and item.get("non_lifecycle_sha256")
+                != earlier.get("non_lifecycle_sha256")
+            ):
+                required_event_types.append(
+                    ("relationship metadata change", {"metadata-changed"})
+                )
+            claim_content_changed = bool(
+                kind == "claim"
+                and earlier is not None
+                and item.get("content_sha256") != earlier.get("content_sha256")
+            )
+            if claim_content_changed:
+                required_event_types.append(
+                    ("bounded claim-content change", {"claim-clarified"})
+                )
+            if (
+                kind == "claim"
+                and earlier is not None
+                and not registering
+                and item.get("non_lifecycle_metadata_sha256")
+                != earlier.get("non_lifecycle_metadata_sha256")
+            ):
+                required_event_types.append(("claim metadata change", {"metadata-changed"}))
+            supersession_changed = bool(
+                (earlier is not None and (
+                    item.get("supersession_sha256")
+                    != earlier.get("supersession_sha256")
+                ))
+                or (
+                    preexisting_unregistered_entity
+                    and (item.get("supersedes") or item.get("superseded_by"))
+                )
+            )
+            if supersession_changed:
+                required_event_types.append(
+                    (f"{kind} supersession change", {"metadata-changed"})
+                )
+            if state_changed and not required_event_types:
+                self.error(
+                    path,
+                    f"changed {kind} {object_id} has an unclassified object-state change",
+                )
+            before_state_sha256 = (
+                str(earlier["state_sha256"])
+                if earlier is not None
+                else (
+                    str(baseline_readable_records.get(path, ""))
+                    if preexisting_unregistered_entity
+                    else ""
+                )
+            )
+            before_path = (
+                str(earlier[path_field])
+                if earlier is not None
+                else (path if preexisting_unregistered_entity else "")
+            )
+            expected_transition_sha256 = stable_transition_hash(
+                kind=kind,
+                object_id=object_id,
+                before_state_sha256=before_state_sha256,
+                after_state_sha256=str(item["state_sha256"]),
+                before_path=before_path,
+                after_path=path,
+                actions=[reason for reason, _ in required_event_types],
+            )
+            applicable_types = {
+                change_type
+                for _, change_types in required_event_types
+                for change_type in change_types
+            }
+            for event in events:
+                if str(event.get("transition_sha256", "")) != expected_transition_sha256:
+                    self.error(
+                        path,
+                        f"history {event['history_id']} transition_sha256 must equal "
+                        f"{expected_transition_sha256}",
+                    )
+                if str(event["change_type"]) not in applicable_types:
+                    self.error(
+                        path,
+                        f"history {event['history_id']} change_type "
+                        f"{event['change_type']!r} is not applicable to transition on {object_id}",
+                    )
+            for reason, expected in required_event_types:
+                matching_events = [
+                    event for event in events if str(event["change_type"]) in expected
+                ]
+                if not matching_events:
+                    self.error(
+                        path,
+                        f"new history for changed {kind} {object_id} has no compatible "
+                        f"change_type for {reason}; expected one of {sorted(expected)}",
+                    )
+                    continue
+                allowed_authorities = transition_authorities(
+                    kind=kind,
+                    object_id=object_id,
+                    item=item,
+                    earlier=earlier,
+                    reason=reason,
+                )
+                for event in matching_events:
+                    for claim_id in event["review_claims"]:
+                        claim = intake_claims_by_id.get(str(claim_id), {})
+                        authority = str(claim.get("review_authority", ""))
+                        if authority not in allowed_authorities:
+                            self.error(
+                                path,
+                                f"history {event['history_id']} uses authority "
+                                f"{authority!r} for {reason} on {object_id}; "
+                                f"expected one of {sorted(allowed_authorities)}",
+                            )
+            return True
+
+        for entity_id, item in current["entities"].items():
+            earlier = baseline["entities"].get(entity_id)
+            requires_v2 = require_change_event(
+                kind="entity",
+                object_id=entity_id,
+                item=item,
+                earlier=earlier,
+                path_field="path",
+            )
+            if not requires_v2:
+                continue
+            try:
+                entity_metadata = parse_front_matter_data(self.root / str(item["path"]))
+            except ValueError:
+                entity_metadata = {}
+            if entity_id in missing_status:
+                self.error(str(item["path"]), f"changed entity {entity_id} lacks graph_status")
+            if entity_id in missing_history_coverage:
+                self.error(
+                    str(item["path"]),
+                    f"changed entity {entity_id} lacks history_coverage",
+                )
+            for field in ("claims", "history", "supersedes", "superseded_by"):
+                if field not in entity_metadata:
+                    self.error(
+                        str(item["path"]),
+                        f"changed entity {entity_id} lacks schema-v2 {field} field",
+                    )
+
+        for kind, lifecycle_field in (("relationship", "graph_status"), ("claim", "lifecycle")):
+            collection = f"{kind}s"
+            for object_id, item in current[collection].items():
+                earlier = baseline[collection].get(object_id)
+                requires_v2 = require_change_event(
+                    kind=kind,
+                    object_id=object_id,
+                    item=item,
+                    earlier=earlier,
+                    path_field="authoritative_record",
+                )
+                if requires_v2 and not item.get(lifecycle_field):
+                    self.error(
+                        str(item["authoritative_record"]),
+                        f"new or changed {kind} {object_id} lacks {lifecycle_field}",
+                    )
 
     def validate_intake(self) -> None:
         submissions: dict[str, Path] = {}

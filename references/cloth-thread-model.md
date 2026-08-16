@@ -139,9 +139,11 @@ authority.
 ## Local paper trails
 
 The immutable patch/submission archive remains the global evidentiary record.
-For practical retrieval, an entity or relationship may maintain a local history
-that points to the patches, claims, decisions, or evidence that changed that
-knowledge object.
+For practical retrieval, every schema-v2 entity, relationship, and maintained
+knowledge claim has an append-only local history that points to the patches,
+intake claims, decisions, or evidence that changed that knowledge object.
+Records not yet migrated expose that incomplete coverage rather than implying
+that a missing history is complete.
 
 Local history should reference authoritative records rather than duplicate
 full rationale. Normal retrieval should therefore be able to proceed:
@@ -151,6 +153,12 @@ patch when deeper provenance is needed**
 
 This makes pulling a THREAD efficient without requiring an agent to replay the
 entire global intake history.
+
+An immutable intake claim and a maintained knowledge claim are distinct
+objects. Intake claims preserve what a patch submitted and how review disposed
+it. Maintained claims identify decision-worthy current or historical
+assertions on their natural owning Markdown records. One intake claim may
+establish, change, supersede, or produce no change to a maintained claim.
 
 ## Coherence and authority
 

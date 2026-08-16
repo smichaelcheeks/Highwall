@@ -2,7 +2,13 @@
 title: TODO
 type: historical-event
 entity_id: TODO
+graph_status: active
+history_coverage: complete
+supersedes: []
+superseded_by: []
 relationships: []
+claims: []
+history: []
 status: draft
 canon_level: working
 aliases: []

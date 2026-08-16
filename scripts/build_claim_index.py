@@ -107,7 +107,7 @@ def build_index(root: Path = ROOT) -> dict[str, object]:
         claim["superseded_by"].sort()
     claims.sort(key=lambda item: str(item["claim_id"]))
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "authority": "navigation-only",
         "generated_from": "development/intake-reviews/*.md",
         "claims": claims,

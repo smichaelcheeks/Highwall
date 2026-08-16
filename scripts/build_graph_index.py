@@ -44,7 +44,9 @@ def main() -> int:
     output.write_text(expected, encoding="utf-8")
     print(
         f"Wrote {output.relative_to(root)} with {len(data['entities'])} entities, "
-        f"{len(data['relationships'])} relationships, and "
+        f"{len(data['relationships'])} relationships, "
+        f"{len(data['knowledge_claims'])} maintained claims, "
+        f"{len(data['histories'])} history events, and "
         f"{len(data['unmigrated_related_links'])} unmigrated related links."
     )
     return 0

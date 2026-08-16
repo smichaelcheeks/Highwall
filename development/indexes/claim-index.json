@@ -10,6 +10,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Actions used movable major-version tags; SHA pinning was disabled.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -29,6 +30,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Defaults used commit-derived titles and messages.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -48,6 +50,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Projects was enabled; other selected surfaces already matched policy.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -67,6 +70,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Private visibility blocks branch protection under the current plan.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -86,6 +90,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No root `AGENTS.md` existed.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -105,6 +110,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Workflow documentation existed but lacked a concise entry point.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -124,6 +130,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Python was absent locally; CI provisioned it remotely.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -143,6 +150,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "PR #1 was merged and both branch copies remained.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -162,6 +170,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "All three methods were previously enabled.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -181,6 +190,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The development record was pending.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -205,6 +215,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No enforcement decision was made.",
       "review": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -224,6 +235,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No intake area existed.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -243,6 +255,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No audit format existed.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -262,6 +275,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No controlled vocabulary existed.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -281,6 +295,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Canon templates lacked provenance.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -300,6 +315,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Initial workflow used standalone submission IDs.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -319,6 +335,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No session-mode rules existed.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -338,6 +355,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Corrections were supported but conversation was informal.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -357,6 +375,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Git repository and remote exist.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -376,6 +395,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Setup previously had no intake records.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -400,6 +420,7 @@
           "status": "resolved"
         }
       ],
+      "existing_authority_or_evidence": "No specific policy was approved.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -419,6 +440,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Manual validation already exists.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -438,6 +460,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository uses portable Markdown.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -457,6 +480,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Fictional terms and external availability are inherently unstable.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -476,6 +500,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Empty repository",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -495,6 +520,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Author instruction",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -514,6 +540,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Author instruction",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -533,6 +560,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Author instruction",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -552,6 +580,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Placeholder README",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -571,6 +600,7 @@
       "disposition": "out-of-scope",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Explicit prohibition",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -590,6 +620,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 review and implemented repository foundation",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -609,6 +640,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 is labeled as a reconstruction.",
       "review": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -628,6 +660,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No authorial-intent section existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -647,6 +680,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No Highwall canon page existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -666,6 +700,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No related canon existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -685,6 +720,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No named institutions exist yet.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -704,6 +740,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No culture page exists yet.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
       "review_authority": "classify",
       "subjects": [],
@@ -723,6 +760,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No design section existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -742,6 +780,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No design guidance existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -761,6 +800,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No design guidance existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -780,6 +820,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No Highwall canon page existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -799,6 +840,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No related canon existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -818,6 +860,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No related canon existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -837,6 +880,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No related canon existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -856,6 +900,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No design guidance existed.",
       "review": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
       "review_authority": "proposal-only",
       "subjects": [],
@@ -881,6 +926,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology S01 C020, C021, and C023 and both current canon pages already represent the megaflood model; the Tier 3 audit identifies the unsuperseded accepted claim.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -912,6 +958,7 @@
         "government"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 C005/C012/C020 establish the corridor, neighboring groups, and mutual dependence; A02 defines practical corridor exclusivity.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -941,6 +988,7 @@
         "government"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C005 already authorizes all three, but current canon omits information; the audit identifies the incomplete effect.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -970,6 +1018,7 @@
         "government"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current canon establishes Highwall's arbitration role and internally sovereign regional polities but does not define this boundary.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -993,6 +1042,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "`canon/places/highwall.md` already establishes a narrow canyon.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1012,6 +1062,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The existing page establishes recurring catastrophic floods only.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1033,6 +1084,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes general environmental influence.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1052,6 +1104,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing layout detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1071,6 +1124,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing regional geography detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1090,6 +1144,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes generally capable institutions.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1109,6 +1164,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No technology page contains setting detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1128,6 +1184,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon only notes general environmental influence on the economy.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1147,6 +1204,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No specialized institutional pages exist.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1166,6 +1224,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing residency classification.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1185,6 +1244,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes stewardship as a value.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1204,6 +1264,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No named neighboring groups or pages exist.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1223,6 +1284,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior resource detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1247,6 +1309,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No river name exists.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1266,6 +1329,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon only establishes centuries of adaptation.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1285,6 +1349,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior Old Wall material.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1304,6 +1369,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes stewardship, knowledge, continuity, and long-term thinking.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1323,6 +1389,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing law detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1342,6 +1409,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No office names or specialized government facts exist.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1361,6 +1429,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior dependency detail.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1380,6 +1449,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior official account.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1399,6 +1469,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No competing specific claims exist.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1418,6 +1489,7 @@
       "disposition": "out-of-scope",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Story indexes contain no project-specific material.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1437,6 +1509,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The current seed supplies sufficient overview layout and no concrete missing fact.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1456,6 +1529,7 @@
       "disposition": "out-of-scope",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository rules separate external research and canon.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1475,6 +1549,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Specialized category indexes exist but contain no relevant facts.",
       "review": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1494,6 +1569,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current rules prohibit guessing but contain no pre-intake transmission gate.",
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1513,6 +1589,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Intake metadata and validation currently do not represent source completeness.",
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1532,6 +1609,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The regional case showed sandboxed `gh` could not read the keyring while escalated `gh` succeeded; `git push` already had its own approval.",
       "review": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1551,6 +1629,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The template prohibits invention but does not specifically constrain editorial connective prose.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1570,6 +1649,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current guidance mentions TODO and unknowns but does not define these three states.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1589,6 +1669,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository standards require one authoritative home, but the authoring prompt lacks a planned-seed boundary.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1608,6 +1689,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The current placeholder says only “what is actually true.”",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1627,6 +1709,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The current source placeholder is broad and does not prohibit inferred inspirations.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1646,6 +1729,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Design guidance cannot establish setting facts, but real-world comparison handling is not explicit.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1665,6 +1749,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The marker is already required by merged policy.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1684,6 +1769,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The template had one broad story-boundary section.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1703,6 +1789,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The template explained handoff but not the surrounding audit system.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1722,6 +1809,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing templates begin at repository intake or authoritative-page creation.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1741,6 +1829,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository standards distinguish truth, belief, story, and development material.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1760,6 +1849,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Canon safety reserves interpretation, IDs, and dispositions for audited intake.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1779,6 +1869,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The canon-intake quick start currently begins with an already prepared seed.",
       "review": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [],
@@ -1798,6 +1889,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 ends during this sentence.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1817,6 +1909,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing imperial authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1836,6 +1929,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The new economic pages establish relevant specializations but no imperial duty.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1855,6 +1949,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The regional trade system establishes specializations only.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1874,6 +1969,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes cooperation, not imperial classification.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1893,6 +1989,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall's corridor and trade role are already established.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1912,6 +2009,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing Highwall canon mentions diplomatic and legal relations.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1931,6 +2029,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing regional terminology authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1950,6 +2049,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No relevant character record exists.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1969,6 +2069,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing project or reveal record.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -1988,6 +2089,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Objective and official positions are established in A01-C002 and C007-C008.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2007,6 +2109,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Review found compatible objective and official truth levels.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2031,6 +2134,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Highwall's river-name question exists; the Stormlands-Delta river is unnamed.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2055,6 +2159,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No distances or travel times exist.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2079,6 +2184,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Current place pages do not claim exhaustiveness.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2098,6 +2204,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The map was not available in this session.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2117,6 +2224,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The integrated pages remain bounded to supplied overview facts.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2136,6 +2244,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The Highwall Overview already says “only practical” for the broader highland-to-coast route; S01 says “principal practical” for the plateau-to-lowlands corridor.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2155,6 +2264,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No alternative route is documented.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2181,6 +2291,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon uses upriver, downriver, downstream, coastal plain, and lowlands without defining their exact relationship.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2212,6 +2323,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Forge currently says `downstream` without an authorizing claim; the audit identifies the gap.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2243,6 +2355,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes the Stormlands-to-Forge production dependency but no complete relative order.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2267,6 +2380,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon names broad upland and downstream relationships but not this regional system.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2286,6 +2400,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "`canon/places/highwall.md` says the only practical highland-to-coast route.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2305,6 +2420,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Already stated in `canon/places/highwall.md` and the river-name question.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2324,6 +2440,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The existing page establishes a sandstone canyon but not its depth or plateau relationship.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2343,6 +2460,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Engineering and trade are established generally.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2362,6 +2480,7 @@
       "disposition": "update",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes Highwall as a principal interface and mentions larger centers.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2381,6 +2500,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon locates clans generally in mountains and smaller canyons.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2400,6 +2520,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon mentions livestock and other upland resources but not this specialization.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2419,6 +2540,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Stormlands authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2438,6 +2560,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing named supplier.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2457,6 +2580,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Stormlands geography.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2476,6 +2600,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon does not identify this source.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2495,6 +2620,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Forge authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2514,6 +2640,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing manufacturing detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2533,6 +2660,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Forge-Stormlands dependency.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2552,6 +2680,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Ledger authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2571,6 +2700,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Ledger economic detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2590,6 +2720,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing financial-instrument detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2609,6 +2740,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing moneychanging detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2628,6 +2760,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Delta authority.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2647,6 +2780,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing agricultural trade detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2666,6 +2800,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Delta military detail.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2685,6 +2820,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing named source relationship.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2704,6 +2840,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes seasonal Highwall floods but no Delta effect.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2723,6 +2860,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Individual roles are new or expanded in C010-C024.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2742,6 +2880,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing Highwall canon already establishes this connection generally.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2761,6 +2900,7 @@
       "disposition": "create",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing clan currency preference.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2785,6 +2925,7 @@
           "status": "resolved"
         }
       ],
+      "existing_authority_or_evidence": "The source ends mid-sentence and no existing canon supplies its intended completion.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2804,6 +2945,7 @@
       "disposition": "no-change",
       "domains": [],
       "exception_records": [],
+      "existing_authority_or_evidence": "The source supplies only bounded overview claims in these domains.",
       "review": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [],
@@ -2830,6 +2972,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon identifies sandstone but no formations.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2862,6 +3005,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No formation-level authority exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2894,6 +3038,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon gives no strata or measurements.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2926,6 +3071,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall canon establishes carved structures but not formation capacity.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2958,6 +3104,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No formation sequence exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -2990,6 +3137,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon gives no strata or measurements.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3022,6 +3170,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No comparative formation properties exist.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3054,6 +3203,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No structural geology exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3086,6 +3236,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon names an inland plateau without its structure.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3118,6 +3269,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing pages locate Highwall on the plateau without relative elevation.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3150,6 +3302,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The coastal plain exists, but its plateau boundary does not.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3182,6 +3335,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "`canon/places/upriver-highlands.md` already names an inland basin beyond Highwall.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3214,6 +3368,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No basin morphology exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3246,6 +3401,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon generally associates upriver clans with mountains and canyons.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3278,6 +3434,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No ancient lake or drainage event exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3310,6 +3467,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No basin-surface detail exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3342,6 +3500,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon calls the canyon deep but supplies no section or depth.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3374,6 +3533,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes the only practical corridor, not the geological uniqueness.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3406,6 +3566,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No geological chronology exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3438,6 +3599,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Earlier canon only says an intermittent river formed the canyon.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3470,6 +3632,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall and river-name pages attribute canyon formation to the modern river.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3502,6 +3665,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No formation-to-landform dependency exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3534,6 +3698,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing language is less precise; no official, character, or reader position exists.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3566,6 +3731,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No relevant narrative records exist.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3603,6 +3769,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No absolute ages exist.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3640,6 +3807,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Only relative chronology is supplied.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3677,6 +3845,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No additional geological names exist.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3709,6 +3878,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing pages cover some adjacent subjects.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3741,6 +3911,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The submission preserves the supplied source statement.",
       "review": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -3772,6 +3943,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Reviews currently lack machine-readable scope metadata.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3800,6 +3972,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current guidance encourages broad inspection for every case.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3828,6 +4001,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Claims are distributed across review tables.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3856,6 +4030,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Canon has tags and relations, but reviews have no controlled impact vocabulary.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3884,6 +4059,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Context is currently assembled through repeated broad searches.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3912,6 +4088,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "CONTRIBUTING makes intake optional but gives no concrete lightweight path.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3940,6 +4117,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Prior cases repeatedly committed GitHub check outcomes, triggering duplicate runs.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3968,6 +4146,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No explicit cadence or risk trigger exists.",
       "review": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -3998,6 +4177,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate S01 C018 establishes the seasonal relationship; C025 excludes detailed agriculture and ecology; ecology S02 keeps organism inventory working.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4029,6 +4209,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate S01 C012 alone uses Salt Basin; geology S01 C012-C016 establishes the inland basin; geography/economy S01 C007 locates clans there.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4061,6 +4242,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes a semi-arid plateau; geology establishes the escarpment.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4097,6 +4279,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology names seasonal inputs but leaves atmospheric sources open.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4133,6 +4316,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology already establishes winter snow and spring snowmelt generally.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4169,6 +4353,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing east-west storm comparison.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4205,6 +4390,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes upstream storms but not localization.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4241,6 +4427,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology and Highwall already establish both facts.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4277,6 +4464,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology leaves climatic averages open.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4313,6 +4501,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology establishes the canyon but not orientation or microclimate.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4349,6 +4538,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Stormlands already owns forests and their resource role.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4385,6 +4575,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No separate plateau-zone pages exist.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4421,6 +4612,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology supplies only general mountain snowmelt.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4457,6 +4649,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes salt flats and margin freshwater but not temporary wetlands.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4493,6 +4686,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing pages contain only parts of the sequence.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4529,6 +4723,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes snowmelt but not these seasonal effects.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4565,6 +4760,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing seasonal sequence.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4601,6 +4797,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes upstream flood origin but not the atmospheric sequence or storm belt.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4637,6 +4834,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing late-autumn climate authority.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4673,6 +4871,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Some named activities exist, but no climate relationship is authoritative.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4709,6 +4908,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No microclimate authority exists.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4745,6 +4945,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology and geology are existing authorities.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4781,6 +4982,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No relevant authority exists.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4822,6 +5024,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Hydrology leaves hidden-basin mechanisms and averages open.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4863,6 +5066,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No existing climate-detail record.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4899,6 +5103,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository rules separate real-world inspiration from setting truth.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4935,6 +5140,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Adjacent authorities exist but do not require expansion.",
       "review": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -4969,6 +5175,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology establishes the catastrophic drainage and rapid canyon excavation but not the millennia-scale dating or full-basin extent.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5000,6 +5207,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology establishes a remaining saline lake that periodically overflows; S01 says the ancient lake no longer remains.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5031,6 +5239,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall canon separately records an Old Wall-destroying flood at approximately the same time.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5061,6 +5270,7 @@
         "history"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "A01-C003 establishes the collapse around 185 years ago; Highwall canon establishes the destructive flood at the same time but left causation open.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5094,6 +5304,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No regional climate authority exists.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5131,6 +5342,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Seasonal hydrology was previously excluded.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5168,6 +5380,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Already established in Highwall and geology pages.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5205,6 +5418,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "River-name question says no final name exists.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5242,6 +5456,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Intermittent flow is already established.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5279,6 +5494,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes recurring catastrophic floods but not frequency.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5316,6 +5532,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Another regional river exists, but prior questions prohibit assuming identity.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5353,6 +5570,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology establishes thick sandstone formations.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5390,6 +5608,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No earlier authority.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5427,6 +5646,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geological structures are established.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5469,6 +5689,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No detailed hydrogeology exists.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5506,6 +5727,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes limited flow and catastrophic floods.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5543,6 +5765,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon only says seasonal storms.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5580,6 +5803,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Canyon danger is established generally.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5617,6 +5841,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology establishes salt flats and surrounding terrain.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5659,6 +5884,7 @@
           "status": "resolved"
         }
       ],
+      "existing_authority_or_evidence": "Established geology says a saline lake remains and periodically overflows.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5696,6 +5922,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior hidden-basin authority.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5733,6 +5960,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior account.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5775,6 +6003,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No mechanism exists.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5812,6 +6041,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No matching design record is needed for in-world authority.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5849,6 +6079,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Recurring catastrophic floods are established.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5891,6 +6122,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No prior proposal record.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5937,6 +6169,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "River-name questions exist; remaining details do not.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -5974,6 +6207,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Adjacent subjects are absent or separately owned.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6011,6 +6245,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Future pages do not yet exist.",
       "review": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6046,6 +6281,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes incremental audits but the regular intake workflow does not require a baseline checkpoint.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6077,6 +6313,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The S01 incremental template records these fields only for standalone audit records.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6108,6 +6345,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing periodic guidance states these checkpoints but the intake process does not make them blocking.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6139,6 +6377,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing Tier 3 guidance covers related categories but lacks the clarified mandatory intake evaluation and complete list.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6170,6 +6409,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 already rejects guessed reuse from unreliable baselines but does not bind every lore intake review to a fresh Tier 3 response.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6201,6 +6441,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 makes Git authoritative for changed paths and treats manifests/change log as aids.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6232,6 +6473,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The validator already applies prospective completeness and impact-manifest rules using the base ref.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6263,6 +6505,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The parent case grants process-policy authority only.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6293,6 +6536,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Both completed audits name exact commits; Git workflow already owns publication history.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6323,6 +6567,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing consistency policy defines manifests as scoped discovery metadata.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6353,6 +6598,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The provenance audit records relationship-specific invalidation conditions and rejects path-only reuse.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6383,6 +6629,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Historical audit findings already record invalidation conditions but lack a reusable decision vocabulary.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6413,6 +6660,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Claim-index and targeted-context policy already declare generated artifacts non-authoritative.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6443,6 +6691,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "`references/consistency-workflow.md` already controls Tier 2 and Tier 3 scope.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6473,6 +6722,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Completed audits are baseline records and Git policy discourages audit-only publication edits.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6503,6 +6753,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing tools provide deterministic claim indexing and targeted context but no baseline comparison.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6533,6 +6784,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Claim-index schema 3 already exposes review authority and lifecycle navigation.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6563,6 +6815,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The integrity suite favors focused deterministic failures over partial output.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6593,6 +6846,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The merged 113-test suite is the canonical test harness.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6623,6 +6877,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The provenance audit names `027d0e3` as its reusable baseline and `856f0d4` contains the requested remediations and test suite.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6653,6 +6908,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The task grants policy authority only and expressly prohibits the listed changes.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6683,6 +6939,7 @@
         "administration"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Git workflow separates completed review content from external publication state.",
       "review": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -6715,6 +6972,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No ecology authority exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6750,6 +7008,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology, climate, and hydrology establish the named physical drivers.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6785,6 +7044,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior ecological treatment of settlement exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6820,6 +7080,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior wildfire authority exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6855,6 +7116,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes recurring floods but not ecological effects.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6890,6 +7152,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate and hydrology establish aridity, springs, and seeps.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6925,6 +7188,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Geology, climate, and hydrology establish the physical setting.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6960,6 +7224,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate establishes temporary basin-margin wetlands.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -6995,6 +7260,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate and Stormlands establish wet coastal forests.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7030,6 +7296,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing pages reserve detailed practices.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7065,6 +7332,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior pollinator authority.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7100,6 +7368,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology distinguishes waterway permanence.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7135,6 +7404,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No conflicting settlement ecology exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7170,6 +7440,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No relevant authority exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7210,6 +7481,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No existing ecology question record.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7245,6 +7517,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Adjacent authorities do not require expansion.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7280,6 +7553,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The corresponding established authorities exist.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
       "review_authority": "establish-canon",
       "subjects": [
@@ -7315,6 +7589,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes the niches but excludes species inventories.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7351,6 +7626,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes the broad management pattern.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7387,6 +7663,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes domesticated pollinators broadly.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7423,6 +7700,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior organism inventory exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7459,6 +7737,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior canyon organism inventory exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7495,6 +7774,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Climate and S01 establish seasonal wetlands.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7531,6 +7811,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Stormlands establishes exceptionally large forest trees but not their analogue or fauna.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7567,6 +7848,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology establishes permanent rivers only.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7603,6 +7885,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes only broad long-term influence.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7639,6 +7922,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No prior species examples exist.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7675,6 +7959,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes broad pollinator function.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7711,6 +7996,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes broad functional roles.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7747,6 +8033,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Hydrology distinguishes permanent rivers from the intermittent canyon river.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7783,6 +8070,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 already establishes this at higher authority.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7819,6 +8107,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No relevant authority exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7860,6 +8149,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No prior organism-design proposal exists.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7901,6 +8191,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "S01 has broader ecology unknowns.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7937,6 +8228,7 @@
         "economy"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Adjacent domains have no relevant authority.",
       "review": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -7980,6 +8272,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Regional imperial structure already states both scopes.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8021,6 +8314,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall overview and its established source claims cover all elements except intentional design and competing priorities.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8062,6 +8356,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing internal-government owner.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8103,6 +8398,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing internal-government owner.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8144,6 +8440,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall overview supplies only general institutional character.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8185,6 +8482,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Council owner.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8226,6 +8524,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing Council detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8267,6 +8566,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing boundary rules.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8308,6 +8608,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing selection authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8349,6 +8650,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing tenure authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8390,6 +8692,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing removal rule.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8431,6 +8734,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall establishes Stewardship but not Council representation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8472,6 +8776,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing Highwall page only distinguishes residency classes.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8513,6 +8818,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing Highwall page establishes visitors but not representation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8554,6 +8860,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing professional-institution owner.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8595,6 +8902,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing constituency organization.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8636,6 +8944,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing market-governance authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8677,6 +8986,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing office detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8718,6 +9028,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Defining rescue expertise exists, but no organization.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8759,6 +9070,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing rescue hierarchy.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8800,6 +9112,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing rescue hierarchy.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8841,6 +9154,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing authority allocates these functions.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8882,6 +9196,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Archives and jurisprudence are established expertise only.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8923,6 +9238,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing office or constituency detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -8964,6 +9280,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall history establishes civic continuity but not these institutions.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9005,6 +9322,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Old Wall destruction and continuity are established, but political succession is new working canon.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9046,6 +9364,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing succession history.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9087,6 +9406,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon mentions arbitration but no office.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9128,6 +9448,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing office allocation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9169,6 +9490,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing legislative office detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9210,6 +9532,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing legislative process.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9251,6 +9574,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing constitutional interaction.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9292,6 +9616,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing removal authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9333,6 +9658,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing selection detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9374,6 +9700,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing resignation detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9415,6 +9742,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing interim office.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9456,6 +9784,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing designate practice.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9497,6 +9826,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing vacancy process.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9540,6 +9870,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Jurisprudence is established expertise but structure is absent.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9581,6 +9912,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Floods are established, but emergency office is absent.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9622,6 +9954,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing emergency activation rule.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9663,6 +9996,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing flood-command authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9704,6 +10038,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing office relationship.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9745,6 +10080,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing accountability standard.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9786,6 +10122,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing comparison.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9827,6 +10164,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Highwall already establishes the general title history.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9868,6 +10206,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing lesser-emergency authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9909,6 +10248,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing bespoke regime.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9950,6 +10290,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing pool or threshold link.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -9991,6 +10332,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing oversight detail.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10032,6 +10374,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing canon establishes impartial arbitration reputation only.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10073,6 +10416,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Regional page establishes relations and obligations, not internal allocation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10114,6 +10458,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Regional imperial structure already attributes this exact institutional position.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10155,6 +10500,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing regional page has general official language but not compact precedence.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10196,6 +10542,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Baseline audits already verify the imperial perspective distinction; other tensions are new.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10242,6 +10589,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No approved selection method exists.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10288,6 +10636,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Safety hierarchy is explicitly incomplete.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10338,6 +10687,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Source repeatedly withholds the numerical threshold.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10384,6 +10734,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No earlier authority supplies the details.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10430,6 +10781,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No earlier legal authority exists.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10476,6 +10828,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "No earlier authority supplies these details.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10517,6 +10870,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Story indexes and reveal authority remain unchanged.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10558,6 +10912,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Repository ownership and seed scope require restraint.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10599,6 +10954,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Submission is the sole authority; analogies are expressly disclaimed.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10637,6 +10993,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing pages establish capable, intentionally designed institutions but not this development mechanism.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10675,6 +11032,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing competence limitations do not state this experience boundary.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10713,6 +11071,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C038 gives the Arbiter unilateral appointment discretion.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10753,6 +11112,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No challenge process exists.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10791,6 +11151,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No Council review standard exists.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10829,6 +11190,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C038 allowed the Arbiter to set aside the initial designate.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10867,6 +11229,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Council already states this rule.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10905,6 +11268,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing page states expulsion but not the clarified threshold distinction.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10943,6 +11307,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C009 lists possible methods but does not explicitly reject a universal preference.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -10981,6 +11346,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C016 allows multi-profession constituencies without stating the representational consequence.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11019,6 +11385,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Council already lists the same possibilities in broader language.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11057,6 +11424,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01 establishes restraint but not its guidance source.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11095,6 +11463,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C036 establishes a general long-term-restraint expectation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11133,6 +11502,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing page states Council consideration but no legal-boundary qualification.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11171,6 +11541,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing emergency pages establish review but not procedural adaptation.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11209,6 +11580,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "S01-C043-C044 establish hearing and consequence standards.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11247,6 +11619,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No existing page enumerates these possible learning outcomes.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11285,6 +11658,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing structures can coexist under the supplied scopes.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11328,6 +11702,7 @@
           "status": "open"
         }
       ],
+      "existing_authority_or_evidence": "Existing open-question record lacks these specific gaps.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11366,6 +11741,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Source expressly excludes expansion.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11404,6 +11780,7 @@
         "law"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Story corpus contains no such authority.",
       "review": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
       "review_authority": "working-canon",
       "subjects": [
@@ -11438,6 +11815,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The repository describes a controlled canon system but has no unifying architectural name.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11471,6 +11849,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Intake records and semantic audits already model these relationships without this name.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11504,6 +11883,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Targeted and repository-wide consistency workflows already perform this discovery.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11537,6 +11917,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Open questions and contradictions are represented, but traceability failure lacks shared terminology.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11570,6 +11951,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current workflows already preserve these distinct technical records.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11605,6 +11987,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Impact manifests, dispositions, and consistency tiers already govern integration consequences.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11640,6 +12023,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The workflow has the same operational order but no compact conceptual statement.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11675,6 +12059,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The maintenance boundary distinguishes process maintenance from governed changes.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11708,6 +12093,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Canon safety and truth-kind rules already require these distinctions.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11741,6 +12127,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Significant policy already uses full intake, but self-governance is implicit.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11774,6 +12161,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Validator and tests currently recognize only the legacy literal.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11809,6 +12197,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Historical provenance and generated claim records contain many legitimate uses of “seed.”",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11842,6 +12231,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current repository is maintained Markdown current state with immutable sources and Git history.",
       "review": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11878,6 +12268,7 @@
         "institutions"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "PR #33 establishes incremental migration and exposes the remaining inventory.",
       "review": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11913,6 +12304,7 @@
         "institutions"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The graph policy authorizes governed batches using navigation-only `related-to` for existing generic links.",
       "review": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11953,6 +12345,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current policy and guidance consistently use stitch as the change unit.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -11997,6 +12390,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current policy uses weave and weaving for integration and the earlier conceptual order.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12042,6 +12436,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Validator, fixtures, tests, templates, and guidance currently treat the stitch marker as current.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12086,6 +12481,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The current model describes THREADs but not an explicit storage-independent graph abstraction.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12128,6 +12524,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No recursive relationship rule currently exists.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12170,6 +12567,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "No current reification boundary exists.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12212,6 +12610,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Existing governance controls claims and domains but does not state this ontology rule.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12254,6 +12653,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current provenance is global through submissions, reviews, links, and Git.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12296,6 +12696,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current consistency review uses manifests, links, indexes, searches, and semantic judgment without this traversal preference.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12338,6 +12739,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current repository storage is document-first.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12380,6 +12782,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Submission immutability and historical terminology compatibility are existing policy.",
       "review": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12420,6 +12823,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "PR #32 establishes a conceptual graph but explicitly leaves storage implementation partial.",
       "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12460,6 +12864,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The claim index demonstrates the repository's generated, navigation-only index pattern.",
       "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12500,6 +12905,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Current canon prose, authority metadata, `related` links, and cumulative provenance are governed current state.",
       "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12540,6 +12946,7 @@
         "terminology"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The repository contains nineteen canon content records plus story, design, development, and policy records.",
       "review": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12577,6 +12984,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The four pairs already exist as maintained generic `related` navigation; PRs #33–#37 establish and demonstrate bounded incremental migration.",
       "review": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12612,6 +13020,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The established graph policy and accepted referenced scope prohibit semantic strengthening.",
       "review": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12647,6 +13056,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "PRs #33 and #34 establish and demonstrate bounded incremental migration.",
       "review": "development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12682,6 +13092,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The established graph policy and accepted referenced scope prohibit semantic strengthening.",
       "review": "development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12716,6 +13127,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The three pairs already exist as maintained generic `related` navigation; PRs #33–#36 establish and demonstrate bounded incremental migration.",
       "review": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12750,6 +13162,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The established graph policy and accepted referenced scope prohibit semantic strengthening.",
       "review": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12781,6 +13194,7 @@
         "story"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "PR #39 was clean and mergeable at commit `43ac4a28a602561d8a3e3db33ac32c43aac58105`; both required checks passed.",
       "review": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12813,6 +13227,7 @@
         "story"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Regional Imperial Structure maintains the inventory's sole legacy link, targeting an existing story-reveal record that graph policy permits to opt in after review.",
       "review": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12849,6 +13264,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "PRs #33–#35 establish and demonstrate bounded incremental migration.",
       "review": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12884,6 +13300,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The established graph policy and accepted referenced scope prohibit semantic strengthening.",
       "review": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12915,6 +13332,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "Storm Marshal already maintains a generic `related` link to the Hydrology record; PRs #33–#38 establish and demonstrate bounded incremental migration.",
       "review": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12947,6 +13365,7 @@
         "places"
       ],
       "exception_records": [],
+      "existing_authority_or_evidence": "The established graph policy and accepted referenced scope prohibit semantic strengthening.",
       "review": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
       "review_authority": "establish-policy",
       "subjects": [
@@ -12961,8 +13380,1060 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "All non-relationship canon content and the unresolved story inventory row"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "S01 C004 established mandatory append-only local history; the completion audit proved existence-only validation accepted later unlogged changes.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Require a compatible appended history event for every changed schema-v2 object using isolated canonical object state.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph policy, snapshots, base-ref validator, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "S01 required completed authorized provenance; the completion audit proved policy/no-change review claims could substantiate established objective claims.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Enforce provenance authority, disposition, and exact object relevance.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph provenance policy, validator, claim projection, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "The S01 registry design named required provenance, but the implemented registry omitted a machine-visible field.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Add a controlled provenance policy to every relationship-type row.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`references/relationship-types.md`; graph registry parser and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "S01 C006 required these traversal objects; the initial projection reduced intake claims to review paths and omitted the other collections.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Complete the unified projection with full intake claims, decisions, exceptions, and evidence references.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph index builder, compatibility claim parser, generated indexes, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "S01 C005 permits relationships to address other knowledge objects; entity-ID equality blocked valid recursive storage.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Generalize endpoint kinds and validate ownership through object records.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph parser, relationship registry, ownership validation, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "S01 C004 required tombstones, bidirectional supersession, path-stable IDs, and non-reuse; the audit found incomplete entity and path behavior.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Complete lifecycle, relocation, supersession, and ID safeguards.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph policy, entity schema/templates, lifecycle validator, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C007",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "All initial tests passed while three prohibited states remained valid.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Add positive and negative tests for every repaired invariant.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph and repository-validator tests and fixtures"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "references/front-matter.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01-C008",
+      "classification": "administrative",
+      "disposition": "no-change",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "The public ledger already separates foundation from entity, relationship, claim, traversal, and final-audit stages.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-projection",
+        "relationship-registry"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A01",
+      "summary": "Keep historical migrations and final completion work outside PR #41.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "`development/knowledge-object-schema-v2-migration.md` staged boundary"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Temporary audit fixture accepted established canon entity prose under `establish-policy` with zero errors.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-lifecycle",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a02.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02",
+      "summary": "Bind every event authority to the changed object and actual state component.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph policy, snapshots, history authorization, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Temporary audit fixture used valid retirement authority to add an active established claim with zero errors.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-lifecycle",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a02.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02",
+      "summary": "Match provenance and history dispositions to the object action.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Provenance policy, history validation, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Temporary audit fixture reactivated a retired entity with zero errors; state-event selection stopped after detecting a move or lifecycle event.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-lifecycle",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a02.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02",
+      "summary": "Preserve tombstone permanence and require events for every component of a compound change.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Lifecycle evolution, component hashes, event validation, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "The prior 184 tests and both GitHub checks passed all reproduced prohibited states.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-history",
+        "knowledge-object-provenance",
+        "knowledge-object-lifecycle",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a02.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A02",
+      "summary": "Add the missing regression matrix and correct completion records only after it passes.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Tests, A02 review, migration ledger, generated indexes, and PR #41"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "An undeclared marker block could conceal arbitrary prose from entity hashing.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Parse and bind every maintained-claim boundary before excluding claim content from entity state.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Claim parser, canonical state, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Existing validation matched broad events after detecting selected state components.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Classify the complete baseline-to-result transition without a permissive fallback.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Transition model, validator, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C003",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Compatible event names were not tied to exact before and after state.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Bind appended histories to the exact deterministic transition.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "History schema, transition hashing, validator, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Working or classify authority could lower current authority and be judged against the weaker result.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Derive authority from baseline and resulting state.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Authority matrix, validator, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Policy metadata could rewire established replacement meaning.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Treat lifecycle and supersession as semantic identity transitions.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "State components, supersession validation, provenance relevance, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C006",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "New and pre-existing entities could use either initial event type.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Require the one truthful initial event determined by Git history.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Initial-transition validation and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C007",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Empty definitions and nonreciprocal directed inverses passed.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Validate every relationship-type semantic contract field and inverse invariant.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Relationship registry parser, policy, and tests"
+    },
+    {
+      "authoritative_targets": [
+        "references/graph-structure.md",
+        "references/relationship-types.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03-C008",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Two green suites failed to cover adjacent prohibited states.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-a03-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-transition",
+        "maintained-claim-boundary",
+        "knowledge-object-authority",
+        "relationship-type-registry",
+        "graph-validation"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-a03.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-A03",
+      "summary": "Prove an adversarial invariant matrix and require independent audit before re-closing validation.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Tests, migration ledger, generated indexes, and PR #41"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Current claim index contains intake dispositions and does not identify maintained fact objects.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Distinguish maintained knowledge claims from immutable intake-review claims.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "CLOTH and graph policy; schema-v2 tooling"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Markdown pages are already the authoritative graph surfaces.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Keep authoritative entity, relationship, claim, and history metadata on owning Markdown records.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph and front-matter policy"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C003",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Current review targets are page-level and cannot identify the maintained assertion they affected.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Give decision-worthy claims stable IDs and exact bounded prose while avoiding sentence-level atomization.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Knowledge-claim schema and boundary validation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Current entities and relationships have no required local history or representable retirement.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Require append-only local histories, lifecycle, tombstones, and exact review-claim provenance for graph objects.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph policy, validators, migration program"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Current endpoints resolve only entity and relationship IDs; only `related-to` is controlled.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Generalize controlled relationships to registered object kinds without introducing unreviewed semantic lore types.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Relationship registry and graph validation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C006",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Graph and intake claims are currently disconnected indexes.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Build a unified navigation-only object projection and deterministic THREAD traversal.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Generated indexes and traversal tooling"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C007",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "The earlier migration covered entity IDs and generic related pairs only.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Audit every current entity, relationship, and intake claim through staged migrations with explicit coverage.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Public schema-v2 migration ledger"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C008",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "existing_authority_or_evidence": "Deterministic validation cannot prove semantic equivalence.",
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Require a final independent canon-equivalence and completion audit before declaring schema-v2 migration complete.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Migration completion criteria"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",
-  "schema_version": 3
+  "schema_version": 4
 }

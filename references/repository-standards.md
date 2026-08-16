@@ -89,6 +89,12 @@ Every substantive claim must receive a disposition, even when no repository cont
 
 Use stable submission and claim identifiers so canon changes, contradiction reports, decisions, and Git commits can refer back to the exact reviewed material. Follow [`intake-workflow.md`](intake-workflow.md).
 
+Intake-review `CASE-...-C...` identifiers preserve submitted claims and their
+dispositions. Maintained `claim-...` identifiers address decision-worthy
+assertions on their natural authoritative Markdown records. A maintained claim
+must bind exact prose, subjects, authority, lifecycle, and review-claim
+provenance; do not mechanically promote every intake claim into one.
+
 A traceable provenance or dependency chain is a THREAD. An explicitly
 unresolved relationship may remain a loose thread without being erroneous; a
 missing or irreconcilable provenance connection is a broken thread and should
@@ -110,6 +116,26 @@ Explicit entities and relationships must follow
 [`graph-structure.md`](graph-structure.md) and the controlled
 [`relationship-types.md`](relationship-types.md) registry. The generated graph
 index is navigation-only; its Markdown sources retain authority.
+
+Every migrated knowledge object maintains append-only local history. A
+materially different relationship or claim receives a new durable ID and
+supersedes or retires the earlier tombstone; published relationship type and
+endpoints, history events, and durable IDs are not rewritten or reused. Every
+object change appends a compatible event, and every exact provenance claim
+must have authority and disposition for the result and name its durable object
+ID. Event authority is evaluated against the object and actual state component
+changed, so policy authority over graph administration cannot alter lore or
+story content. Creation, update, link, supersession, and retirement events use
+action-compatible dispositions. Retired and superseded lifecycles are
+permanent, and a compound change appends every applicable event class rather
+than allowing one event to conceal another state change.
+
+Prospective history is bound to the complete baseline-to-result transition,
+not merely a compatible event label. Required authority is derived from both
+states, with prior authority acting as a floor. Supersession is semantic
+identity rather than administrative graph metadata. Maintained-claim passages
+are excluded from entity state only after every declaration and boundary is
+structurally bound one-to-one; invalid boundaries fail closed.
 
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits
