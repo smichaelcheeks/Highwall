@@ -9,6 +9,7 @@ related:
   - "../references/graph-structure.md"
   - "../references/cloth-thread-model.md"
   - "intake-reviews/2026-08-16-knowledge-object-schema-v2-a01-review.md"
+  - "intake-reviews/2026-08-16-knowledge-object-schema-v2-a02-review.md"
 ---
 
 # Knowledge Object Schema V2 Migration
@@ -26,9 +27,9 @@ not equivalent to a completed knowledge migration.
 
 | Stage | Required outcome | Status |
 | --- | --- | --- |
-| Policy and schema | Knowledge claims, intake claims, histories, lifecycle, provenance, and completion invariants are authoritative policy. | Complete in foundation case with A01 corrections |
-| Parser and projection | Maintained metadata and governance records are parsed structurally and emitted in a unified navigation-only projection. | Complete in foundation case with A01 corrections |
-| Prospective validation | New and changed objects enforce identity, per-change history, lifecycle, ownership, authorized provenance, and content-boundary rules. | Complete in foundation case with A01 corrections |
+| Policy and schema | Knowledge claims, intake claims, histories, lifecycle, provenance, and completion invariants are authoritative policy. | Complete in foundation case with A01 and A02 corrections |
+| Parser and projection | Maintained metadata and governance records are parsed structurally and emitted in a unified navigation-only projection. | Complete in foundation case with A01 and A02 corrections |
+| Prospective validation | New and changed objects enforce identity, per-change history, lifecycle, ownership, authorized provenance, and content-boundary rules. | Complete in foundation case with A01 and A02 corrections |
 | Entity history migration | Every current entity has audited history coverage and an explicit migration disposition. | Pending |
 | Relationship history migration | Every current relationship has audited history, lifecycle, provenance, ownership, and pair validation. | Pending |
 | Intake-claim crosswalk | Every indexed intake claim maps to a maintained claim or an explicit non-current-state category. | Pending |
@@ -60,9 +61,11 @@ The program may be marked complete only when:
    identity, bounded authoritative content, lifecycle, subjects, and exact
    provenance;
 4. retired and superseded objects remain addressable and no durable ID is
-   reused;
+   reused or reactivated;
 5. every schema-v2 object change appends a compatible local history event and
    every exact provenance claim authorizes and names its resulting object;
+   authority applies to the actual changed state, dispositions match actions,
+   and compound changes record every applicable event class;
 6. no semantic relationship was inferred from navigation links, prose, or
    co-occurrence;
 7. generated projections contain no unexplained migration inventory;
@@ -74,4 +77,4 @@ The program may be marked complete only when:
 
 | Stage publication | Case or PR | Result |
 | --- | --- | --- |
-| Schema-v2 foundation and A01 completion correction | `CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2` | S01 and A01 reviews complete; publication pending on draft PR #41 |
+| Schema-v2 foundation and completion corrections | `CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2` | S01, A01, and A02 reviews complete; publication pending on draft PR #41 |

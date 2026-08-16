@@ -19,7 +19,13 @@ from consistency_common import (
     scalar_text,
     split_markdown_row,
 )
-from graph_common import GraphValidationError, build_graph_data, collect_object_snapshots
+from graph_common import (
+    GraphValidationError,
+    build_graph_data,
+    collect_record_readable_snapshots,
+    collect_object_snapshots,
+    entity_content_authorities,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -296,11 +302,21 @@ class Validator:
                 self.error("graph", f"could not extract graph baseline: {error}")
                 return
             baseline = collect_object_snapshots(baseline_root)
+            baseline_readable_records = collect_record_readable_snapshots(
+                baseline_root
+            )
 
         current = collect_object_snapshots(self.root)
+        current_readable_records = collect_record_readable_snapshots(self.root)
         current_histories_by_object: dict[str, list[dict[str, object]]] = {}
         for item in current["histories"].values():
             current_histories_by_object.setdefault(str(item["object_id"]), []).append(item)
+        intake_claims_by_id = {
+            str(item["claim_id"]): item for item in graph["intake_claims"]
+        }
+        current_entities_by_id = {
+            str(item["entity_id"]): item for item in graph["entities"]
+        }
 
         for kind in ("entities", "relationships", "claims"):
             for object_id in sorted(baseline[kind]):
@@ -396,38 +412,122 @@ class Validator:
                 )
                 return True
             required_event_types: list[tuple[str, set[str]]] = []
+            preexisting_unregistered_entity = bool(
+                kind == "entity"
+                and earlier is None
+                and path in baseline_readable_records
+            )
             if earlier is None:
                 initial_types = {
                     "entity": {"graph-registered", "established"},
-                    "relationship": {"graph-registered", "relationship-added"},
-                    "claim": {"graph-registered", "claim-added", "established"},
+                    "relationship": {"relationship-added"},
+                    "claim": {"claim-added"},
                 }[kind]
-                required_event_types.append(("initial publication", initial_types))
-            event_types = {str(event["change_type"]) for event in events}
+                initial_reason = (
+                    "schema-v2 registration"
+                    if preexisting_unregistered_entity
+                    else "initial publication"
+                )
+                required_event_types.append((initial_reason, initial_types))
             if moved:
                 required_event_types.append(("owner-path move", {"moved"}))
             lifecycle_field = "lifecycle" if kind == "claim" else "graph_status"
             lifecycle = str(item.get(lifecycle_field, ""))
             prior_lifecycle = str(earlier.get(lifecycle_field, "")) if earlier else ""
-            if earlier is not None and not prior_lifecycle and lifecycle:
+            registering = earlier is not None and not prior_lifecycle and bool(lifecycle)
+            if (
+                earlier is not None
+                and prior_lifecycle in {"superseded", "retired"}
+                and lifecycle != prior_lifecycle
+            ):
+                self.error(
+                    path,
+                    f"published {kind} {object_id} cannot transition from "
+                    f"tombstone lifecycle {prior_lifecycle!r} to {lifecycle!r}",
+                )
+            if registering:
                 required_event_types.append(("schema-v2 registration", {"graph-registered"}))
             elif lifecycle != prior_lifecycle and lifecycle in {"superseded", "retired"}:
                 required_event_types.append((f"{lifecycle} lifecycle transition", {lifecycle}))
+            entity_content_changed = False
+            if kind == "entity" and earlier is not None:
+                entity_content_changed = (
+                    item.get("content_state_sha256")
+                    != earlier.get("content_state_sha256")
+                )
+            elif preexisting_unregistered_entity:
+                entity_content_changed = (
+                    current_readable_records.get(path)
+                    != baseline_readable_records.get(path)
+                )
+            if entity_content_changed:
+                required_event_types.append(("entity content change", {"metadata-changed"}))
             if (
+                kind == "entity"
+                and earlier is not None
+                and not registering
+                and item.get("graph_metadata_sha256")
+                != earlier.get("graph_metadata_sha256")
+            ):
+                required_event_types.append(
+                    ("entity graph-metadata change", {"metadata-changed"})
+                )
+            if (
+                kind == "relationship"
+                and earlier is not None
+                and not registering
+                and item.get("non_lifecycle_sha256")
+                != earlier.get("non_lifecycle_sha256")
+            ):
+                required_event_types.append(
+                    ("relationship metadata change", {"metadata-changed"})
+                )
+            claim_content_changed = bool(
                 kind == "claim"
                 and earlier is not None
                 and item.get("content_sha256") != earlier.get("content_sha256")
+            )
+            if claim_content_changed:
+                required_event_types.append(
+                    ("bounded claim-content change", {"claim-clarified"})
+                )
+            if (
+                kind == "claim"
+                and earlier is not None
+                and not registering
+                and item.get("non_lifecycle_metadata_sha256")
+                != earlier.get("non_lifecycle_metadata_sha256")
             ):
-                required_event_types.append(("bounded claim-content change", {"claim-clarified"}))
+                required_event_types.append(("claim metadata change", {"metadata-changed"}))
             if state_changed and not required_event_types:
                 required_event_types.append(("object-state change", {"metadata-changed"}))
             for reason, expected in required_event_types:
-                if event_types.isdisjoint(expected):
+                matching_events = [
+                    event for event in events if str(event["change_type"]) in expected
+                ]
+                if not matching_events:
                     self.error(
                         path,
                         f"new history for changed {kind} {object_id} has no compatible "
                         f"change_type for {reason}; expected one of {sorted(expected)}",
                     )
+                    continue
+                if kind == "entity" and (
+                    reason in {"initial publication", "entity content change"}
+                ):
+                    entity = current_entities_by_id.get(object_id, item)
+                    allowed_authorities = entity_content_authorities(entity)
+                    for event in matching_events:
+                        for claim_id in event["review_claims"]:
+                            claim = intake_claims_by_id.get(str(claim_id), {})
+                            authority = str(claim.get("review_authority", ""))
+                            if authority not in allowed_authorities:
+                                self.error(
+                                    path,
+                                    f"history {event['history_id']} uses authority "
+                                    f"{authority!r} for {reason} on {object_id}; "
+                                    f"expected one of {sorted(allowed_authorities)}",
+                                )
             return True
 
         for entity_id, item in current["entities"].items():

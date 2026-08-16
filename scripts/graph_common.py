@@ -96,7 +96,13 @@ REGISTRY_PROVENANCE_POLICIES = {
     "administrative",
 }
 OBJECT_KINDS = {"entity", "relationship", "claim", "history", "intake-claim"}
-CHANGE_DISPOSITIONS = {"create", "update", "link-only", "retire"}
+ENTITY_GRAPH_METADATA_FIELDS = {
+    "entity_id",
+    "graph_status",
+    "history_coverage",
+    "supersedes",
+    "superseded_by",
+}
 
 
 class GraphValidationError(ValueError):
@@ -421,6 +427,9 @@ CLAIM_BLOCK = re.compile(
     r"<!-- claim:\1:end -->",
     re.DOTALL,
 )
+CLAIM_BOUNDARY = re.compile(
+    r"(?m)^<!-- claim:claim-[a-z0-9]+(?:-[a-z0-9]+)*:(?:start|end) -->\r?\n?"
+)
 
 
 def stable_state_hash(value: object) -> str:
@@ -457,6 +466,52 @@ def entity_state(metadata: Mapping[str, object], path: Path) -> dict[str, object
     return {"metadata": owned_metadata, "body": body}
 
 
+def entity_state_components(
+    metadata: Mapping[str, object], path: Path
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Separate lore-facing entity state from graph-administrative state."""
+    state = entity_state(metadata, path)
+    owned_metadata = state["metadata"]
+    assert isinstance(owned_metadata, dict)
+    content_metadata = {
+        key: value
+        for key, value in owned_metadata.items()
+        if key not in ENTITY_GRAPH_METADATA_FIELDS
+    }
+    graph_metadata = {
+        key: value
+        for key, value in owned_metadata.items()
+        if key in {"entity_id", "history_coverage"}
+    }
+    return (
+        {"metadata": content_metadata, "body": state["body"]},
+        graph_metadata,
+    )
+
+
+def collect_record_readable_snapshots(root: Path) -> dict[str, str]:
+    """Hash readable record state so first-time registration cannot hide edits."""
+    root = root.resolve()
+    snapshots: dict[str, str] = {}
+    for directory in GRAPH_RECORD_ROOTS:
+        record_root = root / directory
+        if not record_root.is_dir():
+            continue
+        for path in sorted(record_root.rglob("*.md")):
+            try:
+                metadata = parse_front_matter_data(path)
+            except ValueError:
+                continue
+            if not metadata:
+                continue
+            content_state, _ = entity_state_components(metadata, path)
+            content_state["body"] = CLAIM_BOUNDARY.sub("", markdown_body(path))
+            snapshots[path.relative_to(root).as_posix()] = stable_state_hash(
+                content_state
+            )
+    return snapshots
+
+
 def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object]]]:
     """Collect graph object state without applying current-registry validation."""
     root = root.resolve()
@@ -477,10 +532,12 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
             entity_id = scalar_text(metadata.get("entity_id"))
             if entity_id:
                 state = entity_state(metadata, path)
+                content_state, graph_metadata = entity_state_components(metadata, path)
                 entities[entity_id] = {
                     "entity_id": entity_id,
                     "path": relative,
                     "record_type": scalar_text(metadata.get("type")),
+                    "canon_level": scalar_text(metadata.get("canon_level")),
                     "graph_status": scalar_text(metadata.get("graph_status")),
                     "history_coverage": scalar_text(metadata.get("history_coverage")),
                     "supersedes": string_list(
@@ -490,14 +547,22 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                         metadata.get("superseded_by"), "entity.superseded_by", []
                     ),
                     "state_sha256": stable_state_hash(state),
+                    "content_state_sha256": stable_state_hash(content_state),
+                    "graph_metadata_sha256": stable_state_hash(graph_metadata),
                 }
             parsed_relationships, _ = parse_relationships(path)
             for relationship in parsed_relationships:
                 relationship_id = str(relationship["relationship_id"])
                 if relationship_id:
+                    non_lifecycle = {
+                        key: value
+                        for key, value in relationship.items()
+                        if key not in {"graph_status", "supersedes", "superseded_by"}
+                    }
                     relationships[relationship_id] = {
                         **relationship,
                         "state_sha256": stable_state_hash(relationship),
+                        "non_lifecycle_sha256": stable_state_hash(non_lifecycle),
                         "authoritative_record": relative,
                     }
             parsed_claims, _ = parse_knowledge_claims(path)
@@ -511,9 +576,17 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                         else hashlib.sha256(content.encode("utf-8")).hexdigest()
                     )
                     claim_state = {**claim, "content_sha256": content_hash}
+                    non_lifecycle_metadata = {
+                        key: value
+                        for key, value in claim.items()
+                        if key not in {"lifecycle", "supersedes", "superseded_by"}
+                    }
                     claims[claim_id] = {
                         **claim_state,
                         "state_sha256": stable_state_hash(claim_state),
+                        "non_lifecycle_metadata_sha256": stable_state_hash(
+                            non_lifecycle_metadata
+                        ),
                         "authoritative_record": relative,
                     }
             parsed_histories, _ = parse_histories(path)
@@ -729,6 +802,19 @@ def relationship_provenance_authorities(policy: str) -> set[str]:
     }.get(policy, set())
 
 
+def entity_content_authorities(entity: Mapping[str, object]) -> set[str]:
+    """Return authorities permitted to change an entity's readable content."""
+    path = str(entity.get("path", ""))
+    canon_level = str(entity.get("canon_level", ""))
+    if path.startswith("canon/") or path.startswith("story/"):
+        if canon_level == "established":
+            return {"establish-canon"}
+        return {"establish-canon", "working-canon"}
+    if path.startswith("design/"):
+        return {"establish-policy", "proposal-only", "classify"}
+    return {"establish-policy"}
+
+
 def claim_provenance_authorities(claim: Mapping[str, object]) -> set[str]:
     truth_kind = str(claim.get("truth_kind", ""))
     authority_level = str(claim.get("authority_level", ""))
@@ -744,9 +830,60 @@ def claim_provenance_authorities(claim: Mapping[str, object]) -> set[str]:
 
 
 def claim_provenance_dispositions(claim: Mapping[str, object]) -> set[str]:
+    lifecycle = str(claim.get("lifecycle", ""))
     if str(claim.get("truth_kind", "")) in {"proposal", "question"}:
-        return {"create", "update", "defer", "retire"}
-    return {"create", "update", "retire"}
+        allowed = {"create", "update", "defer"}
+    else:
+        allowed = {"create", "update"}
+    if lifecycle in {"superseded", "retired"}:
+        allowed.add("retire")
+    return allowed
+
+
+def relationship_provenance_dispositions(
+    relationship: Mapping[str, object], policy: str
+) -> set[str]:
+    allowed = {"create", "update"}
+    if policy == "navigation":
+        allowed.add("link-only")
+    if str(relationship.get("graph_status", "")) in {"superseded", "retired"}:
+        allowed.add("retire")
+    return allowed
+
+
+def history_dispositions(
+    change_type: str,
+    *,
+    object_kind_name: str,
+    proposal_or_question: bool = False,
+    navigation_relationship: bool = False,
+) -> set[str]:
+    """Return review dispositions that authorize a specific event action."""
+    if change_type == "graph-registered":
+        allowed = {"create", "update"}
+        if object_kind_name == "relationship" and navigation_relationship:
+            allowed.add("link-only")
+        return allowed
+    if change_type == "established":
+        return {"create"}
+    if change_type in {"metadata-changed", "moved", "claim-clarified"}:
+        allowed = {"update"}
+        if proposal_or_question and change_type == "claim-clarified":
+            allowed.add("defer")
+        return allowed
+    if change_type == "claim-added":
+        return {"create", "defer"} if proposal_or_question else {"create"}
+    if change_type == "relationship-added":
+        return (
+            {"create", "link-only"}
+            if navigation_relationship
+            else {"create"}
+        )
+    if change_type == "superseded":
+        return {"update", "retire"}
+    if change_type == "retired":
+        return {"retire"}
+    return set()
 
 
 def target_names_object(target: object, object_id: str) -> bool:
@@ -1000,7 +1137,10 @@ def build_graph_data(root: Path) -> dict[str, object]:
             allowed_authorities=relationship_provenance_authorities(
                 str(registry["provenance_policy"]) if registry else ""
             ),
-            allowed_dispositions={"create", "update", "link-only", "retire"},
+            allowed_dispositions=relationship_provenance_dispositions(
+                relationship,
+                str(registry["provenance_policy"]) if registry else "",
+            ),
         )
 
     for claim in knowledge_claims:
@@ -1044,6 +1184,10 @@ def build_graph_data(root: Path) -> dict[str, object]:
     knowledge_claims_by_id = {
         str(item["claim_id"]): item for item in knowledge_claims
     }
+    entities_by_id = {str(item["entity_id"]): item for item in entities}
+    relationships_by_id = {
+        str(item["relationship_id"]): item for item in relationships
+    }
     history_by_object: dict[str, list[dict[str, object]]] = {}
     for history in histories:
         history_id = str(history["history_id"])
@@ -1072,22 +1216,64 @@ def build_graph_data(root: Path) -> dict[str, object]:
             if review and review["status"] != "complete":
                 errors.append(f"{label} cites review claim from an incomplete review")
             review_authority = str(claim.get("review_authority", ""))
-            if review_authority not in REVIEW_AUTHORITIES:
+            object_kind_name = object_kind(object_id)
+            maintained_claim = knowledge_claims_by_id.get(object_id)
+            proposal_or_question = bool(
+                maintained_claim
+                and maintained_claim["truth_kind"] in {"proposal", "question"}
+            )
+            if object_kind_name == "relationship":
+                relationship = relationships_by_id.get(object_id, {})
+                registry = relationship_types.get(
+                    str(relationship.get("relationship_type", "")), {}
+                )
+                allowed_history_authorities = relationship_provenance_authorities(
+                    str(registry.get("provenance_policy", ""))
+                )
+                navigation_relationship = (
+                    str(registry.get("provenance_policy", "")) == "navigation"
+                )
+            elif object_kind_name == "claim" and maintained_claim:
+                allowed_history_authorities = claim_provenance_authorities(
+                    maintained_claim
+                )
+                navigation_relationship = False
+            elif object_kind_name == "entity":
+                entity = entities_by_id.get(object_id, {})
+                if history["change_type"] in {"graph-registered", "moved"}:
+                    allowed_history_authorities = {
+                        "establish-policy",
+                        "establish-canon",
+                        "working-canon",
+                    }
+                elif history["change_type"] == "metadata-changed":
+                    allowed_history_authorities = entity_content_authorities(entity) | {
+                        "establish-policy"
+                    }
+                else:
+                    allowed_history_authorities = entity_content_authorities(entity)
+                navigation_relationship = False
+            else:
+                allowed_history_authorities = {"establish-policy"}
+                navigation_relationship = False
+            if review_authority not in allowed_history_authorities:
                 errors.append(
-                    f"{label} cites review claim with invalid authority "
-                    f"{review_authority!r}"
+                    f"{label} cites review claim with unauthorized authority "
+                    f"{review_authority!r}; expected one of "
+                    f"{sorted(allowed_history_authorities)}"
                 )
             disposition = str(claim.get("disposition", ""))
-            allowed_history_dispositions = set(CHANGE_DISPOSITIONS)
-            maintained_claim = knowledge_claims_by_id.get(object_id)
-            if maintained_claim and maintained_claim["truth_kind"] in {
-                "proposal",
-                "question",
-            }:
-                allowed_history_dispositions.add("defer")
+            allowed_history_dispositions = history_dispositions(
+                str(history["change_type"]),
+                object_kind_name=object_kind_name,
+                proposal_or_question=proposal_or_question,
+                navigation_relationship=navigation_relationship,
+            )
             if disposition not in allowed_history_dispositions:
                 errors.append(
-                    f"{label} cites non-authorizing disposition {disposition!r}"
+                    f"{label} cites disposition {disposition!r} incompatible with "
+                    f"{history['change_type']!r}; expected one of "
+                    f"{sorted(allowed_history_dispositions)}"
                 )
             if not target_names_object(claim.get("target", ""), object_id):
                 errors.append(

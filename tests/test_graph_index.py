@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from build_graph_index import render
 from graph_common import GraphValidationError, build_graph_data
 from fixtures import FixtureRepository
-from fixtures import CLAIM_ID
+from fixtures import CLAIM_ID, SUBMISSION_ID
 
 
 class GraphIndexTests(unittest.TestCase):
@@ -210,7 +210,7 @@ class GraphIndexTests(unittest.TestCase):
             authority="establish-canon",
             claims=[
                 self.fixture.claim_row(
-                    disposition="update",
+                    disposition="create",
                     target="entity-example-place claim-example-place-exists",
                 )
             ],
@@ -305,12 +305,73 @@ Synthetic maintained assertion.
         with self.assertRaisesRegex(GraphValidationError, "matching start and end marker"):
             build_graph_data(self.fixture.root)
 
+    def test_active_claim_rejects_retire_disposition(self) -> None:
+        self.fixture.development_record(
+            "development/retired/example-retired.md",
+            status="retired",
+            record_type="retired",
+        )
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    classification="canon",
+                    disposition="retire",
+                    target=(
+                        "claim-example-place-retired "
+                        "[Retired record](../retired/example-retired.md)"
+                    ),
+                )
+            ],
+        )
+        page = self.fixture.root / "canon/places/example-place.md"
+        text = page.read_text(encoding="utf-8")
+        metadata = f"""relationships: []
+claims:
+  - claim_id: claim-example-place-retired
+    content_id: claim-example-place-retired
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-example-place
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+history:
+  - history_id: history-example-retired-claim-001
+    sequence: 1
+    object_id: claim-example-place-retired
+    change_type: claim-added
+    review_claims:
+      - {CLAIM_ID}
+    summary: Deliberately misused a retirement decision for an active claim.
+"""
+        body = """<!-- claim:claim-example-place-retired:start -->
+Synthetic assertion that must not be activated by retirement authority.
+<!-- claim:claim-example-place-retired:end -->"""
+        page.write_text(
+            text.replace("relationships: []\n", metadata).replace(
+                "Synthetic administrative fixture.", body
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "non-authorizing disposition"):
+            build_graph_data(self.fixture.root)
+
     def test_established_claim_rejects_policy_review_authority(self) -> None:
         self.fixture.review(
             authority="establish-policy",
             claims=[
                 self.fixture.claim_row(
-                    disposition="update", target="claim-example-place-policy-backed"
+                    disposition="create", target="claim-example-place-policy-backed"
                 )
             ],
         )
@@ -378,6 +439,68 @@ Synthetic policy-backed assertion.
             encoding="utf-8",
         )
         with self.assertRaisesRegex(GraphValidationError, "invalid provenance policy"):
+            build_graph_data(self.fixture.root)
+
+    def test_semantic_relationship_history_rejects_link_only(self) -> None:
+        link_claim_id = f"{SUBMISSION_ID}-C002"
+        self.fixture.review(
+            authority="establish-canon",
+            lore_review="true",
+            include_audit=True,
+            claims=[
+                self.fixture.claim_row(
+                    classification="canon",
+                    disposition="create",
+                    target="relationship-example-located-in-second",
+                ),
+                self.fixture.claim_row(
+                    claim_id=link_claim_id,
+                    classification="canon",
+                    disposition="link-only",
+                    target="relationship-example-located-in-second",
+                ),
+            ],
+        )
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8")
+            + "| `located-in` | `directed` | `semantic` | `entity` | `entity` | "
+            "`forbidden` | `none` | `semantic-canon` | Synthetic location. |\n",
+            encoding="utf-8",
+        )
+        self.second_entity()
+        page = self.fixture.root / "canon/places/example-place.md"
+        schema = f"""relationships:
+  - relationship_id: relationship-example-located-in-second
+    relationship_type: located-in
+    source: entity-example-place
+    target: entity-second-place
+    graph_status: active
+    history_coverage: complete
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+history:
+  - history_id: history-example-located-in-second-001
+    sequence: 1
+    object_id: relationship-example-located-in-second
+    change_type: relationship-added
+    review_claims:
+      - {link_claim_id}
+    summary: Deliberately used navigation-only authority for a semantic edge.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace("relationships: []\n", schema),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(
+            GraphValidationError,
+            "cites disposition 'link-only' incompatible with 'relationship-added'",
+        ):
             build_graph_data(self.fixture.root)
 
     def test_relationship_pair_can_be_owned_by_shared_object_record(self) -> None:

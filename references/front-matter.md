@@ -32,7 +32,7 @@ provenance: []
 | `title` | Yes | Human-readable canonical title |
 | `type` | Yes | Subject kind, such as `character`, `place`, or `historical-event` |
 | `entity_id` | Yes | Stable graph identity in the form `entity-<slug>` |
-| `graph_status` | Schema-v2 target | Object lifecycle: `active`, `superseded`, or `retired` |
+| `graph_status` | Schema-v2 target | Object lifecycle: `active`, `superseded`, or `retired`; published tombstones are permanent |
 | `history_coverage` | Schema-v2 target | Local changelog coverage: `provenance-only`, `prospective`, or `complete` |
 | `supersedes` | Schema-v2 target | Earlier entity IDs replaced by this entity |
 | `superseded_by` | Schema-v2 target | Later entity IDs that replace this entity |

@@ -123,7 +123,12 @@ supersedes or retires the earlier tombstone; published relationship type and
 endpoints, history events, and durable IDs are not rewritten or reused. Every
 object change appends a compatible event, and every exact provenance claim
 must have authority and disposition for the result and name its durable object
-ID.
+ID. Event authority is evaluated against the object and actual state component
+changed, so policy authority over graph administration cannot alter lore or
+story content. Creation, update, link, supersession, and retirement events use
+action-compatible dispositions. Retired and superseded lifecycles are
+permanent, and a compound change appends every applicable event class rather
+than allowing one event to conceal another state change.
 
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits

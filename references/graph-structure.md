@@ -45,9 +45,11 @@ superseded_by: []
 An entity's `graph_status` is `active`, `superseded`, or `retired`. Retired and
 superseded objects remain indexed as tombstones. Supersession names the earlier
 and later entity IDs in both directions, follows the same lifecycle integrity
-rules as relationships and claims, and may not form a cycle. A page remains the
-entity's authoritative human-readable surface; the index records its current
-path and metadata without replacing it.
+rules as relationships and claims, and may not form a cycle. A published
+`superseded` or `retired` lifecycle is permanent: later work creates or updates
+the successor and preserves the earlier tombstone rather than reactivating it.
+A page remains the entity's authoritative human-readable surface; the index
+records its current path and metadata without replacing it.
 
 ## Relationship records
 
@@ -151,11 +153,12 @@ Exact claim provenance must authorize the maintained result. Established lore
 requires an `establish-canon` review; working lore permits `establish-canon` or
 `working-canon`; design and administrative claims require `establish-policy`;
 and proposal or question claims may use `proposal-only`, `classify`, or
-`establish-policy`. The intake claim must use an authorizing `create`, `update`,
-or `retire` disposition and its target must name the maintained claim ID;
-proposal and question claims may also use `defer`. `no-change`, `link-only`,
-conflict, and out-of-scope claims cannot establish or change maintained claim
-content, and `defer` cannot establish lore truth.
+`establish-policy`. The intake claim must use an action-compatible disposition
+and its target must name the maintained claim ID: active content may cite
+`create` or `update`, while `retire` is valid only for a `superseded` or
+`retired` tombstone. Proposal and question claims may also use `defer`.
+`no-change`, `link-only`, conflict, and out-of-scope claims cannot establish or
+change maintained claim content, and `defer` cannot establish lore truth.
 
 ## Intake claims
 
@@ -191,6 +194,35 @@ rewritten. Their summaries remain concise and point to exact intake claims;
 reviews retain full rationale and Git retains exact file changes. A migration
 entry uses `graph-registered` and must not falsely claim that pre-existing lore
 was newly established.
+
+Event authority follows the object and the state actually changed, not merely
+the fact that a history row is administrative metadata. Established canon
+entity content requires `establish-canon`; working or unresolved canon content
+permits `establish-canon` or `working-canon`. Story content follows the same
+content-authority boundary. Design content uses its design-policy authorities,
+and administrative entity content uses `establish-policy`. Policy authority
+may register an existing object, record an owner-path move, or maintain
+graph-only coverage metadata, but it cannot authorize a lore or story content
+change.
+
+History dispositions are action-specific:
+
+| Change type | Required disposition |
+| --- | --- |
+| `graph-registered` | `create` or `update` |
+| `established` | `create` |
+| `relationship-added` | `create`, or `link-only` for a navigation relationship |
+| `claim-added` | `create`; `defer` is also permitted for proposal or question claims |
+| `metadata-changed` or `moved` | `update` |
+| `claim-clarified` | `update`; `defer` is also permitted for proposal or question claims |
+| `superseded` | `update` or `retire` |
+| `retired` | `retire` |
+
+One integration may change more than one independently governed component.
+Each applicable event class is then required. For example, moving an entity
+record while changing its readable content requires both `moved` and
+`metadata-changed` events; a move or lifecycle event cannot conceal a content
+or metadata change.
 
 Base-ref validation compares isolated canonical state for each object. Entity
 state excludes nested relationship, maintained-claim, and history metadata;
@@ -287,7 +319,9 @@ a compatible event, published histories cannot be rewritten, and relationship
 endpoints or type cannot be mutated in place. Owning paths remain mutable: a
 move preserves the earlier event content and appends a controlled `moved`
 event on the relocated record. A generic metadata event cannot stand in for a
-move, lifecycle transition, or bounded claim-content change.
+move, lifecycle transition, or bounded claim-content change. Tombstones cannot
+return to an active lifecycle, event authority must authorize the changed
+state, and compound changes must append every applicable event class.
 
 Structural validation cannot prove semantic correctness. Relationship scope,
 claim meaning, authority, canon equivalence, and story boundaries still require

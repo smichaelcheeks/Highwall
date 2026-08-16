@@ -23,13 +23,18 @@ governed ontology work.
 Provenance policies apply to every schema-v2 relationship and its exact intake
 claims:
 
-| Provenance policy | Permitted completed review authority | Permitted disposition |
+| Provenance policy | Permitted completed review authority | Permitted current-object provenance |
 | --- | --- | --- |
-| `navigation` | `establish-policy`, `establish-canon`, or `working-canon` | `create`, `update`, `link-only`, or `retire` |
-| `semantic-canon` | `establish-canon` | `create`, `update`, `link-only`, or `retire` |
-| `semantic-working` | `establish-canon` or `working-canon` | `create`, `update`, `link-only`, or `retire` |
-| `administrative` | `establish-policy` | `create`, `update`, `link-only`, or `retire` |
+| `navigation` | `establish-policy`, `establish-canon`, or `working-canon` | `create`, `update`, or `link-only`; `retire` only on a tombstone |
+| `semantic-canon` | `establish-canon` | `create` or `update`; `retire` only on a tombstone |
+| `semantic-working` | `establish-canon` or `working-canon` | `create` or `update`; `retire` only on a tombstone |
+| `administrative` | `establish-policy` | `create` or `update`; `retire` only on a tombstone |
 
 Every cited intake claim's target must name the relationship ID. A completed
 review with `no-change`, `defer`, `conflict`, or `out-of-scope` disposition
-cannot establish or change a relationship object.
+cannot establish or change a relationship object. The relationship's history
+event must also match the action: `relationship-added` uses `create` or, for a
+navigation relationship, `link-only`; ordinary modification uses `update`;
+supersession uses `update` or `retire`; and retirement uses `retire`. Current
+provenance is cumulative, but no cited disposition authorizes a different
+action merely because it is permitted elsewhere in that object's history.
