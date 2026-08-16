@@ -38,12 +38,16 @@ record classes may opt in as their migration is reviewed.
 entity_id: entity-highwall
 graph_status: active
 history_coverage: prospective
+supersedes: []
+superseded_by: []
 ```
 
 An entity's `graph_status` is `active`, `superseded`, or `retired`. Retired and
-superseded objects remain indexed as tombstones. A page remains the entity's
-authoritative human-readable surface; the index records its current path and
-metadata without replacing it.
+superseded objects remain indexed as tombstones. Supersession names the earlier
+and later entity IDs in both directions, follows the same lifecycle integrity
+rules as relationships and claims, and may not form a cycle. A page remains the
+entity's authoritative human-readable surface; the index records its current
+path and metadata without replacing it.
 
 ## Relationship records
 
@@ -74,6 +78,7 @@ Every migrated relationship requires:
   [`relationship-types.md`](relationship-types.md);
 - source and target IDs of kinds permitted by that registry row;
 - an explicit lifecycle;
+- the relationship type's controlled provenance policy;
 - review paths and exact immutable intake-claim provenance; and
 - a local history event.
 
@@ -83,9 +88,9 @@ directions of supersession are recorded and the earlier object remains
 addressable.
 
 The registry controls directionality, authority effect, permitted endpoint
-kinds, self-link behavior, and inverse behavior. Validation rejects duplicate
-symmetric pairs, prohibited self-links, and ownership inconsistent with
-directionality.
+kinds, self-link behavior, inverse behavior, and provenance policy. Validation
+rejects duplicate symmetric pairs, prohibited self-links, unauthorized or
+irrelevant provenance, and ownership inconsistent with directionality.
 
 ## Maintained knowledge claims
 
@@ -123,6 +128,12 @@ The generated projection hashes the normalized bounded passage for change
 detection. The hash remains navigation metadata; the bounded Markdown passage
 is authoritative.
 
+Prospective validation includes that content hash in the claim's canonical
+state. Changing bounded content under an existing claim ID therefore requires
+an appended compatible claim-history event. Semantic review must still decide
+whether the change is a wording clarification or a materially different claim
+that requires a new ID and supersession.
+
 Only an assertion needing independent citation, authority, lifecycle,
 contradiction, disclosure, or multi-object scope requires a maintained claim
 ID. Ordinary descriptive prose does not become an atomic claim merely because
@@ -135,6 +146,16 @@ policy, proposal, and question. Authority and lifecycle remain separate.
 The `about` list creates navigation bindings only. It does not assign semantic
 roles, strengthen the bounded assertion, or make it true. Semantic
 relationships to a claim require a separately authorized controlled type.
+
+Exact claim provenance must authorize the maintained result. Established lore
+requires an `establish-canon` review; working lore permits `establish-canon` or
+`working-canon`; design and administrative claims require `establish-policy`;
+and proposal or question claims may use `proposal-only`, `classify`, or
+`establish-policy`. The intake claim must use an authorizing `create`, `update`,
+or `retire` disposition and its target must name the maintained claim ID;
+proposal and question claims may also use `defer`. `no-change`, `link-only`,
+conflict, and out-of-scope claims cannot establish or change maintained claim
+content, and `defer` cannot establish lore truth.
 
 ## Intake claims
 
@@ -171,6 +192,14 @@ reviews retain full rationale and Git retains exact file changes. A migration
 entry uses `graph-registered` and must not falsely claim that pre-existing lore
 was newly established.
 
+Base-ref validation compares isolated canonical state for each object. Entity
+state excludes nested relationship, maintained-claim, and history metadata;
+bounded claim passages are represented by stable claim markers rather than
+their content. Relationship state contains that relationship's metadata, and
+claim state contains its metadata plus its bounded-content hash. Every state or
+owner-path change must append a compatible next event for that object. An older
+event cannot satisfy a later change.
+
 Historical coverage that has not been reconstructed remains explicitly
 provenance-only in the migration ledger. Missing events are not presented as a
 complete changelog.
@@ -185,15 +214,22 @@ is their first event.
 ## Ownership, recursion, and reification
 
 Store an object on the Markdown record that owns its authoritative
-explanation. A directed relationship normally lives on its source entity. A
-symmetric relationship may live on either endpoint. The explicit source and
+explanation. A directed relationship lives on the authoritative record of its
+source object. A symmetric relationship may live on the authoritative record
+of either endpoint. Ownership compares record paths, not an owning page's
+entity ID, so relationships and maintained claims can participate without
+becoming separate entity pages. A record may own explicit knowledge metadata
+without opting the entire page into entity identity. The explicit source and
 target remain traversable without inferring them from storage.
 
-Endpoints may name registered entity, relationship, or maintained claim IDs
-when the controlled relationship type permits those kinds. This allows a
-relationship to be about another relationship or a fact. When a relationship
-develops substantial identity, rules, history, or structure, reify it as an
-entity and connect its participants through simpler relationships.
+Endpoints may name any registered addressable object kind when the controlled
+relationship type permits it. Schema v2 currently recognizes entities,
+relationships, maintained claims, local history events, and immutable intake
+claims as addressable endpoint classes; a registry row may allow only the
+subset appropriate to its meaning. This allows a relationship to be about
+another relationship, fact, or change record. When a relationship develops
+substantial identity, rules, history, or structure, reify it as an entity and
+connect its participants through simpler relationships.
 
 An explicit edge assists discovery but never creates authority. Its type,
 endpoints, scope, and provenance must follow an authorized source.
@@ -208,6 +244,7 @@ endpoints, scope, and provenance must follow an authorized source.
 - maintained knowledge claims and bounded-content hashes;
 - local history events;
 - immutable submissions, reviews, and intake claims needed for traversal;
+- decisions, exception records, and review-owned evidence references;
 - the controlled relationship-type registry;
 - validated endpoint and provenance pointers;
 - legacy `related` links not represented by explicit relationships; and
@@ -239,13 +276,18 @@ navigation-only `related-to` and cannot support a stronger semantic type.
 ## Validation
 
 Repository validation rejects malformed or duplicate identities, uncontrolled
-types, invalid endpoint kinds, unresolved endpoints, prohibited self-links,
-duplicate symmetric pairs, invalid ownership, broken provenance, invalid claim
-boundaries, non-contiguous history, and broken lifecycle or supersession.
+types or provenance policies, invalid endpoint kinds, unresolved endpoints,
+prohibited self-links, duplicate symmetric pairs, invalid ownership,
+unauthorized or irrelevant provenance, invalid claim boundaries,
+non-contiguous or unappended history, and broken lifecycle or supersession.
 
-Prospective validation compares changed objects with a supplied Git base so
-stable IDs cannot disappear or be reused, published histories cannot be
-rewritten, and relationship endpoints or type cannot be mutated in place.
+Prospective validation compares canonical object state with a supplied Git
+base so stable IDs cannot disappear or change kind, every object change appends
+a compatible event, published histories cannot be rewritten, and relationship
+endpoints or type cannot be mutated in place. Owning paths remain mutable: a
+move preserves the earlier event content and appends a controlled `moved`
+event on the relocated record. A generic metadata event cannot stand in for a
+move, lifecycle transition, or bounded claim-content change.
 
 Structural validation cannot prove semantic correctness. Relationship scope,
 claim meaning, authority, canon equivalence, and story boundaries still require

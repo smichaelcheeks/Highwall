@@ -145,6 +145,8 @@ TODO or `None`.
 - [ ] Maintained knowledge claims are distinct from intake claims and bind
       exact prose, lifecycle, subjects, and review-claim provenance.
 - [ ] Every changed schema-v2 object has an appended local history event.
+- [ ] Every schema-v2 provenance claim has authorizing review authority and
+      disposition and names its resulting object ID.
 - [ ] Canon and story information remain separate.
 - [ ] Beliefs and disputed claims are attributed.
 - [ ] No contradiction was silently resolved.

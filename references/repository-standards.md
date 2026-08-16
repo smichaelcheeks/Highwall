@@ -120,7 +120,10 @@ index is navigation-only; its Markdown sources retain authority.
 Every migrated knowledge object maintains append-only local history. A
 materially different relationship or claim receives a new durable ID and
 supersedes or retires the earlier tombstone; published relationship type and
-endpoints, history events, and durable IDs are not rewritten or reused.
+endpoints, history events, and durable IDs are not rewritten or reused. Every
+object change appends a compatible event, and every exact provenance claim
+must have authority and disposition for the result and name its durable object
+ID.
 
 A mechanical change preserves meaning, such as an unambiguous typo,
 formatting, link, equivalent-path, or generated-file repair. Mechanical edits

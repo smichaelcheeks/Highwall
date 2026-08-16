@@ -11,6 +11,8 @@ type: TODO
 entity_id: entity-stable-slug
 graph_status: active
 history_coverage: complete
+supersedes: []
+superseded_by: []
 relationships: []
 claims: []
 history: []
@@ -32,6 +34,8 @@ provenance: []
 | `entity_id` | Yes | Stable graph identity in the form `entity-<slug>` |
 | `graph_status` | Schema-v2 target | Object lifecycle: `active`, `superseded`, or `retired` |
 | `history_coverage` | Schema-v2 target | Local changelog coverage: `provenance-only`, `prospective`, or `complete` |
+| `supersedes` | Schema-v2 target | Earlier entity IDs replaced by this entity |
+| `superseded_by` | Schema-v2 target | Later entity IDs that replace this entity |
 | `relationships` | Yes | Addressable typed graph relationships maintained on this record |
 | `claims` | Schema-v2 target | Decision-worthy maintained knowledge claims owned by this record |
 | `history` | Schema-v2 target | Append-only local changelog entries for objects owned by this record |

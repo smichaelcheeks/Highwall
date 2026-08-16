@@ -24,7 +24,7 @@ class ClaimIndexTests(unittest.TestCase):
 
     def test_valid_fixture_builds_navigation_only_index(self) -> None:
         index = build_index(self.fixture.root)
-        self.assertEqual(3, index["schema_version"])
+        self.assertEqual(4, index["schema_version"])
         self.assertEqual("navigation-only", index["authority"])
         self.assertEqual(CLAIM_ID, index["claims"][0]["claim_id"])
 
@@ -32,6 +32,7 @@ class ClaimIndexTests(unittest.TestCase):
         row = self.fixture.claim_row(
             summary="Synthetic summary.",
             classification="question",
+            evidence="Source record.",
             disposition="out-of-scope",
             target="No change",
             rationale="A rationale that is not indexed.",
@@ -40,6 +41,7 @@ class ClaimIndexTests(unittest.TestCase):
         claim = self.claims()[0]
         self.assertEqual("Synthetic summary.", claim["summary"])
         self.assertEqual("question", claim["classification"])
+        self.assertEqual("Source record.", claim["existing_authority_or_evidence"])
         self.assertEqual("out-of-scope", claim["disposition"])
         self.assertEqual("No change", claim["target"])
 

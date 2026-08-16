@@ -236,7 +236,9 @@ Use one of these values:
    records where required.
 10. Record all changed and deliberately unchanged targets in the review.
 11. Append local history for every schema-v2 entity, relationship, or
-    maintained claim changed by the integration.
+    maintained claim changed by the integration. The event must be the next
+    contiguous event for that object, use a compatible controlled change type,
+    and cite an authorizing intake claim whose target names the object ID.
 12. Run the required consistency tier, link, metadata, contradiction,
     duplication, generated-index, and diff checks.
 13. Add a canon change-log entry for significant canon effects.

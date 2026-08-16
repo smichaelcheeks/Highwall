@@ -18,7 +18,8 @@ explicit instructions. See the
 - Preserve narrative ambiguity when instructed. Do not convert implication, rumor, belief, or reader inference into fact.
 - Record significant canon changes and the decision authorizing them.
 - Keep maintained knowledge-claim IDs distinct from immutable intake-claim
-  IDs, and append local object history when schema-v2 objects change.
+  IDs. Every schema-v2 object change must append a compatible local history
+  event whose exact review claim authorizes and names the changed object.
 - Do not treat external research, prior drafts, or retired ideas as canon.
 
 ## Contribution workflow

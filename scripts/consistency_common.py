@@ -150,6 +150,7 @@ def parse_claim_rows(path: Path) -> list[dict[str, object]]:
                 "classification": cells[2].strip("`"),
                 "authority_basis": cells[3].strip("`"),
                 "supersedes": CLAIM_ID.findall(cells[4]),
+                "existing_authority_or_evidence": cells[5],
                 "disposition": cells[6].strip("`"),
                 "target": cells[7],
             }

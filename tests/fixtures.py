@@ -34,9 +34,9 @@ class FixtureRepository:
         self.write(
             "references/relationship-types.md",
             "# Relationship Types\n\n"
-            "| Type | Directionality | Authority effect | Source kinds | Target kinds | Self-link | Inverse | Definition |\n"
-            "| --- | --- | --- | --- | --- | --- | --- | --- |\n"
-            "| `related-to` | `symmetric` | `navigation-only` | `entity, relationship, claim` | `entity, relationship, claim` | `forbidden` | `related-to` | Synthetic generic association. |\n",
+            "| Type | Directionality | Authority effect | Source kinds | Target kinds | Self-link | Inverse | Provenance policy | Definition |\n"
+            "| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n"
+            "| `related-to` | `symmetric` | `navigation-only` | `entity, relationship, claim` | `entity, relationship, claim` | `forbidden` | `related-to` | `navigation` | Synthetic generic association. |\n",
         )
 
     def cleanup(self) -> None:
@@ -205,10 +205,21 @@ class FixtureRepository:
         relative: str = "development/open-questions/example-question.md",
         *,
         status: str = "open",
+        record_type: str | None = None,
     ) -> Path:
+        if record_type is None:
+            directory_types = {
+                "open-questions": "open-question",
+                "contradictions": "contradiction",
+                "proposals": "proposal",
+                "retired": "retired",
+                "decisions": "decision",
+            }
+            parts = Path(relative).parts
+            record_type = directory_types.get(parts[1], "open-question")
         return self.write(
             relative,
-            f"---\ntitle: Example Question\ntype: open-question\nstatus: {status}\n---\n\n"
+            f"---\ntitle: Example Question\ntype: {record_type}\nstatus: {status}\n---\n\n"
             "# Example Question\n\nSynthetic administrative fixture.\n",
         )
 

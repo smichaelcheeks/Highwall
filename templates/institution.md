@@ -4,6 +4,8 @@ type: institution
 entity_id: TODO
 graph_status: active
 history_coverage: complete
+supersedes: []
+superseded_by: []
 relationships: []
 claims: []
 history: []

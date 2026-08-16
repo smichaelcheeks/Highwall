@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import json
 import re
 from collections.abc import Mapping
 from pathlib import Path
@@ -71,6 +72,7 @@ HISTORY_CHANGE_TYPES = {
     "graph-registered",
     "established",
     "metadata-changed",
+    "moved",
     "claim-added",
     "claim-clarified",
     "relationship-added",
@@ -87,7 +89,14 @@ REVIEW_AUTHORITIES = {
 REGISTRY_DIRECTIONS = {"directed", "symmetric"}
 REGISTRY_AUTHORITY_EFFECTS = {"navigation-only", "semantic"}
 REGISTRY_SELF_LINK_POLICIES = {"allowed", "forbidden"}
-OBJECT_KINDS = {"entity", "relationship", "claim"}
+REGISTRY_PROVENANCE_POLICIES = {
+    "navigation",
+    "semantic-canon",
+    "semantic-working",
+    "administrative",
+}
+OBJECT_KINDS = {"entity", "relationship", "claim", "history", "intake-claim"}
+CHANGE_DISPOSITIONS = {"create", "update", "link-only", "retire"}
 
 
 class GraphValidationError(ValueError):
@@ -112,6 +121,10 @@ def object_kind(object_id: str) -> str:
         return "relationship"
     if object_id.startswith("claim-"):
         return "claim"
+    if object_id.startswith("history-"):
+        return "history"
+    if INTAKE_CLAIM_ID.fullmatch(object_id):
+        return "intake-claim"
     return ""
 
 
@@ -293,7 +306,7 @@ def relationship_type_registry(
     types: dict[str, dict[str, object]] = {}
     for line in path.read_text(encoding="utf-8").splitlines():
         cells = split_markdown_row(line)
-        if len(cells) != 8 or not cells[0].startswith("`"):
+        if len(cells) != 9 or not cells[0].startswith("`"):
             continue
         relationship_type = cells[0].strip("`")
         directionality = cells[1].strip("`")
@@ -302,6 +315,7 @@ def relationship_type_registry(
         target_kinds = parse_kind_set(cells[4].replace("`", ""))
         self_link = cells[5].strip("`")
         inverse = cells[6].strip("`")
+        provenance_policy = cells[7].strip("`")
         if not RELATIONSHIP_TYPE.fullmatch(relationship_type):
             errors.append(f"references/relationship-types.md: invalid type {relationship_type!r}")
             continue
@@ -334,6 +348,19 @@ def relationship_type_registry(
             errors.append(
                 f"references/relationship-types.md: invalid inverse {inverse!r}"
             )
+        if provenance_policy not in REGISTRY_PROVENANCE_POLICIES:
+            errors.append(
+                "references/relationship-types.md: invalid provenance policy "
+                f"{provenance_policy!r}"
+            )
+        if authority_effect == "semantic" and provenance_policy not in {
+            "semantic-canon",
+            "semantic-working",
+        }:
+            errors.append(
+                "references/relationship-types.md: semantic relationship "
+                f"{relationship_type} requires semantic provenance policy"
+            )
         types[relationship_type] = {
             "relationship_type": relationship_type,
             "directionality": directionality,
@@ -342,7 +369,8 @@ def relationship_type_registry(
             "target_kinds": sorted(target_kinds),
             "self_link": self_link,
             "inverse": inverse,
-            "definition": cells[7],
+            "provenance_policy": provenance_policy,
+            "definition": cells[8],
         }
     if not types:
         errors.append("references/relationship-types.md: no controlled types found")
@@ -388,6 +416,47 @@ def claim_content(path: Path, content_id: str) -> tuple[str, str | None]:
     return content, None
 
 
+CLAIM_BLOCK = re.compile(
+    r"<!-- claim:(claim-[a-z0-9]+(?:-[a-z0-9]+)*):start -->.*?"
+    r"<!-- claim:\1:end -->",
+    re.DOTALL,
+)
+
+
+def stable_state_hash(value: object) -> str:
+    """Hash a JSON-normalized object state without generated location data."""
+    payload = json.dumps(
+        value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def markdown_body(path: Path) -> str:
+    """Return normalized Markdown after YAML front matter."""
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    lines = text.splitlines(keepends=True)
+    if not lines or lines[0].rstrip("\n") != "---":
+        return text
+    for index, line in enumerate(lines[1:], start=1):
+        if line.rstrip("\n") == "---":
+            return "".join(lines[index + 1 :])
+    return text
+
+
+def entity_state(metadata: Mapping[str, object], path: Path) -> dict[str, object]:
+    """Return entity-owned state, excluding nested graph objects and histories."""
+    owned_metadata = {
+        str(key): value
+        for key, value in metadata.items()
+        if key not in {"relationships", "claims", "history"}
+    }
+    body = CLAIM_BLOCK.sub(
+        lambda match: f"<!-- maintained-claim:{match.group(1)} -->",
+        markdown_body(path),
+    )
+    return {"metadata": owned_metadata, "body": body}
+
+
 def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object]]]:
     """Collect graph object state without applying current-registry validation."""
     root = root.resolve()
@@ -407,11 +476,20 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
             relative = path.relative_to(root).as_posix()
             entity_id = scalar_text(metadata.get("entity_id"))
             if entity_id:
+                state = entity_state(metadata, path)
                 entities[entity_id] = {
                     "entity_id": entity_id,
                     "path": relative,
+                    "record_type": scalar_text(metadata.get("type")),
                     "graph_status": scalar_text(metadata.get("graph_status")),
                     "history_coverage": scalar_text(metadata.get("history_coverage")),
+                    "supersedes": string_list(
+                        metadata.get("supersedes"), "entity.supersedes", []
+                    ),
+                    "superseded_by": string_list(
+                        metadata.get("superseded_by"), "entity.superseded_by", []
+                    ),
+                    "state_sha256": stable_state_hash(state),
                 }
             parsed_relationships, _ = parse_relationships(path)
             for relationship in parsed_relationships:
@@ -419,13 +497,25 @@ def collect_object_snapshots(root: Path) -> dict[str, dict[str, dict[str, object
                 if relationship_id:
                     relationships[relationship_id] = {
                         **relationship,
+                        "state_sha256": stable_state_hash(relationship),
                         "authoritative_record": relative,
                     }
             parsed_claims, _ = parse_knowledge_claims(path)
             for claim in parsed_claims:
                 claim_id = str(claim["claim_id"])
                 if claim_id:
-                    claims[claim_id] = {**claim, "authoritative_record": relative}
+                    content, content_error = claim_content(path, str(claim["content_id"]))
+                    content_hash = (
+                        ""
+                        if content_error
+                        else hashlib.sha256(content.encode("utf-8")).hexdigest()
+                    )
+                    claim_state = {**claim, "content_sha256": content_hash}
+                    claims[claim_id] = {
+                        **claim_state,
+                        "state_sha256": stable_state_hash(claim_state),
+                        "authoritative_record": relative,
+                    }
             parsed_histories, _ = parse_histories(path)
             for history in parsed_histories:
                 history_id = str(history["history_id"])
@@ -496,6 +586,72 @@ def build_review_objects(
     return submissions, reviews, intake_claims
 
 
+def build_development_objects(
+    root: Path, intake_claims: list[dict[str, object]], errors: list[str]
+) -> tuple[list[dict[str, object]], list[dict[str, object]], list[dict[str, str]]]:
+    """Project decisions, exception records, and review-owned evidence references."""
+
+    def records(directory: str, expected_types: set[str]) -> list[dict[str, object]]:
+        projected: list[dict[str, object]] = []
+        record_root = root / "development" / directory
+        if not record_root.is_dir():
+            return projected
+        for path in sorted(record_root.glob("*.md")):
+            if path.name == "README.md":
+                continue
+            try:
+                metadata = parse_front_matter_data(path)
+            except ValueError as error:
+                errors.append(f"{path.relative_to(root).as_posix()}: {error}")
+                continue
+            record_type = scalar_text(metadata.get("type"))
+            if record_type not in expected_types:
+                errors.append(
+                    f"{path.relative_to(root).as_posix()}: invalid projected record type "
+                    f"{record_type!r}"
+                )
+            related_errors: list[str] = []
+            projected.append(
+                {
+                    "path": path.relative_to(root).as_posix(),
+                    "record_type": record_type,
+                    "title": scalar_text(metadata.get("title")),
+                    "status": scalar_text(metadata.get("status")),
+                    "related": string_list(
+                        metadata.get("related"), "related", related_errors
+                    ),
+                }
+            )
+            errors.extend(
+                f"{path.relative_to(root).as_posix()}: {error}"
+                for error in related_errors
+            )
+        return projected
+
+    decisions = records("decisions", {"decision"})
+    exceptions: list[dict[str, object]] = []
+    for directory, expected in (
+        ("open-questions", {"open-question"}),
+        ("contradictions", {"contradiction"}),
+        ("proposals", {"proposal"}),
+        ("retired", {"retired"}),
+    ):
+        exceptions.extend(records(directory, expected))
+    exceptions.sort(key=lambda item: str(item["path"]))
+
+    evidence_references = [
+        {
+            "claim_id": str(claim["claim_id"]),
+            "review": str(claim["review"]),
+            "evidence": str(claim["existing_authority_or_evidence"]),
+        }
+        for claim in intake_claims
+        if str(claim.get("existing_authority_or_evidence", "")).strip()
+    ]
+    evidence_references.sort(key=lambda item: item["claim_id"])
+    return decisions, exceptions, evidence_references
+
+
 def validate_review_provenance(
     *,
     root: Path,
@@ -506,6 +662,9 @@ def validate_review_provenance(
     intake_claims_by_id: dict[str, dict[str, object]],
     errors: list[str],
     require_review_claims: bool,
+    object_id: str,
+    allowed_authorities: set[str],
+    allowed_dispositions: set[str],
 ) -> None:
     reviews = provenance["reviews"]
     review_claims = provenance["review_claims"]
@@ -541,6 +700,62 @@ def validate_review_provenance(
         review = reviews_by_path.get(review_path)
         if review and review["status"] != "complete":
             errors.append(f"{label} cites review claim {claim_id} from an incomplete review")
+        if not require_review_claims:
+            continue
+        review_authority = str(claim.get("review_authority", ""))
+        if review_authority not in allowed_authorities:
+            errors.append(
+                f"{label} review claim {claim_id} has unauthorized review authority "
+                f"{review_authority!r}"
+            )
+        disposition = str(claim.get("disposition", ""))
+        if disposition not in allowed_dispositions:
+            errors.append(
+                f"{label} review claim {claim_id} has non-authorizing disposition "
+                f"{disposition!r}"
+            )
+        if not target_names_object(claim.get("target", ""), object_id):
+            errors.append(
+                f"{label} review claim {claim_id} target does not name {object_id}"
+            )
+
+
+def relationship_provenance_authorities(policy: str) -> set[str]:
+    return {
+        "navigation": {"establish-policy", "establish-canon", "working-canon"},
+        "semantic-canon": {"establish-canon"},
+        "semantic-working": {"establish-canon", "working-canon"},
+        "administrative": {"establish-policy"},
+    }.get(policy, set())
+
+
+def claim_provenance_authorities(claim: Mapping[str, object]) -> set[str]:
+    truth_kind = str(claim.get("truth_kind", ""))
+    authority_level = str(claim.get("authority_level", ""))
+    if truth_kind in {"design", "administrative"}:
+        return {"establish-policy"}
+    if truth_kind in {"proposal", "question"}:
+        return {"proposal-only", "classify", "establish-policy"}
+    if authority_level == "established":
+        return {"establish-canon"}
+    if authority_level == "working":
+        return {"establish-canon", "working-canon"}
+    return {"establish-canon", "working-canon", "classify"}
+
+
+def claim_provenance_dispositions(claim: Mapping[str, object]) -> set[str]:
+    if str(claim.get("truth_kind", "")) in {"proposal", "question"}:
+        return {"create", "update", "defer", "retire"}
+    return {"create", "update", "retire"}
+
+
+def target_names_object(target: object, object_id: str) -> bool:
+    return bool(
+        re.search(
+            rf"(?<![A-Za-z0-9-]){re.escape(object_id)}(?![A-Za-z0-9-])",
+            str(target),
+        )
+    )
 
 
 def build_graph_data(root: Path) -> dict[str, object]:
@@ -548,6 +763,9 @@ def build_graph_data(root: Path) -> dict[str, object]:
     root = root.resolve()
     relationship_types, errors = relationship_type_registry(root)
     submissions, reviews, intake_claims = build_review_objects(root, errors)
+    decisions, exceptions, evidence_references = build_development_objects(
+        root, intake_claims, errors
+    )
     reviews_by_path = {
         (root / str(review["path"])).resolve(): review for review in reviews
     }
@@ -587,48 +805,60 @@ def build_graph_data(root: Path) -> dict[str, object]:
         errors.extend(f"{relative}: {error}" for error in history_errors)
 
         entity_id = scalar_text(metadata.get("entity_id"))
-        if not entity_id:
-            if parsed_relationships or parsed_claims or parsed_histories:
-                errors.append(f"{relative}: knowledge metadata requires entity_id")
-            continue
-        if not ENTITY_ID.fullmatch(entity_id):
-            errors.append(f"{relative}: invalid entity_id {entity_id!r}")
-            continue
-        if entity_id in entity_sources:
-            errors.append(
-                f"{relative}: duplicate entity_id {entity_id}; first used by "
-                f"{entity_sources[entity_id].relative_to(root).as_posix()}"
-            )
-            continue
-        entity_sources[entity_id] = path
-        path_to_entity[path.resolve()] = entity_id
-        graph_status = scalar_text(metadata.get("graph_status"))
-        if graph_status and graph_status not in GRAPH_STATUSES:
-            errors.append(f"{relative}: invalid graph_status {graph_status!r}")
-        history_coverage = scalar_text(metadata.get("history_coverage"))
-        if graph_status and history_coverage not in HISTORY_COVERAGE_VALUES:
-            errors.append(
-                f"{relative}: schema-v2 entity has invalid history_coverage "
-                f"{history_coverage!r}"
-            )
-        aliases = string_list(metadata.get("aliases", []), "aliases", errors)
-        related = string_list(metadata.get("related", []), "related", errors)
-        provenance = string_list(metadata.get("provenance", []), "provenance", errors)
-        entities.append(
-            {
-                "entity_id": entity_id,
-                "path": relative,
-                "title": scalar_text(metadata.get("title")),
-                "record_type": scalar_text(metadata.get("type")),
-                "status": scalar_text(metadata.get("status")),
-                "canon_level": scalar_text(metadata.get("canon_level")),
-                "graph_status": graph_status,
-                "history_coverage": history_coverage,
-                "aliases": aliases,
-                "provenance": provenance,
-            }
-        )
-        entity_related.append((path, entity_id, related))
+        if entity_id:
+            if not ENTITY_ID.fullmatch(entity_id):
+                errors.append(f"{relative}: invalid entity_id {entity_id!r}")
+            elif entity_id in entity_sources:
+                errors.append(
+                    f"{relative}: duplicate entity_id {entity_id}; first used by "
+                    f"{entity_sources[entity_id].relative_to(root).as_posix()}"
+                )
+            else:
+                entity_sources[entity_id] = path
+                path_to_entity[path.resolve()] = entity_id
+                graph_status = scalar_text(metadata.get("graph_status"))
+                if graph_status and graph_status not in GRAPH_STATUSES:
+                    errors.append(f"{relative}: invalid graph_status {graph_status!r}")
+                history_coverage = scalar_text(metadata.get("history_coverage"))
+                if graph_status and history_coverage not in HISTORY_COVERAGE_VALUES:
+                    errors.append(
+                        f"{relative}: schema-v2 entity has invalid history_coverage "
+                        f"{history_coverage!r}"
+                    )
+                if graph_status:
+                    for field in ("claims", "history", "supersedes", "superseded_by"):
+                        if field not in metadata:
+                            errors.append(
+                                f"{relative}: schema-v2 entity lacks {field} field"
+                            )
+                aliases = string_list(metadata.get("aliases", []), "aliases", errors)
+                related = string_list(metadata.get("related", []), "related", errors)
+                provenance = string_list(
+                    metadata.get("provenance", []), "provenance", errors
+                )
+                supersedes = string_list(
+                    metadata.get("supersedes"), "entity.supersedes", errors
+                )
+                superseded_by = string_list(
+                    metadata.get("superseded_by"), "entity.superseded_by", errors
+                )
+                entities.append(
+                    {
+                        "entity_id": entity_id,
+                        "path": relative,
+                        "title": scalar_text(metadata.get("title")),
+                        "record_type": scalar_text(metadata.get("type")),
+                        "status": scalar_text(metadata.get("status")),
+                        "canon_level": scalar_text(metadata.get("canon_level")),
+                        "graph_status": graph_status,
+                        "history_coverage": history_coverage,
+                        "supersedes": supersedes,
+                        "superseded_by": superseded_by,
+                        "aliases": aliases,
+                        "provenance": provenance,
+                    }
+                )
+                entity_related.append((path, entity_id, related))
 
         for relationship in parsed_relationships:
             relationship_id = str(relationship["relationship_id"])
@@ -684,8 +914,24 @@ def build_graph_data(root: Path) -> dict[str, object]:
             history_sources[history_id] = path
             histories.append({**history, "authoritative_record": relative})
 
-    known_endpoints = set(entity_sources) | set(relationship_sources) | set(claim_sources)
-    known_sources = {**entity_sources, **relationship_sources, **claim_sources}
+    intake_claim_sources = {
+        claim_id: root / str(claim["review"])
+        for claim_id, claim in intake_claims_by_id.items()
+    }
+    known_endpoints = (
+        set(entity_sources)
+        | set(relationship_sources)
+        | set(claim_sources)
+        | set(history_sources)
+        | set(intake_claim_sources)
+    )
+    known_sources = {
+        **entity_sources,
+        **relationship_sources,
+        **claim_sources,
+        **history_sources,
+        **intake_claim_sources,
+    }
 
     symmetric_pairs: dict[tuple[str, frozenset[str]], str] = {}
     for relationship in relationships:
@@ -711,12 +957,22 @@ def build_graph_data(root: Path) -> dict[str, object]:
                 errors.append(f"{label} disallows target kind {target_kind!r}")
             if source == target and registry["self_link"] == "forbidden":
                 errors.append(f"{label} is a forbidden self-link")
-            owner_entity = path_to_entity.get(owner.resolve())
+            source_owner = known_sources.get(source)
+            target_owner = known_sources.get(target)
             if registry["directionality"] == "directed":
-                if owner_entity and owner_entity != source:
-                    errors.append(f"{label} owner entity does not match source")
-            elif owner_entity and owner_entity not in {source, target}:
-                errors.append(f"{label} owner entity is not a symmetric endpoint")
+                if source_owner is not None and owner.resolve() != source_owner.resolve():
+                    errors.append(
+                        f"{label} is not stored on its source object's authoritative record"
+                    )
+            elif (
+                source_owner is not None
+                and target_owner is not None
+                and owner.resolve()
+                not in {source_owner.resolve(), target_owner.resolve()}
+            ):
+                errors.append(
+                    f"{label} is not stored on a symmetric endpoint's authoritative record"
+                )
             if registry["directionality"] == "symmetric":
                 key = (relationship_type, frozenset((source, target)))
                 prior = symmetric_pairs.get(key)
@@ -740,6 +996,11 @@ def build_graph_data(root: Path) -> dict[str, object]:
             intake_claims_by_id=intake_claims_by_id,
             errors=errors,
             require_review_claims=bool(graph_status),
+            object_id=relationship_id,
+            allowed_authorities=relationship_provenance_authorities(
+                str(registry["provenance_policy"]) if registry else ""
+            ),
+            allowed_dispositions={"create", "update", "link-only", "retire"},
         )
 
     for claim in knowledge_claims:
@@ -775,8 +1036,14 @@ def build_graph_data(root: Path) -> dict[str, object]:
             intake_claims_by_id=intake_claims_by_id,
             errors=errors,
             require_review_claims=True,
+            object_id=claim_id,
+            allowed_authorities=claim_provenance_authorities(claim),
+            allowed_dispositions=claim_provenance_dispositions(claim),
         )
 
+    knowledge_claims_by_id = {
+        str(item["claim_id"]): item for item in knowledge_claims
+    }
     history_by_object: dict[str, list[dict[str, object]]] = {}
     for history in histories:
         history_id = str(history["history_id"])
@@ -804,6 +1071,29 @@ def build_graph_data(root: Path) -> dict[str, object]:
             review = reviews_by_path.get(review_path)
             if review and review["status"] != "complete":
                 errors.append(f"{label} cites review claim from an incomplete review")
+            review_authority = str(claim.get("review_authority", ""))
+            if review_authority not in REVIEW_AUTHORITIES:
+                errors.append(
+                    f"{label} cites review claim with invalid authority "
+                    f"{review_authority!r}"
+                )
+            disposition = str(claim.get("disposition", ""))
+            allowed_history_dispositions = set(CHANGE_DISPOSITIONS)
+            maintained_claim = knowledge_claims_by_id.get(object_id)
+            if maintained_claim and maintained_claim["truth_kind"] in {
+                "proposal",
+                "question",
+            }:
+                allowed_history_dispositions.add("defer")
+            if disposition not in allowed_history_dispositions:
+                errors.append(
+                    f"{label} cites non-authorizing disposition {disposition!r}"
+                )
+            if not target_names_object(claim.get("target", ""), object_id):
+                errors.append(
+                    f"{label} review claim {review_claim} target does not name "
+                    f"{object_id}"
+                )
         history_by_object.setdefault(object_id, []).append(history)
 
     for object_id, object_histories in history_by_object.items():
@@ -815,27 +1105,89 @@ def build_graph_data(root: Path) -> dict[str, object]:
                 f"history for {object_id} has non-contiguous sequences {sequences}"
             )
 
-    for collection in (relationships, knowledge_claims):
-        by_id = {
-            str(item.get("relationship_id") or item.get("claim_id")): item
-            for item in collection
-        }
+    for entity in entities:
+        entity_id = str(entity["entity_id"])
+        if entity["graph_status"] and entity_id not in history_by_object:
+            errors.append(f"{entity['path']}: schema-v2 entity {entity_id} has no local history")
+    for relationship in relationships:
+        relationship_id = str(relationship["relationship_id"])
+        if relationship["graph_status"] and relationship_id not in history_by_object:
+            errors.append(
+                f"{relationship['authoritative_record']}: schema-v2 relationship "
+                f"{relationship_id} has no local history"
+            )
+    for claim in knowledge_claims:
+        claim_id = str(claim["claim_id"])
+        if claim_id not in history_by_object:
+            errors.append(
+                f"{claim['authoritative_record']}: maintained claim {claim_id} has no local history"
+            )
+
+    lifecycle_collections = (
+        (entities, "entity_id", "graph_status"),
+        (relationships, "relationship_id", "graph_status"),
+        (knowledge_claims, "claim_id", "lifecycle"),
+    )
+    for collection, id_field, lifecycle_field in lifecycle_collections:
+        by_id = {str(item[id_field]): item for item in collection}
+        supersession_edges: dict[str, list[str]] = {}
         for object_id, item in by_id.items():
-            lifecycle = str(item.get("graph_status") or item.get("lifecycle"))
+            lifecycle = str(item.get(lifecycle_field, ""))
             supersedes = list(item["supersedes"])
             superseded_by = list(item["superseded_by"])
+            supersession_edges[object_id] = supersedes
+            if len(supersedes) != len(set(supersedes)):
+                errors.append(f"{object_id} contains duplicate supersedes links")
+            if len(superseded_by) != len(set(superseded_by)):
+                errors.append(f"{object_id} contains duplicate superseded_by links")
+            if object_id in supersedes or object_id in superseded_by:
+                errors.append(f"{object_id} cannot supersede itself")
+            if lifecycle in {"active", "retired"} and superseded_by:
+                errors.append(
+                    f"{object_id} is {lifecycle} but has superseded_by replacements"
+                )
+            if lifecycle == "superseded" and not superseded_by:
+                errors.append(f"{object_id} is superseded without a replacement")
             for earlier in supersedes:
                 if earlier not in by_id:
                     errors.append(f"{object_id} supersedes missing object {earlier}")
-                elif object_id not in by_id[earlier]["superseded_by"]:
+                    continue
+                if object_id not in by_id[earlier]["superseded_by"]:
                     errors.append(f"{object_id} supersession lacks reverse link from {earlier}")
+                earlier_lifecycle = str(by_id[earlier].get(lifecycle_field, ""))
+                if earlier_lifecycle and earlier_lifecycle != "superseded":
+                    errors.append(
+                        f"{object_id} supersedes {earlier} but its lifecycle is "
+                        f"{earlier_lifecycle!r}"
+                    )
             for later in superseded_by:
                 if later not in by_id:
                     errors.append(f"{object_id} has missing superseded_by object {later}")
-                elif object_id not in by_id[later]["supersedes"]:
+                    continue
+                if object_id not in by_id[later]["supersedes"]:
                     errors.append(f"{object_id} superseded_by lacks reverse link from {later}")
-            if lifecycle == "superseded" and not superseded_by:
-                errors.append(f"{object_id} is superseded without a replacement")
+                later_lifecycle = str(by_id[later].get(lifecycle_field, ""))
+                if later_lifecycle == "retired":
+                    errors.append(f"{object_id} has retired replacement {later}")
+
+        visiting: set[str] = set()
+        visited: set[str] = set()
+
+        def visit(object_id: str) -> None:
+            if object_id in visiting:
+                errors.append(f"{object_id} participates in a supersession cycle")
+                return
+            if object_id in visited:
+                return
+            visiting.add(object_id)
+            for earlier in supersession_edges.get(object_id, []):
+                if earlier in by_id:
+                    visit(earlier)
+            visiting.remove(object_id)
+            visited.add(object_id)
+
+        for object_id in sorted(by_id):
+            visit(object_id)
 
     explicit_related_pairs = {
         frozenset((str(item["source"]), str(item["target"])))
@@ -873,9 +1225,6 @@ def build_graph_data(root: Path) -> dict[str, object]:
         for claim in knowledge_claims
         for claim_id in claim["provenance"]["review_claims"]
     }
-    intake_claim_registry = {
-        str(item["claim_id"]): str(item["review"]) for item in intake_claims
-    }
     return {
         "schema_version": 2,
         "authority": "navigation-only",
@@ -889,7 +1238,10 @@ def build_graph_data(root: Path) -> dict[str, object]:
         "histories": histories,
         "submissions": submissions,
         "reviews": reviews,
-        "intake_claims": intake_claim_registry,
+        "intake_claims": intake_claims,
+        "decisions": decisions,
+        "exceptions": exceptions,
+        "evidence_references": evidence_references,
         "migration_inventory": {
             "entities_without_graph_status": sorted(
                 str(item["entity_id"]) for item in entities if not item["graph_status"]
@@ -923,6 +1275,16 @@ def build_graph_data(root: Path) -> dict[str, object]:
                 str(item["relationship_id"])
                 for item in relationships
                 if not item["provenance"]["review_claims"]
+            ),
+            "knowledge_claims_without_history": sorted(
+                str(item["claim_id"])
+                for item in knowledge_claims
+                if str(item["claim_id"]) not in history_by_object
+            ),
+            "knowledge_claims_without_history_coverage": sorted(
+                str(item["claim_id"])
+                for item in knowledge_claims
+                if not item["history_coverage"]
             ),
             "intake_claims_without_knowledge_claim_reference": sorted(
                 str(item["claim_id"])

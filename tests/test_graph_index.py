@@ -200,14 +200,27 @@ class GraphIndexTests(unittest.TestCase):
             encoding="utf-8",
         )
         self.relationship_page(source="entity-second-place", target="entity-third-place")
-        with self.assertRaisesRegex(GraphValidationError, "owner entity is not a symmetric endpoint"):
+        with self.assertRaisesRegex(
+            GraphValidationError, "not stored on a symmetric endpoint's authoritative record"
+        ):
             build_graph_data(self.fixture.root)
 
     def test_maintained_claim_has_bounded_content_and_exact_provenance(self) -> None:
+        self.fixture.review(
+            authority="establish-canon",
+            claims=[
+                self.fixture.claim_row(
+                    disposition="update",
+                    target="entity-example-place claim-example-place-exists",
+                )
+            ],
+        )
         page = self.fixture.root / "canon/places/example-place.md"
         text = page.read_text(encoding="utf-8")
         claims = f"""graph_status: active
 history_coverage: complete
+supersedes: []
+superseded_by: []
 relationships:
   - relationship_id: relationship-example-related-to-claim
     relationship_type: related-to
@@ -290,6 +303,152 @@ Synthetic maintained assertion.
             encoding="utf-8",
         )
         with self.assertRaisesRegex(GraphValidationError, "matching start and end marker"):
+            build_graph_data(self.fixture.root)
+
+    def test_established_claim_rejects_policy_review_authority(self) -> None:
+        self.fixture.review(
+            authority="establish-policy",
+            claims=[
+                self.fixture.claim_row(
+                    disposition="update", target="claim-example-place-policy-backed"
+                )
+            ],
+        )
+        page = self.fixture.root / "canon/places/example-place.md"
+        text = page.read_text(encoding="utf-8")
+        metadata = f"""relationships: []
+claims:
+  - claim_id: claim-example-place-policy-backed
+    content_id: claim-example-place-policy-backed
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-example-place
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+history:
+  - history_id: history-example-policy-backed-claim-001
+    sequence: 1
+    object_id: claim-example-place-policy-backed
+    change_type: claim-added
+    review_claims:
+      - {CLAIM_ID}
+    summary: Added a deliberately unauthorized fixture claim.
+"""
+        body = """<!-- claim:claim-example-place-policy-backed:start -->
+Synthetic policy-backed assertion.
+<!-- claim:claim-example-place-policy-backed:end -->"""
+        page.write_text(
+            text.replace("relationships: []\n", metadata).replace(
+                "Synthetic administrative fixture.", body
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "unauthorized review authority"):
+            build_graph_data(self.fixture.root)
+
+    def test_projection_contains_full_intake_and_development_objects(self) -> None:
+        self.fixture.development_record(
+            "development/decisions/example-decision.md", status="accepted"
+        )
+        self.fixture.development_record(
+            "development/open-questions/example-question.md", status="open"
+        )
+        graph = build_graph_data(self.fixture.root)
+        self.assertIsInstance(graph["intake_claims"], list)
+        self.assertEqual("no-change", graph["intake_claims"][0]["disposition"])
+        self.assertEqual("Synthetic fixture.", graph["intake_claims"][0]["existing_authority_or_evidence"])
+        self.assertEqual("decision", graph["decisions"][0]["record_type"])
+        self.assertEqual("open-question", graph["exceptions"][0]["record_type"])
+        self.assertEqual(CLAIM_ID, graph["evidence_references"][0]["claim_id"])
+
+    def test_registry_requires_controlled_provenance_policy(self) -> None:
+        registry = self.fixture.root / "references/relationship-types.md"
+        registry.write_text(
+            registry.read_text(encoding="utf-8").replace(
+                "| `navigation` |", "| `invalid-policy` |"
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "invalid provenance policy"):
+            build_graph_data(self.fixture.root)
+
+    def test_relationship_pair_can_be_owned_by_shared_object_record(self) -> None:
+        self.second_entity()
+        self.fixture.canon_page("canon/places/third-place.md", title="Third Place")
+        third = self.fixture.root / "canon/places/third-place.md"
+        third.write_text(
+            third.read_text(encoding="utf-8").replace(
+                "entity-example-place", "entity-third-place"
+            ),
+            encoding="utf-8",
+        )
+        page = self.fixture.root / "canon/places/example-place.md"
+        relationships = """relationships:
+  - relationship_id: relationship-example-to-second
+    relationship_type: related-to
+    source: entity-example-place
+    target: entity-second-place
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+  - relationship_id: relationship-example-to-third
+    relationship_type: related-to
+    source: entity-example-place
+    target: entity-third-place
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+  - relationship_id: relationship-first-related-to-second-relationship
+    relationship_type: related-to
+    source: relationship-example-to-second
+    target: relationship-example-to-third
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "relationships: []\n", relationships
+            ),
+            encoding="utf-8",
+        )
+        graph = build_graph_data(self.fixture.root)
+        self.assertEqual(3, len(graph["relationships"]))
+
+    def test_superseded_entity_requires_replacement(self) -> None:
+        self.fixture.review(
+            claims=[
+                self.fixture.claim_row(
+                    disposition="update", target="entity-example-place"
+                )
+            ]
+        )
+        page = self.fixture.root / "canon/places/example-place.md"
+        schema = f"""graph_status: superseded
+history_coverage: complete
+supersedes: []
+superseded_by: []
+relationships: []
+claims: []
+history:
+  - history_id: history-example-superseded-entity-001
+    sequence: 1
+    object_id: entity-example-place
+    change_type: superseded
+    review_claims:
+      - {CLAIM_ID}
+    summary: Superseded the fixture entity.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace("relationships: []\n", schema),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "superseded without a replacement"):
             build_graph_data(self.fixture.root)
 
 
