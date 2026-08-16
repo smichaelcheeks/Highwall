@@ -2,7 +2,11 @@
 title: TODO
 type: culture
 entity_id: TODO
+graph_status: active
+history_coverage: complete
 relationships: []
+claims: []
+history: []
 status: draft
 canon_level: working
 aliases: []

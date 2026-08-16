@@ -34,9 +34,9 @@ class FixtureRepository:
         self.write(
             "references/relationship-types.md",
             "# Relationship Types\n\n"
-            "| Type | Direction | Semantics | Definition |\n"
-            "| --- | --- | --- | --- |\n"
-            "| `related-to` | symmetric | navigation-only | Synthetic generic association. |\n",
+            "| Type | Directionality | Authority effect | Source kinds | Target kinds | Self-link | Inverse | Definition |\n"
+            "| --- | --- | --- | --- | --- | --- | --- | --- |\n"
+            "| `related-to` | `symmetric` | `navigation-only` | `entity, relationship, claim` | `entity, relationship, claim` | `forbidden` | `related-to` | Synthetic generic association. |\n",
         )
 
     def cleanup(self) -> None:

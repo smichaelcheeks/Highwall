@@ -10,6 +10,8 @@
       ],
       "canon_level": "working",
       "entity_id": "entity-arbiter",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/government/arbiter.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
@@ -25,6 +27,8 @@
       ],
       "canon_level": "working",
       "entity_id": "entity-council-of-highwall",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/government/council.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
@@ -38,6 +42,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-delta",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/delta.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
@@ -50,6 +56,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-forge",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/forge.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
@@ -63,6 +71,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-highwall",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
@@ -85,6 +95,8 @@
       "aliases": [],
       "canon_level": "working",
       "entity_id": "entity-highwall-civic-government",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/government/highwall-civic-government.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
@@ -98,6 +110,8 @@
       "aliases": [],
       "canon_level": "working",
       "entity_id": "entity-highwall-governmental-continuity",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/history/highwall-governmental-continuity.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md"
@@ -110,6 +124,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-highwall-region-climate",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall-region-climate.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
@@ -123,6 +139,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-highwall-region-ecology",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall-region-ecology.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-07-regional-ecology-s01-review.md"
@@ -135,6 +153,8 @@
       "aliases": [],
       "canon_level": "working",
       "entity_id": "entity-highwall-region-flora-and-fauna",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall-region-flora-and-fauna.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
@@ -148,6 +168,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-highwall-region-geology",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall-region-geology.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
@@ -162,6 +184,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-highwall-region-hydrology",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/highwall-region-hydrology.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
@@ -177,6 +201,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-ledger",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/ledger.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md"
@@ -189,6 +215,8 @@
       "aliases": [],
       "canon_level": "working",
       "entity_id": "entity-professional-civic-institutions",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/institutions/professional-civic-institutions.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
@@ -202,6 +230,8 @@
       "aliases": [],
       "canon_level": "",
       "entity_id": "entity-regional-imperial-relationship-reveal",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "story/reveals/regional-imperial-relationship.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
@@ -215,6 +245,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-regional-imperial-structure",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/government/regional-imperial-structure.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md"
@@ -227,6 +259,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-regional-trade-system",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/economy/regional-trade-system.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
@@ -241,6 +275,8 @@
       "aliases": [],
       "canon_level": "working",
       "entity_id": "entity-storm-marshal",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/government/storm-marshal.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
@@ -254,6 +290,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-stormlands",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/stormlands.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
@@ -267,6 +305,8 @@
       "aliases": [],
       "canon_level": "established",
       "entity_id": "entity-upriver-highlands",
+      "graph_status": "",
+      "history_coverage": "",
       "path": "canon/places/upriver-highlands.md",
       "provenance": [
         "../../development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
@@ -278,527 +318,2670 @@
       "title": "Upriver Highlands"
     }
   ],
-  "generated_from": "Markdown records with explicit graph metadata",
+  "generated_from": "Markdown records with explicit knowledge-object metadata",
+  "histories": [],
+  "intake_claims": {
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C001": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C002": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C003": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C004": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C001": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C002": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C003": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C001": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C002": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C003": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
+    "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C004": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C001": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C002": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C003": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C004": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C001": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C002": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C003": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C004": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C005": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C006": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C001": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C002": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C003": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C001": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C002": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C003": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C004": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C005": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C006": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02-C001": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
+    "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02-C002": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C001": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C002": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C003": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C004": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C005": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C001": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C002": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C003": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C004": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C005": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C006": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C007": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C008": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01-C001": "development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C001": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C002": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C003": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C001": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C002": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C003": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C004": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C005": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C006": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C007": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C008": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C009": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C010": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C011": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C012": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C013": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C014": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C015": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C016": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C017": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C018": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C019": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C020": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C021": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C022": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C023": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C024": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C025": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C026": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+    "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C001": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
+    "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C002": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
+    "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C003": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C001": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C002": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C003": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C004": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C005": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C006": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C007": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01-C001": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01-C002": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C001": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C002": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C003": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
+    "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C004": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C001": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C002": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C003": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C004": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C005": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C006": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C007": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C008": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C009": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C010": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C011": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C012": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C013": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C014": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C015": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C016": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C017": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02-C001": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02-C002": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C001": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C002": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C003": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C001": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C002": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C003": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C004": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C005": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C006": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C007": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C008": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C009": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C010": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C011": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C012": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C013": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C014": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C015": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C016": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C017": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C018": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C019": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C020": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C021": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C022": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C023": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C024": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C025": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C026": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C027": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C028": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C029": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C001": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C002": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C003": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C004": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C005": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C006": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C007": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C008": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C009": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C010": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C011": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C012": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C013": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C014": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C015": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C016": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C017": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C018": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C019": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C020": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C021": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C022": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C023": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C024": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C025": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C026": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C027": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C028": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C029": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C001": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C002": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C003": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C004": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C005": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C006": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C007": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C008": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C001": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C002": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C001": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C002": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C003": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C004": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C005": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C006": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C007": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C008": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C009": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C010": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C011": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C012": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C013": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C014": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C015": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C016": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C017": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C018": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C019": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C020": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C021": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C022": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C023": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C024": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C025": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C001": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C002": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C003": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02-C001": "development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C001": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C002": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C003": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C004": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C005": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C006": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C007": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C008": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C009": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C010": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C011": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C012": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C013": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C014": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C015": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C016": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C017": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C018": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C019": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C020": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C021": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C022": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C023": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C024": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C025": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C001": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C002": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C003": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C004": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C005": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C006": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C007": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C008": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C001": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C002": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C003": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C004": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C005": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C006": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C007": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C008": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C009": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C010": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C011": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C012": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C013": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C014": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C001": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C002": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C003": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C004": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C005": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C006": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C007": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C008": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C009": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C010": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C011": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C012": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C013": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C014": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C015": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C016": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C017": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C001": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C002": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C003": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C004": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C005": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C006": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C007": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C008": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C009": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C010": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C011": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C012": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C013": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C014": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C015": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C016": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C017": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C018": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C001": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C002": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C003": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C004": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C005": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C006": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C007": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C008": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C009": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C010": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C011": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C012": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C013": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C014": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C015": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C016": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C017": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C018": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C019": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C020": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C021": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C022": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C023": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C024": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C025": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C026": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C027": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C028": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C029": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C030": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C031": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C032": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C033": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C034": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C035": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C036": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C037": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C038": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C039": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C040": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C041": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C042": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C043": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C044": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C045": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C046": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C047": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C048": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C049": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C050": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C051": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C052": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C053": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C054": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C055": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C056": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C057": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C058": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C059": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C060": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C061": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C062": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C063": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C064": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C001": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C002": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C003": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C004": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C005": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C006": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C007": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C008": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C009": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C010": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C011": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C012": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C013": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C014": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C015": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C016": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C017": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C018": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C019": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C020": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C021": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C001": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C002": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C003": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C004": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C005": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C006": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C007": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C008": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C009": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C010": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C011": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C012": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C013": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+    "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
+    "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C001": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C002": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C003": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C004": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C005": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C006": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C007": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C008": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C009": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C010": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C011": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+    "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C001": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+    "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C002": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+    "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C003": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+    "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C004": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+    "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
+    "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
+    "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
+    "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C001": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
+    "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C002": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C002": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C003": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C004": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C005": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C006": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C007": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+    "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C008": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md"
+  },
+  "knowledge_claims": [],
+  "migration_inventory": {
+    "entities_without_graph_status": [
+      "entity-arbiter",
+      "entity-council-of-highwall",
+      "entity-delta",
+      "entity-forge",
+      "entity-highwall",
+      "entity-highwall-civic-government",
+      "entity-highwall-governmental-continuity",
+      "entity-highwall-region-climate",
+      "entity-highwall-region-ecology",
+      "entity-highwall-region-flora-and-fauna",
+      "entity-highwall-region-geology",
+      "entity-highwall-region-hydrology",
+      "entity-ledger",
+      "entity-professional-civic-institutions",
+      "entity-regional-imperial-relationship-reveal",
+      "entity-regional-imperial-structure",
+      "entity-regional-trade-system",
+      "entity-storm-marshal",
+      "entity-stormlands",
+      "entity-upriver-highlands"
+    ],
+    "entities_without_history": [
+      "entity-arbiter",
+      "entity-council-of-highwall",
+      "entity-delta",
+      "entity-forge",
+      "entity-highwall",
+      "entity-highwall-civic-government",
+      "entity-highwall-governmental-continuity",
+      "entity-highwall-region-climate",
+      "entity-highwall-region-ecology",
+      "entity-highwall-region-flora-and-fauna",
+      "entity-highwall-region-geology",
+      "entity-highwall-region-hydrology",
+      "entity-ledger",
+      "entity-professional-civic-institutions",
+      "entity-regional-imperial-relationship-reveal",
+      "entity-regional-imperial-structure",
+      "entity-regional-trade-system",
+      "entity-storm-marshal",
+      "entity-stormlands",
+      "entity-upriver-highlands"
+    ],
+    "entities_without_history_coverage": [
+      "entity-arbiter",
+      "entity-council-of-highwall",
+      "entity-delta",
+      "entity-forge",
+      "entity-highwall",
+      "entity-highwall-civic-government",
+      "entity-highwall-governmental-continuity",
+      "entity-highwall-region-climate",
+      "entity-highwall-region-ecology",
+      "entity-highwall-region-flora-and-fauna",
+      "entity-highwall-region-geology",
+      "entity-highwall-region-hydrology",
+      "entity-ledger",
+      "entity-professional-civic-institutions",
+      "entity-regional-imperial-relationship-reveal",
+      "entity-regional-imperial-structure",
+      "entity-regional-trade-system",
+      "entity-storm-marshal",
+      "entity-stormlands",
+      "entity-upriver-highlands"
+    ],
+    "intake_claims_without_knowledge_claim_reference": [
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C001",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C002",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C003",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01-C004",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C001",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C002",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02-C003",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C001",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C002",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C003",
+      "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01-C004",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C001",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C002",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C003",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01-C004",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C001",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C002",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C003",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C004",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C005",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02-C006",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C001",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C002",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03-C003",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C001",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C002",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C003",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C004",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C005",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01-C006",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02-C001",
+      "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02-C002",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C001",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C002",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C003",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C004",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01-C005",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C001",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C002",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C003",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C004",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C005",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C006",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C007",
+      "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01-C008",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01-C001",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C001",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C002",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02-C003",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C001",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C002",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C003",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C004",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C005",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C006",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C007",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C008",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C009",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C010",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C011",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C012",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C013",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C014",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C015",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C016",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C017",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C018",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C019",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C020",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C021",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C022",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C023",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C024",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C025",
+      "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01-C026",
+      "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C001",
+      "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C002",
+      "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01-C003",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C001",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C002",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C003",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C004",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C005",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C006",
+      "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01-C007",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01-C001",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01-C002",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C001",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C002",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C003",
+      "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01-C004",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C001",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C002",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C003",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C004",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C005",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C006",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C007",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C008",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C009",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C010",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C011",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C012",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C013",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C014",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C015",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C016",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01-C017",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02-C001",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02-C002",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C001",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C002",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03-C003",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C001",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C002",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C003",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C004",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C005",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C006",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C007",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C008",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C009",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C010",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C011",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C012",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C013",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C014",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C015",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C016",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C017",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C018",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C019",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C020",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C021",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C022",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C023",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C024",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C025",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C026",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C027",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C028",
+      "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01-C029",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C001",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C002",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C003",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C004",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C005",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C006",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C007",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C008",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C009",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C010",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C011",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C012",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C013",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C014",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C015",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C016",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C017",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C018",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C019",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C020",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C021",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C022",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C023",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C024",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C025",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C026",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C027",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C028",
+      "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01-C029",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C001",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C002",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C003",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C004",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C005",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C006",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C007",
+      "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01-C008",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C001",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-A01-C002",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C001",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C002",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C003",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C004",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C005",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C006",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C007",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C008",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C009",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C010",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C011",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C012",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C013",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C014",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C015",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C016",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C017",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C018",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C019",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C020",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C021",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C022",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C023",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C024",
+      "CASE-2026-08-06-REGIONAL-CLIMATE-S01-C025",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C001",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C002",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01-C003",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02-C001",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C001",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C002",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C003",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C004",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C005",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C006",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C007",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C008",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C009",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C010",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C011",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C012",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C013",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C014",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C015",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C016",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C017",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C018",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C019",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C020",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C021",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C022",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C023",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C024",
+      "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01-C025",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C001",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C002",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C003",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C004",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C005",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C006",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C007",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01-C008",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C001",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C002",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C003",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C004",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C005",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C006",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C007",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C008",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C009",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C010",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C011",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C012",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C013",
+      "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01-C014",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C001",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C002",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C003",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C004",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C005",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C006",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C007",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C008",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C009",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C010",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C011",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C012",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C013",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C014",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C015",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C016",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S01-C017",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C001",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C002",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C003",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C004",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C005",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C006",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C007",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C008",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C009",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C010",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C011",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C012",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C013",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C014",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C015",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C016",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C017",
+      "CASE-2026-08-07-REGIONAL-ECOLOGY-S02-C018",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C001",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C002",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C003",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C004",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C005",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C006",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C007",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C008",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C009",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C010",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C011",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C012",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C013",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C014",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C015",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C016",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C017",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C018",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C019",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C020",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C021",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C022",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C023",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C024",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C025",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C026",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C027",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C028",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C029",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C030",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C031",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C032",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C033",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C034",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C035",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C036",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C037",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C038",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C039",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C040",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C041",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C042",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C043",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C044",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C045",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C046",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C047",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C048",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C049",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C050",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C051",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C052",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C053",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C054",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C055",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C056",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C057",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C058",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C059",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C060",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C061",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C062",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C063",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01-C064",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C001",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C002",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C003",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C004",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C005",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C006",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C007",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C008",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C009",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C010",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C011",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C012",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C013",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C014",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C015",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C016",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C017",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C018",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C019",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C020",
+      "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02-C021",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C001",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C002",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C003",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C004",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C005",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C006",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C007",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C008",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C009",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C010",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C011",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C012",
+      "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01-C013",
+      "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C001",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C002",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C003",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C004",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C005",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C006",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C007",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C008",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C009",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C010",
+      "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01-C011",
+      "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C001",
+      "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C002",
+      "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C003",
+      "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01-C004",
+      "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C001",
+      "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01-C002",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C002",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C003",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C004",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C005",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C006",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C007",
+      "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C008"
+    ],
+    "relationships_without_graph_status": [
+      "relationship-arbiter-related-to-council-of-highwall",
+      "relationship-arbiter-related-to-highwall-civic-government",
+      "relationship-arbiter-related-to-highwall-governmental-continuity",
+      "relationship-arbiter-related-to-professional-civic-institutions",
+      "relationship-arbiter-related-to-storm-marshal",
+      "relationship-council-of-highwall-related-to-highwall-civic-government",
+      "relationship-council-of-highwall-related-to-professional-civic-institutions",
+      "relationship-council-of-highwall-related-to-storm-marshal",
+      "relationship-delta-related-to-highwall",
+      "relationship-delta-related-to-regional-trade-system",
+      "relationship-delta-related-to-stormlands",
+      "relationship-forge-related-to-regional-trade-system",
+      "relationship-forge-related-to-stormlands",
+      "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
+      "relationship-highwall-civic-government-related-to-professional-civic-institutions",
+      "relationship-highwall-civic-government-related-to-storm-marshal",
+      "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
+      "relationship-highwall-governmental-continuity-related-to-highwall",
+      "relationship-highwall-region-climate-related-to-highwall-region-ecology",
+      "relationship-highwall-region-climate-related-to-highwall-region-geology",
+      "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-climate-related-to-stormlands",
+      "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
+      "relationship-highwall-region-ecology-related-to-highwall-region-geology",
+      "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-ecology-related-to-stormlands",
+      "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
+      "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-geology-related-to-upriver-highlands",
+      "relationship-highwall-region-hydrology-related-to-upriver-highlands",
+      "relationship-highwall-related-to-civic-government",
+      "relationship-highwall-related-to-climate",
+      "relationship-highwall-related-to-ecology",
+      "relationship-highwall-related-to-flora-and-fauna",
+      "relationship-highwall-related-to-geology",
+      "relationship-highwall-related-to-hydrology",
+      "relationship-highwall-related-to-professional-institutions",
+      "relationship-highwall-related-to-regional-imperial-structure",
+      "relationship-highwall-related-to-regional-trade-system",
+      "relationship-ledger-related-to-highwall",
+      "relationship-ledger-related-to-regional-trade-system",
+      "relationship-professional-civic-institutions-related-to-storm-marshal",
+      "relationship-regional-imperial-structure-related-to-highwall-civic-government",
+      "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
+      "relationship-regional-imperial-structure-related-to-regional-trade-system",
+      "relationship-regional-imperial-structure-related-to-upriver-highlands",
+      "relationship-regional-trade-system-related-to-stormlands",
+      "relationship-regional-trade-system-related-to-upriver-highlands",
+      "relationship-storm-marshal-related-to-highwall-region-hydrology",
+      "relationship-upriver-highlands-related-to-highwall"
+    ],
+    "relationships_without_history": [
+      "relationship-arbiter-related-to-council-of-highwall",
+      "relationship-arbiter-related-to-highwall-civic-government",
+      "relationship-arbiter-related-to-highwall-governmental-continuity",
+      "relationship-arbiter-related-to-professional-civic-institutions",
+      "relationship-arbiter-related-to-storm-marshal",
+      "relationship-council-of-highwall-related-to-highwall-civic-government",
+      "relationship-council-of-highwall-related-to-professional-civic-institutions",
+      "relationship-council-of-highwall-related-to-storm-marshal",
+      "relationship-delta-related-to-highwall",
+      "relationship-delta-related-to-regional-trade-system",
+      "relationship-delta-related-to-stormlands",
+      "relationship-forge-related-to-regional-trade-system",
+      "relationship-forge-related-to-stormlands",
+      "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
+      "relationship-highwall-civic-government-related-to-professional-civic-institutions",
+      "relationship-highwall-civic-government-related-to-storm-marshal",
+      "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
+      "relationship-highwall-governmental-continuity-related-to-highwall",
+      "relationship-highwall-region-climate-related-to-highwall-region-ecology",
+      "relationship-highwall-region-climate-related-to-highwall-region-geology",
+      "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-climate-related-to-stormlands",
+      "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
+      "relationship-highwall-region-ecology-related-to-highwall-region-geology",
+      "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-ecology-related-to-stormlands",
+      "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
+      "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-geology-related-to-upriver-highlands",
+      "relationship-highwall-region-hydrology-related-to-upriver-highlands",
+      "relationship-highwall-related-to-civic-government",
+      "relationship-highwall-related-to-climate",
+      "relationship-highwall-related-to-ecology",
+      "relationship-highwall-related-to-flora-and-fauna",
+      "relationship-highwall-related-to-geology",
+      "relationship-highwall-related-to-hydrology",
+      "relationship-highwall-related-to-professional-institutions",
+      "relationship-highwall-related-to-regional-imperial-structure",
+      "relationship-highwall-related-to-regional-trade-system",
+      "relationship-ledger-related-to-highwall",
+      "relationship-ledger-related-to-regional-trade-system",
+      "relationship-professional-civic-institutions-related-to-storm-marshal",
+      "relationship-regional-imperial-structure-related-to-highwall-civic-government",
+      "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
+      "relationship-regional-imperial-structure-related-to-regional-trade-system",
+      "relationship-regional-imperial-structure-related-to-upriver-highlands",
+      "relationship-regional-trade-system-related-to-stormlands",
+      "relationship-regional-trade-system-related-to-upriver-highlands",
+      "relationship-storm-marshal-related-to-highwall-region-hydrology",
+      "relationship-upriver-highlands-related-to-highwall"
+    ],
+    "relationships_without_history_coverage": [
+      "relationship-arbiter-related-to-council-of-highwall",
+      "relationship-arbiter-related-to-highwall-civic-government",
+      "relationship-arbiter-related-to-highwall-governmental-continuity",
+      "relationship-arbiter-related-to-professional-civic-institutions",
+      "relationship-arbiter-related-to-storm-marshal",
+      "relationship-council-of-highwall-related-to-highwall-civic-government",
+      "relationship-council-of-highwall-related-to-professional-civic-institutions",
+      "relationship-council-of-highwall-related-to-storm-marshal",
+      "relationship-delta-related-to-highwall",
+      "relationship-delta-related-to-regional-trade-system",
+      "relationship-delta-related-to-stormlands",
+      "relationship-forge-related-to-regional-trade-system",
+      "relationship-forge-related-to-stormlands",
+      "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
+      "relationship-highwall-civic-government-related-to-professional-civic-institutions",
+      "relationship-highwall-civic-government-related-to-storm-marshal",
+      "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
+      "relationship-highwall-governmental-continuity-related-to-highwall",
+      "relationship-highwall-region-climate-related-to-highwall-region-ecology",
+      "relationship-highwall-region-climate-related-to-highwall-region-geology",
+      "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-climate-related-to-stormlands",
+      "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
+      "relationship-highwall-region-ecology-related-to-highwall-region-geology",
+      "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-ecology-related-to-stormlands",
+      "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
+      "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-geology-related-to-upriver-highlands",
+      "relationship-highwall-region-hydrology-related-to-upriver-highlands",
+      "relationship-highwall-related-to-civic-government",
+      "relationship-highwall-related-to-climate",
+      "relationship-highwall-related-to-ecology",
+      "relationship-highwall-related-to-flora-and-fauna",
+      "relationship-highwall-related-to-geology",
+      "relationship-highwall-related-to-hydrology",
+      "relationship-highwall-related-to-professional-institutions",
+      "relationship-highwall-related-to-regional-imperial-structure",
+      "relationship-highwall-related-to-regional-trade-system",
+      "relationship-ledger-related-to-highwall",
+      "relationship-ledger-related-to-regional-trade-system",
+      "relationship-professional-civic-institutions-related-to-storm-marshal",
+      "relationship-regional-imperial-structure-related-to-highwall-civic-government",
+      "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
+      "relationship-regional-imperial-structure-related-to-regional-trade-system",
+      "relationship-regional-imperial-structure-related-to-upriver-highlands",
+      "relationship-regional-trade-system-related-to-stormlands",
+      "relationship-regional-trade-system-related-to-upriver-highlands",
+      "relationship-storm-marshal-related-to-highwall-region-hydrology",
+      "relationship-upriver-highlands-related-to-highwall"
+    ],
+    "relationships_without_review_claim_provenance": [
+      "relationship-arbiter-related-to-council-of-highwall",
+      "relationship-arbiter-related-to-highwall-civic-government",
+      "relationship-arbiter-related-to-highwall-governmental-continuity",
+      "relationship-arbiter-related-to-professional-civic-institutions",
+      "relationship-arbiter-related-to-storm-marshal",
+      "relationship-council-of-highwall-related-to-highwall-civic-government",
+      "relationship-council-of-highwall-related-to-professional-civic-institutions",
+      "relationship-council-of-highwall-related-to-storm-marshal",
+      "relationship-delta-related-to-highwall",
+      "relationship-delta-related-to-regional-trade-system",
+      "relationship-delta-related-to-stormlands",
+      "relationship-forge-related-to-regional-trade-system",
+      "relationship-forge-related-to-stormlands",
+      "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
+      "relationship-highwall-civic-government-related-to-professional-civic-institutions",
+      "relationship-highwall-civic-government-related-to-storm-marshal",
+      "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
+      "relationship-highwall-governmental-continuity-related-to-highwall",
+      "relationship-highwall-region-climate-related-to-highwall-region-ecology",
+      "relationship-highwall-region-climate-related-to-highwall-region-geology",
+      "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-climate-related-to-stormlands",
+      "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
+      "relationship-highwall-region-ecology-related-to-highwall-region-geology",
+      "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-ecology-related-to-stormlands",
+      "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
+      "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
+      "relationship-highwall-region-geology-related-to-upriver-highlands",
+      "relationship-highwall-region-hydrology-related-to-upriver-highlands",
+      "relationship-highwall-related-to-civic-government",
+      "relationship-highwall-related-to-climate",
+      "relationship-highwall-related-to-ecology",
+      "relationship-highwall-related-to-flora-and-fauna",
+      "relationship-highwall-related-to-geology",
+      "relationship-highwall-related-to-hydrology",
+      "relationship-highwall-related-to-professional-institutions",
+      "relationship-highwall-related-to-regional-imperial-structure",
+      "relationship-highwall-related-to-regional-trade-system",
+      "relationship-ledger-related-to-highwall",
+      "relationship-ledger-related-to-regional-trade-system",
+      "relationship-professional-civic-institutions-related-to-storm-marshal",
+      "relationship-regional-imperial-structure-related-to-highwall-civic-government",
+      "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
+      "relationship-regional-imperial-structure-related-to-regional-trade-system",
+      "relationship-regional-imperial-structure-related-to-upriver-highlands",
+      "relationship-regional-trade-system-related-to-stormlands",
+      "relationship-regional-trade-system-related-to-upriver-highlands",
+      "relationship-storm-marshal-related-to-highwall-region-hydrology",
+      "relationship-upriver-highlands-related-to-highwall"
+    ]
+  },
   "relationship_types": [
     {
       "authority_effect": "navigation-only",
       "definition": "Preserves an explicitly maintained generic `related` association without asserting a more specific domain relationship.",
       "directionality": "symmetric",
-      "relationship_type": "related-to"
+      "inverse": "related-to",
+      "relationship_type": "related-to",
+      "self_link": "forbidden",
+      "source_kinds": [
+        "claim",
+        "entity",
+        "relationship"
+      ],
+      "target_kinds": [
+        "claim",
+        "entity",
+        "relationship"
+      ]
     }
   ],
   "relationships": [
     {
       "authoritative_record": "canon/government/arbiter.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-arbiter-related-to-council-of-highwall",
       "relationship_type": "related-to",
       "source": "entity-arbiter",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-council-of-highwall"
     },
     {
       "authoritative_record": "canon/government/arbiter.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-arbiter-related-to-highwall-civic-government",
       "relationship_type": "related-to",
       "source": "entity-arbiter",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-civic-government"
     },
     {
       "authoritative_record": "canon/government/arbiter.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-arbiter-related-to-highwall-governmental-continuity",
       "relationship_type": "related-to",
       "source": "entity-arbiter",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-governmental-continuity"
     },
     {
       "authoritative_record": "canon/government/arbiter.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-arbiter-related-to-professional-civic-institutions",
       "relationship_type": "related-to",
       "source": "entity-arbiter",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-professional-civic-institutions"
     },
     {
       "authoritative_record": "canon/government/arbiter.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-arbiter-related-to-storm-marshal",
       "relationship_type": "related-to",
       "source": "entity-arbiter",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-storm-marshal"
     },
     {
       "authoritative_record": "canon/government/council.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-council-of-highwall-related-to-highwall-civic-government",
       "relationship_type": "related-to",
       "source": "entity-council-of-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-civic-government"
     },
     {
       "authoritative_record": "canon/government/council.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-council-of-highwall-related-to-professional-civic-institutions",
       "relationship_type": "related-to",
       "source": "entity-council-of-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-professional-civic-institutions"
     },
     {
       "authoritative_record": "canon/government/council.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-council-of-highwall-related-to-storm-marshal",
       "relationship_type": "related-to",
       "source": "entity-council-of-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-storm-marshal"
     },
     {
       "authoritative_record": "canon/places/delta.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-delta-related-to-highwall",
       "relationship_type": "related-to",
       "source": "entity-delta",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall"
     },
     {
       "authoritative_record": "canon/places/delta.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-delta-related-to-regional-trade-system",
       "relationship_type": "related-to",
       "source": "entity-delta",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-trade-system"
     },
     {
       "authoritative_record": "canon/places/delta.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-delta-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-delta",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/places/forge.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-forge-related-to-regional-trade-system",
       "relationship_type": "related-to",
       "source": "entity-forge",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-trade-system"
     },
     {
       "authoritative_record": "canon/places/forge.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-forge-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-forge",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/government/highwall-civic-government.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-civic-government-related-to-highwall-governmental-continuity",
       "relationship_type": "related-to",
       "source": "entity-highwall-civic-government",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-governmental-continuity"
     },
     {
       "authoritative_record": "canon/government/highwall-civic-government.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-civic-government-related-to-professional-civic-institutions",
       "relationship_type": "related-to",
       "source": "entity-highwall-civic-government",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-professional-civic-institutions"
     },
     {
       "authoritative_record": "canon/government/highwall-civic-government.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-civic-government-related-to-storm-marshal",
       "relationship_type": "related-to",
       "source": "entity-highwall-civic-government",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-storm-marshal"
     },
     {
       "authoritative_record": "canon/history/highwall-governmental-continuity.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-governmental-continuity-related-to-council-of-highwall",
       "relationship_type": "related-to",
       "source": "entity-highwall-governmental-continuity",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-council-of-highwall"
     },
     {
       "authoritative_record": "canon/history/highwall-governmental-continuity.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-governmental-continuity-related-to-highwall",
       "relationship_type": "related-to",
       "source": "entity-highwall-governmental-continuity",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall"
     },
     {
       "authoritative_record": "canon/places/highwall-region-climate.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-ecology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-climate",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-ecology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-climate.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-geology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-climate",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-geology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-climate.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-climate-related-to-highwall-region-hydrology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-climate",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-climate.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-climate-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-climate",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/places/highwall-region-ecology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-flora-and-fauna",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-ecology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-flora-and-fauna"
     },
     {
       "authoritative_record": "canon/places/highwall-region-ecology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-geology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-ecology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-geology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-ecology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-ecology-related-to-highwall-region-hydrology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-ecology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-ecology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-ecology-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-ecology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/places/highwall-region-flora-and-fauna.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-flora-and-fauna-related-to-highwall-region-hydrology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-flora-and-fauna",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-flora-and-fauna.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-flora-and-fauna-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-flora-and-fauna",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/places/highwall-region-geology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-geology-related-to-highwall-region-hydrology",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-geology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/highwall-region-geology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-geology-related-to-upriver-highlands",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-geology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-upriver-highlands"
     },
     {
       "authoritative_record": "canon/places/highwall-region-hydrology.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-region-hydrology-related-to-upriver-highlands",
       "relationship_type": "related-to",
       "source": "entity-highwall-region-hydrology",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-upriver-highlands"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-civic-government",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-civic-government"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-climate",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-climate"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-ecology",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-ecology"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-flora-and-fauna",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-flora-and-fauna"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-geology",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-geology"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-hydrology",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-professional-institutions",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-professional-civic-institutions"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-regional-imperial-structure",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-imperial-structure"
     },
     {
       "authoritative_record": "canon/places/highwall.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-highwall-related-to-regional-trade-system",
       "relationship_type": "related-to",
       "source": "entity-highwall",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-trade-system"
     },
     {
       "authoritative_record": "canon/places/ledger.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-ledger-related-to-highwall",
       "relationship_type": "related-to",
       "source": "entity-ledger",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall"
     },
     {
       "authoritative_record": "canon/places/ledger.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-ledger-related-to-regional-trade-system",
       "relationship_type": "related-to",
       "source": "entity-ledger",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-trade-system"
     },
     {
       "authoritative_record": "canon/institutions/professional-civic-institutions.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-professional-civic-institutions-related-to-storm-marshal",
       "relationship_type": "related-to",
       "source": "entity-professional-civic-institutions",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-storm-marshal"
     },
     {
       "authoritative_record": "canon/government/regional-imperial-structure.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-imperial-structure-related-to-highwall-civic-government",
       "relationship_type": "related-to",
       "source": "entity-regional-imperial-structure",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-civic-government"
     },
     {
       "authoritative_record": "canon/government/regional-imperial-structure.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-imperial-structure-related-to-regional-imperial-relationship-reveal",
       "relationship_type": "related-to",
       "source": "entity-regional-imperial-structure",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-imperial-relationship-reveal"
     },
     {
       "authoritative_record": "canon/government/regional-imperial-structure.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-imperial-structure-related-to-regional-trade-system",
       "relationship_type": "related-to",
       "source": "entity-regional-imperial-structure",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-regional-trade-system"
     },
     {
       "authoritative_record": "canon/government/regional-imperial-structure.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-imperial-structure-related-to-upriver-highlands",
       "relationship_type": "related-to",
       "source": "entity-regional-imperial-structure",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-upriver-highlands"
     },
     {
       "authoritative_record": "canon/economy/regional-trade-system.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-trade-system-related-to-stormlands",
       "relationship_type": "related-to",
       "source": "entity-regional-trade-system",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-stormlands"
     },
     {
       "authoritative_record": "canon/economy/regional-trade-system.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-regional-trade-system-related-to-upriver-highlands",
       "relationship_type": "related-to",
       "source": "entity-regional-trade-system",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-upriver-highlands"
     },
     {
       "authoritative_record": "canon/government/storm-marshal.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-storm-marshal-related-to-highwall-region-hydrology",
       "relationship_type": "related-to",
       "source": "entity-storm-marshal",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall-region-hydrology"
     },
     {
       "authoritative_record": "canon/places/upriver-highlands.md",
-      "provenance": [
-        "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
-      ],
+      "graph_status": "",
+      "history_coverage": "",
+      "provenance": {
+        "review_claims": [],
+        "reviews": [
+          "../../development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md"
+        ]
+      },
       "relationship_id": "relationship-upriver-highlands-related-to-highwall",
       "relationship_type": "related-to",
       "source": "entity-upriver-highlands",
+      "superseded_by": [],
+      "supersedes": [],
       "target": "entity-highwall"
     }
   ],
-  "schema_version": 1,
+  "reviews": [
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "development/intake-reviews/2026-08-03-github-merge-policy-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "development/intake-reviews/2026-08-03-github-merge-policy-a02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "development/intake-reviews/2026-08-03-github-merge-policy-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "development/intake-reviews/2026-08-03-repository-foundation-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "development/intake-reviews/2026-08-03-repository-foundation-a02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "development/intake-reviews/2026-08-03-repository-foundation-a03-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "development/intake-reviews/2026-08-03-repository-foundation-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "development/intake-reviews/2026-08-03-repository-foundation-s02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES",
+      "path": "development/intake-reviews/2026-08-04-authorial-design-principles-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01"
+    },
+    {
+      "authority": "proposal-only",
+      "case_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES",
+      "path": "development/intake-reviews/2026-08-04-authorial-design-principles-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "development/intake-reviews/2026-08-04-highwall-overview-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "development/intake-reviews/2026-08-04-highwall-overview-a02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "development/intake-reviews/2026-08-04-highwall-overview-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS",
+      "path": "development/intake-reviews/2026-08-04-intake-completeness-github-approvals-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES",
+      "path": "development/intake-reviews/2026-08-04-lore-seed-boundaries-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE",
+      "path": "development/intake-reviews/2026-08-04-lore-seed-template-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE",
+      "path": "development/intake-reviews/2026-08-04-lore-seed-template-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "development/intake-reviews/2026-08-04-regional-geography-economy-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "development/intake-reviews/2026-08-04-regional-geography-economy-a02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "development/intake-reviews/2026-08-04-regional-geography-economy-a03-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "development/intake-reviews/2026-08-04-regional-geography-economy-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "path": "development/intake-reviews/2026-08-05-geology-geomorphology-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW",
+      "path": "development/intake-reviews/2026-08-05-scalable-consistency-workflow-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "path": "development/intake-reviews/2026-08-06-regional-climate-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "path": "development/intake-reviews/2026-08-06-regional-climate-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "development/intake-reviews/2026-08-06-regional-hydrology-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "development/intake-reviews/2026-08-06-regional-hydrology-a02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "development/intake-reviews/2026-08-06-regional-hydrology-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "path": "development/intake-reviews/2026-08-07-incremental-audit-framework-a01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "path": "development/intake-reviews/2026-08-07-incremental-audit-framework-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "path": "development/intake-reviews/2026-08-07-regional-ecology-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "path": "development/intake-reviews/2026-08-07-regional-ecology-s02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "path": "development/intake-reviews/2026-08-09-highwall-civic-government-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "path": "development/intake-reviews/2026-08-09-highwall-civic-government-s02-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "path": "development/intake-reviews/2026-08-13-cloth-thread-terminology-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-civic-governance-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL",
+      "path": "development/intake-reviews/2026-08-15-cloth-patch-graph-model-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "path": "development/intake-reviews/2026-08-15-entity-relationship-graph-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-highwall-hub-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-regional-environment-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-regional-imperial-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-regional-imperial-reveal-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-regional-trade-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION",
+      "path": "development/intake-reviews/2026-08-15-storm-marshal-hydrology-graph-migration-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "path": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "status": "complete",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01"
+    }
+  ],
+  "schema_version": 2,
+  "submissions": [
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "intake/submissions/2026-08-03-github-merge-policy-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "intake/submissions/2026-08-03-github-merge-policy-a02.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-A02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY",
+      "path": "intake/submissions/2026-08-03-github-merge-policy-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-03-GITHUB-MERGE-POLICY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "intake/submissions/2026-08-03-repository-foundation-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A01"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "intake/submissions/2026-08-03-repository-foundation-a02.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "intake/submissions/2026-08-03-repository-foundation-a03.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-A03"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "intake/submissions/2026-08-03-repository-foundation-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S01"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION",
+      "path": "intake/submissions/2026-08-03-repository-foundation-s02.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-03-REPOSITORY-FOUNDATION-S02"
+    },
+    {
+      "authority": "classify",
+      "case_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES",
+      "path": "intake/submissions/2026-08-04-authorial-design-principles-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-A01"
+    },
+    {
+      "authority": "proposal-only",
+      "case_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES",
+      "path": "intake/submissions/2026-08-04-authorial-design-principles-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-AUTHORIAL-DESIGN-PRINCIPLES-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "intake/submissions/2026-08-04-highwall-overview-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "intake/submissions/2026-08-04-highwall-overview-a02.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW",
+      "path": "intake/submissions/2026-08-04-highwall-overview-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-HIGHWALL-OVERVIEW-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS",
+      "path": "intake/submissions/2026-08-04-intake-completeness-github-approvals-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-INTAKE-COMPLETENESS-GITHUB-APPROVALS-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES",
+      "path": "intake/submissions/2026-08-04-lore-seed-boundaries-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-BOUNDARIES-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE",
+      "path": "intake/submissions/2026-08-04-lore-seed-template-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE",
+      "path": "intake/submissions/2026-08-04-lore-seed-template-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-LORE-SEED-TEMPLATE-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "intake/submissions/2026-08-04-regional-geography-economy-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "intake/submissions/2026-08-04-regional-geography-economy-a02.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "intake/submissions/2026-08-04-regional-geography-economy-a03.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-A03"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY",
+      "path": "intake/submissions/2026-08-04-regional-geography-economy-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-04-REGIONAL-GEOGRAPHY-ECONOMY-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY",
+      "path": "intake/submissions/2026-08-05-geology-geomorphology-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-05-GEOLOGY-GEOMORPHOLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW",
+      "path": "intake/submissions/2026-08-05-scalable-consistency-workflow-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-05-SCALABLE-CONSISTENCY-WORKFLOW-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "path": "intake/submissions/2026-08-06-regional-climate-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-CLIMATE",
+      "path": "intake/submissions/2026-08-06-regional-climate-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-06-REGIONAL-CLIMATE-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "intake/submissions/2026-08-06-regional-hydrology-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "intake/submissions/2026-08-06-regional-hydrology-a02.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-A02"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY",
+      "path": "intake/submissions/2026-08-06-regional-hydrology-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-06-REGIONAL-HYDROLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "path": "intake/submissions/2026-08-07-incremental-audit-framework-a01.md",
+      "record_type": "conversation-addendum",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-A01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK",
+      "path": "intake/submissions/2026-08-07-incremental-audit-framework-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-07-INCREMENTAL-AUDIT-FRAMEWORK-S01"
+    },
+    {
+      "authority": "establish-canon",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "path": "intake/submissions/2026-08-07-regional-ecology-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S01"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-07-REGIONAL-ECOLOGY",
+      "path": "intake/submissions/2026-08-07-regional-ecology-s02.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-07-REGIONAL-ECOLOGY-S02"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "path": "intake/submissions/2026-08-09-highwall-civic-government-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S01"
+    },
+    {
+      "authority": "working-canon",
+      "case_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT",
+      "path": "intake/submissions/2026-08-09-highwall-civic-government-s02.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-09-HIGHWALL-CIVIC-GOVERNMENT-S02"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY",
+      "path": "intake/submissions/2026-08-13-cloth-thread-terminology-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-13-CLOTH-THREAD-TERMINOLOGY-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-civic-governance-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-CIVIC-GOVERNANCE-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL",
+      "path": "intake/submissions/2026-08-15-cloth-patch-graph-model-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-CLOTH-PATCH-GRAPH-MODEL-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH",
+      "path": "intake/submissions/2026-08-15-entity-relationship-graph-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-ENTITY-RELATIONSHIP-GRAPH-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-highwall-hub-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-HIGHWALL-HUB-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-regional-environment-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-REGIONAL-ENVIRONMENT-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-regional-imperial-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-regional-imperial-reveal-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-REGIONAL-IMPERIAL-REVEAL-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-regional-trade-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-REGIONAL-TRADE-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION",
+      "path": "intake/submissions/2026-08-15-storm-marshal-hydrology-graph-migration-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-15-STORM-MARSHAL-HYDROLOGY-GRAPH-MIGRATION-S01"
+    },
+    {
+      "authority": "establish-policy",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "path": "intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "record_type": "intake-submission",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01"
+    }
+  ],
   "unmigrated_related_links": []
 }

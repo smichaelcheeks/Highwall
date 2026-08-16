@@ -80,10 +80,13 @@ THREADs across the coherent repository state. The intake review, impact
 manifest, controlled dispositions, consistency tiers, validation, and
 publication history govern that integration.
 
-The immutable submission archive remains the global paper trail, while local
-knowledge objects may maintain concise histories pointing back to the patches,
-claims, and decisions that changed them. This lets normal retrieval start from
-the object and follow its THREADs before opening the full historical patch.
+The immutable submission archive remains the global paper trail, while
+schema-v2 knowledge objects maintain concise histories pointing back to the
+patches, intake claims, and decisions that changed them. This lets normal
+retrieval start from the object and follow its THREADs before opening the full
+historical patch. The staged schema-v2 migration and incomplete coverage are
+reported in the
+[`public migration ledger`](development/knowledge-object-schema-v2-migration.md).
 
 The complete workflow and controlled decision vocabulary are defined in [`references/intake-workflow.md`](references/intake-workflow.md).
 

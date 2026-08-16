@@ -4,13 +4,44 @@
 from __future__ import annotations
 
 import re
+from collections.abc import Mapping
+from datetime import date, datetime
 from pathlib import Path
+
+import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
 CLAIM_ROW = re.compile(r"^\|\s*(CASE-.*-C\d{3})\s*\|")
 CLAIM_ID = re.compile(r"CASE-[A-Z0-9-]+-C\d{3}")
 CLAIM_COLUMN_COUNT = 9
+
+
+class FrontMatterLoader(yaml.SafeLoader):
+    """Safe YAML loader with YAML 1.2-style true/false booleans."""
+
+
+FrontMatterLoader.yaml_implicit_resolvers = {
+    key: list(value) for key, value in yaml.SafeLoader.yaml_implicit_resolvers.items()
+}
+for resolver_key, resolvers in list(FrontMatterLoader.yaml_implicit_resolvers.items()):
+    FrontMatterLoader.yaml_implicit_resolvers[resolver_key] = [
+        resolver
+        for resolver in resolvers
+        if resolver[0]
+        not in {
+            "tag:yaml.org,2002:bool",
+            "tag:yaml.org,2002:float",
+            "tag:yaml.org,2002:int",
+            "tag:yaml.org,2002:null",
+            "tag:yaml.org,2002:timestamp",
+        }
+    ]
+FrontMatterLoader.add_implicit_resolver(
+    "tag:yaml.org,2002:bool",
+    re.compile(r"^(?:true|false)$", re.IGNORECASE),
+    list("tTfF"),
+)
 
 
 def parse_inline_list(value: str) -> list[str] | None:
@@ -50,38 +81,57 @@ def split_markdown_row(line: str) -> list[str]:
     return cells
 
 
-def parse_front_matter(path: Path) -> tuple[dict[str, str], dict[str, list[str]]]:
+def parse_front_matter_data(path: Path) -> dict[str, object]:
+    """Parse a Markdown record's YAML front matter into native values."""
     lines = path.read_text(encoding="utf-8").splitlines()
     if not lines or lines[0] != "---":
-        return {}, {}
+        return {}
     try:
         end = lines.index("---", 1)
+    except ValueError:
+        return {}
+    try:
+        parsed = yaml.load("\n".join(lines[1:end]), Loader=FrontMatterLoader)
+    except yaml.YAMLError as error:
+        raise ValueError(f"invalid YAML front matter: {error}") from error
+    if parsed is None:
+        return {}
+    if not isinstance(parsed, Mapping):
+        raise ValueError("YAML front matter must be a mapping")
+    return {str(key): value for key, value in parsed.items()}
+
+
+def scalar_text(value: object) -> str:
+    """Normalize a parsed YAML scalar for legacy string-oriented callers."""
+    if value is None:
+        return ""
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (date, datetime)):
+        return value.isoformat()
+    return str(value)
+
+
+def parse_front_matter(path: Path) -> tuple[dict[str, str], dict[str, list[str]]]:
+    """Return backward-compatible scalar and scalar-list front-matter views."""
+    try:
+        data = parse_front_matter_data(path)
     except ValueError:
         return {}, {}
     scalars: dict[str, str] = {}
     lists: dict[str, list[str]] = {}
-    current_list: str | None = None
-    for line in lines[1:end]:
-        item = re.match(r"^\s+-\s+(.+?)\s*$", line)
-        if item and current_list:
-            lists[current_list].append(item.group(1).strip().strip('"'))
-            continue
-        field = re.match(r"^([a-z_]+):(?:\s*(.*))?$", line)
-        if not field:
-            current_list = None
-            continue
-        key = field.group(1)
-        value = (field.group(2) or "").strip().strip('"')
-        scalars[key] = value
-        inline_list = parse_inline_list(value)
-        if inline_list is not None:
-            lists[key] = inline_list
-            current_list = None
-        elif value:
-            current_list = None
-        else:
+    for key, value in data.items():
+        if value is None or value == "":
+            scalars[key] = ""
             lists[key] = []
-            current_list = key
+        elif isinstance(value, list):
+            if all(not isinstance(item, (dict, list)) for item in value):
+                lists[key] = [scalar_text(item) for item in value]
+            scalars[key] = "" if value else "[]"
+        elif isinstance(value, dict):
+            scalars[key] = ""
+        else:
+            scalars[key] = scalar_text(value)
     return scalars, lists
 
 

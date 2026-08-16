@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from build_graph_index import render
 from graph_common import GraphValidationError, build_graph_data
 from fixtures import FixtureRepository
+from fixtures import CLAIM_ID
 
 
 class GraphIndexTests(unittest.TestCase):
@@ -60,7 +61,7 @@ class GraphIndexTests(unittest.TestCase):
         self.second_entity()
         self.relationship_page()
         graph = build_graph_data(self.fixture.root)
-        self.assertEqual(1, graph["schema_version"])
+        self.assertEqual(2, graph["schema_version"])
         self.assertEqual("navigation-only", graph["authority"])
         self.assertEqual(2, len(graph["entities"]))
         self.assertEqual(1, len(graph["relationships"]))
@@ -140,7 +141,7 @@ class GraphIndexTests(unittest.TestCase):
       - "../../development/intake-reviews/example-review.md"
   - relationship_id: relationship-second-related-to-first-relationship
     relationship_type: related-to
-    source: entity-second-place
+    source: entity-example-place
     target: relationship-example-related-to-second
     provenance:
       - "../../development/intake-reviews/example-review.md"
@@ -163,6 +164,133 @@ class GraphIndexTests(unittest.TestCase):
         )
         graph = build_graph_data(self.fixture.root)
         self.assertEqual([], graph["unmigrated_related_links"])
+
+    def test_duplicate_symmetric_pair_with_distinct_ids_is_rejected(self) -> None:
+        self.second_entity()
+        self.relationship_page()
+        second = self.fixture.root / "canon/places/second-place.md"
+        text = second.read_text(encoding="utf-8")
+        duplicate = """relationships:
+  - relationship_id: relationship-second-related-to-example
+    relationship_type: related-to
+    source: entity-second-place
+    target: entity-example-place
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+"""
+        second.write_text(text.replace("relationships: []\n", duplicate), encoding="utf-8")
+        with self.assertRaisesRegex(GraphValidationError, "duplicates symmetric pair"):
+            build_graph_data(self.fixture.root)
+
+    def test_registry_forbidden_self_link_is_rejected(self) -> None:
+        self.relationship_page(target="entity-example-place")
+        with self.assertRaisesRegex(GraphValidationError, "forbidden self-link"):
+            build_graph_data(self.fixture.root)
+
+    def test_symmetric_relationship_owner_must_be_endpoint(self) -> None:
+        self.second_entity()
+        self.fixture.canon_page(
+            "canon/places/third-place.md", title="Third Place"
+        )
+        third = self.fixture.root / "canon/places/third-place.md"
+        third.write_text(
+            third.read_text(encoding="utf-8").replace(
+                "entity-example-place", "entity-third-place"
+            ),
+            encoding="utf-8",
+        )
+        self.relationship_page(source="entity-second-place", target="entity-third-place")
+        with self.assertRaisesRegex(GraphValidationError, "owner entity is not a symmetric endpoint"):
+            build_graph_data(self.fixture.root)
+
+    def test_maintained_claim_has_bounded_content_and_exact_provenance(self) -> None:
+        page = self.fixture.root / "canon/places/example-place.md"
+        text = page.read_text(encoding="utf-8")
+        claims = f"""graph_status: active
+history_coverage: complete
+relationships:
+  - relationship_id: relationship-example-related-to-claim
+    relationship_type: related-to
+    source: entity-example-place
+    target: claim-example-place-exists
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+claims:
+  - claim_id: claim-example-place-exists
+    content_id: claim-example-place-exists
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-example-place
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+history:
+  - history_id: history-example-place-001
+    sequence: 1
+    object_id: entity-example-place
+    change_type: graph-registered
+    review_claims:
+      - {CLAIM_ID}
+    summary: Registered the fixture entity.
+  - history_id: history-example-place-claim-001
+    sequence: 1
+    object_id: claim-example-place-exists
+    change_type: claim-added
+    review_claims:
+      - {CLAIM_ID}
+    summary: Added the maintained fixture claim.
+"""
+        body = """<!-- claim:claim-example-place-exists:start -->
+Synthetic maintained assertion.
+<!-- claim:claim-example-place-exists:end -->"""
+        page.write_text(
+            text.replace("relationships: []\n", claims).replace(
+                "Synthetic administrative fixture.", body
+            ),
+            encoding="utf-8",
+        )
+        graph = build_graph_data(self.fixture.root)
+        self.assertEqual(1, len(graph["knowledge_claims"]))
+        self.assertEqual(
+            "claim-example-place-exists", graph["relationships"][0]["target"]
+        )
+        self.assertEqual(64, len(graph["knowledge_claims"][0]["content_sha256"]))
+        self.assertNotIn(
+            "entity-example-place",
+            graph["migration_inventory"]["entities_without_history"],
+        )
+
+    def test_maintained_claim_requires_exact_content_boundaries(self) -> None:
+        page = self.fixture.root / "canon/places/example-place.md"
+        text = page.read_text(encoding="utf-8")
+        claims = f"""claims:
+  - claim_id: claim-example-place-exists
+    content_id: claim-example-place-exists
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-example-place
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - {CLAIM_ID}
+"""
+        page.write_text(
+            text.replace("relationships: []\n", "relationships: []\n" + claims),
+            encoding="utf-8",
+        )
+        with self.assertRaisesRegex(GraphValidationError, "matching start and end marker"):
+            build_graph_data(self.fixture.root)
 
 
 if __name__ == "__main__":

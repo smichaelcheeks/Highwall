@@ -142,6 +142,9 @@ TODO or `None`.
 - [ ] Superseded claims remain traceable.
 - [ ] The original submission remains unchanged.
 - [ ] All new facts have explicit authority and provenance.
+- [ ] Maintained knowledge claims are distinct from intake claims and bind
+      exact prose, lifecycle, subjects, and review-claim provenance.
+- [ ] Every changed schema-v2 object has an appended local history event.
 - [ ] Canon and story information remain separate.
 - [ ] Beliefs and disputed claims are attributed.
 - [ ] No contradiction was silently resolved.

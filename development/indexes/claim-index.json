@@ -12961,6 +12961,318 @@
       "superseded_by": [],
       "supersedes": [],
       "target": "All non-relationship canon content and the unresolved story inventory row"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C001",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Distinguish maintained knowledge claims from immutable intake-review claims.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "CLOTH and graph policy; schema-v2 tooling"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C002",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Keep authoritative entity, relationship, claim, and history metadata on owning Markdown records.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph and front-matter policy"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C003",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Give decision-worthy claims stable IDs and exact bounded prose while avoiding sentence-level atomization.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Knowledge-claim schema and boundary validation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C004",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Require append-only local histories, lifecycle, tombstones, and exact review-claim provenance for graph objects.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Graph policy, validators, migration program"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C005",
+      "classification": "administrative",
+      "disposition": "update",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Generalize controlled relationships to registered object kinds without introducing unreviewed semantic lore types.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Relationship registry and graph validation"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C006",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Build a unified navigation-only object projection and deterministic THREAD traversal.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Generated indexes and traversal tooling"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C007",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Audit every current entity, relationship, and intake claim through staged migrations with explicit coverage.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Public schema-v2 migration ledger"
+    },
+    {
+      "authoritative_targets": [
+        "references/cloth-thread-model.md",
+        "references/graph-structure.md",
+        "references/front-matter.md",
+        "references/relationship-types.md",
+        "references/consistency-workflow.md",
+        "development/knowledge-object-schema-v2-migration.md",
+        "scripts/graph_common.py",
+        "scripts/build_graph_index.py",
+        "scripts/validate_repository.py"
+      ],
+      "authority_basis": "explicit",
+      "case_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2",
+      "claim_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01-C008",
+      "classification": "administrative",
+      "disposition": "create",
+      "domains": [
+        "administration",
+        "design",
+        "terminology"
+      ],
+      "exception_records": [],
+      "review": "development/intake-reviews/2026-08-16-knowledge-object-schema-v2-s01-review.md",
+      "review_authority": "establish-policy",
+      "subjects": [
+        "knowledge-object-schema",
+        "knowledge-claims",
+        "object-history",
+        "graph-validation",
+        "thread-traversal"
+      ],
+      "submission": "../../intake/submissions/2026-08-16-knowledge-object-schema-v2-s01.md",
+      "submission_id": "CASE-2026-08-16-KNOWLEDGE-OBJECT-SCHEMA-V2-S01",
+      "summary": "Require a final independent canon-equivalence and completion audit before declaring schema-v2 migration complete.",
+      "superseded_by": [],
+      "supersedes": [],
+      "target": "Migration completion criteria"
     }
   ],
   "generated_from": "development/intake-reviews/*.md",

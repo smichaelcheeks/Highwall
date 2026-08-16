@@ -1,10 +1,32 @@
-# Entity and Relationship Graph Structure
+# Knowledge Object Graph Structure
 
 This document defines Highwall's explicit Markdown-first implementation of the
 graph abstraction in the [`CLOTH / THREAD model`](cloth-thread-model.md).
-Markdown records remain authoritative. The generated graph index is
-navigation-only and cannot establish facts, relationship semantics, authority,
-or provenance.
+Markdown records remain authoritative. Generated indexes are navigation-only
+and cannot establish facts, relationship semantics, authority, or provenance.
+
+Schema v2 is being introduced through the staged
+[`migration ledger`](../development/knowledge-object-schema-v2-migration.md).
+A current generated index does not mean that the migration inventories are
+empty or that the overall program is complete.
+
+## Identity classes
+
+Schema v2 distinguishes maintained objects from immutable processing records:
+
+- `entity-...` identifies an entity;
+- `relationship-...` identifies a typed connection;
+- `claim-...` identifies a maintained knowledge assertion;
+- `history-...` identifies a local changelog event; and
+- `CASE-...-C...` identifies an immutable intake-review claim.
+
+Maintained and intake claim IDs are not interchangeable. The former identifies
+knowledge expressed on an authoritative record; the latter identifies source
+input and its review disposition.
+
+All durable IDs use lowercase kebab case after their controlled prefix, remain
+stable through ordinary wording, title, and path changes, and must never be
+reused for another object.
 
 ## Entity records
 
@@ -14,19 +36,14 @@ record classes may opt in as their migration is reviewed.
 
 ```yaml
 entity_id: entity-highwall
+graph_status: active
+history_coverage: prospective
 ```
 
-Entity IDs:
-
-- use lowercase kebab case with the `entity-` prefix;
-- are unique repository-wide;
-- identify the knowledge object rather than its current file path or title;
-- remain stable across ordinary renames and moves; and
-- must never be reused for a different object.
-
-A page remains the entity's authoritative human-readable surface. The graph
-index records its current path, title, record type, lifecycle metadata, and
-provenance without replacing that page.
+An entity's `graph_status` is `active`, `superseded`, or `retired`. Retired and
+superseded objects remain indexed as tombstones. A page remains the entity's
+authoritative human-readable surface; the index records its current path and
+metadata without replacing it.
 
 ## Relationship records
 
@@ -39,85 +56,197 @@ relationships:
     relationship_type: related-to
     source: entity-highwall
     target: entity-regional-trade-system
+    graph_status: active
+    history_coverage: prospective
+    supersedes: []
+    superseded_by: []
     provenance:
-      - "../../development/intake-reviews/example-review.md"
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - CASE-YYYY-MM-DD-EXAMPLE-S01-C001
 ```
 
-Every relationship requires:
+Every migrated relationship requires:
 
-- a unique lowercase-kebab `relationship_id` with the `relationship-` prefix;
-- a controlled `relationship_type` from
+- a unique `relationship-...` ID;
+- a controlled type from
   [`relationship-types.md`](relationship-types.md);
-- a `source` and `target` resolving to an entity or relationship ID; and
-- at least one repository-relative provenance pointer from the owning Markdown
-  record.
+- source and target IDs of kinds permitted by that registry row;
+- an explicit lifecycle;
+- review paths and exact immutable intake-claim provenance; and
+- a local history event.
 
-Relationship IDs identify the connection independently of its endpoints. They
-remain stable while the same relationship continues to exist. A materially
-different relationship receives a new ID; retirement or supersession preserves
-the earlier relationship's history rather than reusing its identifier.
+Relationship type and endpoints are immutable after publication. Changing
+either creates a new relationship and retires or supersedes the old one. Both
+directions of supersession are recorded and the earlier object remains
+addressable.
 
-## Relationship ownership and recursion
+The registry controls directionality, authority effect, permitted endpoint
+kinds, self-link behavior, and inverse behavior. Validation rejects duplicate
+symmetric pairs, prohibited self-links, and ownership inconsistent with
+directionality.
 
-Store a relationship on the Markdown record that owns its authoritative
-explanation. A simple entity-to-entity relationship normally lives on its
-source entity. The `source` field remains explicit so the graph is traversable
-without inferring ownership from file location.
+## Maintained knowledge claims
 
-Both endpoints may name relationship IDs. This implements relationship-to-
-relationship connections without inventing a separate storage mechanism.
-When a relationship develops substantial identity, rules, history, or further
-structure, reify it as an entity under the rule in the CLOTH model and connect
-the participants through simpler relationships.
+A decision-worthy assertion becomes addressable through a stable `claim-...`
+ID in the owning record's `claims` metadata:
+
+```yaml
+claims:
+  - claim_id: claim-highwall-example
+    content_id: claim-highwall-example
+    truth_kind: objective
+    authority_level: established
+    lifecycle: active
+    history_coverage: complete
+    about:
+      - entity-highwall
+    supersedes: []
+    superseded_by: []
+    provenance:
+      reviews:
+        - "../../development/intake-reviews/example-review.md"
+      review_claims:
+        - CASE-YYYY-MM-DD-EXAMPLE-S01-C002
+```
+
+The assertion remains readable Markdown between exact hidden boundaries:
+
+```markdown
+<!-- claim:claim-highwall-example:start -->
+The maintained assertion appears here.
+<!-- claim:claim-highwall-example:end -->
+```
+
+The generated projection hashes the normalized bounded passage for change
+detection. The hash remains navigation metadata; the bounded Markdown passage
+is authoritative.
+
+Only an assertion needing independent citation, authority, lifecycle,
+contradiction, disclosure, or multi-object scope requires a maintained claim
+ID. Ordinary descriptive prose does not become an atomic claim merely because
+it appears on an entity page.
+
+Controlled truth kinds distinguish objective setting truth, in-world belief,
+historical claim, character knowledge, reader reveal, design, administrative
+policy, proposal, and question. Authority and lifecycle remain separate.
+
+The `about` list creates navigation bindings only. It does not assign semantic
+roles, strengthen the bounded assertion, or make it true. Semantic
+relationships to a claim require a separately authorized controlled type.
+
+## Intake claims
+
+Existing `CASE-...-C...` claim IDs remain immutable review objects. They record
+what a patch submitted, its classification, authority basis, disposition, and
+resulting target. A maintained claim cites the exact intake claims that
+established or changed it.
+
+One intake claim may establish, revise, supersede, or produce no change to a
+maintained claim. Administrative, deferred, rejected, and no-current-state
+intake claims are not mechanically converted into maintained facts. The
+schema-v2 migration must give every baseline intake claim an explicit crosswalk
+result.
+
+## Local object histories
+
+Every migrated entity, relationship, and maintained claim has an append-only
+history on its owning Markdown record:
+
+```yaml
+history:
+  - history_id: history-highwall-001
+    sequence: 1
+    object_id: entity-highwall
+    change_type: graph-registered
+    review_claims:
+      - CASE-YYYY-MM-DD-EXAMPLE-S01-C001
+    summary: Registered the existing page as a graph entity.
+```
+
+History sequences are contiguous per object. Published events are never
+rewritten. Their summaries remain concise and point to exact intake claims;
+reviews retain full rationale and Git retains exact file changes. A migration
+entry uses `graph-registered` and must not falsely claim that pre-existing lore
+was newly established.
+
+Historical coverage that has not been reconstructed remains explicitly
+provenance-only in the migration ledger. Missing events are not presented as a
+complete changelog.
+
+`history_coverage` is controlled: `provenance-only` means local event coverage
+has not been audited; `prospective` means it is complete from the first
+schema-v2 event forward while earlier changes remain in cumulative provenance;
+and `complete` means all known authoritative changes were reconstructed and
+audited. New objects normally begin as `complete` because their establishment
+is their first event.
+
+## Ownership, recursion, and reification
+
+Store an object on the Markdown record that owns its authoritative
+explanation. A directed relationship normally lives on its source entity. A
+symmetric relationship may live on either endpoint. The explicit source and
+target remain traversable without inferring them from storage.
+
+Endpoints may name registered entity, relationship, or maintained claim IDs
+when the controlled relationship type permits those kinds. This allows a
+relationship to be about another relationship or a fact. When a relationship
+develops substantial identity, rules, history, or structure, reify it as an
+entity and connect its participants through simpler relationships.
 
 An explicit edge assists discovery but never creates authority. Its type,
 endpoints, scope, and provenance must follow an authorized source.
 
-## Generated graph index
+## Generated projection
 
 `development/indexes/knowledge-graph.json` is generated by
-`scripts/build_graph_index.py`. It contains:
+`scripts/build_graph_index.py`. Schema v2 includes:
 
-- every opted-in entity and its current authoritative Markdown path;
-- every explicit relationship and its owning record;
+- opted-in entities and their authoritative Markdown paths;
+- explicit relationships and their owning records;
+- maintained knowledge claims and bounded-content hashes;
+- local history events;
+- immutable submissions, reviews, and intake claims needed for traversal;
 - the controlled relationship-type registry;
-- validated endpoint and provenance pointers; and
-- legacy `related` links not yet represented by explicit relationship objects.
+- validated endpoint and provenance pointers;
+- legacy `related` links not represented by explicit relationships; and
+- explicit schema-v2 migration inventories.
 
-The index is deterministic and navigation-only. Edit Markdown records or the
-relationship-type registry, then regenerate it. Never edit the JSON directly.
+The specialized claim index remains a compatibility view during migration.
+Edit Markdown records or the relationship registry and regenerate indexes;
+never edit generated JSON directly.
 
 ## Incremental migration
 
-Migration proceeds in governed batches:
+Migration proceeds in governed stages:
 
-1. Assign stable entity IDs without changing prose, authority, or provenance.
-2. Preserve existing `related` links during compatibility migration.
-3. Add explicit relationship objects only when their type and endpoints are
-   already supported by authority.
-4. Use the navigation-only `related-to` type when migrating an existing generic
-   `related` link without asserting a stronger domain fact.
-5. Review the graph index's `unmigrated_related_links` inventory in later
-   patches.
-6. Remove or redefine legacy compatibility fields only through a later
-   authorized policy patch.
+1. Establish schema, lifecycle, history, provenance, and completion policy.
+2. Implement structural parsing, projection, prospective validation, and
+   visible migration inventories.
+3. Audit and backfill every baseline entity and relationship history.
+4. Crosswalk every baseline intake claim to a maintained claim or an explicit
+   non-current-state category.
+5. Add maintained knowledge claims without changing their bounded prose.
+6. Add semantic relationship types only through separately authorized patches.
+7. Implement deterministic THREAD traversal.
+8. Run an independent canon-equivalence and completion audit.
 
-An unmigrated link is visible work, not permission to infer a semantic edge.
-The index must expose incomplete coverage rather than present a partial graph as
-complete.
+Legacy `related` links remain compatibility navigation until a later policy
+patch removes or redefines them. Generic links may migrate only to
+navigation-only `related-to` and cannot support a stronger semantic type.
 
 ## Validation
 
-Repository validation rejects:
+Repository validation rejects malformed or duplicate identities, uncontrolled
+types, invalid endpoint kinds, unresolved endpoints, prohibited self-links,
+duplicate symmetric pairs, invalid ownership, broken provenance, invalid claim
+boundaries, non-contiguous history, and broken lifecycle or supersession.
 
-- missing or malformed required canon entity IDs;
-- duplicate entity or relationship IDs;
-- malformed relationship records;
-- relationship types absent from the controlled registry;
-- unresolved entity or relationship endpoints;
-- empty or missing relationship provenance;
-- provenance pointers that do not resolve; and
-- a stale generated graph index when the dedicated freshness check runs.
+Prospective validation compares changed objects with a supplied Git base so
+stable IDs cannot disappear or be reused, published histories cannot be
+rewritten, and relationship endpoints or type cannot be mutated in place.
 
-Validation proves structural integrity only. Semantic correctness, relationship
-scope, and authority still require the governed patch and consistency workflow.
+Structural validation cannot prove semantic correctness. Relationship scope,
+claim meaning, authority, canon equivalence, and story boundaries still require
+the governed patch and consistency workflow.

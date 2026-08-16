@@ -74,6 +74,90 @@ class ValidatorTests(unittest.TestCase):
         self.fixture.write("story/link.md", "[Target](nested\\target.md)\n")
         self.assertEqual([], self.validate())
 
+    def test_changed_entity_requires_schema_v2_lifecycle_and_history(self) -> None:
+        baseline = self.fixture.initialize_git()
+        page = self.fixture.root / "canon/places/example-place.md"
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "Synthetic administrative fixture.",
+                "Synthetic administrative fixture updated.",
+            ),
+            encoding="utf-8",
+        )
+        errors = self.validate(baseline)
+        self.assertTrue(any("lacks graph_status" in error for error in errors))
+        self.assertTrue(any("lacks local history" in error for error in errors))
+
+    def test_published_relationship_endpoints_are_immutable(self) -> None:
+        self.fixture.canon_page("canon/places/second-place.md", title="Second Place")
+        second = self.fixture.root / "canon/places/second-place.md"
+        second.write_text(
+            second.read_text(encoding="utf-8").replace(
+                "entity-example-place", "entity-second-place"
+            ),
+            encoding="utf-8",
+        )
+        self.fixture.canon_page("canon/places/third-place.md", title="Third Place")
+        third = self.fixture.root / "canon/places/third-place.md"
+        third.write_text(
+            third.read_text(encoding="utf-8").replace(
+                "entity-example-place", "entity-third-place"
+            ),
+            encoding="utf-8",
+        )
+        page = self.fixture.root / "canon/places/example-place.md"
+        relationship = """relationships:
+  - relationship_id: relationship-example-related-to-second
+    relationship_type: related-to
+    source: entity-example-place
+    target: entity-second-place
+    provenance:
+      - "../../development/intake-reviews/example-review.md"
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "relationships: []\n", relationship
+            ),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "target: entity-second-place", "target: entity-third-place"
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error("changed immutable target", baseline)
+
+    def test_published_history_event_is_append_only(self) -> None:
+        page = self.fixture.root / "canon/places/example-place.md"
+        history = f"""graph_status: active
+history_coverage: complete
+relationships: []
+history:
+  - history_id: history-example-place-001
+    sequence: 1
+    object_id: entity-example-place
+    change_type: graph-registered
+    review_claims:
+      - {CLAIM_ID}
+    summary: Registered the fixture entity.
+"""
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "relationships: []\n", history
+            ),
+            encoding="utf-8",
+        )
+        baseline = self.fixture.initialize_git()
+        page.write_text(
+            page.read_text(encoding="utf-8").replace(
+                "Registered the fixture entity.", "Rewrote the fixture history."
+            ),
+            encoding="utf-8",
+        )
+        self.assert_error("published history event history-example-place-001 was rewritten", baseline)
+
     def test_posix_style_relative_link_is_supported(self) -> None:
         self.fixture.write("story/nested/target.md", "# Target\n")
         self.fixture.write("story/link.md", "[Target](nested/target.md)\n")

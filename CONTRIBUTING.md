@@ -17,6 +17,8 @@ explicit instructions. See the
   fact or infer missing lore from it.
 - Preserve narrative ambiguity when instructed. Do not convert implication, rumor, belief, or reader inference into fact.
 - Record significant canon changes and the decision authorizing them.
+- Keep maintained knowledge-claim IDs distinct from immutable intake-claim
+  IDs, and append local object history when schema-v2 objects change.
 - Do not treat external research, prior drafts, or retired ideas as canon.
 
 ## Contribution workflow
@@ -97,6 +99,7 @@ Use one short-lived branch per intake case or other coherent maintenance task. K
 Before pushing, run the same deterministic integrity check used by CI:
 
 ```powershell
+python -m pip install --requirement requirements.txt
 python scripts/validate_repository.py --base-ref origin/main
 python scripts/build_claim_index.py --check
 python scripts/build_graph_index.py --check

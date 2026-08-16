@@ -63,14 +63,24 @@ Before changing authoritative content:
     connection. Reify a relationship as an entity when it develops substantial
     independent identity, rules, history, or further structure. Do not silently
     mint new durable relationship types without authority.
-12. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
-13. Apply the required consistency tier. A fresh Tier 3 audit is mandatory
+12. Keep maintained `claim-...` knowledge objects distinct from immutable
+    `CASE-...-C...` intake claims. Add a maintained claim only for an assertion
+    that needs independent citation, authority, lifecycle, contradiction,
+    disclosure, or multi-object scope; bind it to exact prose markers and exact
+    review-claim provenance.
+13. For every schema-v2 entity, relationship, or maintained claim changed by
+    an integration, append a local history event. Never rewrite a published
+    event, reuse an object ID, mutate published relationship endpoints or type,
+    or delete a superseded or retired object instead of preserving its
+    tombstone.
+14. Capture later confirmed conversational decisions in immutable, sequenced addenda before integrating them. Apply the same completeness gate to addenda.
+15. Apply the required consistency tier. A fresh Tier 3 audit is mandatory
     after ten completed canon cases; before a tagged canon snapshot or sustained
     story drafting; after major regional, chronological, political, taxonomy,
     ownership, path, or alias changes; for three or more affected domains; for
     repeated unexpected dependencies; or when the baseline is missing,
     incomplete, or unreliable.
-14. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
+16. Complete validation, push the branch, and open a draft PR. Never merge without explicit author instruction.
 
 Use the conceptual order: patch → review and authority determination →
 stitch/integration → integration review/current-state changes → validation →

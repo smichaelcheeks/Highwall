@@ -32,7 +32,11 @@ Canon templates default to `status: draft` and `canon_level: working`. Those def
 Replace `entity_id: TODO` with a stable ID under
 [`../references/graph-structure.md`](../references/graph-structure.md). Leave
 `relationships: []` empty unless an authorized, controlled relationship is
-being recorded with resolvable endpoints and provenance.
+being recorded with resolvable endpoints and provenance. New schema-v2 records
+also require a lifecycle and a reviewed initial history event before
+publication. Leave `claims: []` empty unless a decision-worthy assertion needs
+independent identity; a maintained claim requires exact bounded prose and
+intake-claim provenance.
 
 The lore-patch template is author-facing. The intake-submission template is
 the repository-facing wrapper that assigns identifiers and preserves a

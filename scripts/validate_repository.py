@@ -4,14 +4,22 @@
 from __future__ import annotations
 
 import argparse
+import io
 import re
 import subprocess
 import sys
+import tarfile
+import tempfile
 from pathlib import Path
 from urllib.parse import unquote
 
-from consistency_common import CLAIM_COLUMN_COUNT, parse_inline_list, split_markdown_row
-from graph_common import GraphValidationError, build_graph_data
+from consistency_common import (
+    CLAIM_COLUMN_COUNT,
+    parse_front_matter_data,
+    scalar_text,
+    split_markdown_row,
+)
+from graph_common import GraphValidationError, build_graph_data, collect_object_snapshots
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,48 +150,28 @@ class Validator:
 
     @staticmethod
     def parse_front_matter(path: Path) -> dict[str, str] | None:
-        lines = path.read_text(encoding="utf-8").splitlines()
-        if not lines or lines[0] != "---":
-            return None
         try:
-            end = lines.index("---", 1)
+            data = parse_front_matter_data(path)
         except ValueError:
             return None
-        values: dict[str, str] = {}
-        for line in lines[1:end]:
-            match = re.match(r"^([a-z_]+):(?:\s*(.*))?$", line)
-            if match:
-                values[match.group(1)] = (match.group(2) or "").strip().strip('"')
-        return values
+        if not data:
+            return None
+        return {
+            key: "" if isinstance(value, (dict, list)) else scalar_text(value)
+            for key, value in data.items()
+        }
 
     @staticmethod
     def parse_front_matter_lists(path: Path) -> dict[str, list[str]]:
-        lines = path.read_text(encoding="utf-8").splitlines()
-        if not lines or lines[0] != "---":
-            return {}
         try:
-            end = lines.index("---", 1)
+            data = parse_front_matter_data(path)
         except ValueError:
             return {}
-        values: dict[str, list[str]] = {}
-        current: str | None = None
-        for line in lines[1:end]:
-            item = re.match(r"^\s+-\s+(.+?)\s*$", line)
-            if item and current:
-                values[current].append(item.group(1).strip().strip('"'))
-                continue
-            field = re.match(r"^([a-z_]+):\s*$", line)
-            if field:
-                current = field.group(1)
-                values[current] = []
-            else:
-                inline = re.match(r"^([a-z_]+):\s*(\[.*\])\s*$", line)
-                if inline:
-                    parsed = parse_inline_list(inline.group(2))
-                    if parsed is not None:
-                        values[inline.group(1)] = parsed
-                current = None
-        return values
+        return {
+            key: [scalar_text(item) for item in value]
+            for key, value in data.items()
+            if isinstance(value, list)
+        } | {key: [] for key, value in data.items() if value is None or value == ""}
 
     @staticmethod
     def slugify(heading: str) -> str:
@@ -259,9 +247,158 @@ class Validator:
 
     def validate_graph(self) -> None:
         try:
-            build_graph_data(self.root)
+            graph = build_graph_data(self.root)
         except GraphValidationError as error:
             self.errors.extend(error.errors)
+            return
+        if self.base_ref:
+            self.validate_graph_evolution(graph)
+
+    def changed_paths(self) -> set[str]:
+        if not self.base_ref:
+            return set()
+        result = subprocess.run(
+            ["git", "diff", "--name-only", self.base_ref, "--"],
+            cwd=self.root,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            detail = result.stderr.strip() or "Git could not compare the requested ref"
+            self.error("graph", f"invalid comparison ref {self.base_ref!r}: {detail}")
+            return set()
+        return {line.replace("\\", "/") for line in result.stdout.splitlines() if line}
+
+    def validate_graph_evolution(self, graph: dict[str, object]) -> None:
+        """Enforce durable identity and append-only graph evolution against Git."""
+        if not self.base_ref:
+            return
+        archive = subprocess.run(
+            ["git", "archive", "--format=tar", self.base_ref],
+            cwd=self.root,
+            check=False,
+            capture_output=True,
+        )
+        if archive.returncode != 0:
+            detail = archive.stderr.decode("utf-8", errors="replace").strip()
+            self.error(
+                "graph",
+                f"could not read graph baseline {self.base_ref!r}: {detail or 'git archive failed'}",
+            )
+            return
+        with tempfile.TemporaryDirectory(prefix="highwall-graph-base-") as directory:
+            baseline_root = Path(directory)
+            try:
+                with tarfile.open(fileobj=io.BytesIO(archive.stdout), mode="r:") as tar:
+                    tar.extractall(baseline_root, filter="data")
+            except (tarfile.TarError, OSError) as error:
+                self.error("graph", f"could not extract graph baseline: {error}")
+                return
+            baseline = collect_object_snapshots(baseline_root)
+
+        current = collect_object_snapshots(self.root)
+        changed = self.changed_paths()
+        histories_by_object = {
+            str(item["object_id"])
+            for item in current["histories"].values()
+        }
+
+        for kind in ("entities", "relationships", "claims"):
+            for object_id in sorted(baseline[kind]):
+                if object_id not in current[kind]:
+                    self.error(
+                        baseline[kind][object_id]["path"]
+                        if kind == "entities"
+                        else baseline[kind][object_id]["authoritative_record"],
+                        f"published {kind[:-1]} {object_id} was removed instead of retained as a tombstone",
+                    )
+
+        for relationship_id, earlier in baseline["relationships"].items():
+            later = current["relationships"].get(relationship_id)
+            if later is None:
+                continue
+            for field in ("relationship_type", "source", "target"):
+                if earlier[field] != later[field]:
+                    self.error(
+                        str(later["authoritative_record"]),
+                        f"published relationship {relationship_id} changed immutable {field}",
+                    )
+
+        for history_id, earlier in baseline["histories"].items():
+            later = current["histories"].get(history_id)
+            if later is None:
+                self.error(
+                    str(earlier["authoritative_record"]),
+                    f"published history event {history_id} was removed",
+                )
+            elif earlier != later:
+                self.error(
+                    str(later["authoritative_record"]),
+                    f"published history event {history_id} was rewritten",
+                )
+
+        inventory = graph["migration_inventory"]
+        missing_status = set(inventory["entities_without_graph_status"]) | set(
+            inventory["relationships_without_graph_status"]
+        )
+        missing_history = set(inventory["entities_without_history"]) | set(
+            inventory["relationships_without_history"]
+        )
+        missing_history_coverage = set(
+            inventory["entities_without_history_coverage"]
+        ) | set(inventory["relationships_without_history_coverage"])
+
+        for entity_id, item in current["entities"].items():
+            earlier = baseline["entities"].get(entity_id)
+            requires_v2 = earlier is None or str(item["path"]) in changed
+            try:
+                entity_metadata = parse_front_matter_data(self.root / str(item["path"]))
+            except ValueError:
+                entity_metadata = {}
+            if requires_v2 and entity_id in missing_status:
+                self.error(str(item["path"]), f"changed entity {entity_id} lacks graph_status")
+            if requires_v2 and entity_id in missing_history:
+                self.error(str(item["path"]), f"changed entity {entity_id} lacks local history")
+            if requires_v2 and entity_id in missing_history_coverage:
+                self.error(
+                    str(item["path"]),
+                    f"changed entity {entity_id} lacks history_coverage",
+                )
+            if requires_v2:
+                for field in ("claims", "history"):
+                    if field not in entity_metadata:
+                        self.error(
+                            str(item["path"]),
+                            f"changed entity {entity_id} lacks schema-v2 {field} field",
+                        )
+
+        for kind, lifecycle_field in (("relationships", "graph_status"), ("claims", "lifecycle")):
+            for object_id, item in current[kind].items():
+                earlier = baseline[kind].get(object_id)
+                comparable = {
+                    key: value for key, value in item.items() if key != "authoritative_record"
+                }
+                prior_comparable = (
+                    {
+                        key: value
+                        for key, value in earlier.items()
+                        if key != "authoritative_record"
+                    }
+                    if earlier
+                    else None
+                )
+                requires_v2 = earlier is None or comparable != prior_comparable
+                if requires_v2 and not item.get(lifecycle_field):
+                    self.error(
+                        str(item["authoritative_record"]),
+                        f"new or changed {kind[:-1]} {object_id} lacks {lifecycle_field}",
+                    )
+                if requires_v2 and object_id not in histories_by_object:
+                    self.error(
+                        str(item["authoritative_record"]),
+                        f"new or changed {kind[:-1]} {object_id} lacks local history",
+                    )
 
     def validate_intake(self) -> None:
         submissions: dict[str, Path] = {}
